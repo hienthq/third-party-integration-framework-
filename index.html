@@ -9106,6 +9106,7 @@ Darkula color scheme from the JetBrains family of IDEs
     <!-- backwards compatibility -->
     <!-- backwards compatibility -->
     <!-- backwards compatibility -->
+    <!-- backwards compatibility -->
   </head>
 
   <body data-languages='["javascript","typescript","python","php","shell"]'>
@@ -9119,8 +9120,14 @@ Darkula color scheme from the JetBrains family of IDEs
         />
       </span>
     </a>
-    <div class="toc-wrapper">
-      <div style="display: flex; justify-content: center; margin: 20px"></div>
+    <div class="toc-wrapper" style="box-shadow: 2px 1px 10px #ccc">
+      <div style="height: 200px">
+        <img
+          src="https://go.hrforte.com/hubfs/HRF%20Logo%20(new%20tagline)%20-%20Jan%202025-4.jpg"
+          alt="logo"
+          style="width: 100%; height: 100%; object-fit: cover"
+        />
+      </div>
 
       <div class="lang-selector">
         <a href="#" data-language-name="javascript">JavaScript</a>
@@ -9178,7 +9185,7 @@ Darkula color scheme from the JetBrains family of IDEs
                   href="#create-external-employee"
                   class="toc-h2 toc-link"
                   data-title=""
-                  >Create a external employee</a
+                  >Create external employee</a
                 >
               </li>
 
@@ -9190,58 +9197,87 @@ Darkula color scheme from the JetBrains family of IDEs
                   >Create external employees</a
                 >
               </li>
+            </ul>
+          </li>
 
+          <li>
+            <a
+              href="#hr-forte-public-integration-api-public-integration-api-references"
+              class="toc-h1 toc-link"
+              data-title="Public Integration API - References"
+              >Public Integration API - References</a
+            >
+
+            <ul class="toc-list-h2">
               <li>
                 <a
-                  href="#update-external-employee-information-of-work"
+                  href="#get-list-of-countries"
                   class="toc-h2 toc-link"
                   data-title=""
-                  >Update external employee information of work</a
+                  >Get list of countries</a
                 >
               </li>
 
               <li>
                 <a
-                  href="#update-external-employee-information-of-compensation"
+                  href="#get-list-of-genders"
                   class="toc-h2 toc-link"
                   data-title=""
-                  >Update external employee information of compensation</a
+                  >Get list of genders</a
                 >
               </li>
 
               <li>
                 <a
-                  href="#update-external-employee-information-of-dependents"
+                  href="#get-list-of-relationship-types"
                   class="toc-h2 toc-link"
                   data-title=""
-                  >Update external employee information of dependents</a
+                  >Get list of relationship types</a
                 >
               </li>
 
               <li>
                 <a
-                  href="#create-unpaid-leave-for-calculating-payroll"
+                  href="#get-list-of-pay-element-codes"
                   class="toc-h2 toc-link"
                   data-title=""
-                  >Create unpaid leave for calculating payroll</a
+                  >Get list of pay element codes</a
                 >
               </li>
 
               <li>
                 <a
-                  href="#create-claim-for-calculating-payroll"
+                  href="#get-list-of-contract-types"
                   class="toc-h2 toc-link"
                   data-title=""
-                  >Create claim for calculating payroll</a
+                  >Get list of contract types</a
                 >
               </li>
 
               <li>
                 <a
-                  href="#create-overtime-for-calculating-payroll"
+                  href="#get-list-of-currencies"
                   class="toc-h2 toc-link"
                   data-title=""
-                  >Create overtime for calculating payroll</a
+                  >Get list of currencies</a
+                >
+              </li>
+
+              <li>
+                <a
+                  href="#get-list-of-applicable-tax-types"
+                  class="toc-h2 toc-link"
+                  data-title=""
+                  >Get list of Applicable Tax Types</a
+                >
+              </li>
+
+              <li>
+                <a
+                  href="#get-all-reference-data"
+                  class="toc-h2 toc-link"
+                  data-title=""
+                  >Get all reference data</a
                 >
               </li>
             </ul>
@@ -9259,6 +9295,15 @@ Darkula color scheme from the JetBrains family of IDEs
                   class="toc-h2 toc-link"
                   data-title=""
                   >EmployeeDataDto</a
+                >
+              </li>
+
+              <li>
+                <a
+                  href="#tocs_employeecontractdto"
+                  class="toc-h2 toc-link"
+                  data-title=""
+                  >EmployeeContractDto</a
                 >
               </li>
 
@@ -9354,47 +9399,19 @@ Darkula color scheme from the JetBrains family of IDEs
       &quot;isWorking&quot;: false
     }
   ],
-  &quot;compensations&quot;: [
-    {
-      &quot;payElementCode&quot;: &quot;BASIC&quot;,
-      &quot;calculateBy&quot;: 1,
-      &quot;referenceNo&quot;: &quot;REF-khangnt&quot;,
-      &quot;description&quot;: &quot;Basic monthly salary&quot;,
-      &quot;currencyCode&quot;: &quot;VND&quot;,
-      &quot;amount&quot;: 15000000,
-      &quot;startDate&quot;: &quot;2020-01-01&quot;,
-      &quot;payable&quot;: true,
-      &quot;proration&quot;: true,
-      &quot;taxable&quot;: true,
-      &quot;isRegular&quot;: true
-    },
-    {
-      &quot;payElementCode&quot;: &quot;ALLOW_HOUSE&quot;,
-      &quot;calculateBy&quot;: 1,
-      &quot;description&quot;: &quot;Housing allowance&quot;,
-      &quot;currencyCode&quot;: &quot;VND&quot;,
-      &quot;amount&quot;: 3000000,
-      &quot;startDate&quot;: &quot;2020-01-01&quot;,
-      &quot;payable&quot;: true,
-      &quot;taxable&quot;: false
-    }
-  ],
-  &quot;loans&quot;: [
-    {
-      &quot;referenceNo&quot;: &quot;LOAN-2020-001&quot;,
-      &quot;description&quot;: &quot;Housing loan&quot;,
-      &quot;loanTypeCode&quot;: &quot;HOUSING&quot;,
-      &quot;loanDate&quot;: &quot;2020-01-15&quot;,
-      &quot;expireDate&quot;: &quot;2025-12-31&quot;,
-      &quot;loanRepaymentStartDate&quot;: &quot;2020-02-01&quot;,
-      &quot;interestInAmount&quot;: false,
-      &quot;interest&quot;: 5,
-      &quot;totalPrincipalLoan&quot;: 50000000,
-      &quot;otherFees&quot;: 500000,
-      &quot;repaymentOption&quot;: 0,
-      &quot;remark&quot;: &quot;Monthly repayment&quot;
-    }
-  ]
+  &quot;contract&quot;: {
+    &quot;currencyCode&quot;: &quot;VND&quot;,
+    &quot;referenceNo&quot;: &quot;CTR-001&quot;,
+    &quot;dateFrom&quot;: &quot;2020-01-01&quot;,
+    &quot;dateTo&quot;: &quot;2025-12-31&quot;,
+    &quot;contractType&quot;: &quot;FT&quot;,
+    &quot;entitledTaxRelief&quot;: true,
+    &quot;nonTaxResident&quot;: false,
+    &quot;taxBorneByCompany&quot;: false,
+    &quot;remarks&quot;: &quot;Full-time contract&quot;,
+    &quot;applicableToTax&quot;: &quot;PG&quot;,
+    &quot;commitmentAnnualIncomeBelowTax&quot;: false
+  }
 }&#x27;</span>;
 <span class="hljs-keyword">const</span> headers = {
   <span class="hljs-string">&#x27;Content-Type&#x27;</span>:<span class="hljs-string">&#x27;application/json&#x27;</span>,
@@ -9469,9 +9486,8 @@ curl -X POST /integration/hrf/employee \
         <p><code>POST /integration/hrf/employee</code></p>
         <p>
           Create a new employee with comprehensive data including employee
-          information, dependents, compensation, and loans. This endpoint is
-          designed for third-party systems to create employee data in the HR
-          system.
+          information and dependents. This endpoint is designed for third-party
+          systems to create employee data in the HR system.
         </p>
         <blockquote>
           <p>Body parameter</p>
@@ -9500,47 +9516,19 @@ curl -X POST /integration/hrf/employee \
       <span class="hljs-attr">&quot;isWorking&quot;</span>: <span class="hljs-literal">false</span>
     }
   ],
-  <span class="hljs-attr">&quot;compensations&quot;</span>: [
-    {
-      <span class="hljs-attr">&quot;payElementCode&quot;</span>: <span class="hljs-string">&quot;BASIC&quot;</span>,
-      <span class="hljs-attr">&quot;calculateBy&quot;</span>: <span class="hljs-number">1</span>,
-      <span class="hljs-attr">&quot;referenceNo&quot;</span>: <span class="hljs-string">&quot;REF-khangnt&quot;</span>,
-      <span class="hljs-attr">&quot;description&quot;</span>: <span class="hljs-string">&quot;Basic monthly salary&quot;</span>,
-      <span class="hljs-attr">&quot;currencyCode&quot;</span>: <span class="hljs-string">&quot;VND&quot;</span>,
-      <span class="hljs-attr">&quot;amount&quot;</span>: <span class="hljs-number">15000000</span>,
-      <span class="hljs-attr">&quot;startDate&quot;</span>: <span class="hljs-string">&quot;2020-01-01&quot;</span>,
-      <span class="hljs-attr">&quot;payable&quot;</span>: <span class="hljs-literal">true</span>,
-      <span class="hljs-attr">&quot;proration&quot;</span>: <span class="hljs-literal">true</span>,
-      <span class="hljs-attr">&quot;taxable&quot;</span>: <span class="hljs-literal">true</span>,
-      <span class="hljs-attr">&quot;isRegular&quot;</span>: <span class="hljs-literal">true</span>
-    },
-    {
-      <span class="hljs-attr">&quot;payElementCode&quot;</span>: <span class="hljs-string">&quot;ALLOW_HOUSE&quot;</span>,
-      <span class="hljs-attr">&quot;calculateBy&quot;</span>: <span class="hljs-number">1</span>,
-      <span class="hljs-attr">&quot;description&quot;</span>: <span class="hljs-string">&quot;Housing allowance&quot;</span>,
-      <span class="hljs-attr">&quot;currencyCode&quot;</span>: <span class="hljs-string">&quot;VND&quot;</span>,
-      <span class="hljs-attr">&quot;amount&quot;</span>: <span class="hljs-number">3000000</span>,
-      <span class="hljs-attr">&quot;startDate&quot;</span>: <span class="hljs-string">&quot;2020-01-01&quot;</span>,
-      <span class="hljs-attr">&quot;payable&quot;</span>: <span class="hljs-literal">true</span>,
-      <span class="hljs-attr">&quot;taxable&quot;</span>: <span class="hljs-literal">false</span>
-    }
-  ],
-  <span class="hljs-attr">&quot;loans&quot;</span>: [
-    {
-      <span class="hljs-attr">&quot;referenceNo&quot;</span>: <span class="hljs-string">&quot;LOAN-2020-001&quot;</span>,
-      <span class="hljs-attr">&quot;description&quot;</span>: <span class="hljs-string">&quot;Housing loan&quot;</span>,
-      <span class="hljs-attr">&quot;loanTypeCode&quot;</span>: <span class="hljs-string">&quot;HOUSING&quot;</span>,
-      <span class="hljs-attr">&quot;loanDate&quot;</span>: <span class="hljs-string">&quot;2020-01-15&quot;</span>,
-      <span class="hljs-attr">&quot;expireDate&quot;</span>: <span class="hljs-string">&quot;2025-12-31&quot;</span>,
-      <span class="hljs-attr">&quot;loanRepaymentStartDate&quot;</span>: <span class="hljs-string">&quot;2020-02-01&quot;</span>,
-      <span class="hljs-attr">&quot;interestInAmount&quot;</span>: <span class="hljs-literal">false</span>,
-      <span class="hljs-attr">&quot;interest&quot;</span>: <span class="hljs-number">5</span>,
-      <span class="hljs-attr">&quot;totalPrincipalLoan&quot;</span>: <span class="hljs-number">50000000</span>,
-      <span class="hljs-attr">&quot;otherFees&quot;</span>: <span class="hljs-number">500000</span>,
-      <span class="hljs-attr">&quot;repaymentOption&quot;</span>: <span class="hljs-number">0</span>,
-      <span class="hljs-attr">&quot;remark&quot;</span>: <span class="hljs-string">&quot;Monthly repayment&quot;</span>
-    }
-  ]
+  <span class="hljs-attr">&quot;contract&quot;</span>: {
+    <span class="hljs-attr">&quot;currencyCode&quot;</span>: <span class="hljs-string">&quot;VND&quot;</span>,
+    <span class="hljs-attr">&quot;referenceNo&quot;</span>: <span class="hljs-string">&quot;CTR-001&quot;</span>,
+    <span class="hljs-attr">&quot;dateFrom&quot;</span>: <span class="hljs-string">&quot;2020-01-01&quot;</span>,
+    <span class="hljs-attr">&quot;dateTo&quot;</span>: <span class="hljs-string">&quot;2025-12-31&quot;</span>,
+    <span class="hljs-attr">&quot;contractType&quot;</span>: <span class="hljs-string">&quot;FT&quot;</span>,
+    <span class="hljs-attr">&quot;entitledTaxRelief&quot;</span>: <span class="hljs-literal">true</span>,
+    <span class="hljs-attr">&quot;nonTaxResident&quot;</span>: <span class="hljs-literal">false</span>,
+    <span class="hljs-attr">&quot;taxBorneByCompany&quot;</span>: <span class="hljs-literal">false</span>,
+    <span class="hljs-attr">&quot;remarks&quot;</span>: <span class="hljs-string">&quot;Full-time contract&quot;</span>,
+    <span class="hljs-attr">&quot;applicableToTax&quot;</span>: <span class="hljs-string">&quot;PG&quot;</span>,
+    <span class="hljs-attr">&quot;commitmentAnnualIncomeBelowTax&quot;</span>: <span class="hljs-literal">false</span>
+  }
 }
 </code></pre>
         <h3 id="create-external-employee-parameters">Parameters</h3>
@@ -9564,7 +9552,7 @@ curl -X POST /integration/hrf/employee \
                 >
               </td>
               <td>true</td>
-              <td>Employee creation payload with all related data</td>
+              <td>Employee creation payload (employee info and dependents)</td>
             </tr>
           </tbody>
         </table>
@@ -9647,72 +9635,46 @@ curl -X POST /integration/hrf/employee \
         </blockquote>
         <pre
           class="highlight tab tab-javascript"
-        ><code><span class="hljs-keyword">const</span> inputBody = <span class="hljs-string">&#x27;{
-  &quot;employee&quot;: {
-    &quot;firstNameLocal&quot;: &quot;Khang&quot;,
-    &quot;lastNameLocal&quot;: &quot;Nguyen&quot;,
-    &quot;fullNameLocal&quot;: &quot;Nguyen Khang&quot;,
-    &quot;employeeRef&quot;: &quot;khangnt&quot;,
-    &quot;email&quot;: &quot;khang.nguyen@company.com&quot;,
-    &quot;gender&quot;: &quot;M&quot;,
-    &quot;nationalityCode&quot;: &quot;VN&quot;,
-    &quot;joinDate&quot;: &quot;2020-01-01&quot;,
-    &quot;active&quot;: true,
-    &quot;isEssEnabled&quot;: true
-  },
-  &quot;dependents&quot;: [
-    {
-      &quot;name&quot;: &quot;Jane Nguyen&quot;,
-      &quot;relationship&quot;: &quot;CH&quot;,
-      &quot;dateOfBirth&quot;: &quot;2015-10-07&quot;,
-      &quot;effectiveDate&quot;: &quot;2025-10-07&quot;,
-      &quot;expiryDate&quot;: &quot;2999-12-31&quot;,
-      &quot;isDisabled&quot;: false,
-      &quot;isWorking&quot;: false
-    }
-  ],
-  &quot;compensations&quot;: [
-    {
-      &quot;payElementCode&quot;: &quot;BASIC&quot;,
-      &quot;calculateBy&quot;: 1,
-      &quot;referenceNo&quot;: &quot;REF-khangnt&quot;,
-      &quot;description&quot;: &quot;Basic monthly salary&quot;,
-      &quot;currencyCode&quot;: &quot;VND&quot;,
-      &quot;amount&quot;: 15000000,
-      &quot;startDate&quot;: &quot;2020-01-01&quot;,
-      &quot;payable&quot;: true,
-      &quot;proration&quot;: true,
-      &quot;taxable&quot;: true,
-      &quot;isRegular&quot;: true
+        ><code><span class="hljs-keyword">const</span> inputBody = <span class="hljs-string">&#x27;[
+  {
+    &quot;employee&quot;: {
+      &quot;firstNameLocal&quot;: &quot;Khang&quot;,
+      &quot;lastNameLocal&quot;: &quot;Nguyen&quot;,
+      &quot;fullNameLocal&quot;: &quot;Nguyen Khang&quot;,
+      &quot;employeeRef&quot;: &quot;khangnt&quot;,
+      &quot;email&quot;: &quot;khang.nguyen@company.com&quot;,
+      &quot;gender&quot;: &quot;M&quot;,
+      &quot;nationalityCode&quot;: &quot;VN&quot;,
+      &quot;joinDate&quot;: &quot;2020-01-01&quot;,
+      &quot;active&quot;: true,
+      &quot;isEssEnabled&quot;: true
     },
-    {
-      &quot;payElementCode&quot;: &quot;ALLOW_HOUSE&quot;,
-      &quot;calculateBy&quot;: 1,
-      &quot;description&quot;: &quot;Housing allowance&quot;,
+    &quot;dependents&quot;: [
+      {
+        &quot;name&quot;: &quot;Jane Nguyen&quot;,
+        &quot;relationship&quot;: &quot;CH&quot;,
+        &quot;dateOfBirth&quot;: &quot;2015-10-07&quot;,
+        &quot;effectiveDate&quot;: &quot;2025-10-07&quot;,
+        &quot;expiryDate&quot;: &quot;2999-12-31&quot;,
+        &quot;isDisabled&quot;: false,
+        &quot;isWorking&quot;: false
+      }
+    ],
+    &quot;contract&quot;: {
       &quot;currencyCode&quot;: &quot;VND&quot;,
-      &quot;amount&quot;: 3000000,
-      &quot;startDate&quot;: &quot;2020-01-01&quot;,
-      &quot;payable&quot;: true,
-      &quot;taxable&quot;: false
+      &quot;referenceNo&quot;: &quot;CTR-001&quot;,
+      &quot;dateFrom&quot;: &quot;2020-01-01&quot;,
+      &quot;dateTo&quot;: &quot;2025-12-31&quot;,
+      &quot;contractType&quot;: &quot;FT&quot;,
+      &quot;entitledTaxRelief&quot;: true,
+      &quot;nonTaxResident&quot;: false,
+      &quot;taxBorneByCompany&quot;: false,
+      &quot;remarks&quot;: &quot;Full-time contract&quot;,
+      &quot;applicableToTax&quot;: &quot;PG&quot;,
+      &quot;commitmentAnnualIncomeBelowTax&quot;: false
     }
-  ],
-  &quot;loans&quot;: [
-    {
-      &quot;referenceNo&quot;: &quot;LOAN-2020-001&quot;,
-      &quot;description&quot;: &quot;Housing loan&quot;,
-      &quot;loanTypeCode&quot;: &quot;HOUSING&quot;,
-      &quot;loanDate&quot;: &quot;2020-01-15&quot;,
-      &quot;expireDate&quot;: &quot;2025-12-31&quot;,
-      &quot;loanRepaymentStartDate&quot;: &quot;2020-02-01&quot;,
-      &quot;interestInAmount&quot;: false,
-      &quot;interest&quot;: 5,
-      &quot;totalPrincipalLoan&quot;: 50000000,
-      &quot;otherFees&quot;: 500000,
-      &quot;repaymentOption&quot;: 0,
-      &quot;remark&quot;: &quot;Monthly repayment&quot;
-    }
-  ]
-}&#x27;</span>;
+  }
+]&#x27;</span>;
 <span class="hljs-keyword">const</span> headers = {
   <span class="hljs-string">&#x27;Content-Type&#x27;</span>:<span class="hljs-string">&#x27;application/json&#x27;</span>,
   <span class="hljs-string">&#x27;Accept&#x27;</span>:<span class="hljs-string">&#x27;application/json&#x27;</span>,
@@ -9786,79 +9748,52 @@ curl -X POST /integration/hrf/employee/bulk \
         <p><code>POST /integration/hrf/employee/bulk</code></p>
         <p>
           Create new employees with comprehensive data including employee
-          information, dependents, compensation, and loans. This endpoint is
-          designed for third-party systems to create employee data in the HR
-          system.
+          information and dependents. This endpoint is designed for third-party
+          systems to create employee data in the HR system.
         </p>
         <blockquote>
           <p>Body parameter</p>
         </blockquote>
-        <pre class="highlight tab tab-json"><code>{
-  <span class="hljs-attr">&quot;employee&quot;</span>: {
-    <span class="hljs-attr">&quot;firstNameLocal&quot;</span>: <span class="hljs-string">&quot;Khang&quot;</span>,
-    <span class="hljs-attr">&quot;lastNameLocal&quot;</span>: <span class="hljs-string">&quot;Nguyen&quot;</span>,
-    <span class="hljs-attr">&quot;fullNameLocal&quot;</span>: <span class="hljs-string">&quot;Nguyen Khang&quot;</span>,
-    <span class="hljs-attr">&quot;employeeRef&quot;</span>: <span class="hljs-string">&quot;khangnt&quot;</span>,
-    <span class="hljs-attr">&quot;email&quot;</span>: <span class="hljs-string">&quot;khang.nguyen@company.com&quot;</span>,
-    <span class="hljs-attr">&quot;gender&quot;</span>: <span class="hljs-string">&quot;M&quot;</span>,
-    <span class="hljs-attr">&quot;nationalityCode&quot;</span>: <span class="hljs-string">&quot;VN&quot;</span>,
-    <span class="hljs-attr">&quot;joinDate&quot;</span>: <span class="hljs-string">&quot;2020-01-01&quot;</span>,
-    <span class="hljs-attr">&quot;active&quot;</span>: <span class="hljs-literal">true</span>,
-    <span class="hljs-attr">&quot;isEssEnabled&quot;</span>: <span class="hljs-literal">true</span>
-  },
-  <span class="hljs-attr">&quot;dependents&quot;</span>: [
-    {
-      <span class="hljs-attr">&quot;name&quot;</span>: <span class="hljs-string">&quot;Jane Nguyen&quot;</span>,
-      <span class="hljs-attr">&quot;relationship&quot;</span>: <span class="hljs-string">&quot;CH&quot;</span>,
-      <span class="hljs-attr">&quot;dateOfBirth&quot;</span>: <span class="hljs-string">&quot;2015-10-07&quot;</span>,
-      <span class="hljs-attr">&quot;effectiveDate&quot;</span>: <span class="hljs-string">&quot;2025-10-07&quot;</span>,
-      <span class="hljs-attr">&quot;expiryDate&quot;</span>: <span class="hljs-string">&quot;2999-12-31&quot;</span>,
-      <span class="hljs-attr">&quot;isDisabled&quot;</span>: <span class="hljs-literal">false</span>,
-      <span class="hljs-attr">&quot;isWorking&quot;</span>: <span class="hljs-literal">false</span>
-    }
-  ],
-  <span class="hljs-attr">&quot;compensations&quot;</span>: [
-    {
-      <span class="hljs-attr">&quot;payElementCode&quot;</span>: <span class="hljs-string">&quot;BASIC&quot;</span>,
-      <span class="hljs-attr">&quot;calculateBy&quot;</span>: <span class="hljs-number">1</span>,
-      <span class="hljs-attr">&quot;referenceNo&quot;</span>: <span class="hljs-string">&quot;REF-khangnt&quot;</span>,
-      <span class="hljs-attr">&quot;description&quot;</span>: <span class="hljs-string">&quot;Basic monthly salary&quot;</span>,
-      <span class="hljs-attr">&quot;currencyCode&quot;</span>: <span class="hljs-string">&quot;VND&quot;</span>,
-      <span class="hljs-attr">&quot;amount&quot;</span>: <span class="hljs-number">15000000</span>,
-      <span class="hljs-attr">&quot;startDate&quot;</span>: <span class="hljs-string">&quot;2020-01-01&quot;</span>,
-      <span class="hljs-attr">&quot;payable&quot;</span>: <span class="hljs-literal">true</span>,
-      <span class="hljs-attr">&quot;proration&quot;</span>: <span class="hljs-literal">true</span>,
-      <span class="hljs-attr">&quot;taxable&quot;</span>: <span class="hljs-literal">true</span>,
-      <span class="hljs-attr">&quot;isRegular&quot;</span>: <span class="hljs-literal">true</span>
+        <pre class="highlight tab tab-json"><code>[
+  {
+    <span class="hljs-attr">&quot;employee&quot;</span>: {
+      <span class="hljs-attr">&quot;firstNameLocal&quot;</span>: <span class="hljs-string">&quot;Khang&quot;</span>,
+      <span class="hljs-attr">&quot;lastNameLocal&quot;</span>: <span class="hljs-string">&quot;Nguyen&quot;</span>,
+      <span class="hljs-attr">&quot;fullNameLocal&quot;</span>: <span class="hljs-string">&quot;Nguyen Khang&quot;</span>,
+      <span class="hljs-attr">&quot;employeeRef&quot;</span>: <span class="hljs-string">&quot;khangnt&quot;</span>,
+      <span class="hljs-attr">&quot;email&quot;</span>: <span class="hljs-string">&quot;khang.nguyen@company.com&quot;</span>,
+      <span class="hljs-attr">&quot;gender&quot;</span>: <span class="hljs-string">&quot;M&quot;</span>,
+      <span class="hljs-attr">&quot;nationalityCode&quot;</span>: <span class="hljs-string">&quot;VN&quot;</span>,
+      <span class="hljs-attr">&quot;joinDate&quot;</span>: <span class="hljs-string">&quot;2020-01-01&quot;</span>,
+      <span class="hljs-attr">&quot;active&quot;</span>: <span class="hljs-literal">true</span>,
+      <span class="hljs-attr">&quot;isEssEnabled&quot;</span>: <span class="hljs-literal">true</span>
     },
-    {
-      <span class="hljs-attr">&quot;payElementCode&quot;</span>: <span class="hljs-string">&quot;ALLOW_HOUSE&quot;</span>,
-      <span class="hljs-attr">&quot;calculateBy&quot;</span>: <span class="hljs-number">1</span>,
-      <span class="hljs-attr">&quot;description&quot;</span>: <span class="hljs-string">&quot;Housing allowance&quot;</span>,
+    <span class="hljs-attr">&quot;dependents&quot;</span>: [
+      {
+        <span class="hljs-attr">&quot;name&quot;</span>: <span class="hljs-string">&quot;Jane Nguyen&quot;</span>,
+        <span class="hljs-attr">&quot;relationship&quot;</span>: <span class="hljs-string">&quot;CH&quot;</span>,
+        <span class="hljs-attr">&quot;dateOfBirth&quot;</span>: <span class="hljs-string">&quot;2015-10-07&quot;</span>,
+        <span class="hljs-attr">&quot;effectiveDate&quot;</span>: <span class="hljs-string">&quot;2025-10-07&quot;</span>,
+        <span class="hljs-attr">&quot;expiryDate&quot;</span>: <span class="hljs-string">&quot;2999-12-31&quot;</span>,
+        <span class="hljs-attr">&quot;isDisabled&quot;</span>: <span class="hljs-literal">false</span>,
+        <span class="hljs-attr">&quot;isWorking&quot;</span>: <span class="hljs-literal">false</span>
+      }
+    ],
+    <span class="hljs-attr">&quot;contract&quot;</span>: {
       <span class="hljs-attr">&quot;currencyCode&quot;</span>: <span class="hljs-string">&quot;VND&quot;</span>,
-      <span class="hljs-attr">&quot;amount&quot;</span>: <span class="hljs-number">3000000</span>,
-      <span class="hljs-attr">&quot;startDate&quot;</span>: <span class="hljs-string">&quot;2020-01-01&quot;</span>,
-      <span class="hljs-attr">&quot;payable&quot;</span>: <span class="hljs-literal">true</span>,
-      <span class="hljs-attr">&quot;taxable&quot;</span>: <span class="hljs-literal">false</span>
+      <span class="hljs-attr">&quot;referenceNo&quot;</span>: <span class="hljs-string">&quot;CTR-001&quot;</span>,
+      <span class="hljs-attr">&quot;dateFrom&quot;</span>: <span class="hljs-string">&quot;2020-01-01&quot;</span>,
+      <span class="hljs-attr">&quot;dateTo&quot;</span>: <span class="hljs-string">&quot;2025-12-31&quot;</span>,
+      <span class="hljs-attr">&quot;contractType&quot;</span>: <span class="hljs-string">&quot;FT&quot;</span>,
+      <span class="hljs-attr">&quot;entitledTaxRelief&quot;</span>: <span class="hljs-literal">true</span>,
+      <span class="hljs-attr">&quot;nonTaxResident&quot;</span>: <span class="hljs-literal">false</span>,
+      <span class="hljs-attr">&quot;taxBorneByCompany&quot;</span>: <span class="hljs-literal">false</span>,
+      <span class="hljs-attr">&quot;remarks&quot;</span>: <span class="hljs-string">&quot;Full-time contract&quot;</span>,
+      <span class="hljs-attr">&quot;applicableToTax&quot;</span>: <span class="hljs-string">&quot;PG&quot;</span>,
+      <span class="hljs-attr">&quot;commitmentAnnualIncomeBelowTax&quot;</span>: <span class="hljs-literal">false</span>
     }
-  ],
-  <span class="hljs-attr">&quot;loans&quot;</span>: [
-    {
-      <span class="hljs-attr">&quot;referenceNo&quot;</span>: <span class="hljs-string">&quot;LOAN-2020-001&quot;</span>,
-      <span class="hljs-attr">&quot;description&quot;</span>: <span class="hljs-string">&quot;Housing loan&quot;</span>,
-      <span class="hljs-attr">&quot;loanTypeCode&quot;</span>: <span class="hljs-string">&quot;HOUSING&quot;</span>,
-      <span class="hljs-attr">&quot;loanDate&quot;</span>: <span class="hljs-string">&quot;2020-01-15&quot;</span>,
-      <span class="hljs-attr">&quot;expireDate&quot;</span>: <span class="hljs-string">&quot;2025-12-31&quot;</span>,
-      <span class="hljs-attr">&quot;loanRepaymentStartDate&quot;</span>: <span class="hljs-string">&quot;2020-02-01&quot;</span>,
-      <span class="hljs-attr">&quot;interestInAmount&quot;</span>: <span class="hljs-literal">false</span>,
-      <span class="hljs-attr">&quot;interest&quot;</span>: <span class="hljs-number">5</span>,
-      <span class="hljs-attr">&quot;totalPrincipalLoan&quot;</span>: <span class="hljs-number">50000000</span>,
-      <span class="hljs-attr">&quot;otherFees&quot;</span>: <span class="hljs-number">500000</span>,
-      <span class="hljs-attr">&quot;repaymentOption&quot;</span>: <span class="hljs-number">0</span>,
-      <span class="hljs-attr">&quot;remark&quot;</span>: <span class="hljs-string">&quot;Monthly repayment&quot;</span>
-    }
-  ]
-}
+  }
+]
 </code></pre>
         <h3 id="create-external-employees-parameters">Parameters</h3>
         <table>
@@ -9881,7 +9816,10 @@ curl -X POST /integration/hrf/employee/bulk \
                 >
               </td>
               <td>true</td>
-              <td>Employee creation payload with all related data</td>
+              <td>
+                Bulk Employees creation payload [CreateEmployeePayloadDto]
+                (employee info and dependents)
+              </td>
             </tr>
           </tbody>
         </table>
@@ -9920,7 +9858,7 @@ curl -X POST /integration/hrf/employee/bulk \
                   >Created</a
                 >
               </td>
-              <td>Successfully created employee</td>
+              <td>Successfully created employees</td>
               <td>
                 <a href="#schemapublicemployeeresponsedto"
                   >PublicEmployeeResponseDto</a
@@ -9953,25 +9891,27 @@ curl -X POST /integration/hrf/employee/bulk \
           To perform this operation, you must be authenticated by means of one
           of the following methods: X-API-Key ( Scopes: X-API-Key )
         </aside>
-        <h2 id="update-external-employee-information-of-work">
-          Update external employee information of work
-        </h2>
+        <h1
+          id="hr-forte-public-integration-api-public-integration-api-references"
+        >
+          Public Integration API - References
+        </h1>
+        <h2 id="get-list-of-countries">Get list of countries</h2>
         <p>
-          <a
-            id="opIdPublicIntegrationEmployeeController_updateEmployeeWork"
-          ></a>
+          <a id="opIdPublicIntegrationReferenceController_getCountries"></a>
         </p>
         <blockquote>
           <p>Code samples</p>
         </blockquote>
         <pre class="highlight tab tab-javascript"><code>
 <span class="hljs-keyword">const</span> headers = {
+  <span class="hljs-string">&#x27;Accept&#x27;</span>:<span class="hljs-string">&#x27;application/json&#x27;</span>,
   <span class="hljs-string">&#x27;X-API-Key&#x27;</span>:<span class="hljs-string">&#x27;API_KEY&#x27;</span>
 };
 
-fetch(<span class="hljs-string">&#x27;/integration/hrf/employee/{id}/work&#x27;</span>,
+fetch(<span class="hljs-string">&#x27;/integration/hrf/references/countries&#x27;</span>,
 {
-  <span class="hljs-attr">method</span>: <span class="hljs-string">&#x27;PUT&#x27;</span>,
+  <span class="hljs-attr">method</span>: <span class="hljs-string">&#x27;GET&#x27;</span>,
 
   <span class="hljs-attr">headers</span>: headers
 })
@@ -9986,17 +9926,19 @@ fetch(<span class="hljs-string">&#x27;/integration/hrf/employee/{id}/work&#x27;<
           class="highlight tab tab-python"
         ><code><span class="hljs-keyword">import</span> requests
 headers = {
+  <span class="hljs-string">&#x27;Accept&#x27;</span>: <span class="hljs-string">&#x27;application/json&#x27;</span>,
   <span class="hljs-string">&#x27;X-API-Key&#x27;</span>: <span class="hljs-string">&#x27;API_KEY&#x27;</span>
 }
 
-r = requests.put(<span class="hljs-string">&#x27;/integration/hrf/employee/{id}/work&#x27;</span>, headers = headers)
+r = requests.get(<span class="hljs-string">&#x27;/integration/hrf/references/countries&#x27;</span>, headers = headers)
 
 <span class="hljs-built_in">print</span>(r.json())
 
 </code></pre>
         <pre
           class="highlight tab tab-php"
-        ><code> <span class="hljs-string">&#x27;API_KEY&#x27;</span>,
+        ><code> <span class="hljs-string">&#x27;application/json&#x27;</span>,
+    <span class="hljs-string">&#x27;X-API-Key&#x27;</span> =&gt; <span class="hljs-string">&#x27;API_KEY&#x27;</span>,
 );
 
 <span class="hljs-variable">$client</span> = <span class="hljs-keyword">new</span> \GuzzleHttp\Client();
@@ -10005,7 +9947,7 @@ r = requests.put(<span class="hljs-string">&#x27;/integration/hrf/employee/{id}/
 <span class="hljs-variable">$request_body</span> = <span class="hljs-keyword">array</span>();
 
 <span class="hljs-keyword">try</span> {
-    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;PUT&#x27;</span>,<span class="hljs-string">&#x27;/integration/hrf/employee/{id}/work&#x27;</span>, <span class="hljs-keyword">array</span>(
+    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;GET&#x27;</span>,<span class="hljs-string">&#x27;/integration/hrf/references/countries&#x27;</span>, <span class="hljs-keyword">array</span>(
         <span class="hljs-string">&#x27;headers&#x27;</span> =&gt; <span class="hljs-variable">$headers</span>,
         <span class="hljs-string">&#x27;json&#x27;</span> =&gt; <span class="hljs-variable">$request_body</span>,
        )
@@ -10023,19 +9965,42 @@ r = requests.put(<span class="hljs-string">&#x27;/integration/hrf/employee/{id}/
         <pre
           class="highlight tab tab-shell"
         ><code><span class="hljs-comment"># You can also use wget</span>
-curl -X PUT /integration/hrf/employee/{id}/work \
+curl -X GET /integration/hrf/references/countries \
+  -H <span class="hljs-string">&#x27;Accept: application/json&#x27;</span> \
   -H <span class="hljs-string">&#x27;X-API-Key: API_KEY&#x27;</span>
 
 </code></pre>
-        <p><code>PUT /integration/hrf/employee/{id}/work</code></p>
+        <p><code>GET /integration/hrf/references/countries</code></p>
         <p>
-          Update existing employee information related to work details. This
-          endpoint allows third-party systems to modify employee work-related
-          data in the HR system.
+          Retrieve all available country codes (ISO 3166-1 alpha-2) that can be
+          used for nationality, address, and other country-related fields.
         </p>
-        <h3 id="update-external-employee-information-of-work-responses">
-          Responses
-        </h3>
+        <blockquote>
+          <p>Example responses</p>
+        </blockquote>
+        <blockquote>
+          <p>200 Response</p>
+        </blockquote>
+        <pre class="highlight tab tab-json"><code>{
+  <span class="hljs-attr">&quot;type&quot;</span>: <span class="hljs-string">&quot;countries&quot;</span>,
+  <span class="hljs-attr">&quot;data&quot;</span>: [
+    {
+      <span class="hljs-attr">&quot;code&quot;</span>: <span class="hljs-string">&quot;VN&quot;</span>,
+      <span class="hljs-attr">&quot;name&quot;</span>: <span class="hljs-string">&quot;Vietnam&quot;</span>
+    },
+    {
+      <span class="hljs-attr">&quot;code&quot;</span>: <span class="hljs-string">&quot;US&quot;</span>,
+      <span class="hljs-attr">&quot;name&quot;</span>: <span class="hljs-string">&quot;United States&quot;</span>
+    },
+    {
+      <span class="hljs-attr">&quot;code&quot;</span>: <span class="hljs-string">&quot;SG&quot;</span>,
+      <span class="hljs-attr">&quot;name&quot;</span>: <span class="hljs-string">&quot;Singapore&quot;</span>
+    }
+  ],
+  <span class="hljs-attr">&quot;count&quot;</span>: <span class="hljs-number">227</span>
+}
+</code></pre>
+        <h3 id="get-list-of-countries-responses">Responses</h3>
         <table>
           <thead>
             <tr>
@@ -10053,34 +10018,40 @@ curl -X PUT /integration/hrf/employee/{id}/work \
                   >OK</a
                 >
               </td>
-              <td>none</td>
+              <td>Successfully retrieved country list</td>
+              <td>Inline</td>
+            </tr>
+            <tr>
+              <td>401</td>
+              <td>
+                <a href="https://tools.ietf.org/html/rfc7235#section-3.1"
+                  >Unauthorized</a
+                >
+              </td>
+              <td>Unauthorized - Invalid or missing API Key</td>
               <td>None</td>
             </tr>
           </tbody>
         </table>
+        <h3 id="get-list-of-countries-responseschema">Response Schema</h3>
         <aside class="warning">
           To perform this operation, you must be authenticated by means of one
           of the following methods: X-API-Key ( Scopes: X-API-Key )
         </aside>
-        <h2 id="update-external-employee-information-of-compensation">
-          Update external employee information of compensation
-        </h2>
-        <p>
-          <a
-            id="opIdPublicIntegrationEmployeeController_updateEmployeeCompensation"
-          ></a>
-        </p>
+        <h2 id="get-list-of-genders">Get list of genders</h2>
+        <p><a id="opIdPublicIntegrationReferenceController_getGenders"></a></p>
         <blockquote>
           <p>Code samples</p>
         </blockquote>
         <pre class="highlight tab tab-javascript"><code>
 <span class="hljs-keyword">const</span> headers = {
+  <span class="hljs-string">&#x27;Accept&#x27;</span>:<span class="hljs-string">&#x27;application/json&#x27;</span>,
   <span class="hljs-string">&#x27;X-API-Key&#x27;</span>:<span class="hljs-string">&#x27;API_KEY&#x27;</span>
 };
 
-fetch(<span class="hljs-string">&#x27;/integration/hrf/employee/{id}/compensation&#x27;</span>,
+fetch(<span class="hljs-string">&#x27;/integration/hrf/references/genders&#x27;</span>,
 {
-  <span class="hljs-attr">method</span>: <span class="hljs-string">&#x27;PUT&#x27;</span>,
+  <span class="hljs-attr">method</span>: <span class="hljs-string">&#x27;GET&#x27;</span>,
 
   <span class="hljs-attr">headers</span>: headers
 })
@@ -10095,17 +10066,19 @@ fetch(<span class="hljs-string">&#x27;/integration/hrf/employee/{id}/compensatio
           class="highlight tab tab-python"
         ><code><span class="hljs-keyword">import</span> requests
 headers = {
+  <span class="hljs-string">&#x27;Accept&#x27;</span>: <span class="hljs-string">&#x27;application/json&#x27;</span>,
   <span class="hljs-string">&#x27;X-API-Key&#x27;</span>: <span class="hljs-string">&#x27;API_KEY&#x27;</span>
 }
 
-r = requests.put(<span class="hljs-string">&#x27;/integration/hrf/employee/{id}/compensation&#x27;</span>, headers = headers)
+r = requests.get(<span class="hljs-string">&#x27;/integration/hrf/references/genders&#x27;</span>, headers = headers)
 
 <span class="hljs-built_in">print</span>(r.json())
 
 </code></pre>
         <pre
           class="highlight tab tab-php"
-        ><code> <span class="hljs-string">&#x27;API_KEY&#x27;</span>,
+        ><code> <span class="hljs-string">&#x27;application/json&#x27;</span>,
+    <span class="hljs-string">&#x27;X-API-Key&#x27;</span> =&gt; <span class="hljs-string">&#x27;API_KEY&#x27;</span>,
 );
 
 <span class="hljs-variable">$client</span> = <span class="hljs-keyword">new</span> \GuzzleHttp\Client();
@@ -10114,7 +10087,7 @@ r = requests.put(<span class="hljs-string">&#x27;/integration/hrf/employee/{id}/
 <span class="hljs-variable">$request_body</span> = <span class="hljs-keyword">array</span>();
 
 <span class="hljs-keyword">try</span> {
-    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;PUT&#x27;</span>,<span class="hljs-string">&#x27;/integration/hrf/employee/{id}/compensation&#x27;</span>, <span class="hljs-keyword">array</span>(
+    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;GET&#x27;</span>,<span class="hljs-string">&#x27;/integration/hrf/references/genders&#x27;</span>, <span class="hljs-keyword">array</span>(
         <span class="hljs-string">&#x27;headers&#x27;</span> =&gt; <span class="hljs-variable">$headers</span>,
         <span class="hljs-string">&#x27;json&#x27;</span> =&gt; <span class="hljs-variable">$request_body</span>,
        )
@@ -10132,19 +10105,42 @@ r = requests.put(<span class="hljs-string">&#x27;/integration/hrf/employee/{id}/
         <pre
           class="highlight tab tab-shell"
         ><code><span class="hljs-comment"># You can also use wget</span>
-curl -X PUT /integration/hrf/employee/{id}/compensation \
+curl -X GET /integration/hrf/references/genders \
+  -H <span class="hljs-string">&#x27;Accept: application/json&#x27;</span> \
   -H <span class="hljs-string">&#x27;X-API-Key: API_KEY&#x27;</span>
 
 </code></pre>
-        <p><code>PUT /integration/hrf/employee/{id}/compensation</code></p>
+        <p><code>GET /integration/hrf/references/genders</code></p>
         <p>
-          Update existing employee information related to compensation. This
-          endpoint allows third-party systems to modify employee compensation
-          data in the HR system.
+          Retrieve all available gender options that can be used in employee
+          records.
         </p>
-        <h3 id="update-external-employee-information-of-compensation-responses">
-          Responses
-        </h3>
+        <blockquote>
+          <p>Example responses</p>
+        </blockquote>
+        <blockquote>
+          <p>200 Response</p>
+        </blockquote>
+        <pre class="highlight tab tab-json"><code>{
+  <span class="hljs-attr">&quot;type&quot;</span>: <span class="hljs-string">&quot;genders&quot;</span>,
+  <span class="hljs-attr">&quot;data&quot;</span>: [
+    {
+      <span class="hljs-attr">&quot;code&quot;</span>: <span class="hljs-string">&quot;M&quot;</span>,
+      <span class="hljs-attr">&quot;name&quot;</span>: <span class="hljs-string">&quot;Male&quot;</span>
+    },
+    {
+      <span class="hljs-attr">&quot;code&quot;</span>: <span class="hljs-string">&quot;F&quot;</span>,
+      <span class="hljs-attr">&quot;name&quot;</span>: <span class="hljs-string">&quot;Female&quot;</span>
+    },
+    {
+      <span class="hljs-attr">&quot;code&quot;</span>: <span class="hljs-string">&quot;O&quot;</span>,
+      <span class="hljs-attr">&quot;name&quot;</span>: <span class="hljs-string">&quot;Other&quot;</span>
+    }
+  ],
+  <span class="hljs-attr">&quot;count&quot;</span>: <span class="hljs-number">3</span>
+}
+</code></pre>
+        <h3 id="get-list-of-genders-responses">Responses</h3>
         <table>
           <thead>
             <tr>
@@ -10162,34 +10158,44 @@ curl -X PUT /integration/hrf/employee/{id}/compensation \
                   >OK</a
                 >
               </td>
-              <td>none</td>
+              <td>Successfully retrieved gender list</td>
+              <td>Inline</td>
+            </tr>
+            <tr>
+              <td>401</td>
+              <td>
+                <a href="https://tools.ietf.org/html/rfc7235#section-3.1"
+                  >Unauthorized</a
+                >
+              </td>
+              <td>Unauthorized - Invalid or missing API Key</td>
               <td>None</td>
             </tr>
           </tbody>
         </table>
+        <h3 id="get-list-of-genders-responseschema">Response Schema</h3>
         <aside class="warning">
           To perform this operation, you must be authenticated by means of one
           of the following methods: X-API-Key ( Scopes: X-API-Key )
         </aside>
-        <h2 id="update-external-employee-information-of-dependents">
-          Update external employee information of dependents
+        <h2 id="get-list-of-relationship-types">
+          Get list of relationship types
         </h2>
         <p>
-          <a
-            id="opIdPublicIntegrationEmployeeController_updateEmployeeDependents"
-          ></a>
+          <a id="opIdPublicIntegrationReferenceController_getRelationships"></a>
         </p>
         <blockquote>
           <p>Code samples</p>
         </blockquote>
         <pre class="highlight tab tab-javascript"><code>
 <span class="hljs-keyword">const</span> headers = {
+  <span class="hljs-string">&#x27;Accept&#x27;</span>:<span class="hljs-string">&#x27;application/json&#x27;</span>,
   <span class="hljs-string">&#x27;X-API-Key&#x27;</span>:<span class="hljs-string">&#x27;API_KEY&#x27;</span>
 };
 
-fetch(<span class="hljs-string">&#x27;/integration/hrf/employee/{id}/dependents&#x27;</span>,
+fetch(<span class="hljs-string">&#x27;/integration/hrf/references/relationships&#x27;</span>,
 {
-  <span class="hljs-attr">method</span>: <span class="hljs-string">&#x27;PUT&#x27;</span>,
+  <span class="hljs-attr">method</span>: <span class="hljs-string">&#x27;GET&#x27;</span>,
 
   <span class="hljs-attr">headers</span>: headers
 })
@@ -10204,17 +10210,19 @@ fetch(<span class="hljs-string">&#x27;/integration/hrf/employee/{id}/dependents&
           class="highlight tab tab-python"
         ><code><span class="hljs-keyword">import</span> requests
 headers = {
+  <span class="hljs-string">&#x27;Accept&#x27;</span>: <span class="hljs-string">&#x27;application/json&#x27;</span>,
   <span class="hljs-string">&#x27;X-API-Key&#x27;</span>: <span class="hljs-string">&#x27;API_KEY&#x27;</span>
 }
 
-r = requests.put(<span class="hljs-string">&#x27;/integration/hrf/employee/{id}/dependents&#x27;</span>, headers = headers)
+r = requests.get(<span class="hljs-string">&#x27;/integration/hrf/references/relationships&#x27;</span>, headers = headers)
 
 <span class="hljs-built_in">print</span>(r.json())
 
 </code></pre>
         <pre
           class="highlight tab tab-php"
-        ><code> <span class="hljs-string">&#x27;API_KEY&#x27;</span>,
+        ><code> <span class="hljs-string">&#x27;application/json&#x27;</span>,
+    <span class="hljs-string">&#x27;X-API-Key&#x27;</span> =&gt; <span class="hljs-string">&#x27;API_KEY&#x27;</span>,
 );
 
 <span class="hljs-variable">$client</span> = <span class="hljs-keyword">new</span> \GuzzleHttp\Client();
@@ -10223,7 +10231,7 @@ r = requests.put(<span class="hljs-string">&#x27;/integration/hrf/employee/{id}/
 <span class="hljs-variable">$request_body</span> = <span class="hljs-keyword">array</span>();
 
 <span class="hljs-keyword">try</span> {
-    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;PUT&#x27;</span>,<span class="hljs-string">&#x27;/integration/hrf/employee/{id}/dependents&#x27;</span>, <span class="hljs-keyword">array</span>(
+    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;GET&#x27;</span>,<span class="hljs-string">&#x27;/integration/hrf/references/relationships&#x27;</span>, <span class="hljs-keyword">array</span>(
         <span class="hljs-string">&#x27;headers&#x27;</span> =&gt; <span class="hljs-variable">$headers</span>,
         <span class="hljs-string">&#x27;json&#x27;</span> =&gt; <span class="hljs-variable">$request_body</span>,
        )
@@ -10241,19 +10249,46 @@ r = requests.put(<span class="hljs-string">&#x27;/integration/hrf/employee/{id}/
         <pre
           class="highlight tab tab-shell"
         ><code><span class="hljs-comment"># You can also use wget</span>
-curl -X PUT /integration/hrf/employee/{id}/dependents \
+curl -X GET /integration/hrf/references/relationships \
+  -H <span class="hljs-string">&#x27;Accept: application/json&#x27;</span> \
   -H <span class="hljs-string">&#x27;X-API-Key: API_KEY&#x27;</span>
 
 </code></pre>
-        <p><code>PUT /integration/hrf/employee/{id}/dependents</code></p>
+        <p><code>GET /integration/hrf/references/relationships</code></p>
         <p>
-          Update existing employee information related to dependents. This
-          endpoint allows third-party systems to modify employee dependents data
-          in the HR system.
+          Retrieve all available relationship types between an employee and
+          their dependents.
         </p>
-        <h3 id="update-external-employee-information-of-dependents-responses">
-          Responses
-        </h3>
+        <blockquote>
+          <p>Example responses</p>
+        </blockquote>
+        <blockquote>
+          <p>200 Response</p>
+        </blockquote>
+        <pre class="highlight tab tab-json"><code>{
+  <span class="hljs-attr">&quot;type&quot;</span>: <span class="hljs-string">&quot;relationships&quot;</span>,
+  <span class="hljs-attr">&quot;data&quot;</span>: [
+    {
+      <span class="hljs-attr">&quot;code&quot;</span>: <span class="hljs-string">&quot;SP&quot;</span>,
+      <span class="hljs-attr">&quot;name&quot;</span>: <span class="hljs-string">&quot;Spouse&quot;</span>
+    },
+    {
+      <span class="hljs-attr">&quot;code&quot;</span>: <span class="hljs-string">&quot;CH&quot;</span>,
+      <span class="hljs-attr">&quot;name&quot;</span>: <span class="hljs-string">&quot;Child&quot;</span>
+    },
+    {
+      <span class="hljs-attr">&quot;code&quot;</span>: <span class="hljs-string">&quot;PA&quot;</span>,
+      <span class="hljs-attr">&quot;name&quot;</span>: <span class="hljs-string">&quot;Parent&quot;</span>
+    },
+    {
+      <span class="hljs-attr">&quot;code&quot;</span>: <span class="hljs-string">&quot;RE&quot;</span>,
+      <span class="hljs-attr">&quot;name&quot;</span>: <span class="hljs-string">&quot;Relative&quot;</span>
+    }
+  ],
+  <span class="hljs-attr">&quot;count&quot;</span>: <span class="hljs-number">4</span>
+}
+</code></pre>
+        <h3 id="get-list-of-relationship-types-responses">Responses</h3>
         <table>
           <thead>
             <tr>
@@ -10271,128 +10306,34 @@ curl -X PUT /integration/hrf/employee/{id}/dependents \
                   >OK</a
                 >
               </td>
-              <td>none</td>
-              <td>None</td>
+              <td>Successfully retrieved relationship list</td>
+              <td>Inline</td>
             </tr>
-          </tbody>
-        </table>
-        <aside class="warning">
-          To perform this operation, you must be authenticated by means of one
-          of the following methods: X-API-Key ( Scopes: X-API-Key )
-        </aside>
-        <h2 id="create-unpaid-leave-for-calculating-payroll">
-          Create unpaid leave for calculating payroll
-        </h2>
-        <p>
-          <a id="opIdPublicIntegrationPayrollController_createUnpaidLeave"></a>
-        </p>
-        <blockquote>
-          <p>Code samples</p>
-        </blockquote>
-        <pre class="highlight tab tab-javascript"><code>
-<span class="hljs-keyword">const</span> headers = {
-  <span class="hljs-string">&#x27;X-API-Key&#x27;</span>:<span class="hljs-string">&#x27;API_KEY&#x27;</span>
-};
-
-fetch(<span class="hljs-string">&#x27;/integration/hrf/payroll/leave&#x27;</span>,
-{
-  <span class="hljs-attr">method</span>: <span class="hljs-string">&#x27;POST&#x27;</span>,
-
-  <span class="hljs-attr">headers</span>: headers
-})
-.then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">res</span>) </span>{
-    <span class="hljs-keyword">return</span> res.json();
-}).then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">body</span>) </span>{
-    <span class="hljs-built_in">console</span>.log(body);
-});
-
-</code></pre>
-        <pre
-          class="highlight tab tab-python"
-        ><code><span class="hljs-keyword">import</span> requests
-headers = {
-  <span class="hljs-string">&#x27;X-API-Key&#x27;</span>: <span class="hljs-string">&#x27;API_KEY&#x27;</span>
-}
-
-r = requests.post(<span class="hljs-string">&#x27;/integration/hrf/payroll/leave&#x27;</span>, headers = headers)
-
-<span class="hljs-built_in">print</span>(r.json())
-
-</code></pre>
-        <pre
-          class="highlight tab tab-php"
-        ><code> <span class="hljs-string">&#x27;API_KEY&#x27;</span>,
-);
-
-<span class="hljs-variable">$client</span> = <span class="hljs-keyword">new</span> \GuzzleHttp\Client();
-
-<span class="hljs-comment">// Define array of request body.</span>
-<span class="hljs-variable">$request_body</span> = <span class="hljs-keyword">array</span>();
-
-<span class="hljs-keyword">try</span> {
-    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;POST&#x27;</span>,<span class="hljs-string">&#x27;/integration/hrf/payroll/leave&#x27;</span>, <span class="hljs-keyword">array</span>(
-        <span class="hljs-string">&#x27;headers&#x27;</span> =&gt; <span class="hljs-variable">$headers</span>,
-        <span class="hljs-string">&#x27;json&#x27;</span> =&gt; <span class="hljs-variable">$request_body</span>,
-       )
-    );
-    print_r(<span class="hljs-variable">$response</span>-&gt;getBody()-&gt;getContents());
- }
- <span class="hljs-keyword">catch</span> (\GuzzleHttp\<span class="hljs-built_in">Exception</span>\BadResponseException <span class="hljs-variable">$e</span>) {
-    <span class="hljs-comment">// handle exception or api errors.</span>
-    print_r(<span class="hljs-variable">$e</span>-&gt;getMessage());
- }
-
- <span class="hljs-comment">// ...</span>
-
-</code></pre>
-        <pre
-          class="highlight tab tab-shell"
-        ><code><span class="hljs-comment"># You can also use wget</span>
-curl -X POST /integration/hrf/payroll/leave \
-  -H <span class="hljs-string">&#x27;X-API-Key: API_KEY&#x27;</span>
-
-</code></pre>
-        <p><code>POST /integration/hrf/payroll/leave</code></p>
-        <p>
-          Create unpaid leave records for employees to be considered in payroll
-          processing. This endpoint is designed for third-party systems to
-          submit unpaid leave data to the HR system.
-        </p>
-        <h3 id="create-unpaid-leave-for-calculating-payroll-responses">
-          Responses
-        </h3>
-        <table>
-          <thead>
             <tr>
-              <th>Status</th>
-              <th>Meaning</th>
-              <th>Description</th>
-              <th>Schema</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>201</td>
+              <td>401</td>
               <td>
-                <a href="https://tools.ietf.org/html/rfc7231#section-6.3.2"
-                  >Created</a
+                <a href="https://tools.ietf.org/html/rfc7235#section-3.1"
+                  >Unauthorized</a
                 >
               </td>
-              <td>none</td>
+              <td>Unauthorized - Invalid or missing API Key</td>
               <td>None</td>
             </tr>
           </tbody>
         </table>
+        <h3 id="get-list-of-relationship-types-responseschema">
+          Response Schema
+        </h3>
         <aside class="warning">
           To perform this operation, you must be authenticated by means of one
           of the following methods: X-API-Key ( Scopes: X-API-Key )
         </aside>
-        <h2 id="create-claim-for-calculating-payroll">
-          Create claim for calculating payroll
+        <h2 id="get-list-of-pay-element-codes">
+          Get list of pay element codes
         </h2>
         <p>
           <a
-            id="opIdPublicIntegrationPayrollController_createClaimForPayroll"
+            id="opIdPublicIntegrationReferenceController_getPayElementCodes"
           ></a>
         </p>
         <blockquote>
@@ -10400,12 +10341,13 @@ curl -X POST /integration/hrf/payroll/leave \
         </blockquote>
         <pre class="highlight tab tab-javascript"><code>
 <span class="hljs-keyword">const</span> headers = {
+  <span class="hljs-string">&#x27;Accept&#x27;</span>:<span class="hljs-string">&#x27;application/json&#x27;</span>,
   <span class="hljs-string">&#x27;X-API-Key&#x27;</span>:<span class="hljs-string">&#x27;API_KEY&#x27;</span>
 };
 
-fetch(<span class="hljs-string">&#x27;/integration/hrf/payroll/claim&#x27;</span>,
+fetch(<span class="hljs-string">&#x27;/integration/hrf/references/pay-element-codes&#x27;</span>,
 {
-  <span class="hljs-attr">method</span>: <span class="hljs-string">&#x27;POST&#x27;</span>,
+  <span class="hljs-attr">method</span>: <span class="hljs-string">&#x27;GET&#x27;</span>,
 
   <span class="hljs-attr">headers</span>: headers
 })
@@ -10420,17 +10362,19 @@ fetch(<span class="hljs-string">&#x27;/integration/hrf/payroll/claim&#x27;</span
           class="highlight tab tab-python"
         ><code><span class="hljs-keyword">import</span> requests
 headers = {
+  <span class="hljs-string">&#x27;Accept&#x27;</span>: <span class="hljs-string">&#x27;application/json&#x27;</span>,
   <span class="hljs-string">&#x27;X-API-Key&#x27;</span>: <span class="hljs-string">&#x27;API_KEY&#x27;</span>
 }
 
-r = requests.post(<span class="hljs-string">&#x27;/integration/hrf/payroll/claim&#x27;</span>, headers = headers)
+r = requests.get(<span class="hljs-string">&#x27;/integration/hrf/references/pay-element-codes&#x27;</span>, headers = headers)
 
 <span class="hljs-built_in">print</span>(r.json())
 
 </code></pre>
         <pre
           class="highlight tab tab-php"
-        ><code> <span class="hljs-string">&#x27;API_KEY&#x27;</span>,
+        ><code> <span class="hljs-string">&#x27;application/json&#x27;</span>,
+    <span class="hljs-string">&#x27;X-API-Key&#x27;</span> =&gt; <span class="hljs-string">&#x27;API_KEY&#x27;</span>,
 );
 
 <span class="hljs-variable">$client</span> = <span class="hljs-keyword">new</span> \GuzzleHttp\Client();
@@ -10439,7 +10383,7 @@ r = requests.post(<span class="hljs-string">&#x27;/integration/hrf/payroll/claim
 <span class="hljs-variable">$request_body</span> = <span class="hljs-keyword">array</span>();
 
 <span class="hljs-keyword">try</span> {
-    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;POST&#x27;</span>,<span class="hljs-string">&#x27;/integration/hrf/payroll/claim&#x27;</span>, <span class="hljs-keyword">array</span>(
+    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;GET&#x27;</span>,<span class="hljs-string">&#x27;/integration/hrf/references/pay-element-codes&#x27;</span>, <span class="hljs-keyword">array</span>(
         <span class="hljs-string">&#x27;headers&#x27;</span> =&gt; <span class="hljs-variable">$headers</span>,
         <span class="hljs-string">&#x27;json&#x27;</span> =&gt; <span class="hljs-variable">$request_body</span>,
        )
@@ -10457,17 +10401,51 @@ r = requests.post(<span class="hljs-string">&#x27;/integration/hrf/payroll/claim
         <pre
           class="highlight tab tab-shell"
         ><code><span class="hljs-comment"># You can also use wget</span>
-curl -X POST /integration/hrf/payroll/claim \
+curl -X GET /integration/hrf/references/pay-element-codes \
+  -H <span class="hljs-string">&#x27;Accept: application/json&#x27;</span> \
   -H <span class="hljs-string">&#x27;X-API-Key: API_KEY&#x27;</span>
 
 </code></pre>
-        <p><code>POST /integration/hrf/payroll/claim</code></p>
+        <p><code>GET /integration/hrf/references/pay-element-codes</code></p>
         <p>
-          Create claim records for employees to be considered in payroll
-          processing. This endpoint is designed for third-party systems to
-          submit claim data to the HR system.
+          Retrieve all available pay element codes used in compensation
+          management. These codes categorize different types of compensation,
+          allowances, deductions, and benefits.
         </p>
-        <h3 id="create-claim-for-calculating-payroll-responses">Responses</h3>
+        <blockquote>
+          <p>Example responses</p>
+        </blockquote>
+        <blockquote>
+          <p>200 Response</p>
+        </blockquote>
+        <pre class="highlight tab tab-json"><code>{
+  <span class="hljs-attr">&quot;type&quot;</span>: <span class="hljs-string">&quot;payElementCodes&quot;</span>,
+  <span class="hljs-attr">&quot;data&quot;</span>: [
+    {
+      <span class="hljs-attr">&quot;code&quot;</span>: <span class="hljs-string">&quot;BASIC&quot;</span>,
+      <span class="hljs-attr">&quot;name&quot;</span>: <span class="hljs-string">&quot;Basic Salary&quot;</span>,
+      <span class="hljs-attr">&quot;description&quot;</span>: <span class="hljs-string">&quot;Regular monthly or hourly base pay&quot;</span>
+    },
+    {
+      <span class="hljs-attr">&quot;code&quot;</span>: <span class="hljs-string">&quot;ALLOW_HOUSE&quot;</span>,
+      <span class="hljs-attr">&quot;name&quot;</span>: <span class="hljs-string">&quot;Housing Allowance&quot;</span>,
+      <span class="hljs-attr">&quot;description&quot;</span>: <span class="hljs-string">&quot;Monthly housing or rent subsidy&quot;</span>
+    },
+    {
+      <span class="hljs-attr">&quot;code&quot;</span>: <span class="hljs-string">&quot;BONUS_ANNUAL&quot;</span>,
+      <span class="hljs-attr">&quot;name&quot;</span>: <span class="hljs-string">&quot;Annual Bonus&quot;</span>,
+      <span class="hljs-attr">&quot;description&quot;</span>: <span class="hljs-string">&quot;Yearly performance or discretionary bonus&quot;</span>
+    },
+    {
+      <span class="hljs-attr">&quot;code&quot;</span>: <span class="hljs-string">&quot;DED_TAX&quot;</span>,
+      <span class="hljs-attr">&quot;name&quot;</span>: <span class="hljs-string">&quot;Income Tax&quot;</span>,
+      <span class="hljs-attr">&quot;description&quot;</span>: <span class="hljs-string">&quot;Mandatory income tax withholding&quot;</span>
+    }
+  ],
+  <span class="hljs-attr">&quot;count&quot;</span>: <span class="hljs-number">50</span>
+}
+</code></pre>
+        <h3 id="get-list-of-pay-element-codes-responses">Responses</h3>
         <table>
           <thead>
             <tr>
@@ -10479,27 +10457,331 @@ curl -X POST /integration/hrf/payroll/claim \
           </thead>
           <tbody>
             <tr>
-              <td>201</td>
+              <td>200</td>
               <td>
-                <a href="https://tools.ietf.org/html/rfc7231#section-6.3.2"
-                  >Created</a
+                <a href="https://tools.ietf.org/html/rfc7231#section-6.3.1"
+                  >OK</a
                 >
               </td>
-              <td>none</td>
+              <td>Successfully retrieved pay element codes</td>
+              <td>Inline</td>
+            </tr>
+            <tr>
+              <td>401</td>
+              <td>
+                <a href="https://tools.ietf.org/html/rfc7235#section-3.1"
+                  >Unauthorized</a
+                >
+              </td>
+              <td>Unauthorized - Invalid or missing API Key</td>
               <td>None</td>
             </tr>
           </tbody>
         </table>
+        <h3 id="get-list-of-pay-element-codes-responseschema">
+          Response Schema
+        </h3>
         <aside class="warning">
           To perform this operation, you must be authenticated by means of one
           of the following methods: X-API-Key ( Scopes: X-API-Key )
         </aside>
-        <h2 id="create-overtime-for-calculating-payroll">
-          Create overtime for calculating payroll
+        <h2 id="get-list-of-contract-types">Get list of contract types</h2>
+        <p>
+          <a id="opIdPublicIntegrationReferenceController_getContractTypes"></a>
+        </p>
+        <blockquote>
+          <p>Code samples</p>
+        </blockquote>
+        <pre class="highlight tab tab-javascript"><code>
+<span class="hljs-keyword">const</span> headers = {
+  <span class="hljs-string">&#x27;Accept&#x27;</span>:<span class="hljs-string">&#x27;application/json&#x27;</span>,
+  <span class="hljs-string">&#x27;X-API-Key&#x27;</span>:<span class="hljs-string">&#x27;API_KEY&#x27;</span>
+};
+
+fetch(<span class="hljs-string">&#x27;/integration/hrf/references/contract-types&#x27;</span>,
+{
+  <span class="hljs-attr">method</span>: <span class="hljs-string">&#x27;GET&#x27;</span>,
+
+  <span class="hljs-attr">headers</span>: headers
+})
+.then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">res</span>) </span>{
+    <span class="hljs-keyword">return</span> res.json();
+}).then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">body</span>) </span>{
+    <span class="hljs-built_in">console</span>.log(body);
+});
+
+</code></pre>
+        <pre
+          class="highlight tab tab-python"
+        ><code><span class="hljs-keyword">import</span> requests
+headers = {
+  <span class="hljs-string">&#x27;Accept&#x27;</span>: <span class="hljs-string">&#x27;application/json&#x27;</span>,
+  <span class="hljs-string">&#x27;X-API-Key&#x27;</span>: <span class="hljs-string">&#x27;API_KEY&#x27;</span>
+}
+
+r = requests.get(<span class="hljs-string">&#x27;/integration/hrf/references/contract-types&#x27;</span>, headers = headers)
+
+<span class="hljs-built_in">print</span>(r.json())
+
+</code></pre>
+        <pre
+          class="highlight tab tab-php"
+        ><code> <span class="hljs-string">&#x27;application/json&#x27;</span>,
+    <span class="hljs-string">&#x27;X-API-Key&#x27;</span> =&gt; <span class="hljs-string">&#x27;API_KEY&#x27;</span>,
+);
+
+<span class="hljs-variable">$client</span> = <span class="hljs-keyword">new</span> \GuzzleHttp\Client();
+
+<span class="hljs-comment">// Define array of request body.</span>
+<span class="hljs-variable">$request_body</span> = <span class="hljs-keyword">array</span>();
+
+<span class="hljs-keyword">try</span> {
+    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;GET&#x27;</span>,<span class="hljs-string">&#x27;/integration/hrf/references/contract-types&#x27;</span>, <span class="hljs-keyword">array</span>(
+        <span class="hljs-string">&#x27;headers&#x27;</span> =&gt; <span class="hljs-variable">$headers</span>,
+        <span class="hljs-string">&#x27;json&#x27;</span> =&gt; <span class="hljs-variable">$request_body</span>,
+       )
+    );
+    print_r(<span class="hljs-variable">$response</span>-&gt;getBody()-&gt;getContents());
+ }
+ <span class="hljs-keyword">catch</span> (\GuzzleHttp\<span class="hljs-built_in">Exception</span>\BadResponseException <span class="hljs-variable">$e</span>) {
+    <span class="hljs-comment">// handle exception or api errors.</span>
+    print_r(<span class="hljs-variable">$e</span>-&gt;getMessage());
+ }
+
+ <span class="hljs-comment">// ...</span>
+
+</code></pre>
+        <pre
+          class="highlight tab tab-shell"
+        ><code><span class="hljs-comment"># You can also use wget</span>
+curl -X GET /integration/hrf/references/contract-types \
+  -H <span class="hljs-string">&#x27;Accept: application/json&#x27;</span> \
+  -H <span class="hljs-string">&#x27;X-API-Key: API_KEY&#x27;</span>
+
+</code></pre>
+        <p><code>GET /integration/hrf/references/contract-types</code></p>
+        <p>
+          Retrieve all available contract types that can be used for employee
+          contracts.
+        </p>
+        <blockquote>
+          <p>Example responses</p>
+        </blockquote>
+        <blockquote>
+          <p>200 Response</p>
+        </blockquote>
+        <pre class="highlight tab tab-json"><code>{
+  <span class="hljs-attr">&quot;type&quot;</span>: <span class="hljs-string">&quot;contractTypes&quot;</span>,
+  <span class="hljs-attr">&quot;data&quot;</span>: [
+    {
+      <span class="hljs-attr">&quot;code&quot;</span>: <span class="hljs-string">&quot;FT&quot;</span>,
+      <span class="hljs-attr">&quot;name&quot;</span>: <span class="hljs-string">&quot;Definite Contract&quot;</span>
+    },
+    {
+      <span class="hljs-attr">&quot;code&quot;</span>: <span class="hljs-string">&quot;PM&quot;</span>,
+      <span class="hljs-attr">&quot;name&quot;</span>: <span class="hljs-string">&quot;Indefinite Contract&quot;</span>
+    },
+    {
+      <span class="hljs-attr">&quot;code&quot;</span>: <span class="hljs-string">&quot;PT&quot;</span>,
+      <span class="hljs-attr">&quot;name&quot;</span>: <span class="hljs-string">&quot;Project/Seasonal Contract&quot;</span>
+    },
+    {
+      <span class="hljs-attr">&quot;code&quot;</span>: <span class="hljs-string">&quot;PB&quot;</span>,
+      <span class="hljs-attr">&quot;name&quot;</span>: <span class="hljs-string">&quot;Probation Contract&quot;</span>
+    }
+  ],
+  <span class="hljs-attr">&quot;count&quot;</span>: <span class="hljs-number">5</span>
+}
+</code></pre>
+        <h3 id="get-list-of-contract-types-responses">Responses</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Status</th>
+              <th>Meaning</th>
+              <th>Description</th>
+              <th>Schema</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>200</td>
+              <td>
+                <a href="https://tools.ietf.org/html/rfc7231#section-6.3.1"
+                  >OK</a
+                >
+              </td>
+              <td>Successfully retrieved contract types</td>
+              <td>Inline</td>
+            </tr>
+            <tr>
+              <td>401</td>
+              <td>
+                <a href="https://tools.ietf.org/html/rfc7235#section-3.1"
+                  >Unauthorized</a
+                >
+              </td>
+              <td>Unauthorized - Invalid or missing API Key</td>
+              <td>None</td>
+            </tr>
+          </tbody>
+        </table>
+        <h3 id="get-list-of-contract-types-responseschema">Response Schema</h3>
+        <aside class="warning">
+          To perform this operation, you must be authenticated by means of one
+          of the following methods: X-API-Key ( Scopes: X-API-Key )
+        </aside>
+        <h2 id="get-list-of-currencies">Get list of currencies</h2>
+        <p>
+          <a id="opIdPublicIntegrationReferenceController_getCurrencies"></a>
+        </p>
+        <blockquote>
+          <p>Code samples</p>
+        </blockquote>
+        <pre class="highlight tab tab-javascript"><code>
+<span class="hljs-keyword">const</span> headers = {
+  <span class="hljs-string">&#x27;Accept&#x27;</span>:<span class="hljs-string">&#x27;application/json&#x27;</span>,
+  <span class="hljs-string">&#x27;X-API-Key&#x27;</span>:<span class="hljs-string">&#x27;API_KEY&#x27;</span>
+};
+
+fetch(<span class="hljs-string">&#x27;/integration/hrf/references/currencies&#x27;</span>,
+{
+  <span class="hljs-attr">method</span>: <span class="hljs-string">&#x27;GET&#x27;</span>,
+
+  <span class="hljs-attr">headers</span>: headers
+})
+.then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">res</span>) </span>{
+    <span class="hljs-keyword">return</span> res.json();
+}).then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">body</span>) </span>{
+    <span class="hljs-built_in">console</span>.log(body);
+});
+
+</code></pre>
+        <pre
+          class="highlight tab tab-python"
+        ><code><span class="hljs-keyword">import</span> requests
+headers = {
+  <span class="hljs-string">&#x27;Accept&#x27;</span>: <span class="hljs-string">&#x27;application/json&#x27;</span>,
+  <span class="hljs-string">&#x27;X-API-Key&#x27;</span>: <span class="hljs-string">&#x27;API_KEY&#x27;</span>
+}
+
+r = requests.get(<span class="hljs-string">&#x27;/integration/hrf/references/currencies&#x27;</span>, headers = headers)
+
+<span class="hljs-built_in">print</span>(r.json())
+
+</code></pre>
+        <pre
+          class="highlight tab tab-php"
+        ><code> <span class="hljs-string">&#x27;application/json&#x27;</span>,
+    <span class="hljs-string">&#x27;X-API-Key&#x27;</span> =&gt; <span class="hljs-string">&#x27;API_KEY&#x27;</span>,
+);
+
+<span class="hljs-variable">$client</span> = <span class="hljs-keyword">new</span> \GuzzleHttp\Client();
+
+<span class="hljs-comment">// Define array of request body.</span>
+<span class="hljs-variable">$request_body</span> = <span class="hljs-keyword">array</span>();
+
+<span class="hljs-keyword">try</span> {
+    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;GET&#x27;</span>,<span class="hljs-string">&#x27;/integration/hrf/references/currencies&#x27;</span>, <span class="hljs-keyword">array</span>(
+        <span class="hljs-string">&#x27;headers&#x27;</span> =&gt; <span class="hljs-variable">$headers</span>,
+        <span class="hljs-string">&#x27;json&#x27;</span> =&gt; <span class="hljs-variable">$request_body</span>,
+       )
+    );
+    print_r(<span class="hljs-variable">$response</span>-&gt;getBody()-&gt;getContents());
+ }
+ <span class="hljs-keyword">catch</span> (\GuzzleHttp\<span class="hljs-built_in">Exception</span>\BadResponseException <span class="hljs-variable">$e</span>) {
+    <span class="hljs-comment">// handle exception or api errors.</span>
+    print_r(<span class="hljs-variable">$e</span>-&gt;getMessage());
+ }
+
+ <span class="hljs-comment">// ...</span>
+
+</code></pre>
+        <pre
+          class="highlight tab tab-shell"
+        ><code><span class="hljs-comment"># You can also use wget</span>
+curl -X GET /integration/hrf/references/currencies \
+  -H <span class="hljs-string">&#x27;Accept: application/json&#x27;</span> \
+  -H <span class="hljs-string">&#x27;X-API-Key: API_KEY&#x27;</span>
+
+</code></pre>
+        <p><code>GET /integration/hrf/references/currencies</code></p>
+        <p>
+          Retrieve all available currency codes (ISO 4217) that can be used for
+          compensation and financial fields.
+        </p>
+        <blockquote>
+          <p>Example responses</p>
+        </blockquote>
+        <blockquote>
+          <p>200 Response</p>
+        </blockquote>
+        <pre class="highlight tab tab-json"><code>{
+  <span class="hljs-attr">&quot;type&quot;</span>: <span class="hljs-string">&quot;currencies&quot;</span>,
+  <span class="hljs-attr">&quot;data&quot;</span>: [
+    {
+      <span class="hljs-attr">&quot;code&quot;</span>: <span class="hljs-string">&quot;AED&quot;</span>,
+      <span class="hljs-attr">&quot;name&quot;</span>: <span class="hljs-string">&quot;United Arab Emirates dirham&quot;</span>,
+      <span class="hljs-attr">&quot;text&quot;</span>: <span class="hljs-string">&quot;AED (United Arab Emirates dirham)&quot;</span>
+    },
+    {
+      <span class="hljs-attr">&quot;code&quot;</span>: <span class="hljs-string">&quot;USD&quot;</span>,
+      <span class="hljs-attr">&quot;name&quot;</span>: <span class="hljs-string">&quot;United States dollar&quot;</span>,
+      <span class="hljs-attr">&quot;text&quot;</span>: <span class="hljs-string">&quot;USD (United States dollar)&quot;</span>
+    },
+    {
+      <span class="hljs-attr">&quot;code&quot;</span>: <span class="hljs-string">&quot;VND&quot;</span>,
+      <span class="hljs-attr">&quot;name&quot;</span>: <span class="hljs-string">&quot;Vietnamese đồng&quot;</span>,
+      <span class="hljs-attr">&quot;text&quot;</span>: <span class="hljs-string">&quot;VND (Vietnamese đồng)&quot;</span>
+    }
+  ],
+  <span class="hljs-attr">&quot;count&quot;</span>: <span class="hljs-number">150</span>
+}
+</code></pre>
+        <h3 id="get-list-of-currencies-responses">Responses</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Status</th>
+              <th>Meaning</th>
+              <th>Description</th>
+              <th>Schema</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>200</td>
+              <td>
+                <a href="https://tools.ietf.org/html/rfc7231#section-6.3.1"
+                  >OK</a
+                >
+              </td>
+              <td>Successfully retrieved currency list</td>
+              <td>Inline</td>
+            </tr>
+            <tr>
+              <td>401</td>
+              <td>
+                <a href="https://tools.ietf.org/html/rfc7235#section-3.1"
+                  >Unauthorized</a
+                >
+              </td>
+              <td>Unauthorized - Invalid or missing API Key</td>
+              <td>None</td>
+            </tr>
+          </tbody>
+        </table>
+        <h3 id="get-list-of-currencies-responseschema">Response Schema</h3>
+        <aside class="warning">
+          To perform this operation, you must be authenticated by means of one
+          of the following methods: X-API-Key ( Scopes: X-API-Key )
+        </aside>
+        <h2 id="get-list-of-applicable-tax-types">
+          Get list of Applicable Tax Types
         </h2>
         <p>
           <a
-            id="opIdPublicIntegrationPayrollController_createOvertimeForPayroll"
+            id="opIdPublicIntegrationReferenceController_getApplicableTaxTypes"
           ></a>
         </p>
         <blockquote>
@@ -10507,12 +10789,13 @@ curl -X POST /integration/hrf/payroll/claim \
         </blockquote>
         <pre class="highlight tab tab-javascript"><code>
 <span class="hljs-keyword">const</span> headers = {
+  <span class="hljs-string">&#x27;Accept&#x27;</span>:<span class="hljs-string">&#x27;application/json&#x27;</span>,
   <span class="hljs-string">&#x27;X-API-Key&#x27;</span>:<span class="hljs-string">&#x27;API_KEY&#x27;</span>
 };
 
-fetch(<span class="hljs-string">&#x27;/integration/hrf/payroll/overtime&#x27;</span>,
+fetch(<span class="hljs-string">&#x27;/integration/hrf/references/applicable-tax-types&#x27;</span>,
 {
-  <span class="hljs-attr">method</span>: <span class="hljs-string">&#x27;POST&#x27;</span>,
+  <span class="hljs-attr">method</span>: <span class="hljs-string">&#x27;GET&#x27;</span>,
 
   <span class="hljs-attr">headers</span>: headers
 })
@@ -10527,17 +10810,19 @@ fetch(<span class="hljs-string">&#x27;/integration/hrf/payroll/overtime&#x27;</s
           class="highlight tab tab-python"
         ><code><span class="hljs-keyword">import</span> requests
 headers = {
+  <span class="hljs-string">&#x27;Accept&#x27;</span>: <span class="hljs-string">&#x27;application/json&#x27;</span>,
   <span class="hljs-string">&#x27;X-API-Key&#x27;</span>: <span class="hljs-string">&#x27;API_KEY&#x27;</span>
 }
 
-r = requests.post(<span class="hljs-string">&#x27;/integration/hrf/payroll/overtime&#x27;</span>, headers = headers)
+r = requests.get(<span class="hljs-string">&#x27;/integration/hrf/references/applicable-tax-types&#x27;</span>, headers = headers)
 
 <span class="hljs-built_in">print</span>(r.json())
 
 </code></pre>
         <pre
           class="highlight tab tab-php"
-        ><code> <span class="hljs-string">&#x27;API_KEY&#x27;</span>,
+        ><code> <span class="hljs-string">&#x27;application/json&#x27;</span>,
+    <span class="hljs-string">&#x27;X-API-Key&#x27;</span> =&gt; <span class="hljs-string">&#x27;API_KEY&#x27;</span>,
 );
 
 <span class="hljs-variable">$client</span> = <span class="hljs-keyword">new</span> \GuzzleHttp\Client();
@@ -10546,7 +10831,7 @@ r = requests.post(<span class="hljs-string">&#x27;/integration/hrf/payroll/overt
 <span class="hljs-variable">$request_body</span> = <span class="hljs-keyword">array</span>();
 
 <span class="hljs-keyword">try</span> {
-    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;POST&#x27;</span>,<span class="hljs-string">&#x27;/integration/hrf/payroll/overtime&#x27;</span>, <span class="hljs-keyword">array</span>(
+    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;GET&#x27;</span>,<span class="hljs-string">&#x27;/integration/hrf/references/applicable-tax-types&#x27;</span>, <span class="hljs-keyword">array</span>(
         <span class="hljs-string">&#x27;headers&#x27;</span> =&gt; <span class="hljs-variable">$headers</span>,
         <span class="hljs-string">&#x27;json&#x27;</span> =&gt; <span class="hljs-variable">$request_body</span>,
        )
@@ -10564,19 +10849,31 @@ r = requests.post(<span class="hljs-string">&#x27;/integration/hrf/payroll/overt
         <pre
           class="highlight tab tab-shell"
         ><code><span class="hljs-comment"># You can also use wget</span>
-curl -X POST /integration/hrf/payroll/overtime \
+curl -X GET /integration/hrf/references/applicable-tax-types \
+  -H <span class="hljs-string">&#x27;Accept: application/json&#x27;</span> \
   -H <span class="hljs-string">&#x27;X-API-Key: API_KEY&#x27;</span>
 
 </code></pre>
-        <p><code>POST /integration/hrf/payroll/overtime</code></p>
-        <p>
-          Create overtime records for employees to be considered in payroll
-          processing. This endpoint is designed for third-party systems to
-          submit overtime data to the HR system.
-        </p>
-        <h3 id="create-overtime-for-calculating-payroll-responses">
-          Responses
-        </h3>
+        <p><code>GET /integration/hrf/references/applicable-tax-types</code></p>
+        <p>Retrieve all available applicable tax types</p>
+        <blockquote>
+          <p>Example responses</p>
+        </blockquote>
+        <blockquote>
+          <p>200 Response</p>
+        </blockquote>
+        <pre class="highlight tab tab-json"><code>{
+  <span class="hljs-attr">&quot;type&quot;</span>: <span class="hljs-string">&quot;applicableTaxTypes&quot;</span>,
+  <span class="hljs-attr">&quot;data&quot;</span>: [
+    {
+      <span class="hljs-attr">&quot;code&quot;</span>: <span class="hljs-string">&quot;EX&quot;</span>,
+      <span class="hljs-attr">&quot;name&quot;</span>: <span class="hljs-string">&quot;Tax Exempted&quot;</span>
+    }
+  ],
+  <span class="hljs-attr">&quot;count&quot;</span>: <span class="hljs-number">1</span>
+}
+</code></pre>
+        <h3 id="get-list-of-applicable-tax-types-responses">Responses</h3>
         <table>
           <thead>
             <tr>
@@ -10588,17 +10885,200 @@ curl -X POST /integration/hrf/payroll/overtime \
           </thead>
           <tbody>
             <tr>
-              <td>201</td>
+              <td>200</td>
               <td>
-                <a href="https://tools.ietf.org/html/rfc7231#section-6.3.2"
-                  >Created</a
+                <a href="https://tools.ietf.org/html/rfc7231#section-6.3.1"
+                  >OK</a
                 >
               </td>
-              <td>none</td>
+              <td>Successfully retrieved available applicable tax types</td>
+              <td>Inline</td>
+            </tr>
+            <tr>
+              <td>401</td>
+              <td>
+                <a href="https://tools.ietf.org/html/rfc7235#section-3.1"
+                  >Unauthorized</a
+                >
+              </td>
+              <td>Unauthorized - Invalid or missing API Key</td>
               <td>None</td>
             </tr>
           </tbody>
         </table>
+        <h3 id="get-list-of-applicable-tax-types-responseschema">
+          Response Schema
+        </h3>
+        <aside class="warning">
+          To perform this operation, you must be authenticated by means of one
+          of the following methods: X-API-Key ( Scopes: X-API-Key )
+        </aside>
+        <h2 id="get-all-reference-data">Get all reference data</h2>
+        <p>
+          <a id="opIdPublicIntegrationReferenceController_getAllReferences"></a>
+        </p>
+        <blockquote>
+          <p>Code samples</p>
+        </blockquote>
+        <pre class="highlight tab tab-javascript"><code>
+<span class="hljs-keyword">const</span> headers = {
+  <span class="hljs-string">&#x27;Accept&#x27;</span>:<span class="hljs-string">&#x27;application/json&#x27;</span>,
+  <span class="hljs-string">&#x27;X-API-Key&#x27;</span>:<span class="hljs-string">&#x27;API_KEY&#x27;</span>
+};
+
+fetch(<span class="hljs-string">&#x27;/integration/hrf/references/all&#x27;</span>,
+{
+  <span class="hljs-attr">method</span>: <span class="hljs-string">&#x27;GET&#x27;</span>,
+
+  <span class="hljs-attr">headers</span>: headers
+})
+.then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">res</span>) </span>{
+    <span class="hljs-keyword">return</span> res.json();
+}).then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">body</span>) </span>{
+    <span class="hljs-built_in">console</span>.log(body);
+});
+
+</code></pre>
+        <pre
+          class="highlight tab tab-python"
+        ><code><span class="hljs-keyword">import</span> requests
+headers = {
+  <span class="hljs-string">&#x27;Accept&#x27;</span>: <span class="hljs-string">&#x27;application/json&#x27;</span>,
+  <span class="hljs-string">&#x27;X-API-Key&#x27;</span>: <span class="hljs-string">&#x27;API_KEY&#x27;</span>
+}
+
+r = requests.get(<span class="hljs-string">&#x27;/integration/hrf/references/all&#x27;</span>, headers = headers)
+
+<span class="hljs-built_in">print</span>(r.json())
+
+</code></pre>
+        <pre
+          class="highlight tab tab-php"
+        ><code> <span class="hljs-string">&#x27;application/json&#x27;</span>,
+    <span class="hljs-string">&#x27;X-API-Key&#x27;</span> =&gt; <span class="hljs-string">&#x27;API_KEY&#x27;</span>,
+);
+
+<span class="hljs-variable">$client</span> = <span class="hljs-keyword">new</span> \GuzzleHttp\Client();
+
+<span class="hljs-comment">// Define array of request body.</span>
+<span class="hljs-variable">$request_body</span> = <span class="hljs-keyword">array</span>();
+
+<span class="hljs-keyword">try</span> {
+    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;GET&#x27;</span>,<span class="hljs-string">&#x27;/integration/hrf/references/all&#x27;</span>, <span class="hljs-keyword">array</span>(
+        <span class="hljs-string">&#x27;headers&#x27;</span> =&gt; <span class="hljs-variable">$headers</span>,
+        <span class="hljs-string">&#x27;json&#x27;</span> =&gt; <span class="hljs-variable">$request_body</span>,
+       )
+    );
+    print_r(<span class="hljs-variable">$response</span>-&gt;getBody()-&gt;getContents());
+ }
+ <span class="hljs-keyword">catch</span> (\GuzzleHttp\<span class="hljs-built_in">Exception</span>\BadResponseException <span class="hljs-variable">$e</span>) {
+    <span class="hljs-comment">// handle exception or api errors.</span>
+    print_r(<span class="hljs-variable">$e</span>-&gt;getMessage());
+ }
+
+ <span class="hljs-comment">// ...</span>
+
+</code></pre>
+        <pre
+          class="highlight tab tab-shell"
+        ><code><span class="hljs-comment"># You can also use wget</span>
+curl -X GET /integration/hrf/references/all \
+  -H <span class="hljs-string">&#x27;Accept: application/json&#x27;</span> \
+  -H <span class="hljs-string">&#x27;X-API-Key: API_KEY&#x27;</span>
+
+</code></pre>
+        <p><code>GET /integration/hrf/references/all</code></p>
+        <p>
+          Retrieve all available reference data (countries, genders,
+          relationships, pay element codes, contract types) in a single request
+          for efficiency.
+        </p>
+        <blockquote>
+          <p>Example responses</p>
+        </blockquote>
+        <blockquote>
+          <p>200 Response</p>
+        </blockquote>
+        <pre class="highlight tab tab-json"><code>{
+  <span class="hljs-attr">&quot;countries&quot;</span>: [
+    {
+      <span class="hljs-attr">&quot;code&quot;</span>: <span class="hljs-string">&quot;VN&quot;</span>,
+      <span class="hljs-attr">&quot;name&quot;</span>: <span class="hljs-string">&quot;Vietnam&quot;</span>
+    },
+    {
+      <span class="hljs-attr">&quot;code&quot;</span>: <span class="hljs-string">&quot;US&quot;</span>,
+      <span class="hljs-attr">&quot;name&quot;</span>: <span class="hljs-string">&quot;United States&quot;</span>
+    }
+  ],
+  <span class="hljs-attr">&quot;genders&quot;</span>: [
+    {
+      <span class="hljs-attr">&quot;code&quot;</span>: <span class="hljs-string">&quot;M&quot;</span>,
+      <span class="hljs-attr">&quot;name&quot;</span>: <span class="hljs-string">&quot;Male&quot;</span>
+    },
+    {
+      <span class="hljs-attr">&quot;code&quot;</span>: <span class="hljs-string">&quot;F&quot;</span>,
+      <span class="hljs-attr">&quot;name&quot;</span>: <span class="hljs-string">&quot;Female&quot;</span>
+    }
+  ],
+  <span class="hljs-attr">&quot;relationships&quot;</span>: [
+    {
+      <span class="hljs-attr">&quot;code&quot;</span>: <span class="hljs-string">&quot;SP&quot;</span>,
+      <span class="hljs-attr">&quot;name&quot;</span>: <span class="hljs-string">&quot;Spouse&quot;</span>
+    },
+    {
+      <span class="hljs-attr">&quot;code&quot;</span>: <span class="hljs-string">&quot;CH&quot;</span>,
+      <span class="hljs-attr">&quot;name&quot;</span>: <span class="hljs-string">&quot;Child&quot;</span>
+    }
+  ],
+  <span class="hljs-attr">&quot;currencies&quot;</span>: [
+    {
+      <span class="hljs-attr">&quot;code&quot;</span>: <span class="hljs-string">&quot;AED&quot;</span>,
+      <span class="hljs-attr">&quot;name&quot;</span>: <span class="hljs-string">&quot;United Arab Emirates dirham&quot;</span>,
+      <span class="hljs-attr">&quot;text&quot;</span>: <span class="hljs-string">&quot;AED (United Arab Emirates dirham)&quot;</span>
+    }
+  ],
+  <span class="hljs-attr">&quot;contractTypes&quot;</span>: [
+    {
+      <span class="hljs-attr">&quot;code&quot;</span>: <span class="hljs-string">&quot;FT&quot;</span>,
+      <span class="hljs-attr">&quot;name&quot;</span>: <span class="hljs-string">&quot;Definite Contract&quot;</span>
+    }
+  ]
+}
+</code></pre>
+        <h3 id="get-all-reference-data-responses">Responses</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Status</th>
+              <th>Meaning</th>
+              <th>Description</th>
+              <th>Schema</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>200</td>
+              <td>
+                <a href="https://tools.ietf.org/html/rfc7231#section-6.3.1"
+                  >OK</a
+                >
+              </td>
+              <td>Successfully retrieved all reference data</td>
+              <td>Inline</td>
+            </tr>
+            <tr>
+              <td>401</td>
+              <td>
+                <a href="https://tools.ietf.org/html/rfc7235#section-3.1"
+                  >Unauthorized</a
+                >
+              </td>
+              <td>Unauthorized - Invalid or missing API Key</td>
+              <td>None</td>
+            </tr>
+          </tbody>
+        </table>
+        <h3 id="get-all-reference-data-responseschema">Response Schema</h3>
         <aside class="warning">
           To perform this operation, you must be authenticated by means of one
           of the following methods: X-API-Key ( Scopes: X-API-Key )
@@ -10632,7 +11112,8 @@ curl -X POST /integration/hrf/payroll/overtime \
   <span class="hljs-attr">&quot;mobile&quot;</span>: <span class="hljs-string">&quot;+1234567890&quot;</span>,
   <span class="hljs-attr">&quot;personalEmail&quot;</span>: <span class="hljs-string">&quot;personal@email.com&quot;</span>,
   <span class="hljs-attr">&quot;nationalityCode&quot;</span>: <span class="hljs-string">&quot;VN&quot;</span>,
-  <span class="hljs-attr">&quot;bankName&quot;</span>: <span class="hljs-string">&quot;ABC Bank&quot;</span>,
+  <span class="hljs-attr">&quot;bankName&quot;</span>: <span class="hljs-string">&quot;Vietcombank&quot;</span>,
+  <span class="hljs-attr">&quot;bankCode&quot;</span>: <span class="hljs-string">&quot;VCB&quot;</span>,
   <span class="hljs-attr">&quot;bankAccountNo&quot;</span>: <span class="hljs-string">&quot;1234567890&quot;</span>,
   <span class="hljs-attr">&quot;bankAccountName&quot;</span>: <span class="hljs-string">&quot;John Doe&quot;</span>,
   <span class="hljs-attr">&quot;isDisabled&quot;</span>: <span class="hljs-literal">false</span>,
@@ -10659,10 +11140,6 @@ curl -X POST /integration/hrf/payroll/overtime \
   <span class="hljs-attr">&quot;permanentWard&quot;</span>: <span class="hljs-string">&quot;Ward 1&quot;</span>,
   <span class="hljs-attr">&quot;permanentCountry&quot;</span>: <span class="hljs-string">&quot;VN&quot;</span>,
   <span class="hljs-attr">&quot;organizationElementName&quot;</span>: <span class="hljs-string">&quot;Engineering Department&quot;</span>,
-  <span class="hljs-attr">&quot;contractType&quot;</span>: <span class="hljs-string">&quot;PM&quot;</span>,
-  <span class="hljs-attr">&quot;contractDateFrom&quot;</span>: <span class="hljs-string">&quot;2020-01-01&quot;</span>,
-  <span class="hljs-attr">&quot;contractDateTo&quot;</span>: <span class="hljs-string">&quot;2025-12-31&quot;</span>,
-  <span class="hljs-attr">&quot;contractReferenceNo&quot;</span>: <span class="hljs-string">&quot;CTR-001&quot;</span>,
   <span class="hljs-attr">&quot;joinDate&quot;</span>: <span class="hljs-string">&quot;2020-01-01&quot;</span>,
   <span class="hljs-attr">&quot;seniorityDate&quot;</span>: <span class="hljs-string">&quot;2020-01-01&quot;</span>,
   <span class="hljs-attr">&quot;active&quot;</span>: <span class="hljs-literal">true</span>,
@@ -10832,6 +11309,13 @@ curl -X POST /integration/hrf/payroll/overtime \
               <td>false</td>
               <td>none</td>
               <td>Bank name</td>
+            </tr>
+            <tr>
+              <td>bankCode</td>
+              <td>string</td>
+              <td>false</td>
+              <td>none</td>
+              <td>Bank code</td>
             </tr>
             <tr>
               <td>bankAccountNo</td>
@@ -11016,34 +11500,6 @@ curl -X POST /integration/hrf/payroll/overtime \
               <td>Organization element name</td>
             </tr>
             <tr>
-              <td>contractType</td>
-              <td>string</td>
-              <td>false</td>
-              <td>none</td>
-              <td>Contract type</td>
-            </tr>
-            <tr>
-              <td>contractDateFrom</td>
-              <td>string</td>
-              <td>false</td>
-              <td>none</td>
-              <td>Contract start date (yyyy-MM-dd)</td>
-            </tr>
-            <tr>
-              <td>contractDateTo</td>
-              <td>string</td>
-              <td>false</td>
-              <td>none</td>
-              <td>Contract end date (yyyy-MM-dd)</td>
-            </tr>
-            <tr>
-              <td>contractReferenceNo</td>
-              <td>string</td>
-              <td>false</td>
-              <td>none</td>
-              <td>Contract reference number</td>
-            </tr>
-            <tr>
               <td>joinDate</td>
               <td>string</td>
               <td>false</td>
@@ -11101,846 +11557,122 @@ curl -X POST /integration/hrf/payroll/overtime \
             </tr>
           </tbody>
         </table>
-        <h4 id="enumerated-values">Enumerated Values</h4>
+        <h2 id="tocs_employeecontractdto">EmployeeContractDto</h2>
+        <p>
+          <a id="schemaemployeecontractdto"></a>
+          <a id="schema_EmployeeContractDto"></a>
+          <a id="tocSemployeecontractdto"></a>
+          <a id="tocsemployeecontractdto"></a>
+        </p>
+        <pre class="highlight tab tab-json"><code>{
+  <span class="hljs-attr">&quot;currencyCode&quot;</span>: <span class="hljs-string">&quot;VND&quot;</span>,
+  <span class="hljs-attr">&quot;referenceNo&quot;</span>: <span class="hljs-string">&quot;CTR-001&quot;</span>,
+  <span class="hljs-attr">&quot;dateFrom&quot;</span>: <span class="hljs-string">&quot;2020-01-01&quot;</span>,
+  <span class="hljs-attr">&quot;dateTo&quot;</span>: <span class="hljs-string">&quot;2025-12-31&quot;</span>,
+  <span class="hljs-attr">&quot;contractType&quot;</span>: <span class="hljs-string">&quot;FT&quot;</span>,
+  <span class="hljs-attr">&quot;entitledTaxRelief&quot;</span>: <span class="hljs-literal">true</span>,
+  <span class="hljs-attr">&quot;nonTaxResident&quot;</span>: <span class="hljs-literal">false</span>,
+  <span class="hljs-attr">&quot;taxBorneByCompany&quot;</span>: <span class="hljs-literal">false</span>,
+  <span class="hljs-attr">&quot;remarks&quot;</span>: <span class="hljs-string">&quot;Additional contract remarks&quot;</span>,
+  <span class="hljs-attr">&quot;applicableToTax&quot;</span>: <span class="hljs-string">&quot;PG&quot;</span>,
+  <span class="hljs-attr">&quot;commitmentAnnualIncomeBelowTax&quot;</span>: <span class="hljs-literal">false</span>
+}
+
+</code></pre>
+        <h3 id="properties-2">Properties</h3>
         <table>
           <thead>
             <tr>
-              <th>Property</th>
-              <th>Value</th>
+              <th>Name</th>
+              <th>Type</th>
+              <th>Required</th>
+              <th>Restrictions</th>
+              <th>Description</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td>gender</td>
-              <td>M</td>
-            </tr>
-            <tr>
-              <td>gender</td>
-              <td>F</td>
-            </tr>
-            <tr>
-              <td>gender</td>
-              <td>O</td>
-            </tr>
-            <tr>
-              <td>nationalityCode</td>
-              <td>BN</td>
-            </tr>
-            <tr>
-              <td>nationalityCode</td>
-              <td>KH</td>
-            </tr>
-            <tr>
-              <td>nationalityCode</td>
-              <td>ID</td>
-            </tr>
-            <tr>
-              <td>nationalityCode</td>
-              <td>LA</td>
-            </tr>
-            <tr>
-              <td>nationalityCode</td>
-              <td>MY</td>
-            </tr>
-            <tr>
-              <td>nationalityCode</td>
-              <td>MM</td>
-            </tr>
-            <tr>
-              <td>nationalityCode</td>
-              <td>PH</td>
-            </tr>
-            <tr>
-              <td>nationalityCode</td>
-              <td>SG</td>
-            </tr>
-            <tr>
-              <td>nationalityCode</td>
-              <td>TH</td>
-            </tr>
-            <tr>
-              <td>nationalityCode</td>
-              <td>TL</td>
-            </tr>
-            <tr>
-              <td>nationalityCode</td>
-              <td>VN</td>
-            </tr>
-            <tr>
-              <td>nationalityCode</td>
-              <td>CN</td>
-            </tr>
-            <tr>
-              <td>nationalityCode</td>
-              <td>HK</td>
-            </tr>
-            <tr>
-              <td>nationalityCode</td>
-              <td>JP</td>
-            </tr>
-            <tr>
-              <td>nationalityCode</td>
-              <td>MO</td>
-            </tr>
-            <tr>
-              <td>nationalityCode</td>
-              <td>MN</td>
-            </tr>
-            <tr>
-              <td>nationalityCode</td>
-              <td>KP</td>
-            </tr>
-            <tr>
-              <td>nationalityCode</td>
-              <td>KR</td>
-            </tr>
-            <tr>
-              <td>nationalityCode</td>
-              <td>TW</td>
-            </tr>
-            <tr>
-              <td>nationalityCode</td>
-              <td>AF</td>
-            </tr>
-            <tr>
-              <td>nationalityCode</td>
-              <td>BD</td>
-            </tr>
-            <tr>
-              <td>nationalityCode</td>
-              <td>BT</td>
-            </tr>
-            <tr>
-              <td>nationalityCode</td>
-              <td>IN</td>
-            </tr>
-            <tr>
-              <td>nationalityCode</td>
-              <td>MV</td>
-            </tr>
-            <tr>
-              <td>nationalityCode</td>
-              <td>NP</td>
-            </tr>
-            <tr>
-              <td>nationalityCode</td>
-              <td>PK</td>
-            </tr>
-            <tr>
-              <td>nationalityCode</td>
-              <td>LK</td>
-            </tr>
-            <tr>
-              <td>nationalityCode</td>
-              <td>AU</td>
-            </tr>
-            <tr>
-              <td>nationalityCode</td>
-              <td>FJ</td>
-            </tr>
-            <tr>
-              <td>nationalityCode</td>
-              <td>NZ</td>
-            </tr>
-            <tr>
-              <td>nationalityCode</td>
-              <td>PG</td>
-            </tr>
-            <tr>
-              <td>nationalityCode</td>
-              <td>BH</td>
-            </tr>
-            <tr>
-              <td>nationalityCode</td>
-              <td>IQ</td>
-            </tr>
-            <tr>
-              <td>nationalityCode</td>
-              <td>IL</td>
-            </tr>
-            <tr>
-              <td>nationalityCode</td>
-              <td>JO</td>
-            </tr>
-            <tr>
-              <td>nationalityCode</td>
-              <td>KW</td>
-            </tr>
-            <tr>
-              <td>nationalityCode</td>
-              <td>LB</td>
-            </tr>
-            <tr>
-              <td>nationalityCode</td>
-              <td>OM</td>
-            </tr>
-            <tr>
-              <td>nationalityCode</td>
-              <td>QA</td>
-            </tr>
-            <tr>
-              <td>nationalityCode</td>
-              <td>SA</td>
-            </tr>
-            <tr>
-              <td>nationalityCode</td>
-              <td>SY</td>
-            </tr>
-            <tr>
-              <td>nationalityCode</td>
-              <td>TR</td>
-            </tr>
-            <tr>
-              <td>nationalityCode</td>
-              <td>AE</td>
-            </tr>
-            <tr>
-              <td>nationalityCode</td>
-              <td>YE</td>
-            </tr>
-            <tr>
-              <td>nationalityCode</td>
-              <td>FR</td>
-            </tr>
-            <tr>
-              <td>nationalityCode</td>
-              <td>DE</td>
-            </tr>
-            <tr>
-              <td>nationalityCode</td>
-              <td>IT</td>
-            </tr>
-            <tr>
-              <td>nationalityCode</td>
-              <td>NL</td>
-            </tr>
-            <tr>
-              <td>nationalityCode</td>
-              <td>PL</td>
-            </tr>
-            <tr>
-              <td>nationalityCode</td>
-              <td>RU</td>
-            </tr>
-            <tr>
-              <td>nationalityCode</td>
-              <td>ES</td>
-            </tr>
-            <tr>
-              <td>nationalityCode</td>
-              <td>CH</td>
-            </tr>
-            <tr>
-              <td>nationalityCode</td>
-              <td>GB</td>
-            </tr>
-            <tr>
-              <td>nationalityCode</td>
-              <td>AR</td>
-            </tr>
-            <tr>
-              <td>nationalityCode</td>
-              <td>BR</td>
-            </tr>
-            <tr>
-              <td>nationalityCode</td>
-              <td>CA</td>
-            </tr>
-            <tr>
-              <td>nationalityCode</td>
-              <td>CL</td>
-            </tr>
-            <tr>
-              <td>nationalityCode</td>
-              <td>CO</td>
-            </tr>
-            <tr>
-              <td>nationalityCode</td>
-              <td>MX</td>
-            </tr>
-            <tr>
-              <td>nationalityCode</td>
-              <td>PE</td>
-            </tr>
-            <tr>
-              <td>nationalityCode</td>
-              <td>US</td>
-            </tr>
-            <tr>
-              <td>nationalityCode</td>
-              <td>VE</td>
-            </tr>
-            <tr>
-              <td>nationalityCode</td>
-              <td>EG</td>
-            </tr>
-            <tr>
-              <td>nationalityCode</td>
-              <td>KE</td>
-            </tr>
-            <tr>
-              <td>nationalityCode</td>
-              <td>MA</td>
-            </tr>
-            <tr>
-              <td>nationalityCode</td>
-              <td>NG</td>
-            </tr>
-            <tr>
-              <td>nationalityCode</td>
-              <td>ZA</td>
-            </tr>
-            <tr>
-              <td>currentCountry</td>
-              <td>BN</td>
-            </tr>
-            <tr>
-              <td>currentCountry</td>
-              <td>KH</td>
-            </tr>
-            <tr>
-              <td>currentCountry</td>
-              <td>ID</td>
-            </tr>
-            <tr>
-              <td>currentCountry</td>
-              <td>LA</td>
-            </tr>
-            <tr>
-              <td>currentCountry</td>
-              <td>MY</td>
-            </tr>
-            <tr>
-              <td>currentCountry</td>
-              <td>MM</td>
-            </tr>
-            <tr>
-              <td>currentCountry</td>
-              <td>PH</td>
-            </tr>
-            <tr>
-              <td>currentCountry</td>
-              <td>SG</td>
-            </tr>
-            <tr>
-              <td>currentCountry</td>
-              <td>TH</td>
-            </tr>
-            <tr>
-              <td>currentCountry</td>
-              <td>TL</td>
-            </tr>
-            <tr>
-              <td>currentCountry</td>
-              <td>VN</td>
-            </tr>
-            <tr>
-              <td>currentCountry</td>
-              <td>CN</td>
-            </tr>
-            <tr>
-              <td>currentCountry</td>
-              <td>HK</td>
-            </tr>
-            <tr>
-              <td>currentCountry</td>
-              <td>JP</td>
-            </tr>
-            <tr>
-              <td>currentCountry</td>
-              <td>MO</td>
-            </tr>
-            <tr>
-              <td>currentCountry</td>
-              <td>MN</td>
-            </tr>
-            <tr>
-              <td>currentCountry</td>
-              <td>KP</td>
-            </tr>
-            <tr>
-              <td>currentCountry</td>
-              <td>KR</td>
-            </tr>
-            <tr>
-              <td>currentCountry</td>
-              <td>TW</td>
-            </tr>
-            <tr>
-              <td>currentCountry</td>
-              <td>AF</td>
-            </tr>
-            <tr>
-              <td>currentCountry</td>
-              <td>BD</td>
-            </tr>
-            <tr>
-              <td>currentCountry</td>
-              <td>BT</td>
-            </tr>
-            <tr>
-              <td>currentCountry</td>
-              <td>IN</td>
-            </tr>
-            <tr>
-              <td>currentCountry</td>
-              <td>MV</td>
-            </tr>
-            <tr>
-              <td>currentCountry</td>
-              <td>NP</td>
-            </tr>
-            <tr>
-              <td>currentCountry</td>
-              <td>PK</td>
-            </tr>
-            <tr>
-              <td>currentCountry</td>
-              <td>LK</td>
-            </tr>
-            <tr>
-              <td>currentCountry</td>
-              <td>AU</td>
-            </tr>
-            <tr>
-              <td>currentCountry</td>
-              <td>FJ</td>
-            </tr>
-            <tr>
-              <td>currentCountry</td>
-              <td>NZ</td>
-            </tr>
-            <tr>
-              <td>currentCountry</td>
-              <td>PG</td>
-            </tr>
-            <tr>
-              <td>currentCountry</td>
-              <td>BH</td>
-            </tr>
-            <tr>
-              <td>currentCountry</td>
-              <td>IQ</td>
-            </tr>
-            <tr>
-              <td>currentCountry</td>
-              <td>IL</td>
-            </tr>
-            <tr>
-              <td>currentCountry</td>
-              <td>JO</td>
-            </tr>
-            <tr>
-              <td>currentCountry</td>
-              <td>KW</td>
-            </tr>
-            <tr>
-              <td>currentCountry</td>
-              <td>LB</td>
-            </tr>
-            <tr>
-              <td>currentCountry</td>
-              <td>OM</td>
-            </tr>
-            <tr>
-              <td>currentCountry</td>
-              <td>QA</td>
-            </tr>
-            <tr>
-              <td>currentCountry</td>
-              <td>SA</td>
-            </tr>
-            <tr>
-              <td>currentCountry</td>
-              <td>SY</td>
-            </tr>
-            <tr>
-              <td>currentCountry</td>
-              <td>TR</td>
-            </tr>
-            <tr>
-              <td>currentCountry</td>
-              <td>AE</td>
-            </tr>
-            <tr>
-              <td>currentCountry</td>
-              <td>YE</td>
-            </tr>
-            <tr>
-              <td>currentCountry</td>
-              <td>FR</td>
-            </tr>
-            <tr>
-              <td>currentCountry</td>
-              <td>DE</td>
-            </tr>
-            <tr>
-              <td>currentCountry</td>
-              <td>IT</td>
-            </tr>
-            <tr>
-              <td>currentCountry</td>
-              <td>NL</td>
-            </tr>
-            <tr>
-              <td>currentCountry</td>
-              <td>PL</td>
-            </tr>
-            <tr>
-              <td>currentCountry</td>
-              <td>RU</td>
-            </tr>
-            <tr>
-              <td>currentCountry</td>
-              <td>ES</td>
-            </tr>
-            <tr>
-              <td>currentCountry</td>
-              <td>CH</td>
-            </tr>
-            <tr>
-              <td>currentCountry</td>
-              <td>GB</td>
-            </tr>
-            <tr>
-              <td>currentCountry</td>
-              <td>AR</td>
-            </tr>
-            <tr>
-              <td>currentCountry</td>
-              <td>BR</td>
-            </tr>
-            <tr>
-              <td>currentCountry</td>
-              <td>CA</td>
-            </tr>
-            <tr>
-              <td>currentCountry</td>
-              <td>CL</td>
-            </tr>
-            <tr>
-              <td>currentCountry</td>
-              <td>CO</td>
-            </tr>
-            <tr>
-              <td>currentCountry</td>
-              <td>MX</td>
-            </tr>
-            <tr>
-              <td>currentCountry</td>
-              <td>PE</td>
-            </tr>
-            <tr>
-              <td>currentCountry</td>
-              <td>US</td>
-            </tr>
-            <tr>
-              <td>currentCountry</td>
-              <td>VE</td>
-            </tr>
-            <tr>
-              <td>currentCountry</td>
-              <td>EG</td>
-            </tr>
-            <tr>
-              <td>currentCountry</td>
-              <td>KE</td>
-            </tr>
-            <tr>
-              <td>currentCountry</td>
-              <td>MA</td>
-            </tr>
-            <tr>
-              <td>currentCountry</td>
-              <td>NG</td>
-            </tr>
-            <tr>
-              <td>currentCountry</td>
-              <td>ZA</td>
-            </tr>
-            <tr>
-              <td>permanentCountry</td>
-              <td>BN</td>
-            </tr>
-            <tr>
-              <td>permanentCountry</td>
-              <td>KH</td>
-            </tr>
-            <tr>
-              <td>permanentCountry</td>
-              <td>ID</td>
-            </tr>
-            <tr>
-              <td>permanentCountry</td>
-              <td>LA</td>
-            </tr>
-            <tr>
-              <td>permanentCountry</td>
-              <td>MY</td>
-            </tr>
-            <tr>
-              <td>permanentCountry</td>
-              <td>MM</td>
-            </tr>
-            <tr>
-              <td>permanentCountry</td>
-              <td>PH</td>
-            </tr>
-            <tr>
-              <td>permanentCountry</td>
-              <td>SG</td>
-            </tr>
-            <tr>
-              <td>permanentCountry</td>
-              <td>TH</td>
-            </tr>
-            <tr>
-              <td>permanentCountry</td>
-              <td>TL</td>
-            </tr>
-            <tr>
-              <td>permanentCountry</td>
-              <td>VN</td>
-            </tr>
-            <tr>
-              <td>permanentCountry</td>
-              <td>CN</td>
-            </tr>
-            <tr>
-              <td>permanentCountry</td>
-              <td>HK</td>
-            </tr>
-            <tr>
-              <td>permanentCountry</td>
-              <td>JP</td>
-            </tr>
-            <tr>
-              <td>permanentCountry</td>
-              <td>MO</td>
-            </tr>
-            <tr>
-              <td>permanentCountry</td>
-              <td>MN</td>
-            </tr>
-            <tr>
-              <td>permanentCountry</td>
-              <td>KP</td>
-            </tr>
-            <tr>
-              <td>permanentCountry</td>
-              <td>KR</td>
-            </tr>
-            <tr>
-              <td>permanentCountry</td>
-              <td>TW</td>
-            </tr>
-            <tr>
-              <td>permanentCountry</td>
-              <td>AF</td>
-            </tr>
-            <tr>
-              <td>permanentCountry</td>
-              <td>BD</td>
-            </tr>
-            <tr>
-              <td>permanentCountry</td>
-              <td>BT</td>
-            </tr>
-            <tr>
-              <td>permanentCountry</td>
-              <td>IN</td>
-            </tr>
-            <tr>
-              <td>permanentCountry</td>
-              <td>MV</td>
-            </tr>
-            <tr>
-              <td>permanentCountry</td>
-              <td>NP</td>
-            </tr>
-            <tr>
-              <td>permanentCountry</td>
-              <td>PK</td>
-            </tr>
-            <tr>
-              <td>permanentCountry</td>
-              <td>LK</td>
-            </tr>
-            <tr>
-              <td>permanentCountry</td>
-              <td>AU</td>
-            </tr>
-            <tr>
-              <td>permanentCountry</td>
-              <td>FJ</td>
-            </tr>
-            <tr>
-              <td>permanentCountry</td>
-              <td>NZ</td>
-            </tr>
-            <tr>
-              <td>permanentCountry</td>
-              <td>PG</td>
-            </tr>
-            <tr>
-              <td>permanentCountry</td>
-              <td>BH</td>
-            </tr>
-            <tr>
-              <td>permanentCountry</td>
-              <td>IQ</td>
-            </tr>
-            <tr>
-              <td>permanentCountry</td>
-              <td>IL</td>
-            </tr>
-            <tr>
-              <td>permanentCountry</td>
-              <td>JO</td>
-            </tr>
-            <tr>
-              <td>permanentCountry</td>
-              <td>KW</td>
-            </tr>
-            <tr>
-              <td>permanentCountry</td>
-              <td>LB</td>
-            </tr>
-            <tr>
-              <td>permanentCountry</td>
-              <td>OM</td>
-            </tr>
-            <tr>
-              <td>permanentCountry</td>
-              <td>QA</td>
-            </tr>
-            <tr>
-              <td>permanentCountry</td>
-              <td>SA</td>
-            </tr>
-            <tr>
-              <td>permanentCountry</td>
-              <td>SY</td>
-            </tr>
-            <tr>
-              <td>permanentCountry</td>
-              <td>TR</td>
-            </tr>
-            <tr>
-              <td>permanentCountry</td>
-              <td>AE</td>
-            </tr>
-            <tr>
-              <td>permanentCountry</td>
-              <td>YE</td>
-            </tr>
-            <tr>
-              <td>permanentCountry</td>
-              <td>FR</td>
-            </tr>
-            <tr>
-              <td>permanentCountry</td>
-              <td>DE</td>
-            </tr>
-            <tr>
-              <td>permanentCountry</td>
-              <td>IT</td>
-            </tr>
-            <tr>
-              <td>permanentCountry</td>
-              <td>NL</td>
-            </tr>
-            <tr>
-              <td>permanentCountry</td>
-              <td>PL</td>
-            </tr>
-            <tr>
-              <td>permanentCountry</td>
-              <td>RU</td>
-            </tr>
-            <tr>
-              <td>permanentCountry</td>
-              <td>ES</td>
-            </tr>
-            <tr>
-              <td>permanentCountry</td>
-              <td>CH</td>
-            </tr>
-            <tr>
-              <td>permanentCountry</td>
-              <td>GB</td>
-            </tr>
-            <tr>
-              <td>permanentCountry</td>
-              <td>AR</td>
-            </tr>
-            <tr>
-              <td>permanentCountry</td>
-              <td>BR</td>
-            </tr>
-            <tr>
-              <td>permanentCountry</td>
-              <td>CA</td>
-            </tr>
-            <tr>
-              <td>permanentCountry</td>
-              <td>CL</td>
-            </tr>
-            <tr>
-              <td>permanentCountry</td>
-              <td>CO</td>
-            </tr>
-            <tr>
-              <td>permanentCountry</td>
-              <td>MX</td>
-            </tr>
-            <tr>
-              <td>permanentCountry</td>
-              <td>PE</td>
-            </tr>
-            <tr>
-              <td>permanentCountry</td>
-              <td>US</td>
-            </tr>
-            <tr>
-              <td>permanentCountry</td>
-              <td>VE</td>
-            </tr>
-            <tr>
-              <td>permanentCountry</td>
-              <td>EG</td>
-            </tr>
-            <tr>
-              <td>permanentCountry</td>
-              <td>KE</td>
-            </tr>
-            <tr>
-              <td>permanentCountry</td>
-              <td>MA</td>
-            </tr>
-            <tr>
-              <td>permanentCountry</td>
-              <td>NG</td>
-            </tr>
-            <tr>
-              <td>permanentCountry</td>
-              <td>ZA</td>
+              <td>currencyCode</td>
+              <td>string</td>
+              <td>false</td>
+              <td>none</td>
+              <td>Currency code (ISO 3-letter)</td>
+            </tr>
+            <tr>
+              <td>referenceNo</td>
+              <td>string</td>
+              <td>false</td>
+              <td>none</td>
+              <td>Reference number (Contract reference number)</td>
+            </tr>
+            <tr>
+              <td>dateFrom</td>
+              <td>string</td>
+              <td>false</td>
+              <td>none</td>
+              <td>Date from (Contract start date) (yyyy-MM-dd)</td>
+            </tr>
+            <tr>
+              <td>dateTo</td>
+              <td>string</td>
+              <td>false</td>
+              <td>none</td>
+              <td>Date to (Contract end date) (yyyy-MM-dd)</td>
             </tr>
             <tr>
               <td>contractType</td>
-              <td>FT</td>
+              <td>string</td>
+              <td>false</td>
+              <td>none</td>
+              <td>
+                Contract type (FT=Definite, PB=Probation, PM=Indefinite,
+                PT=Project/Seasonal)
+              </td>
             </tr>
             <tr>
-              <td>contractType</td>
-              <td>PM</td>
+              <td>entitledTaxRelief</td>
+              <td>boolean</td>
+              <td>false</td>
+              <td>none</td>
+              <td>Entitled tax relief (true/false)</td>
             </tr>
             <tr>
-              <td>contractType</td>
-              <td>PT</td>
+              <td>nonTaxResident</td>
+              <td>boolean</td>
+              <td>false</td>
+              <td>none</td>
+              <td>Non tax resident (true/false)</td>
             </tr>
             <tr>
-              <td>contractType</td>
-              <td>PB</td>
+              <td>taxBorneByCompany</td>
+              <td>boolean</td>
+              <td>false</td>
+              <td>none</td>
+              <td>Tax borne by company (true/false)</td>
+            </tr>
+            <tr>
+              <td>remarks</td>
+              <td>string</td>
+              <td>false</td>
+              <td>none</td>
+              <td>Remarks</td>
+            </tr>
+            <tr>
+              <td>applicableToTax</td>
+              <td>string</td>
+              <td>false</td>
+              <td>none</td>
+              <td>
+                Applicable to tax (EX=Tax Exempted, PG=Progressive, T10=10%,
+                T20=20%)
+              </td>
+            </tr>
+            <tr>
+              <td>commitmentAnnualIncomeBelowTax</td>
+              <td>boolean</td>
+              <td>false</td>
+              <td>none</td>
+              <td>Commitment annual income below tax (true/false)</td>
             </tr>
           </tbody>
         </table>
@@ -11975,51 +11707,23 @@ curl -X POST /integration/hrf/payroll/overtime \
       <span class="hljs-attr">&quot;isWorking&quot;</span>: <span class="hljs-literal">false</span>
     }
   ],
-  <span class="hljs-attr">&quot;compensations&quot;</span>: [
-    {
-      <span class="hljs-attr">&quot;payElementCode&quot;</span>: <span class="hljs-string">&quot;BASIC&quot;</span>,
-      <span class="hljs-attr">&quot;calculateBy&quot;</span>: <span class="hljs-number">1</span>,
-      <span class="hljs-attr">&quot;referenceNo&quot;</span>: <span class="hljs-string">&quot;REF-khangnt&quot;</span>,
-      <span class="hljs-attr">&quot;description&quot;</span>: <span class="hljs-string">&quot;Basic monthly salary&quot;</span>,
-      <span class="hljs-attr">&quot;currencyCode&quot;</span>: <span class="hljs-string">&quot;VND&quot;</span>,
-      <span class="hljs-attr">&quot;amount&quot;</span>: <span class="hljs-number">15000000</span>,
-      <span class="hljs-attr">&quot;startDate&quot;</span>: <span class="hljs-string">&quot;2020-01-01&quot;</span>,
-      <span class="hljs-attr">&quot;payable&quot;</span>: <span class="hljs-literal">true</span>,
-      <span class="hljs-attr">&quot;proration&quot;</span>: <span class="hljs-literal">true</span>,
-      <span class="hljs-attr">&quot;taxable&quot;</span>: <span class="hljs-literal">true</span>,
-      <span class="hljs-attr">&quot;isRegular&quot;</span>: <span class="hljs-literal">true</span>
-    },
-    {
-      <span class="hljs-attr">&quot;payElementCode&quot;</span>: <span class="hljs-string">&quot;ALLOW_HOUSE&quot;</span>,
-      <span class="hljs-attr">&quot;calculateBy&quot;</span>: <span class="hljs-number">1</span>,
-      <span class="hljs-attr">&quot;description&quot;</span>: <span class="hljs-string">&quot;Housing allowance&quot;</span>,
-      <span class="hljs-attr">&quot;currencyCode&quot;</span>: <span class="hljs-string">&quot;VND&quot;</span>,
-      <span class="hljs-attr">&quot;amount&quot;</span>: <span class="hljs-number">3000000</span>,
-      <span class="hljs-attr">&quot;startDate&quot;</span>: <span class="hljs-string">&quot;2020-01-01&quot;</span>,
-      <span class="hljs-attr">&quot;payable&quot;</span>: <span class="hljs-literal">true</span>,
-      <span class="hljs-attr">&quot;taxable&quot;</span>: <span class="hljs-literal">false</span>
-    }
-  ],
-  <span class="hljs-attr">&quot;loans&quot;</span>: [
-    {
-      <span class="hljs-attr">&quot;referenceNo&quot;</span>: <span class="hljs-string">&quot;LOAN-2020-001&quot;</span>,
-      <span class="hljs-attr">&quot;description&quot;</span>: <span class="hljs-string">&quot;Housing loan&quot;</span>,
-      <span class="hljs-attr">&quot;loanTypeCode&quot;</span>: <span class="hljs-string">&quot;HOUSING&quot;</span>,
-      <span class="hljs-attr">&quot;loanDate&quot;</span>: <span class="hljs-string">&quot;2020-01-15&quot;</span>,
-      <span class="hljs-attr">&quot;expireDate&quot;</span>: <span class="hljs-string">&quot;2025-12-31&quot;</span>,
-      <span class="hljs-attr">&quot;loanRepaymentStartDate&quot;</span>: <span class="hljs-string">&quot;2020-02-01&quot;</span>,
-      <span class="hljs-attr">&quot;interestInAmount&quot;</span>: <span class="hljs-literal">false</span>,
-      <span class="hljs-attr">&quot;interest&quot;</span>: <span class="hljs-number">5</span>,
-      <span class="hljs-attr">&quot;totalPrincipalLoan&quot;</span>: <span class="hljs-number">50000000</span>,
-      <span class="hljs-attr">&quot;otherFees&quot;</span>: <span class="hljs-number">500000</span>,
-      <span class="hljs-attr">&quot;repaymentOption&quot;</span>: <span class="hljs-number">0</span>,
-      <span class="hljs-attr">&quot;remark&quot;</span>: <span class="hljs-string">&quot;Monthly repayment&quot;</span>
-    }
-  ]
+  <span class="hljs-attr">&quot;contract&quot;</span>: {
+    <span class="hljs-attr">&quot;currencyCode&quot;</span>: <span class="hljs-string">&quot;VND&quot;</span>,
+    <span class="hljs-attr">&quot;referenceNo&quot;</span>: <span class="hljs-string">&quot;CTR-001&quot;</span>,
+    <span class="hljs-attr">&quot;dateFrom&quot;</span>: <span class="hljs-string">&quot;2020-01-01&quot;</span>,
+    <span class="hljs-attr">&quot;dateTo&quot;</span>: <span class="hljs-string">&quot;2025-12-31&quot;</span>,
+    <span class="hljs-attr">&quot;contractType&quot;</span>: <span class="hljs-string">&quot;FT&quot;</span>,
+    <span class="hljs-attr">&quot;entitledTaxRelief&quot;</span>: <span class="hljs-literal">true</span>,
+    <span class="hljs-attr">&quot;nonTaxResident&quot;</span>: <span class="hljs-literal">false</span>,
+    <span class="hljs-attr">&quot;taxBorneByCompany&quot;</span>: <span class="hljs-literal">false</span>,
+    <span class="hljs-attr">&quot;remarks&quot;</span>: <span class="hljs-string">&quot;Full-time contract&quot;</span>,
+    <span class="hljs-attr">&quot;applicableToTax&quot;</span>: <span class="hljs-string">&quot;PG&quot;</span>,
+    <span class="hljs-attr">&quot;commitmentAnnualIncomeBelowTax&quot;</span>: <span class="hljs-literal">false</span>
+  }
 }
 
 </code></pre>
-        <h3 id="properties-2">Properties</h3>
+        <h3 id="properties-3">Properties</h3>
         <table>
           <thead>
             <tr>
@@ -12046,18 +11750,13 @@ curl -X POST /integration/hrf/payroll/overtime \
               <td>Employee dependents (Optional)</td>
             </tr>
             <tr>
-              <td>compensations</td>
-              <td>[array]</td>
+              <td>contract</td>
+              <td>
+                <a href="#schemaemployeecontractdto">EmployeeContractDto</a>
+              </td>
               <td>false</td>
               <td>none</td>
-              <td>Employee compensation details (Optional)</td>
-            </tr>
-            <tr>
-              <td>loans</td>
-              <td>[array]</td>
-              <td>false</td>
-              <td>none</td>
-              <td>Employee loans (Optional)</td>
+              <td>Employee contract information (Optional)</td>
             </tr>
           </tbody>
         </table>
@@ -12080,7 +11779,7 @@ curl -X POST /integration/hrf/payroll/overtime \
 }
 
 </code></pre>
-        <h3 id="properties-3">Properties</h3>
+        <h3 id="properties-4">Properties</h3>
         <table>
           <thead>
             <tr>
@@ -12154,6 +11853,7 @@ curl -X POST /integration/hrf/payroll/overtime \
         </table>
         <!-- Renderer: Shins v2.6.0 -->
         <!-- Generator: Widdershins v4.0.1 -->
+        <!-- backwards compatibility -->
         <!-- backwards compatibility -->
         <!-- backwards compatibility -->
         <!-- backwards compatibility -->
