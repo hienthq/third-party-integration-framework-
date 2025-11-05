@@ -9266,6 +9266,10 @@ Darkula color scheme from the JetBrains family of IDEs
         line-height: 1.5;
       }
 
+      .try-it-response-body-content {
+        width: 100% !important
+      }
+
       .try-it-endpoint-info {
         background: #e7f3ff;
         padding: 10px;
@@ -17512,7 +17516,7 @@ curl -X GET https://mia-api.hrforte.com/v1/integration/hrf/health \
           </span>
         </div>
         <div class="try-it-response-body">
-          <pre>${typeof responseBody === 'object' ? JSON.stringify(responseBody, null, 2) : responseBody}</pre>
+          <pre class="try-it-response-body-content">${typeof responseBody === 'object' ? JSON.stringify(responseBody, null, 2) : responseBody}</pre>
         </div>
       `;
           } catch (error) {
@@ -17523,7 +17527,7 @@ curl -X GET https://mia-api.hrforte.com/v1/integration/hrf/health \
           <span class="try-it-response-status error">Request Failed</span>
         </div>
         <div class="try-it-response-body">
-          <pre>${error.message}</pre>
+          <pre class="try-it-response-body-content">${error.message}</pre>
         </div>
       `;
           } finally {
