@@ -1484,6 +1484,12 @@ var n=this.pipeline.run(e.tokenizer(t)),r=new e.Vector,i=[],o=this._fields.reduc
 <!-- backwards compatibility -->
 <!-- backwards compatibility -->
 <!-- backwards compatibility -->
+<!-- backwards compatibility -->
+<!-- backwards compatibility -->
+<!-- backwards compatibility -->
+<!-- backwards compatibility -->
+<!-- backwards compatibility -->
+<!-- backwards compatibility -->
   <link rel="icon" type="image/png" href="/logo.svg" sizes="32x32">
 <style>
 /* Try It Button and Interface Styles */
@@ -1898,6 +1904,11 @@ var n=this.pipeline.run(e.tokenizer(t)),r=new e.Vector,i=[],o=this._fields.reduc
                   </li>
                 
                   <li>
+                    <a href="#get-leaving-reasons-by-company" class="toc-h2 toc-link" data-title="">Get leaving reasons by company</a>
+                    
+                  </li>
+                
+                  <li>
                     <a href="#get-claim-status-options" class="toc-h2 toc-link" data-title="">Get claim status options</a>
                     
                   </li>
@@ -1924,6 +1935,11 @@ var n=this.pipeline.run(e.tokenizer(t)),r=new e.Vector,i=[],o=this._fields.reduc
                 
                   <li>
                     <a href="#get-probation-policy-pay-options" class="toc-h2 toc-link" data-title="">Get probation policy pay options</a>
+                    
+                  </li>
+                
+                  <li>
+                    <a href="#get-cycle-frequency-type-options" class="toc-h2 toc-link" data-title="">Get cycle frequency type options</a>
                     
                   </li>
                 
@@ -2099,11 +2115,6 @@ var n=this.pipeline.run(e.tokenizer(t)),r=new e.Vector,i=[],o=this._fields.reduc
               <ul class="toc-list-h2">
                 
                   <li>
-                    <a href="#create-employee-work-record" class="toc-h2 toc-link" data-title="">Create employee work record</a>
-                    
-                  </li>
-                
-                  <li>
                     <a href="#create-employee-work-records--bulk-" class="toc-h2 toc-link" data-title="">Create employee work records (bulk)</a>
                     
                   </li>
@@ -2201,9 +2212,97 @@ var n=this.pipeline.run(e.tokenizer(t)),r=new e.Vector,i=[],o=this._fields.reduc
           </li>
         
           <li>
+            <a href="#hr-forte-public-integration-api-job-grade-module" class="toc-h1 toc-link" data-title="Job Grade Module">Job Grade Module</a>
+            
+              <ul class="toc-list-h2">
+                
+                  <li>
+                    <a href="#create-job-grade" class="toc-h2 toc-link" data-title="">Create job grade</a>
+                    
+                  </li>
+                
+                  <li>
+                    <a href="#get-all-job-grades" class="toc-h2 toc-link" data-title="">Get all job grades</a>
+                    
+                  </li>
+                
+                  <li>
+                    <a href="#get-job-grade-by-external-id" class="toc-h2 toc-link" data-title="">Get job grade by external ID</a>
+                    
+                  </li>
+                
+                  <li>
+                    <a href="#update-job-grade-by-external-id" class="toc-h2 toc-link" data-title="">Update job grade by external ID</a>
+                    
+                  </li>
+                
+                  <li>
+                    <a href="#delete-job-grade-by-external-id" class="toc-h2 toc-link" data-title="">Delete job grade by external ID</a>
+                    
+                  </li>
+                
+                  <li>
+                    <a href="#bulk-create-job-grades" class="toc-h2 toc-link" data-title="">Bulk create job grades</a>
+                    
+                  </li>
+                
+              </ul>
+            
+          </li>
+        
+          <li>
+            <a href="#hr-forte-public-integration-api-organization-structure-module" class="toc-h1 toc-link" data-title="Organization Structure Module">Organization Structure Module</a>
+            
+              <ul class="toc-list-h2">
+                
+                  <li>
+                    <a href="#create-organization-structure" class="toc-h2 toc-link" data-title="">Create organization structure</a>
+                    
+                  </li>
+                
+                  <li>
+                    <a href="#get-all-organization-structures" class="toc-h2 toc-link" data-title="">Get all organization structures</a>
+                    
+                  </li>
+                
+                  <li>
+                    <a href="#unassign-employees-from-organization-structure" class="toc-h2 toc-link" data-title="">Unassign employees from organization structure</a>
+                    
+                  </li>
+                
+                  <li>
+                    <a href="#get-organization-structure-by-external-id" class="toc-h2 toc-link" data-title="">Get organization structure by external ID</a>
+                    
+                  </li>
+                
+                  <li>
+                    <a href="#update-organization-structure-by-external-id" class="toc-h2 toc-link" data-title="">Update organization structure by external ID</a>
+                    
+                  </li>
+                
+                  <li>
+                    <a href="#delete-organization-structure-by-external-id" class="toc-h2 toc-link" data-title="">Delete organization structure by external ID</a>
+                    
+                  </li>
+                
+                  <li>
+                    <a href="#assign-employees-to-organization-structure" class="toc-h2 toc-link" data-title="">Assign employees to organization structure</a>
+                    
+                  </li>
+                
+              </ul>
+            
+          </li>
+        
+          <li>
             <a href="#schemas" class="toc-h1 toc-link" data-title="Schemas">Schemas</a>
             
               <ul class="toc-list-h2">
+                
+                  <li>
+                    <a href="#tocs_leavingreasondto" class="toc-h2 toc-link" data-title="">LeavingReasonDto</a>
+                    
+                  </li>
                 
                   <li>
                     <a href="#tocs_createemployeepayloaddto" class="toc-h2 toc-link" data-title="">CreateEmployeePayloadDto</a>
@@ -2302,6 +2401,31 @@ var n=this.pipeline.run(e.tokenizer(t)),r=new e.Vector,i=[],o=this._fields.reduc
                 
                   <li>
                     <a href="#tocs_bulkcreatejobpositionpayloaddto" class="toc-h2 toc-link" data-title="">BulkCreateJobPositionPayloadDto</a>
+                    
+                  </li>
+                
+                  <li>
+                    <a href="#tocs_createjobgradepayloaddto" class="toc-h2 toc-link" data-title="">CreateJobGradePayloadDto</a>
+                    
+                  </li>
+                
+                  <li>
+                    <a href="#tocs_bulkcreatejobgradepayloaddto" class="toc-h2 toc-link" data-title="">BulkCreateJobGradePayloadDto</a>
+                    
+                  </li>
+                
+                  <li>
+                    <a href="#tocs_createorganizationstructurepayloaddto" class="toc-h2 toc-link" data-title="">CreateOrganizationStructurePayloadDto</a>
+                    
+                  </li>
+                
+                  <li>
+                    <a href="#tocs_unassignemployeesfromorgstructuredto" class="toc-h2 toc-link" data-title="">UnassignEmployeesFromOrgStructureDto</a>
+                    
+                  </li>
+                
+                  <li>
+                    <a href="#tocs_assignemployeestoorgstructuredto" class="toc-h2 toc-link" data-title="">AssignEmployeesToOrgStructureDto</a>
                     
                   </li>
                 
@@ -4627,7 +4751,7 @@ X-API-Key ( Scopes: X-API-Key )
 <span class="hljs-variable">$request_body</span> = <span class="hljs-keyword">array</span>();
 
 <span class="hljs-keyword">try</span> {
-    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;GET&#x27;</span>,<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/general/compensation/pay-element-mapping/{companyId}&#x27;</span>, <span class="hljs-keyword">array</span>(
+    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;GET&#x27;</span>,<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/general/compensation/pay-element-mapping&#x27;</span>, <span class="hljs-keyword">array</span>(
         <span class="hljs-string">&#x27;headers&#x27;</span> =&gt; <span class="hljs-variable">$headers</span>,
         <span class="hljs-string">&#x27;json&#x27;</span> =&gt; <span class="hljs-variable">$request_body</span>,
        )
@@ -4648,7 +4772,7 @@ X-API-Key ( Scopes: X-API-Key )
   <span class="hljs-string">&#x27;X-API-Key&#x27;</span>:<span class="hljs-string">&#x27;API_KEY&#x27;</span>
 };
 
-fetch(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/general/compensation/pay-element-mapping/{companyId}&#x27;</span>,
+fetch(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/general/compensation/pay-element-mapping&#x27;</span>,
 {
   <span class="hljs-attr">method</span>: <span class="hljs-string">&#x27;GET&#x27;</span>,
 
@@ -4667,40 +4791,19 @@ headers = {
   <span class="hljs-string">&#x27;X-API-Key&#x27;</span>: <span class="hljs-string">&#x27;API_KEY&#x27;</span>
 }
 
-r = requests.get(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/general/compensation/pay-element-mapping/{companyId}&#x27;</span>, headers = headers)
+r = requests.get(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/general/compensation/pay-element-mapping&#x27;</span>, headers = headers)
 
 <span class="hljs-built_in">print</span>(r.json())
 
 </code></pre>
 <pre class="highlight tab tab-shell"><code><span class="hljs-comment"># You can also use wget</span>
-curl -X GET https://mia-api.hrforte.com/v1/integration/hrf/general/compensation/pay-element-mapping/{companyId} \
+curl -X GET https://mia-api.hrforte.com/v1/integration/hrf/general/compensation/pay-element-mapping \
   -H <span class="hljs-string">&#x27;Accept: application/json&#x27;</span> \
   -H <span class="hljs-string">&#x27;X-API-Key: API_KEY&#x27;</span>
 
 </code></pre>
-<p><code>GET /v1/integration/hrf/general/compensation/pay-element-mapping/{companyId}</code></p>
+<p><code>GET /v1/integration/hrf/general/compensation/pay-element-mapping</code></p>
 <p>Retrieve pay element mappings for compensation module for a specific company</p>
-<h3 id="get-pay-element-mapping-for-compensation-by-company-parameters">Parameters</h3>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>In</th>
-<th>Type</th>
-<th>Required</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>companyId</td>
-<td>path</td>
-<td>string</td>
-<td>true</td>
-<td>none</td>
-</tr>
-</tbody>
-</table>
 <blockquote>
 <p>Example responses</p>
 </blockquote>
@@ -4744,6 +4847,168 @@ curl -X GET https://mia-api.hrforte.com/v1/integration/hrf/general/compensation/
 </tbody>
 </table>
 <h3 id="get-pay-element-mapping-for-compensation-by-company-responseschema">Response Schema</h3>
+<aside class="warning">
+To perform this operation, you must be authenticated by means of one of the following methods:
+X-API-Key ( Scopes: X-API-Key )
+</aside>
+<h2 id="get-leaving-reasons-by-company">Get leaving reasons by company</h2>
+<p><a id="opIdPublicIntegrationReferenceController_getLeavingReasons_v1"></a></p>
+<blockquote>
+<p>Code samples</p>
+</blockquote>
+<pre class="highlight tab tab-php"><code> <span class="hljs-string">&#x27;application/json&#x27;</span>,
+    <span class="hljs-string">&#x27;X-API-Key&#x27;</span> =&gt; <span class="hljs-string">&#x27;API_KEY&#x27;</span>,
+);
+
+<span class="hljs-variable">$client</span> = <span class="hljs-keyword">new</span> \GuzzleHttp\Client();
+
+<span class="hljs-comment">// Define array of request body.</span>
+<span class="hljs-variable">$request_body</span> = <span class="hljs-keyword">array</span>();
+
+<span class="hljs-keyword">try</span> {
+    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;GET&#x27;</span>,<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/general/leaving-reasons&#x27;</span>, <span class="hljs-keyword">array</span>(
+        <span class="hljs-string">&#x27;headers&#x27;</span> =&gt; <span class="hljs-variable">$headers</span>,
+        <span class="hljs-string">&#x27;json&#x27;</span> =&gt; <span class="hljs-variable">$request_body</span>,
+       )
+    );
+    print_r(<span class="hljs-variable">$response</span>-&gt;getBody()-&gt;getContents());
+ }
+ <span class="hljs-keyword">catch</span> (\GuzzleHttp\<span class="hljs-built_in">Exception</span>\BadResponseException <span class="hljs-variable">$e</span>) {
+    <span class="hljs-comment">// handle exception or api errors.</span>
+    print_r(<span class="hljs-variable">$e</span>-&gt;getMessage());
+ }
+
+ <span class="hljs-comment">// ...</span>
+
+</code></pre>
+<pre class="highlight tab tab-javascript"><code>
+<span class="hljs-keyword">const</span> headers = {
+  <span class="hljs-string">&#x27;Accept&#x27;</span>:<span class="hljs-string">&#x27;application/json&#x27;</span>,
+  <span class="hljs-string">&#x27;X-API-Key&#x27;</span>:<span class="hljs-string">&#x27;API_KEY&#x27;</span>
+};
+
+fetch(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/general/leaving-reasons&#x27;</span>,
+{
+  <span class="hljs-attr">method</span>: <span class="hljs-string">&#x27;GET&#x27;</span>,
+
+  <span class="hljs-attr">headers</span>: headers
+})
+.then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">res</span>) </span>{
+    <span class="hljs-keyword">return</span> res.json();
+}).then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">body</span>) </span>{
+    <span class="hljs-built_in">console</span>.log(body);
+});
+
+</code></pre>
+<pre class="highlight tab tab-python"><code><span class="hljs-keyword">import</span> requests
+headers = {
+  <span class="hljs-string">&#x27;Accept&#x27;</span>: <span class="hljs-string">&#x27;application/json&#x27;</span>,
+  <span class="hljs-string">&#x27;X-API-Key&#x27;</span>: <span class="hljs-string">&#x27;API_KEY&#x27;</span>
+}
+
+r = requests.get(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/general/leaving-reasons&#x27;</span>, headers = headers)
+
+<span class="hljs-built_in">print</span>(r.json())
+
+</code></pre>
+<pre class="highlight tab tab-shell"><code><span class="hljs-comment"># You can also use wget</span>
+curl -X GET https://mia-api.hrforte.com/v1/integration/hrf/general/leaving-reasons \
+  -H <span class="hljs-string">&#x27;Accept: application/json&#x27;</span> \
+  -H <span class="hljs-string">&#x27;X-API-Key: API_KEY&#x27;</span>
+
+</code></pre>
+<p><code>GET /v1/integration/hrf/general/leaving-reasons</code></p>
+<p>Retrieve all available leaving reasons for a specific company</p>
+<blockquote>
+<p>Example responses</p>
+</blockquote>
+<blockquote>
+<p>200 Response</p>
+</blockquote>
+<pre class="highlight tab tab-json"><code>[
+  {
+    <span class="hljs-attr">&quot;id&quot;</span>: <span class="hljs-number">6141</span>,
+    <span class="hljs-attr">&quot;code&quot;</span>: <span class="hljs-string">&quot;LS-1000&quot;</span>,
+    <span class="hljs-attr">&quot;name&quot;</span>: <span class="hljs-string">&quot;Your values no longer align with the company mission&quot;</span>,
+    <span class="hljs-attr">&quot;inVoluntary&quot;</span>: <span class="hljs-literal">false</span>
+  }
+]
+</code></pre>
+<h3 id="get-leaving-reasons-by-company-responses">Responses</h3>
+<table>
+<thead>
+<tr>
+<th>Status</th>
+<th>Meaning</th>
+<th>Description</th>
+<th>Schema</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>200</td>
+<td><a href="https://tools.ietf.org/html/rfc7231#section-6.3.1">OK</a></td>
+<td>Successfully retrieved leaving reasons</td>
+<td>Inline</td>
+</tr>
+<tr>
+<td>401</td>
+<td><a href="https://tools.ietf.org/html/rfc7235#section-3.1">Unauthorized</a></td>
+<td>Unauthorized - Invalid or missing API Key</td>
+<td>None</td>
+</tr>
+</tbody>
+</table>
+<h3 id="get-leaving-reasons-by-company-responseschema">Response Schema</h3>
+<p>Status Code <strong>200</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Required</th>
+<th>Restrictions</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>anonymous</em></td>
+<td>[<a href="#schemaleavingreasondto">LeavingReasonDto</a>]</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>» id</td>
+<td>number</td>
+<td>true</td>
+<td>none</td>
+<td>Unique identifier for the leaving reason</td>
+</tr>
+<tr>
+<td>» code</td>
+<td>string</td>
+<td>true</td>
+<td>none</td>
+<td>Code for the leaving reason</td>
+</tr>
+<tr>
+<td>» name</td>
+<td>string</td>
+<td>true</td>
+<td>none</td>
+<td>Display name for the leaving reason</td>
+</tr>
+<tr>
+<td>» inVoluntary</td>
+<td>boolean</td>
+<td>true</td>
+<td>none</td>
+<td>Whether the leaving reason is involuntary</td>
+</tr>
+</tbody>
+</table>
 <aside class="warning">
 To perform this operation, you must be authenticated by means of one of the following methods:
 X-API-Key ( Scopes: X-API-Key )
@@ -5458,6 +5723,99 @@ curl -X GET https://mia-api.hrforte.com/v1/integration/hrf/general/probation-pol
 </tbody>
 </table>
 <h3 id="get-probation-policy-pay-options-responseschema">Response Schema</h3>
+<aside class="warning">
+To perform this operation, you must be authenticated by means of one of the following methods:
+X-API-Key ( Scopes: X-API-Key )
+</aside>
+<h2 id="get-cycle-frequency-type-options">Get cycle frequency type options</h2>
+<p><a id="opIdPublicIntegrationReferenceController_getCycleFrequencyType_v1"></a></p>
+<blockquote>
+<p>Code samples</p>
+</blockquote>
+<pre class="highlight tab tab-php"><code> <span class="hljs-string">&#x27;API_KEY&#x27;</span>,
+);
+
+<span class="hljs-variable">$client</span> = <span class="hljs-keyword">new</span> \GuzzleHttp\Client();
+
+<span class="hljs-comment">// Define array of request body.</span>
+<span class="hljs-variable">$request_body</span> = <span class="hljs-keyword">array</span>();
+
+<span class="hljs-keyword">try</span> {
+    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;GET&#x27;</span>,<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/general/cycle-frequency/type&#x27;</span>, <span class="hljs-keyword">array</span>(
+        <span class="hljs-string">&#x27;headers&#x27;</span> =&gt; <span class="hljs-variable">$headers</span>,
+        <span class="hljs-string">&#x27;json&#x27;</span> =&gt; <span class="hljs-variable">$request_body</span>,
+       )
+    );
+    print_r(<span class="hljs-variable">$response</span>-&gt;getBody()-&gt;getContents());
+ }
+ <span class="hljs-keyword">catch</span> (\GuzzleHttp\<span class="hljs-built_in">Exception</span>\BadResponseException <span class="hljs-variable">$e</span>) {
+    <span class="hljs-comment">// handle exception or api errors.</span>
+    print_r(<span class="hljs-variable">$e</span>-&gt;getMessage());
+ }
+
+ <span class="hljs-comment">// ...</span>
+
+</code></pre>
+<pre class="highlight tab tab-javascript"><code>
+<span class="hljs-keyword">const</span> headers = {
+  <span class="hljs-string">&#x27;X-API-Key&#x27;</span>:<span class="hljs-string">&#x27;API_KEY&#x27;</span>
+};
+
+fetch(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/general/cycle-frequency/type&#x27;</span>,
+{
+  <span class="hljs-attr">method</span>: <span class="hljs-string">&#x27;GET&#x27;</span>,
+
+  <span class="hljs-attr">headers</span>: headers
+})
+.then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">res</span>) </span>{
+    <span class="hljs-keyword">return</span> res.json();
+}).then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">body</span>) </span>{
+    <span class="hljs-built_in">console</span>.log(body);
+});
+
+</code></pre>
+<pre class="highlight tab tab-python"><code><span class="hljs-keyword">import</span> requests
+headers = {
+  <span class="hljs-string">&#x27;X-API-Key&#x27;</span>: <span class="hljs-string">&#x27;API_KEY&#x27;</span>
+}
+
+r = requests.get(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/general/cycle-frequency/type&#x27;</span>, headers = headers)
+
+<span class="hljs-built_in">print</span>(r.json())
+
+</code></pre>
+<pre class="highlight tab tab-shell"><code><span class="hljs-comment"># You can also use wget</span>
+curl -X GET https://mia-api.hrforte.com/v1/integration/hrf/general/cycle-frequency/<span class="hljs-built_in">type</span> \
+  -H <span class="hljs-string">&#x27;X-API-Key: API_KEY&#x27;</span>
+
+</code></pre>
+<p><code>GET /v1/integration/hrf/general/cycle-frequency/type</code></p>
+<p>Retrieve all cycle frequency type options</p>
+<h3 id="get-cycle-frequency-type-options-responses">Responses</h3>
+<table>
+<thead>
+<tr>
+<th>Status</th>
+<th>Meaning</th>
+<th>Description</th>
+<th>Schema</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>200</td>
+<td><a href="https://tools.ietf.org/html/rfc7231#section-6.3.1">OK</a></td>
+<td>Successfully retrieved cycle frequency type options</td>
+<td>None</td>
+</tr>
+<tr>
+<td>401</td>
+<td><a href="https://tools.ietf.org/html/rfc7235#section-3.1">Unauthorized</a></td>
+<td>Unauthorized - Invalid or missing API Key</td>
+<td>None</td>
+</tr>
+</tbody>
+</table>
 <aside class="warning">
 To perform this operation, you must be authenticated by means of one of the following methods:
 X-API-Key ( Scopes: X-API-Key )
@@ -10694,220 +11052,6 @@ To perform this operation, you must be authenticated by means of one of the foll
 X-API-Key ( Scopes: X-API-Key )
 </aside>
 <h1 id="hr-forte-public-integration-api-work-module">Work Module</h1>
-<h2 id="create-employee-work-record">Create employee work record</h2>
-<p><a id="opIdPublicIntegrationWorkController_createWork_v1"></a></p>
-<blockquote>
-<p>Code samples</p>
-</blockquote>
-<pre class="highlight tab tab-php"><code> <span class="hljs-string">&#x27;application/json&#x27;</span>,
-    <span class="hljs-string">&#x27;Accept&#x27;</span> =&gt; <span class="hljs-string">&#x27;application/json&#x27;</span>,
-    <span class="hljs-string">&#x27;Idempotency-Key&#x27;</span> =&gt; <span class="hljs-string">&#x27;emp-create-2025-10-24-550e8400-e29b-41d4-a716-446655440000&#x27;</span>,
-    <span class="hljs-string">&#x27;X-API-Key&#x27;</span> =&gt; <span class="hljs-string">&#x27;API_KEY&#x27;</span>,
-);
-
-<span class="hljs-variable">$client</span> = <span class="hljs-keyword">new</span> \GuzzleHttp\Client();
-
-<span class="hljs-comment">// Define array of request body.</span>
-<span class="hljs-variable">$request_body</span> = <span class="hljs-keyword">array</span>();
-
-<span class="hljs-keyword">try</span> {
-    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;POST&#x27;</span>,<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/work&#x27;</span>, <span class="hljs-keyword">array</span>(
-        <span class="hljs-string">&#x27;headers&#x27;</span> =&gt; <span class="hljs-variable">$headers</span>,
-        <span class="hljs-string">&#x27;json&#x27;</span> =&gt; <span class="hljs-variable">$request_body</span>,
-       )
-    );
-    print_r(<span class="hljs-variable">$response</span>-&gt;getBody()-&gt;getContents());
- }
- <span class="hljs-keyword">catch</span> (\GuzzleHttp\<span class="hljs-built_in">Exception</span>\BadResponseException <span class="hljs-variable">$e</span>) {
-    <span class="hljs-comment">// handle exception or api errors.</span>
-    print_r(<span class="hljs-variable">$e</span>-&gt;getMessage());
- }
-
- <span class="hljs-comment">// ...</span>
-
-</code></pre>
-<pre class="highlight tab tab-javascript"><code><span class="hljs-keyword">const</span> inputBody = <span class="hljs-string">&#x27;{
-  &quot;externalEmployeeId&quot;: &quot;EXT-0059&quot;,
-  &quot;payCalculationMethod&quot;: 1,
-  &quot;joiningDate&quot;: &quot;2024-01-15&quot;,
-  &quot;seniorityDate&quot;: &quot;2024-01-15&quot;,
-  &quot;lastWorkingDate&quot;: &quot;2024-12-31&quot;,
-  &quot;dateToDeActivateEmployee&quot;: &quot;2025-01-15&quot;,
-  &quot;workEmail&quot;: &quot;john.doe@company.com&quot;,
-  &quot;workPhone&quot;: &quot;+65-6123-4567&quot;,
-  &quot;workPhoneExt&quot;: &quot;1234&quot;,
-  &quot;payrollGroupName&quot;: &quot;Monthly Payroll&quot;,
-  &quot;cycleFrequencyName&quot;: &quot;Monthly&quot;,
-  &quot;jobPositionName&quot;: &quot;Senior Software Engineer&quot;,
-  &quot;jobGradeName&quot;: &quot;Grade 5&quot;,
-  &quot;organizationElementName&quot;: &quot;Engineering Department&quot;,
-  &quot;locationName&quot;: &quot;Singapore Office&quot;,
-  &quot;costCenterName&quot;: &quot;CC-ENG-001&quot;,
-  &quot;reportingTo&quot;: &quot;Jane Smith&quot;,
-  &quot;alsoReportingTo&quot;: &quot;Bob Johnson&quot;,
-  &quot;leavingReasonName&quot;: &quot;Resignation&quot;,
-  &quot;workRegion&quot;: 1
-}&#x27;</span>;
-<span class="hljs-keyword">const</span> headers = {
-  <span class="hljs-string">&#x27;Content-Type&#x27;</span>:<span class="hljs-string">&#x27;application/json&#x27;</span>,
-  <span class="hljs-string">&#x27;Accept&#x27;</span>:<span class="hljs-string">&#x27;application/json&#x27;</span>,
-  <span class="hljs-string">&#x27;Idempotency-Key&#x27;</span>:<span class="hljs-string">&#x27;emp-create-2025-10-24-550e8400-e29b-41d4-a716-446655440000&#x27;</span>,
-  <span class="hljs-string">&#x27;X-API-Key&#x27;</span>:<span class="hljs-string">&#x27;API_KEY&#x27;</span>
-};
-
-fetch(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/work&#x27;</span>,
-{
-  <span class="hljs-attr">method</span>: <span class="hljs-string">&#x27;POST&#x27;</span>,
-  <span class="hljs-attr">body</span>: inputBody,
-  <span class="hljs-attr">headers</span>: headers
-})
-.then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">res</span>) </span>{
-    <span class="hljs-keyword">return</span> res.json();
-}).then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">body</span>) </span>{
-    <span class="hljs-built_in">console</span>.log(body);
-});
-
-</code></pre>
-<pre class="highlight tab tab-python"><code><span class="hljs-keyword">import</span> requests
-headers = {
-  <span class="hljs-string">&#x27;Content-Type&#x27;</span>: <span class="hljs-string">&#x27;application/json&#x27;</span>,
-  <span class="hljs-string">&#x27;Accept&#x27;</span>: <span class="hljs-string">&#x27;application/json&#x27;</span>,
-  <span class="hljs-string">&#x27;Idempotency-Key&#x27;</span>: <span class="hljs-string">&#x27;emp-create-2025-10-24-550e8400-e29b-41d4-a716-446655440000&#x27;</span>,
-  <span class="hljs-string">&#x27;X-API-Key&#x27;</span>: <span class="hljs-string">&#x27;API_KEY&#x27;</span>
-}
-
-r = requests.post(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/work&#x27;</span>, headers = headers)
-
-<span class="hljs-built_in">print</span>(r.json())
-
-</code></pre>
-<pre class="highlight tab tab-shell"><code><span class="hljs-comment"># You can also use wget</span>
-curl -X POST https://mia-api.hrforte.com/v1/integration/hrf/work \
-  -H <span class="hljs-string">&#x27;Content-Type: application/json&#x27;</span> \
-  -H <span class="hljs-string">&#x27;Accept: application/json&#x27;</span> \
-  -H <span class="hljs-string">&#x27;Idempotency-Key: emp-create-2025-10-24-550e8400-e29b-41d4-a716-446655440000&#x27;</span> \
-  -H <span class="hljs-string">&#x27;X-API-Key: API_KEY&#x27;</span>
-
-</code></pre>
-<p><code>POST /v1/integration/hrf/work</code></p>
-<p>Create a new employee work record with comprehensive work information. This endpoint is designed for third-party systems to create work data in the HR system. Work records have a 1:1 relationship with employees - each employee can have only one work record.</p>
-<blockquote>
-<p>Body parameter</p>
-</blockquote>
-<pre class="highlight tab tab-json"><code>{
-  <span class="hljs-attr">&quot;externalEmployeeId&quot;</span>: <span class="hljs-string">&quot;EXT-0059&quot;</span>,
-  <span class="hljs-attr">&quot;payCalculationMethod&quot;</span>: <span class="hljs-number">1</span>,
-  <span class="hljs-attr">&quot;joiningDate&quot;</span>: <span class="hljs-string">&quot;2024-01-15&quot;</span>,
-  <span class="hljs-attr">&quot;seniorityDate&quot;</span>: <span class="hljs-string">&quot;2024-01-15&quot;</span>,
-  <span class="hljs-attr">&quot;lastWorkingDate&quot;</span>: <span class="hljs-string">&quot;2024-12-31&quot;</span>,
-  <span class="hljs-attr">&quot;dateToDeActivateEmployee&quot;</span>: <span class="hljs-string">&quot;2025-01-15&quot;</span>,
-  <span class="hljs-attr">&quot;workEmail&quot;</span>: <span class="hljs-string">&quot;john.doe@company.com&quot;</span>,
-  <span class="hljs-attr">&quot;workPhone&quot;</span>: <span class="hljs-string">&quot;+65-6123-4567&quot;</span>,
-  <span class="hljs-attr">&quot;workPhoneExt&quot;</span>: <span class="hljs-string">&quot;1234&quot;</span>,
-  <span class="hljs-attr">&quot;payrollGroupName&quot;</span>: <span class="hljs-string">&quot;Monthly Payroll&quot;</span>,
-  <span class="hljs-attr">&quot;cycleFrequencyName&quot;</span>: <span class="hljs-string">&quot;Monthly&quot;</span>,
-  <span class="hljs-attr">&quot;jobPositionName&quot;</span>: <span class="hljs-string">&quot;Senior Software Engineer&quot;</span>,
-  <span class="hljs-attr">&quot;jobGradeName&quot;</span>: <span class="hljs-string">&quot;Grade 5&quot;</span>,
-  <span class="hljs-attr">&quot;organizationElementName&quot;</span>: <span class="hljs-string">&quot;Engineering Department&quot;</span>,
-  <span class="hljs-attr">&quot;locationName&quot;</span>: <span class="hljs-string">&quot;Singapore Office&quot;</span>,
-  <span class="hljs-attr">&quot;costCenterName&quot;</span>: <span class="hljs-string">&quot;CC-ENG-001&quot;</span>,
-  <span class="hljs-attr">&quot;reportingTo&quot;</span>: <span class="hljs-string">&quot;Jane Smith&quot;</span>,
-  <span class="hljs-attr">&quot;alsoReportingTo&quot;</span>: <span class="hljs-string">&quot;Bob Johnson&quot;</span>,
-  <span class="hljs-attr">&quot;leavingReasonName&quot;</span>: <span class="hljs-string">&quot;Resignation&quot;</span>,
-  <span class="hljs-attr">&quot;workRegion&quot;</span>: <span class="hljs-number">1</span>
-}
-</code></pre>
-<h3 id="create-employee-work-record-parameters">Parameters</h3>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>In</th>
-<th>Type</th>
-<th>Required</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Idempotency-Key</td>
-<td>header</td>
-<td>string</td>
-<td>false</td>
-<td>Idempotency key <code>(24h cache)</code></td>
-</tr>
-<tr>
-<td>body</td>
-<td>body</td>
-<td><a href="#schemacreateworkpayloaddto">CreateWorkPayloadDto</a></td>
-<td>true</td>
-<td>Work record creation payload</td>
-</tr>
-</tbody>
-</table>
-<h4 id="detailed-descriptions-16">Detailed descriptions</h4>
-<p><strong>Idempotency-Key</strong>: Idempotency key <code>(24h cache)</code></p>
-<ul>
-<li>Format: <code>{operation}-{date}-{uuid}</code></li>
-<li>Same key + same payload: <code>202 Accepted</code></li>
-<li>Same key + different payload: <code>409 Conflict</code></li>
-</ul>
-<blockquote>
-<p>Example responses</p>
-</blockquote>
-<blockquote>
-<p>202 Response</p>
-</blockquote>
-<pre class="highlight tab tab-json"><code>{
-  <span class="hljs-attr">&quot;success&quot;</span>: <span class="hljs-literal">true</span>,
-  <span class="hljs-attr">&quot;jobId&quot;</span>: <span class="hljs-string">&quot;create-employee-1698765432000&quot;</span>,
-  <span class="hljs-attr">&quot;incomingDataId&quot;</span>: <span class="hljs-string">&quot;1&quot;</span>,
-  <span class="hljs-attr">&quot;bullmqJobId&quot;</span>: <span class="hljs-string">&quot;123&quot;</span>,
-  <span class="hljs-attr">&quot;timestamp&quot;</span>: <span class="hljs-string">&quot;2024-10-31T08:30:00.000Z&quot;</span>,
-  <span class="hljs-attr">&quot;message&quot;</span>: <span class="hljs-string">&quot;Request accepted and queued for processing&quot;</span>
-}
-</code></pre>
-<h3 id="create-employee-work-record-responses">Responses</h3>
-<table>
-<thead>
-<tr>
-<th>Status</th>
-<th>Meaning</th>
-<th>Description</th>
-<th>Schema</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>202</td>
-<td><a href="https://tools.ietf.org/html/rfc7231#section-6.3.3">Accepted</a></td>
-<td>Accepted - Request queued for processing</td>
-<td><a href="#schemajobacceptanceresponsedto">JobAcceptanceResponseDto</a></td>
-</tr>
-<tr>
-<td>400</td>
-<td><a href="https://tools.ietf.org/html/rfc7231#section-6.5.1">Bad Request</a></td>
-<td>Bad Request - Invalid payload data</td>
-<td>None</td>
-</tr>
-<tr>
-<td>401</td>
-<td><a href="https://tools.ietf.org/html/rfc7235#section-3.1">Unauthorized</a></td>
-<td>Unauthorized - Invalid or missing API Key</td>
-<td>None</td>
-</tr>
-<tr>
-<td>409</td>
-<td><a href="https://tools.ietf.org/html/rfc7231#section-6.5.8">Conflict</a></td>
-<td>Conflict - idempotency key already used with different payload</td>
-<td>None</td>
-</tr>
-</tbody>
-</table>
-<aside class="warning">
-To perform this operation, you must be authenticated by means of one of the following methods:
-X-API-Key ( Scopes: X-API-Key )
-</aside>
 <h2 id="create-employee-work-records--bulk-">Create employee work records (bulk)</h2>
 <p><a id="opIdPublicIntegrationWorkController_createWorkBulk_v1"></a></p>
 <blockquote>
@@ -10949,17 +11093,7 @@ X-API-Key ( Scopes: X-API-Key )
       &quot;seniorityDate&quot;: &quot;2024-01-15&quot;,
       &quot;workEmail&quot;: &quot;john.doe@company.com&quot;,
       &quot;workPhone&quot;: &quot;+65-6123-4567&quot;,
-      &quot;workPhoneExt&quot;: &quot;1234&quot;,
-      &quot;payrollGroupName&quot;: &quot;Monthly Payroll&quot;,
-      &quot;cycleFrequencyName&quot;: &quot;Monthly&quot;,
-      &quot;jobPositionName&quot;: &quot;Senior Software Engineer&quot;,
-      &quot;jobGradeName&quot;: &quot;Grade 5&quot;,
-      &quot;organizationElementName&quot;: &quot;Engineering Department&quot;,
-      &quot;locationName&quot;: &quot;Singapore Office&quot;,
-      &quot;reportingTo&quot;: &quot;Jane Smith&quot;,
-      &quot;alsoReportingTo&quot;: &quot;Bob Johnson&quot;,
-      &quot;costCenterName&quot;: &quot;CC-ENG-001&quot;,
-      &quot;workRegion&quot;: 1
+      &quot;workPhoneExt&quot;: &quot;1234&quot;
     },
     {
       &quot;externalEmployeeId&quot;: &quot;EXT-0060&quot;,
@@ -10967,14 +11101,7 @@ X-API-Key ( Scopes: X-API-Key )
       &quot;joiningDate&quot;: &quot;2024-02-01&quot;,
       &quot;seniorityDate&quot;: &quot;2024-02-01&quot;,
       &quot;workEmail&quot;: &quot;jane.doe@company.com&quot;,
-      &quot;workPhone&quot;: &quot;+65-6123-4568&quot;,
-      &quot;payrollGroupName&quot;: &quot;Monthly Payroll&quot;,
-      &quot;cycleFrequencyName&quot;: &quot;Monthly&quot;,
-      &quot;jobPositionName&quot;: &quot;Software Engineer&quot;,
-      &quot;jobGradeName&quot;: &quot;Grade 4&quot;,
-      &quot;organizationElementName&quot;: &quot;Engineering Department&quot;,
-      &quot;locationName&quot;: &quot;Singapore Office&quot;,
-      &quot;reportingTo&quot;: &quot;Jane Smith&quot;
+      &quot;workPhone&quot;: &quot;+65-6123-4568&quot;
     }
   ]
 }&#x27;</span>;
@@ -11033,17 +11160,7 @@ curl -X POST https://mia-api.hrforte.com/v1/integration/hrf/work/bulk \
       <span class="hljs-attr">&quot;seniorityDate&quot;</span>: <span class="hljs-string">&quot;2024-01-15&quot;</span>,
       <span class="hljs-attr">&quot;workEmail&quot;</span>: <span class="hljs-string">&quot;john.doe@company.com&quot;</span>,
       <span class="hljs-attr">&quot;workPhone&quot;</span>: <span class="hljs-string">&quot;+65-6123-4567&quot;</span>,
-      <span class="hljs-attr">&quot;workPhoneExt&quot;</span>: <span class="hljs-string">&quot;1234&quot;</span>,
-      <span class="hljs-attr">&quot;payrollGroupName&quot;</span>: <span class="hljs-string">&quot;Monthly Payroll&quot;</span>,
-      <span class="hljs-attr">&quot;cycleFrequencyName&quot;</span>: <span class="hljs-string">&quot;Monthly&quot;</span>,
-      <span class="hljs-attr">&quot;jobPositionName&quot;</span>: <span class="hljs-string">&quot;Senior Software Engineer&quot;</span>,
-      <span class="hljs-attr">&quot;jobGradeName&quot;</span>: <span class="hljs-string">&quot;Grade 5&quot;</span>,
-      <span class="hljs-attr">&quot;organizationElementName&quot;</span>: <span class="hljs-string">&quot;Engineering Department&quot;</span>,
-      <span class="hljs-attr">&quot;locationName&quot;</span>: <span class="hljs-string">&quot;Singapore Office&quot;</span>,
-      <span class="hljs-attr">&quot;reportingTo&quot;</span>: <span class="hljs-string">&quot;Jane Smith&quot;</span>,
-      <span class="hljs-attr">&quot;alsoReportingTo&quot;</span>: <span class="hljs-string">&quot;Bob Johnson&quot;</span>,
-      <span class="hljs-attr">&quot;costCenterName&quot;</span>: <span class="hljs-string">&quot;CC-ENG-001&quot;</span>,
-      <span class="hljs-attr">&quot;workRegion&quot;</span>: <span class="hljs-number">1</span>
+      <span class="hljs-attr">&quot;workPhoneExt&quot;</span>: <span class="hljs-string">&quot;1234&quot;</span>
     },
     {
       <span class="hljs-attr">&quot;externalEmployeeId&quot;</span>: <span class="hljs-string">&quot;EXT-0060&quot;</span>,
@@ -11051,14 +11168,7 @@ curl -X POST https://mia-api.hrforte.com/v1/integration/hrf/work/bulk \
       <span class="hljs-attr">&quot;joiningDate&quot;</span>: <span class="hljs-string">&quot;2024-02-01&quot;</span>,
       <span class="hljs-attr">&quot;seniorityDate&quot;</span>: <span class="hljs-string">&quot;2024-02-01&quot;</span>,
       <span class="hljs-attr">&quot;workEmail&quot;</span>: <span class="hljs-string">&quot;jane.doe@company.com&quot;</span>,
-      <span class="hljs-attr">&quot;workPhone&quot;</span>: <span class="hljs-string">&quot;+65-6123-4568&quot;</span>,
-      <span class="hljs-attr">&quot;payrollGroupName&quot;</span>: <span class="hljs-string">&quot;Monthly Payroll&quot;</span>,
-      <span class="hljs-attr">&quot;cycleFrequencyName&quot;</span>: <span class="hljs-string">&quot;Monthly&quot;</span>,
-      <span class="hljs-attr">&quot;jobPositionName&quot;</span>: <span class="hljs-string">&quot;Software Engineer&quot;</span>,
-      <span class="hljs-attr">&quot;jobGradeName&quot;</span>: <span class="hljs-string">&quot;Grade 4&quot;</span>,
-      <span class="hljs-attr">&quot;organizationElementName&quot;</span>: <span class="hljs-string">&quot;Engineering Department&quot;</span>,
-      <span class="hljs-attr">&quot;locationName&quot;</span>: <span class="hljs-string">&quot;Singapore Office&quot;</span>,
-      <span class="hljs-attr">&quot;reportingTo&quot;</span>: <span class="hljs-string">&quot;Jane Smith&quot;</span>
+      <span class="hljs-attr">&quot;workPhone&quot;</span>: <span class="hljs-string">&quot;+65-6123-4568&quot;</span>
     }
   ]
 }
@@ -11091,7 +11201,7 @@ curl -X POST https://mia-api.hrforte.com/v1/integration/hrf/work/bulk \
 </tr>
 </tbody>
 </table>
-<h4 id="detailed-descriptions-17">Detailed descriptions</h4>
+<h4 id="detailed-descriptions-16">Detailed descriptions</h4>
 <p><strong>Idempotency-Key</strong>: Idempotency key <code>(24h cache)</code></p>
 <ul>
 <li>Format: <code>{operation}-{date}-{uuid}</code></li>
@@ -11315,16 +11425,8 @@ X-API-Key ( Scopes: X-API-Key )
   &quot;workEmail&quot;: &quot;john.doe@company.com&quot;,
   &quot;workPhone&quot;: &quot;+65-6123-4567&quot;,
   &quot;workPhoneExt&quot;: &quot;1234&quot;,
-  &quot;payrollGroupName&quot;: &quot;Monthly Payroll&quot;,
-  &quot;cycleFrequencyName&quot;: &quot;Monthly&quot;,
-  &quot;jobPositionName&quot;: &quot;Senior Software Engineer&quot;,
-  &quot;jobGradeName&quot;: &quot;Grade 5&quot;,
-  &quot;organizationElementName&quot;: &quot;Engineering Department&quot;,
-  &quot;locationName&quot;: &quot;Singapore Office&quot;,
-  &quot;costCenterName&quot;: &quot;CC-ENG-001&quot;,
   &quot;reportingTo&quot;: &quot;Jane Smith&quot;,
   &quot;alsoReportingTo&quot;: &quot;Bob Johnson&quot;,
-  &quot;leavingReasonName&quot;: &quot;Resignation&quot;,
   &quot;workRegion&quot;: 1
 }&#x27;</span>;
 <span class="hljs-keyword">const</span> headers = {
@@ -11380,16 +11482,8 @@ curl -X PUT https://mia-api.hrforte.com/v1/integration/hrf/work/{externalEmploye
   <span class="hljs-attr">&quot;workEmail&quot;</span>: <span class="hljs-string">&quot;john.doe@company.com&quot;</span>,
   <span class="hljs-attr">&quot;workPhone&quot;</span>: <span class="hljs-string">&quot;+65-6123-4567&quot;</span>,
   <span class="hljs-attr">&quot;workPhoneExt&quot;</span>: <span class="hljs-string">&quot;1234&quot;</span>,
-  <span class="hljs-attr">&quot;payrollGroupName&quot;</span>: <span class="hljs-string">&quot;Monthly Payroll&quot;</span>,
-  <span class="hljs-attr">&quot;cycleFrequencyName&quot;</span>: <span class="hljs-string">&quot;Monthly&quot;</span>,
-  <span class="hljs-attr">&quot;jobPositionName&quot;</span>: <span class="hljs-string">&quot;Senior Software Engineer&quot;</span>,
-  <span class="hljs-attr">&quot;jobGradeName&quot;</span>: <span class="hljs-string">&quot;Grade 5&quot;</span>,
-  <span class="hljs-attr">&quot;organizationElementName&quot;</span>: <span class="hljs-string">&quot;Engineering Department&quot;</span>,
-  <span class="hljs-attr">&quot;locationName&quot;</span>: <span class="hljs-string">&quot;Singapore Office&quot;</span>,
-  <span class="hljs-attr">&quot;costCenterName&quot;</span>: <span class="hljs-string">&quot;CC-ENG-001&quot;</span>,
   <span class="hljs-attr">&quot;reportingTo&quot;</span>: <span class="hljs-string">&quot;Jane Smith&quot;</span>,
   <span class="hljs-attr">&quot;alsoReportingTo&quot;</span>: <span class="hljs-string">&quot;Bob Johnson&quot;</span>,
-  <span class="hljs-attr">&quot;leavingReasonName&quot;</span>: <span class="hljs-string">&quot;Resignation&quot;</span>,
   <span class="hljs-attr">&quot;workRegion&quot;</span>: <span class="hljs-number">1</span>
 }
 </code></pre>
@@ -11428,7 +11522,7 @@ curl -X PUT https://mia-api.hrforte.com/v1/integration/hrf/work/{externalEmploye
 </tr>
 </tbody>
 </table>
-<h4 id="detailed-descriptions-18">Detailed descriptions</h4>
+<h4 id="detailed-descriptions-17">Detailed descriptions</h4>
 <p><strong>Idempotency-Key</strong>: Idempotency key <code>(24h cache)</code></p>
 <ul>
 <li>Format: <code>{operation}-{date}-{uuid}</code></li>
@@ -11622,7 +11716,7 @@ curl -X POST https://mia-api.hrforte.com/v1/integration/hrf/dependent \
 </tr>
 </tbody>
 </table>
-<h4 id="detailed-descriptions-19">Detailed descriptions</h4>
+<h4 id="detailed-descriptions-18">Detailed descriptions</h4>
 <p><strong>Idempotency-Key</strong>: Idempotency key <code>(24h cache)</code></p>
 <ul>
 <li>Format: <code>{operation}-{date}-{uuid}</code></li>
@@ -11844,7 +11938,7 @@ curl -X POST https://mia-api.hrforte.com/v1/integration/hrf/dependent/bulk \
 </tr>
 </tbody>
 </table>
-<h4 id="detailed-descriptions-20">Detailed descriptions</h4>
+<h4 id="detailed-descriptions-19">Detailed descriptions</h4>
 <p><strong>Idempotency-Key</strong>: Idempotency key <code>(24h cache)</code></p>
 <ul>
 <li>Format: <code>{operation}-{date}-{uuid}</code></li>
@@ -12028,7 +12122,7 @@ curl -X DELETE https://mia-api.hrforte.com/v1/integration/hrf/dependent/bulk \
 </tr>
 </tbody>
 </table>
-<h4 id="detailed-descriptions-21">Detailed descriptions</h4>
+<h4 id="detailed-descriptions-20">Detailed descriptions</h4>
 <p><strong>Idempotency-Key</strong>: Idempotency key <code>(24h cache)</code></p>
 <ul>
 <li>Format: <code>{operation}-{date}-{uuid}</code></li>
@@ -12483,7 +12577,7 @@ curl -X PUT https://mia-api.hrforte.com/v1/integration/hrf/dependent/{externalId
 </tr>
 </tbody>
 </table>
-<h4 id="detailed-descriptions-22">Detailed descriptions</h4>
+<h4 id="detailed-descriptions-21">Detailed descriptions</h4>
 <p><strong>Idempotency-Key</strong>: Idempotency key <code>(24h cache)</code></p>
 <ul>
 <li>Format: <code>{operation}-{date}-{uuid}</code></li>
@@ -12659,7 +12753,7 @@ curl -X DELETE https://mia-api.hrforte.com/v1/integration/hrf/dependent/{externa
 </tr>
 </tbody>
 </table>
-<h4 id="detailed-descriptions-23">Detailed descriptions</h4>
+<h4 id="detailed-descriptions-22">Detailed descriptions</h4>
 <p><strong>Idempotency-Key</strong>: Idempotency key <code>(24h cache)</code></p>
 <ul>
 <li>Format: <code>{operation}-{date}-{uuid}</code></li>
@@ -12839,7 +12933,7 @@ curl -X POST https://mia-api.hrforte.com/v1/integration/hrf/jobPosition \
 </tr>
 </tbody>
 </table>
-<h4 id="detailed-descriptions-24">Detailed descriptions</h4>
+<h4 id="detailed-descriptions-23">Detailed descriptions</h4>
 <p><strong>Idempotency-Key</strong>: Idempotency key <code>(24h cache)</code></p>
 <ul>
 <li>Format: <code>{operation}-{date}-{uuid}</code></li>
@@ -13245,7 +13339,7 @@ curl -X PUT https://mia-api.hrforte.com/v1/integration/hrf/jobPosition/{external
 </tr>
 </tbody>
 </table>
-<h4 id="detailed-descriptions-25">Detailed descriptions</h4>
+<h4 id="detailed-descriptions-24">Detailed descriptions</h4>
 <p><strong>Idempotency-Key</strong>: Idempotency key <code>(24h cache)</code></p>
 <ul>
 <li>Format: <code>{operation}-{date}-{uuid}</code></li>
@@ -13401,7 +13495,7 @@ curl -X DELETE https://mia-api.hrforte.com/v1/integration/hrf/jobPosition/{exter
 </tr>
 </tbody>
 </table>
-<h4 id="detailed-descriptions-26">Detailed descriptions</h4>
+<h4 id="detailed-descriptions-25">Detailed descriptions</h4>
 <p><strong>Idempotency-Key</strong>: Idempotency key <code>(24h cache)</code></p>
 <ul>
 <li>Format: <code>{operation}-{date}-{uuid}</code></li>
@@ -13594,7 +13688,7 @@ curl -X POST https://mia-api.hrforte.com/v1/integration/hrf/jobPosition/bulk \
 </tr>
 </tbody>
 </table>
-<h4 id="detailed-descriptions-27">Detailed descriptions</h4>
+<h4 id="detailed-descriptions-26">Detailed descriptions</h4>
 <p><strong>Idempotency-Key</strong>: Idempotency key <code>(24h cache)</code></p>
 <ul>
 <li>Format: <code>{operation}-{date}-{uuid}</code></li>
@@ -13657,7 +13751,2252 @@ curl -X POST https://mia-api.hrforte.com/v1/integration/hrf/jobPosition/bulk \
 To perform this operation, you must be authenticated by means of one of the following methods:
 X-API-Key ( Scopes: X-API-Key )
 </aside>
+<h1 id="hr-forte-public-integration-api-job-grade-module">Job Grade Module</h1>
+<h2 id="create-job-grade">Create job grade</h2>
+<p><a id="opIdPublicIntegrationJobGradeController_createJobGrade_v1"></a></p>
+<blockquote>
+<p>Code samples</p>
+</blockquote>
+<pre class="highlight tab tab-php"><code> <span class="hljs-string">&#x27;application/json&#x27;</span>,
+    <span class="hljs-string">&#x27;Accept&#x27;</span> =&gt; <span class="hljs-string">&#x27;application/json&#x27;</span>,
+    <span class="hljs-string">&#x27;Idempotency-Key&#x27;</span> =&gt; <span class="hljs-string">&#x27;emp-create-2025-10-24-550e8400-e29b-41d4-a716-446655440000&#x27;</span>,
+    <span class="hljs-string">&#x27;X-API-Key&#x27;</span> =&gt; <span class="hljs-string">&#x27;API_KEY&#x27;</span>,
+);
+
+<span class="hljs-variable">$client</span> = <span class="hljs-keyword">new</span> \GuzzleHttp\Client();
+
+<span class="hljs-comment">// Define array of request body.</span>
+<span class="hljs-variable">$request_body</span> = <span class="hljs-keyword">array</span>();
+
+<span class="hljs-keyword">try</span> {
+    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;POST&#x27;</span>,<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/jobGrade&#x27;</span>, <span class="hljs-keyword">array</span>(
+        <span class="hljs-string">&#x27;headers&#x27;</span> =&gt; <span class="hljs-variable">$headers</span>,
+        <span class="hljs-string">&#x27;json&#x27;</span> =&gt; <span class="hljs-variable">$request_body</span>,
+       )
+    );
+    print_r(<span class="hljs-variable">$response</span>-&gt;getBody()-&gt;getContents());
+ }
+ <span class="hljs-keyword">catch</span> (\GuzzleHttp\<span class="hljs-built_in">Exception</span>\BadResponseException <span class="hljs-variable">$e</span>) {
+    <span class="hljs-comment">// handle exception or api errors.</span>
+    print_r(<span class="hljs-variable">$e</span>-&gt;getMessage());
+ }
+
+ <span class="hljs-comment">// ...</span>
+
+</code></pre>
+<pre class="highlight tab tab-javascript"><code><span class="hljs-keyword">const</span> inputBody = <span class="hljs-string">&#x27;{
+  &quot;externalId&quot;: &quot;EXT-JG-001&quot;,
+  &quot;code&quot;: &quot;JG-001&quot;,
+  &quot;name&quot;: &quot;Grade A&quot;
+}&#x27;</span>;
+<span class="hljs-keyword">const</span> headers = {
+  <span class="hljs-string">&#x27;Content-Type&#x27;</span>:<span class="hljs-string">&#x27;application/json&#x27;</span>,
+  <span class="hljs-string">&#x27;Accept&#x27;</span>:<span class="hljs-string">&#x27;application/json&#x27;</span>,
+  <span class="hljs-string">&#x27;Idempotency-Key&#x27;</span>:<span class="hljs-string">&#x27;emp-create-2025-10-24-550e8400-e29b-41d4-a716-446655440000&#x27;</span>,
+  <span class="hljs-string">&#x27;X-API-Key&#x27;</span>:<span class="hljs-string">&#x27;API_KEY&#x27;</span>
+};
+
+fetch(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/jobGrade&#x27;</span>,
+{
+  <span class="hljs-attr">method</span>: <span class="hljs-string">&#x27;POST&#x27;</span>,
+  <span class="hljs-attr">body</span>: inputBody,
+  <span class="hljs-attr">headers</span>: headers
+})
+.then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">res</span>) </span>{
+    <span class="hljs-keyword">return</span> res.json();
+}).then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">body</span>) </span>{
+    <span class="hljs-built_in">console</span>.log(body);
+});
+
+</code></pre>
+<pre class="highlight tab tab-python"><code><span class="hljs-keyword">import</span> requests
+headers = {
+  <span class="hljs-string">&#x27;Content-Type&#x27;</span>: <span class="hljs-string">&#x27;application/json&#x27;</span>,
+  <span class="hljs-string">&#x27;Accept&#x27;</span>: <span class="hljs-string">&#x27;application/json&#x27;</span>,
+  <span class="hljs-string">&#x27;Idempotency-Key&#x27;</span>: <span class="hljs-string">&#x27;emp-create-2025-10-24-550e8400-e29b-41d4-a716-446655440000&#x27;</span>,
+  <span class="hljs-string">&#x27;X-API-Key&#x27;</span>: <span class="hljs-string">&#x27;API_KEY&#x27;</span>
+}
+
+r = requests.post(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/jobGrade&#x27;</span>, headers = headers)
+
+<span class="hljs-built_in">print</span>(r.json())
+
+</code></pre>
+<pre class="highlight tab tab-shell"><code><span class="hljs-comment"># You can also use wget</span>
+curl -X POST https://mia-api.hrforte.com/v1/integration/hrf/jobGrade \
+  -H <span class="hljs-string">&#x27;Content-Type: application/json&#x27;</span> \
+  -H <span class="hljs-string">&#x27;Accept: application/json&#x27;</span> \
+  -H <span class="hljs-string">&#x27;Idempotency-Key: emp-create-2025-10-24-550e8400-e29b-41d4-a716-446655440000&#x27;</span> \
+  -H <span class="hljs-string">&#x27;X-API-Key: API_KEY&#x27;</span>
+
+</code></pre>
+<p><code>POST /v1/integration/hrf/jobGrade</code></p>
+<p>Create a new job grade. This endpoint is designed for third-party systems to create job grade data in the HR system.</p>
+<blockquote>
+<p>Body parameter</p>
+</blockquote>
+<pre class="highlight tab tab-json"><code>{
+  <span class="hljs-attr">&quot;externalId&quot;</span>: <span class="hljs-string">&quot;EXT-JG-001&quot;</span>,
+  <span class="hljs-attr">&quot;code&quot;</span>: <span class="hljs-string">&quot;JG-001&quot;</span>,
+  <span class="hljs-attr">&quot;name&quot;</span>: <span class="hljs-string">&quot;Grade A&quot;</span>
+}
+</code></pre>
+<h3 id="create-job-grade-parameters">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>In</th>
+<th>Type</th>
+<th>Required</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Idempotency-Key</td>
+<td>header</td>
+<td>string</td>
+<td>false</td>
+<td>Idempotency key <code>(24h cache)</code></td>
+</tr>
+<tr>
+<td>body</td>
+<td>body</td>
+<td><a href="#schemacreatejobgradepayloaddto">CreateJobGradePayloadDto</a></td>
+<td>true</td>
+<td>Job grade creation payload</td>
+</tr>
+</tbody>
+</table>
+<h4 id="detailed-descriptions-27">Detailed descriptions</h4>
+<p><strong>Idempotency-Key</strong>: Idempotency key <code>(24h cache)</code></p>
+<ul>
+<li>Format: <code>{operation}-{date}-{uuid}</code></li>
+<li>Same key + same payload: <code>202 Accepted</code></li>
+<li>Same key + different payload: <code>409 Conflict</code></li>
+</ul>
+<blockquote>
+<p>Example responses</p>
+</blockquote>
+<blockquote>
+<p>202 Response</p>
+</blockquote>
+<pre class="highlight tab tab-json"><code>{
+  <span class="hljs-attr">&quot;success&quot;</span>: <span class="hljs-literal">true</span>,
+  <span class="hljs-attr">&quot;jobId&quot;</span>: <span class="hljs-string">&quot;create-employee-1698765432000&quot;</span>,
+  <span class="hljs-attr">&quot;incomingDataId&quot;</span>: <span class="hljs-string">&quot;1&quot;</span>,
+  <span class="hljs-attr">&quot;bullmqJobId&quot;</span>: <span class="hljs-string">&quot;123&quot;</span>,
+  <span class="hljs-attr">&quot;timestamp&quot;</span>: <span class="hljs-string">&quot;2024-10-31T08:30:00.000Z&quot;</span>,
+  <span class="hljs-attr">&quot;message&quot;</span>: <span class="hljs-string">&quot;Request accepted and queued for processing&quot;</span>
+}
+</code></pre>
+<h3 id="create-job-grade-responses">Responses</h3>
+<table>
+<thead>
+<tr>
+<th>Status</th>
+<th>Meaning</th>
+<th>Description</th>
+<th>Schema</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>202</td>
+<td><a href="https://tools.ietf.org/html/rfc7231#section-6.3.3">Accepted</a></td>
+<td>Accepted - Request queued for processing</td>
+<td><a href="#schemajobacceptanceresponsedto">JobAcceptanceResponseDto</a></td>
+</tr>
+<tr>
+<td>400</td>
+<td><a href="https://tools.ietf.org/html/rfc7231#section-6.5.1">Bad Request</a></td>
+<td>Bad Request - Invalid payload data</td>
+<td>None</td>
+</tr>
+<tr>
+<td>401</td>
+<td><a href="https://tools.ietf.org/html/rfc7235#section-3.1">Unauthorized</a></td>
+<td>Unauthorized - Invalid or missing API Key</td>
+<td>None</td>
+</tr>
+<tr>
+<td>409</td>
+<td><a href="https://tools.ietf.org/html/rfc7231#section-6.5.8">Conflict</a></td>
+<td>Conflict - idempotency key already used with different payload</td>
+<td>None</td>
+</tr>
+</tbody>
+</table>
+<aside class="warning">
+To perform this operation, you must be authenticated by means of one of the following methods:
+X-API-Key ( Scopes: X-API-Key )
+</aside>
+<h2 id="get-all-job-grades">Get all job grades</h2>
+<p><a id="opIdPublicIntegrationJobGradeController_getAllJobGrades_v1"></a></p>
+<blockquote>
+<p>Code samples</p>
+</blockquote>
+<pre class="highlight tab tab-php"><code> <span class="hljs-string">&#x27;API_KEY&#x27;</span>,
+);
+
+<span class="hljs-variable">$client</span> = <span class="hljs-keyword">new</span> \GuzzleHttp\Client();
+
+<span class="hljs-comment">// Define array of request body.</span>
+<span class="hljs-variable">$request_body</span> = <span class="hljs-keyword">array</span>();
+
+<span class="hljs-keyword">try</span> {
+    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;GET&#x27;</span>,<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/jobGrade&#x27;</span>, <span class="hljs-keyword">array</span>(
+        <span class="hljs-string">&#x27;headers&#x27;</span> =&gt; <span class="hljs-variable">$headers</span>,
+        <span class="hljs-string">&#x27;json&#x27;</span> =&gt; <span class="hljs-variable">$request_body</span>,
+       )
+    );
+    print_r(<span class="hljs-variable">$response</span>-&gt;getBody()-&gt;getContents());
+ }
+ <span class="hljs-keyword">catch</span> (\GuzzleHttp\<span class="hljs-built_in">Exception</span>\BadResponseException <span class="hljs-variable">$e</span>) {
+    <span class="hljs-comment">// handle exception or api errors.</span>
+    print_r(<span class="hljs-variable">$e</span>-&gt;getMessage());
+ }
+
+ <span class="hljs-comment">// ...</span>
+
+</code></pre>
+<pre class="highlight tab tab-javascript"><code>
+<span class="hljs-keyword">const</span> headers = {
+  <span class="hljs-string">&#x27;X-API-Key&#x27;</span>:<span class="hljs-string">&#x27;API_KEY&#x27;</span>
+};
+
+fetch(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/jobGrade&#x27;</span>,
+{
+  <span class="hljs-attr">method</span>: <span class="hljs-string">&#x27;GET&#x27;</span>,
+
+  <span class="hljs-attr">headers</span>: headers
+})
+.then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">res</span>) </span>{
+    <span class="hljs-keyword">return</span> res.json();
+}).then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">body</span>) </span>{
+    <span class="hljs-built_in">console</span>.log(body);
+});
+
+</code></pre>
+<pre class="highlight tab tab-python"><code><span class="hljs-keyword">import</span> requests
+headers = {
+  <span class="hljs-string">&#x27;X-API-Key&#x27;</span>: <span class="hljs-string">&#x27;API_KEY&#x27;</span>
+}
+
+r = requests.get(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/jobGrade&#x27;</span>, headers = headers)
+
+<span class="hljs-built_in">print</span>(r.json())
+
+</code></pre>
+<pre class="highlight tab tab-shell"><code><span class="hljs-comment"># You can also use wget</span>
+curl -X GET https://mia-api.hrforte.com/v1/integration/hrf/jobGrade \
+  -H <span class="hljs-string">&#x27;X-API-Key: API_KEY&#x27;</span>
+
+</code></pre>
+<p><code>GET /v1/integration/hrf/jobGrade</code></p>
+<p>Retrieve all job grades for the company. Returns a list of job grades with their external IDs.</p>
+<h3 id="get-all-job-grades-responses">Responses</h3>
+<table>
+<thead>
+<tr>
+<th>Status</th>
+<th>Meaning</th>
+<th>Description</th>
+<th>Schema</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>200</td>
+<td><a href="https://tools.ietf.org/html/rfc7231#section-6.3.1">OK</a></td>
+<td>Job grades retrieved successfully</td>
+<td>None</td>
+</tr>
+<tr>
+<td>401</td>
+<td><a href="https://tools.ietf.org/html/rfc7235#section-3.1">Unauthorized</a></td>
+<td>Unauthorized - Invalid or missing API Key</td>
+<td>None</td>
+</tr>
+</tbody>
+</table>
+<aside class="warning">
+To perform this operation, you must be authenticated by means of one of the following methods:
+X-API-Key ( Scopes: X-API-Key )
+</aside>
+<h2 id="get-job-grade-by-external-id">Get job grade by external ID</h2>
+<p><a id="opIdPublicIntegrationJobGradeController_getJobGrade_v1"></a></p>
+<blockquote>
+<p>Code samples</p>
+</blockquote>
+<pre class="highlight tab tab-php"><code> <span class="hljs-string">&#x27;API_KEY&#x27;</span>,
+);
+
+<span class="hljs-variable">$client</span> = <span class="hljs-keyword">new</span> \GuzzleHttp\Client();
+
+<span class="hljs-comment">// Define array of request body.</span>
+<span class="hljs-variable">$request_body</span> = <span class="hljs-keyword">array</span>();
+
+<span class="hljs-keyword">try</span> {
+    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;GET&#x27;</span>,<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/jobGrade/{externalId}&#x27;</span>, <span class="hljs-keyword">array</span>(
+        <span class="hljs-string">&#x27;headers&#x27;</span> =&gt; <span class="hljs-variable">$headers</span>,
+        <span class="hljs-string">&#x27;json&#x27;</span> =&gt; <span class="hljs-variable">$request_body</span>,
+       )
+    );
+    print_r(<span class="hljs-variable">$response</span>-&gt;getBody()-&gt;getContents());
+ }
+ <span class="hljs-keyword">catch</span> (\GuzzleHttp\<span class="hljs-built_in">Exception</span>\BadResponseException <span class="hljs-variable">$e</span>) {
+    <span class="hljs-comment">// handle exception or api errors.</span>
+    print_r(<span class="hljs-variable">$e</span>-&gt;getMessage());
+ }
+
+ <span class="hljs-comment">// ...</span>
+
+</code></pre>
+<pre class="highlight tab tab-javascript"><code>
+<span class="hljs-keyword">const</span> headers = {
+  <span class="hljs-string">&#x27;X-API-Key&#x27;</span>:<span class="hljs-string">&#x27;API_KEY&#x27;</span>
+};
+
+fetch(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/jobGrade/{externalId}&#x27;</span>,
+{
+  <span class="hljs-attr">method</span>: <span class="hljs-string">&#x27;GET&#x27;</span>,
+
+  <span class="hljs-attr">headers</span>: headers
+})
+.then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">res</span>) </span>{
+    <span class="hljs-keyword">return</span> res.json();
+}).then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">body</span>) </span>{
+    <span class="hljs-built_in">console</span>.log(body);
+});
+
+</code></pre>
+<pre class="highlight tab tab-python"><code><span class="hljs-keyword">import</span> requests
+headers = {
+  <span class="hljs-string">&#x27;X-API-Key&#x27;</span>: <span class="hljs-string">&#x27;API_KEY&#x27;</span>
+}
+
+r = requests.get(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/jobGrade/{externalId}&#x27;</span>, headers = headers)
+
+<span class="hljs-built_in">print</span>(r.json())
+
+</code></pre>
+<pre class="highlight tab tab-shell"><code><span class="hljs-comment"># You can also use wget</span>
+curl -X GET https://mia-api.hrforte.com/v1/integration/hrf/jobGrade/{externalId} \
+  -H <span class="hljs-string">&#x27;X-API-Key: API_KEY&#x27;</span>
+
+</code></pre>
+<p><code>GET /v1/integration/hrf/jobGrade/{externalId}</code></p>
+<p>Retrieve job grade information using your external ID. Returns job grade data with external ID included.</p>
+<h3 id="get-job-grade-by-external-id-parameters">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>In</th>
+<th>Type</th>
+<th>Required</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>externalId</td>
+<td>path</td>
+<td>string</td>
+<td>true</td>
+<td>none</td>
+</tr>
+</tbody>
+</table>
+<h3 id="get-job-grade-by-external-id-responses">Responses</h3>
+<table>
+<thead>
+<tr>
+<th>Status</th>
+<th>Meaning</th>
+<th>Description</th>
+<th>Schema</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>200</td>
+<td><a href="https://tools.ietf.org/html/rfc7231#section-6.3.1">OK</a></td>
+<td>Job grade found and returned successfully</td>
+<td>None</td>
+</tr>
+<tr>
+<td>401</td>
+<td><a href="https://tools.ietf.org/html/rfc7235#section-3.1">Unauthorized</a></td>
+<td>Unauthorized - Invalid or missing API Key</td>
+<td>None</td>
+</tr>
+<tr>
+<td>404</td>
+<td><a href="https://tools.ietf.org/html/rfc7231#section-6.5.4">Not Found</a></td>
+<td>Job grade not found or mapping does not exist</td>
+<td>None</td>
+</tr>
+</tbody>
+</table>
+<aside class="warning">
+To perform this operation, you must be authenticated by means of one of the following methods:
+X-API-Key ( Scopes: X-API-Key )
+</aside>
+<h2 id="update-job-grade-by-external-id">Update job grade by external ID</h2>
+<p><a id="opIdPublicIntegrationJobGradeController_updateJobGrade_v1"></a></p>
+<blockquote>
+<p>Code samples</p>
+</blockquote>
+<pre class="highlight tab tab-php"><code> <span class="hljs-string">&#x27;application/json&#x27;</span>,
+    <span class="hljs-string">&#x27;Idempotency-Key&#x27;</span> =&gt; <span class="hljs-string">&#x27;emp-create-2025-10-24-550e8400-e29b-41d4-a716-446655440000&#x27;</span>,
+    <span class="hljs-string">&#x27;X-API-Key&#x27;</span> =&gt; <span class="hljs-string">&#x27;API_KEY&#x27;</span>,
+);
+
+<span class="hljs-variable">$client</span> = <span class="hljs-keyword">new</span> \GuzzleHttp\Client();
+
+<span class="hljs-comment">// Define array of request body.</span>
+<span class="hljs-variable">$request_body</span> = <span class="hljs-keyword">array</span>();
+
+<span class="hljs-keyword">try</span> {
+    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;PUT&#x27;</span>,<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/jobGrade/{externalId}&#x27;</span>, <span class="hljs-keyword">array</span>(
+        <span class="hljs-string">&#x27;headers&#x27;</span> =&gt; <span class="hljs-variable">$headers</span>,
+        <span class="hljs-string">&#x27;json&#x27;</span> =&gt; <span class="hljs-variable">$request_body</span>,
+       )
+    );
+    print_r(<span class="hljs-variable">$response</span>-&gt;getBody()-&gt;getContents());
+ }
+ <span class="hljs-keyword">catch</span> (\GuzzleHttp\<span class="hljs-built_in">Exception</span>\BadResponseException <span class="hljs-variable">$e</span>) {
+    <span class="hljs-comment">// handle exception or api errors.</span>
+    print_r(<span class="hljs-variable">$e</span>-&gt;getMessage());
+ }
+
+ <span class="hljs-comment">// ...</span>
+
+</code></pre>
+<pre class="highlight tab tab-javascript"><code><span class="hljs-keyword">const</span> inputBody = <span class="hljs-string">&#x27;{
+  &quot;name&quot;: &quot;Grade A+ (Updated)&quot;
+}&#x27;</span>;
+<span class="hljs-keyword">const</span> headers = {
+  <span class="hljs-string">&#x27;Content-Type&#x27;</span>:<span class="hljs-string">&#x27;application/json&#x27;</span>,
+  <span class="hljs-string">&#x27;Idempotency-Key&#x27;</span>:<span class="hljs-string">&#x27;emp-create-2025-10-24-550e8400-e29b-41d4-a716-446655440000&#x27;</span>,
+  <span class="hljs-string">&#x27;X-API-Key&#x27;</span>:<span class="hljs-string">&#x27;API_KEY&#x27;</span>
+};
+
+fetch(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/jobGrade/{externalId}&#x27;</span>,
+{
+  <span class="hljs-attr">method</span>: <span class="hljs-string">&#x27;PUT&#x27;</span>,
+  <span class="hljs-attr">body</span>: inputBody,
+  <span class="hljs-attr">headers</span>: headers
+})
+.then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">res</span>) </span>{
+    <span class="hljs-keyword">return</span> res.json();
+}).then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">body</span>) </span>{
+    <span class="hljs-built_in">console</span>.log(body);
+});
+
+</code></pre>
+<pre class="highlight tab tab-python"><code><span class="hljs-keyword">import</span> requests
+headers = {
+  <span class="hljs-string">&#x27;Content-Type&#x27;</span>: <span class="hljs-string">&#x27;application/json&#x27;</span>,
+  <span class="hljs-string">&#x27;Idempotency-Key&#x27;</span>: <span class="hljs-string">&#x27;emp-create-2025-10-24-550e8400-e29b-41d4-a716-446655440000&#x27;</span>,
+  <span class="hljs-string">&#x27;X-API-Key&#x27;</span>: <span class="hljs-string">&#x27;API_KEY&#x27;</span>
+}
+
+r = requests.put(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/jobGrade/{externalId}&#x27;</span>, headers = headers)
+
+<span class="hljs-built_in">print</span>(r.json())
+
+</code></pre>
+<pre class="highlight tab tab-shell"><code><span class="hljs-comment"># You can also use wget</span>
+curl -X PUT https://mia-api.hrforte.com/v1/integration/hrf/jobGrade/{externalId} \
+  -H <span class="hljs-string">&#x27;Content-Type: application/json&#x27;</span> \
+  -H <span class="hljs-string">&#x27;Idempotency-Key: emp-create-2025-10-24-550e8400-e29b-41d4-a716-446655440000&#x27;</span> \
+  -H <span class="hljs-string">&#x27;X-API-Key: API_KEY&#x27;</span>
+
+</code></pre>
+<p><code>PUT /v1/integration/hrf/jobGrade/{externalId}</code></p>
+<p>Update existing job grade information using your external ID. Only the fields provided will be updated.</p>
+<blockquote>
+<p>Body parameter</p>
+</blockquote>
+<pre class="highlight tab tab-json"><code>{
+  <span class="hljs-attr">&quot;name&quot;</span>: <span class="hljs-string">&quot;Grade A+ (Updated)&quot;</span>
+}
+</code></pre>
+<h3 id="update-job-grade-by-external-id-parameters">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>In</th>
+<th>Type</th>
+<th>Required</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>externalId</td>
+<td>path</td>
+<td>string</td>
+<td>true</td>
+<td>none</td>
+</tr>
+<tr>
+<td>Idempotency-Key</td>
+<td>header</td>
+<td>string</td>
+<td>false</td>
+<td>Idempotency key <code>(24h cache)</code></td>
+</tr>
+<tr>
+<td>body</td>
+<td>body</td>
+<td>object</td>
+<td>true</td>
+<td>Partial job grade data to update</td>
+</tr>
+<tr>
+<td>» name</td>
+<td>body</td>
+<td>string</td>
+<td>false</td>
+<td>Job grade name</td>
+</tr>
+</tbody>
+</table>
+<h4 id="detailed-descriptions-28">Detailed descriptions</h4>
+<p><strong>Idempotency-Key</strong>: Idempotency key <code>(24h cache)</code></p>
+<ul>
+<li>Format: <code>{operation}-{date}-{uuid}</code></li>
+<li>Same key + same payload: <code>202 Accepted</code></li>
+<li>Same key + different payload: <code>409 Conflict</code></li>
+</ul>
+<h3 id="update-job-grade-by-external-id-responses">Responses</h3>
+<table>
+<thead>
+<tr>
+<th>Status</th>
+<th>Meaning</th>
+<th>Description</th>
+<th>Schema</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>200</td>
+<td><a href="https://tools.ietf.org/html/rfc7231#section-6.3.1">OK</a></td>
+<td>Job grade updated successfully</td>
+<td>None</td>
+</tr>
+<tr>
+<td>202</td>
+<td><a href="https://tools.ietf.org/html/rfc7231#section-6.3.3">Accepted</a></td>
+<td>Request already processed</td>
+<td>None</td>
+</tr>
+<tr>
+<td>400</td>
+<td><a href="https://tools.ietf.org/html/rfc7231#section-6.5.1">Bad Request</a></td>
+<td>Bad Request - Invalid payload data</td>
+<td>None</td>
+</tr>
+<tr>
+<td>401</td>
+<td><a href="https://tools.ietf.org/html/rfc7235#section-3.1">Unauthorized</a></td>
+<td>Unauthorized - Invalid or missing API Key</td>
+<td>None</td>
+</tr>
+<tr>
+<td>404</td>
+<td><a href="https://tools.ietf.org/html/rfc7231#section-6.5.4">Not Found</a></td>
+<td>Job grade not found or mapping does not exist</td>
+<td>None</td>
+</tr>
+<tr>
+<td>409</td>
+<td><a href="https://tools.ietf.org/html/rfc7231#section-6.5.8">Conflict</a></td>
+<td>Conflict - idempotency key already used with different payload</td>
+<td>None</td>
+</tr>
+</tbody>
+</table>
+<aside class="warning">
+To perform this operation, you must be authenticated by means of one of the following methods:
+X-API-Key ( Scopes: X-API-Key )
+</aside>
+<h2 id="delete-job-grade-by-external-id">Delete job grade by external ID</h2>
+<p><a id="opIdPublicIntegrationJobGradeController_deleteJobGrade_v1"></a></p>
+<blockquote>
+<p>Code samples</p>
+</blockquote>
+<pre class="highlight tab tab-php"><code> <span class="hljs-string">&#x27;emp-create-2025-10-24-550e8400-e29b-41d4-a716-446655440000&#x27;</span>,
+    <span class="hljs-string">&#x27;X-API-Key&#x27;</span> =&gt; <span class="hljs-string">&#x27;API_KEY&#x27;</span>,
+);
+
+<span class="hljs-variable">$client</span> = <span class="hljs-keyword">new</span> \GuzzleHttp\Client();
+
+<span class="hljs-comment">// Define array of request body.</span>
+<span class="hljs-variable">$request_body</span> = <span class="hljs-keyword">array</span>();
+
+<span class="hljs-keyword">try</span> {
+    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;DELETE&#x27;</span>,<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/jobGrade/{externalId}&#x27;</span>, <span class="hljs-keyword">array</span>(
+        <span class="hljs-string">&#x27;headers&#x27;</span> =&gt; <span class="hljs-variable">$headers</span>,
+        <span class="hljs-string">&#x27;json&#x27;</span> =&gt; <span class="hljs-variable">$request_body</span>,
+       )
+    );
+    print_r(<span class="hljs-variable">$response</span>-&gt;getBody()-&gt;getContents());
+ }
+ <span class="hljs-keyword">catch</span> (\GuzzleHttp\<span class="hljs-built_in">Exception</span>\BadResponseException <span class="hljs-variable">$e</span>) {
+    <span class="hljs-comment">// handle exception or api errors.</span>
+    print_r(<span class="hljs-variable">$e</span>-&gt;getMessage());
+ }
+
+ <span class="hljs-comment">// ...</span>
+
+</code></pre>
+<pre class="highlight tab tab-javascript"><code>
+<span class="hljs-keyword">const</span> headers = {
+  <span class="hljs-string">&#x27;Idempotency-Key&#x27;</span>:<span class="hljs-string">&#x27;emp-create-2025-10-24-550e8400-e29b-41d4-a716-446655440000&#x27;</span>,
+  <span class="hljs-string">&#x27;X-API-Key&#x27;</span>:<span class="hljs-string">&#x27;API_KEY&#x27;</span>
+};
+
+fetch(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/jobGrade/{externalId}&#x27;</span>,
+{
+  <span class="hljs-attr">method</span>: <span class="hljs-string">&#x27;DELETE&#x27;</span>,
+
+  <span class="hljs-attr">headers</span>: headers
+})
+.then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">res</span>) </span>{
+    <span class="hljs-keyword">return</span> res.json();
+}).then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">body</span>) </span>{
+    <span class="hljs-built_in">console</span>.log(body);
+});
+
+</code></pre>
+<pre class="highlight tab tab-python"><code><span class="hljs-keyword">import</span> requests
+headers = {
+  <span class="hljs-string">&#x27;Idempotency-Key&#x27;</span>: <span class="hljs-string">&#x27;emp-create-2025-10-24-550e8400-e29b-41d4-a716-446655440000&#x27;</span>,
+  <span class="hljs-string">&#x27;X-API-Key&#x27;</span>: <span class="hljs-string">&#x27;API_KEY&#x27;</span>
+}
+
+r = requests.delete(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/jobGrade/{externalId}&#x27;</span>, headers = headers)
+
+<span class="hljs-built_in">print</span>(r.json())
+
+</code></pre>
+<pre class="highlight tab tab-shell"><code><span class="hljs-comment"># You can also use wget</span>
+curl -X DELETE https://mia-api.hrforte.com/v1/integration/hrf/jobGrade/{externalId} \
+  -H <span class="hljs-string">&#x27;Idempotency-Key: emp-create-2025-10-24-550e8400-e29b-41d4-a716-446655440000&#x27;</span> \
+  -H <span class="hljs-string">&#x27;X-API-Key: API_KEY&#x27;</span>
+
+</code></pre>
+<p><code>DELETE /v1/integration/hrf/jobGrade/{externalId}</code></p>
+<p>Delete a job grade using your external ID. This will remove the job grade from the system.</p>
+<h3 id="delete-job-grade-by-external-id-parameters">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>In</th>
+<th>Type</th>
+<th>Required</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>externalId</td>
+<td>path</td>
+<td>string</td>
+<td>true</td>
+<td>none</td>
+</tr>
+<tr>
+<td>Idempotency-Key</td>
+<td>header</td>
+<td>string</td>
+<td>false</td>
+<td>Idempotency key <code>(24h cache)</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="detailed-descriptions-29">Detailed descriptions</h4>
+<p><strong>Idempotency-Key</strong>: Idempotency key <code>(24h cache)</code></p>
+<ul>
+<li>Format: <code>{operation}-{date}-{uuid}</code></li>
+<li>Same key + same payload: <code>202 Accepted</code></li>
+<li>Same key + different payload: <code>409 Conflict</code></li>
+</ul>
+<h3 id="delete-job-grade-by-external-id-responses">Responses</h3>
+<table>
+<thead>
+<tr>
+<th>Status</th>
+<th>Meaning</th>
+<th>Description</th>
+<th>Schema</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>200</td>
+<td><a href="https://tools.ietf.org/html/rfc7231#section-6.3.1">OK</a></td>
+<td>Job grade deleted successfully</td>
+<td>None</td>
+</tr>
+<tr>
+<td>202</td>
+<td><a href="https://tools.ietf.org/html/rfc7231#section-6.3.3">Accepted</a></td>
+<td>Request already processed</td>
+<td>None</td>
+</tr>
+<tr>
+<td>401</td>
+<td><a href="https://tools.ietf.org/html/rfc7235#section-3.1">Unauthorized</a></td>
+<td>Unauthorized - Invalid or missing API Key</td>
+<td>None</td>
+</tr>
+<tr>
+<td>404</td>
+<td><a href="https://tools.ietf.org/html/rfc7231#section-6.5.4">Not Found</a></td>
+<td>Job grade not found or mapping does not exist</td>
+<td>None</td>
+</tr>
+<tr>
+<td>409</td>
+<td><a href="https://tools.ietf.org/html/rfc7231#section-6.5.8">Conflict</a></td>
+<td>Conflict - idempotency key already used with different payload</td>
+<td>None</td>
+</tr>
+</tbody>
+</table>
+<aside class="warning">
+To perform this operation, you must be authenticated by means of one of the following methods:
+X-API-Key ( Scopes: X-API-Key )
+</aside>
+<h2 id="bulk-create-job-grades">Bulk create job grades</h2>
+<p><a id="opIdPublicIntegrationJobGradeController_bulkCreateJobGrades_v1"></a></p>
+<blockquote>
+<p>Code samples</p>
+</blockquote>
+<pre class="highlight tab tab-php"><code> <span class="hljs-string">&#x27;application/json&#x27;</span>,
+    <span class="hljs-string">&#x27;Accept&#x27;</span> =&gt; <span class="hljs-string">&#x27;application/json&#x27;</span>,
+    <span class="hljs-string">&#x27;Idempotency-Key&#x27;</span> =&gt; <span class="hljs-string">&#x27;emp-create-2025-10-24-550e8400-e29b-41d4-a716-446655440000&#x27;</span>,
+    <span class="hljs-string">&#x27;X-API-Key&#x27;</span> =&gt; <span class="hljs-string">&#x27;API_KEY&#x27;</span>,
+);
+
+<span class="hljs-variable">$client</span> = <span class="hljs-keyword">new</span> \GuzzleHttp\Client();
+
+<span class="hljs-comment">// Define array of request body.</span>
+<span class="hljs-variable">$request_body</span> = <span class="hljs-keyword">array</span>();
+
+<span class="hljs-keyword">try</span> {
+    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;POST&#x27;</span>,<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/jobGrade/bulk&#x27;</span>, <span class="hljs-keyword">array</span>(
+        <span class="hljs-string">&#x27;headers&#x27;</span> =&gt; <span class="hljs-variable">$headers</span>,
+        <span class="hljs-string">&#x27;json&#x27;</span> =&gt; <span class="hljs-variable">$request_body</span>,
+       )
+    );
+    print_r(<span class="hljs-variable">$response</span>-&gt;getBody()-&gt;getContents());
+ }
+ <span class="hljs-keyword">catch</span> (\GuzzleHttp\<span class="hljs-built_in">Exception</span>\BadResponseException <span class="hljs-variable">$e</span>) {
+    <span class="hljs-comment">// handle exception or api errors.</span>
+    print_r(<span class="hljs-variable">$e</span>-&gt;getMessage());
+ }
+
+ <span class="hljs-comment">// ...</span>
+
+</code></pre>
+<pre class="highlight tab tab-javascript"><code><span class="hljs-keyword">const</span> inputBody = <span class="hljs-string">&#x27;{
+  &quot;jobGrades&quot;: [
+    {
+      &quot;externalId&quot;: &quot;EXT-JG-001&quot;,
+      &quot;code&quot;: &quot;JG-001&quot;,
+      &quot;name&quot;: &quot;Grade A&quot;
+    },
+    {
+      &quot;externalId&quot;: &quot;EXT-JG-002&quot;,
+      &quot;code&quot;: &quot;JG-002&quot;,
+      &quot;name&quot;: &quot;Grade B&quot;
+    }
+  ]
+}&#x27;</span>;
+<span class="hljs-keyword">const</span> headers = {
+  <span class="hljs-string">&#x27;Content-Type&#x27;</span>:<span class="hljs-string">&#x27;application/json&#x27;</span>,
+  <span class="hljs-string">&#x27;Accept&#x27;</span>:<span class="hljs-string">&#x27;application/json&#x27;</span>,
+  <span class="hljs-string">&#x27;Idempotency-Key&#x27;</span>:<span class="hljs-string">&#x27;emp-create-2025-10-24-550e8400-e29b-41d4-a716-446655440000&#x27;</span>,
+  <span class="hljs-string">&#x27;X-API-Key&#x27;</span>:<span class="hljs-string">&#x27;API_KEY&#x27;</span>
+};
+
+fetch(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/jobGrade/bulk&#x27;</span>,
+{
+  <span class="hljs-attr">method</span>: <span class="hljs-string">&#x27;POST&#x27;</span>,
+  <span class="hljs-attr">body</span>: inputBody,
+  <span class="hljs-attr">headers</span>: headers
+})
+.then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">res</span>) </span>{
+    <span class="hljs-keyword">return</span> res.json();
+}).then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">body</span>) </span>{
+    <span class="hljs-built_in">console</span>.log(body);
+});
+
+</code></pre>
+<pre class="highlight tab tab-python"><code><span class="hljs-keyword">import</span> requests
+headers = {
+  <span class="hljs-string">&#x27;Content-Type&#x27;</span>: <span class="hljs-string">&#x27;application/json&#x27;</span>,
+  <span class="hljs-string">&#x27;Accept&#x27;</span>: <span class="hljs-string">&#x27;application/json&#x27;</span>,
+  <span class="hljs-string">&#x27;Idempotency-Key&#x27;</span>: <span class="hljs-string">&#x27;emp-create-2025-10-24-550e8400-e29b-41d4-a716-446655440000&#x27;</span>,
+  <span class="hljs-string">&#x27;X-API-Key&#x27;</span>: <span class="hljs-string">&#x27;API_KEY&#x27;</span>
+}
+
+r = requests.post(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/jobGrade/bulk&#x27;</span>, headers = headers)
+
+<span class="hljs-built_in">print</span>(r.json())
+
+</code></pre>
+<pre class="highlight tab tab-shell"><code><span class="hljs-comment"># You can also use wget</span>
+curl -X POST https://mia-api.hrforte.com/v1/integration/hrf/jobGrade/bulk \
+  -H <span class="hljs-string">&#x27;Content-Type: application/json&#x27;</span> \
+  -H <span class="hljs-string">&#x27;Accept: application/json&#x27;</span> \
+  -H <span class="hljs-string">&#x27;Idempotency-Key: emp-create-2025-10-24-550e8400-e29b-41d4-a716-446655440000&#x27;</span> \
+  -H <span class="hljs-string">&#x27;X-API-Key: API_KEY&#x27;</span>
+
+</code></pre>
+<p><code>POST /v1/integration/hrf/jobGrade/bulk</code></p>
+<p>Create multiple job grades with comprehensive data. This endpoint is designed for third-party systems to bulk import job grade data.</p>
+<blockquote>
+<p>Body parameter</p>
+</blockquote>
+<pre class="highlight tab tab-json"><code>{
+  <span class="hljs-attr">&quot;jobGrades&quot;</span>: [
+    {
+      <span class="hljs-attr">&quot;externalId&quot;</span>: <span class="hljs-string">&quot;EXT-JG-001&quot;</span>,
+      <span class="hljs-attr">&quot;code&quot;</span>: <span class="hljs-string">&quot;JG-001&quot;</span>,
+      <span class="hljs-attr">&quot;name&quot;</span>: <span class="hljs-string">&quot;Grade A&quot;</span>
+    },
+    {
+      <span class="hljs-attr">&quot;externalId&quot;</span>: <span class="hljs-string">&quot;EXT-JG-002&quot;</span>,
+      <span class="hljs-attr">&quot;code&quot;</span>: <span class="hljs-string">&quot;JG-002&quot;</span>,
+      <span class="hljs-attr">&quot;name&quot;</span>: <span class="hljs-string">&quot;Grade B&quot;</span>
+    }
+  ]
+}
+</code></pre>
+<h3 id="bulk-create-job-grades-parameters">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>In</th>
+<th>Type</th>
+<th>Required</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Idempotency-Key</td>
+<td>header</td>
+<td>string</td>
+<td>false</td>
+<td>Idempotency key <code>(24h cache)</code></td>
+</tr>
+<tr>
+<td>body</td>
+<td>body</td>
+<td><a href="#schemabulkcreatejobgradepayloaddto">BulkCreateJobGradePayloadDto</a></td>
+<td>true</td>
+<td>Bulk job grades creation payload [CreateJobGradePayloadDto array]</td>
+</tr>
+</tbody>
+</table>
+<h4 id="detailed-descriptions-30">Detailed descriptions</h4>
+<p><strong>Idempotency-Key</strong>: Idempotency key <code>(24h cache)</code></p>
+<ul>
+<li>Format: <code>{operation}-{date}-{uuid}</code></li>
+<li>Same key + same payload: <code>202 Accepted</code></li>
+<li>Same key + different payload: <code>409 Conflict</code></li>
+</ul>
+<blockquote>
+<p>Example responses</p>
+</blockquote>
+<blockquote>
+<p>202 Response</p>
+</blockquote>
+<pre class="highlight tab tab-json"><code>{
+  <span class="hljs-attr">&quot;success&quot;</span>: <span class="hljs-literal">true</span>,
+  <span class="hljs-attr">&quot;jobId&quot;</span>: <span class="hljs-string">&quot;create-employee-1698765432000&quot;</span>,
+  <span class="hljs-attr">&quot;incomingDataId&quot;</span>: <span class="hljs-string">&quot;1&quot;</span>,
+  <span class="hljs-attr">&quot;bullmqJobId&quot;</span>: <span class="hljs-string">&quot;123&quot;</span>,
+  <span class="hljs-attr">&quot;timestamp&quot;</span>: <span class="hljs-string">&quot;2024-10-31T08:30:00.000Z&quot;</span>,
+  <span class="hljs-attr">&quot;message&quot;</span>: <span class="hljs-string">&quot;Request accepted and queued for processing&quot;</span>
+}
+</code></pre>
+<h3 id="bulk-create-job-grades-responses">Responses</h3>
+<table>
+<thead>
+<tr>
+<th>Status</th>
+<th>Meaning</th>
+<th>Description</th>
+<th>Schema</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>202</td>
+<td><a href="https://tools.ietf.org/html/rfc7231#section-6.3.3">Accepted</a></td>
+<td>Accepted - Bulk request queued for processing</td>
+<td><a href="#schemajobacceptanceresponsedto">JobAcceptanceResponseDto</a></td>
+</tr>
+<tr>
+<td>400</td>
+<td><a href="https://tools.ietf.org/html/rfc7231#section-6.5.1">Bad Request</a></td>
+<td>Bad Request - Invalid payload data</td>
+<td>None</td>
+</tr>
+<tr>
+<td>401</td>
+<td><a href="https://tools.ietf.org/html/rfc7235#section-3.1">Unauthorized</a></td>
+<td>Unauthorized - Invalid or missing API Key</td>
+<td>None</td>
+</tr>
+<tr>
+<td>409</td>
+<td><a href="https://tools.ietf.org/html/rfc7231#section-6.5.8">Conflict</a></td>
+<td>Conflict - idempotency key already used with different payload</td>
+<td>None</td>
+</tr>
+</tbody>
+</table>
+<aside class="warning">
+To perform this operation, you must be authenticated by means of one of the following methods:
+X-API-Key ( Scopes: X-API-Key )
+</aside>
+<h1 id="hr-forte-public-integration-api-organization-structure-module">Organization Structure Module</h1>
+<h2 id="create-organization-structure">Create organization structure</h2>
+<p><a id="opIdPublicIntegrationOrganizationStructureController_createOrganizationStructure_v1"></a></p>
+<blockquote>
+<p>Code samples</p>
+</blockquote>
+<pre class="highlight tab tab-php"><code> <span class="hljs-string">&#x27;application/json&#x27;</span>,
+    <span class="hljs-string">&#x27;Accept&#x27;</span> =&gt; <span class="hljs-string">&#x27;application/json&#x27;</span>,
+    <span class="hljs-string">&#x27;Idempotency-Key&#x27;</span> =&gt; <span class="hljs-string">&#x27;emp-create-2025-10-24-550e8400-e29b-41d4-a716-446655440000&#x27;</span>,
+    <span class="hljs-string">&#x27;X-API-Key&#x27;</span> =&gt; <span class="hljs-string">&#x27;API_KEY&#x27;</span>,
+);
+
+<span class="hljs-variable">$client</span> = <span class="hljs-keyword">new</span> \GuzzleHttp\Client();
+
+<span class="hljs-comment">// Define array of request body.</span>
+<span class="hljs-variable">$request_body</span> = <span class="hljs-keyword">array</span>();
+
+<span class="hljs-keyword">try</span> {
+    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;POST&#x27;</span>,<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/organizationStructure&#x27;</span>, <span class="hljs-keyword">array</span>(
+        <span class="hljs-string">&#x27;headers&#x27;</span> =&gt; <span class="hljs-variable">$headers</span>,
+        <span class="hljs-string">&#x27;json&#x27;</span> =&gt; <span class="hljs-variable">$request_body</span>,
+       )
+    );
+    print_r(<span class="hljs-variable">$response</span>-&gt;getBody()-&gt;getContents());
+ }
+ <span class="hljs-keyword">catch</span> (\GuzzleHttp\<span class="hljs-built_in">Exception</span>\BadResponseException <span class="hljs-variable">$e</span>) {
+    <span class="hljs-comment">// handle exception or api errors.</span>
+    print_r(<span class="hljs-variable">$e</span>-&gt;getMessage());
+ }
+
+ <span class="hljs-comment">// ...</span>
+
+</code></pre>
+<pre class="highlight tab tab-javascript"><code><span class="hljs-keyword">const</span> inputBody = <span class="hljs-string">&#x27;{
+  &quot;externalId&quot;: &quot;EXT-ORG-001&quot;,
+  &quot;code&quot;: &quot;DEPT-001&quot;,
+  &quot;name&quot;: &quot;Human Resources&quot;,
+  &quot;parentId&quot;: &quot;0&quot;,
+  &quot;head&quot;: 456
+}&#x27;</span>;
+<span class="hljs-keyword">const</span> headers = {
+  <span class="hljs-string">&#x27;Content-Type&#x27;</span>:<span class="hljs-string">&#x27;application/json&#x27;</span>,
+  <span class="hljs-string">&#x27;Accept&#x27;</span>:<span class="hljs-string">&#x27;application/json&#x27;</span>,
+  <span class="hljs-string">&#x27;Idempotency-Key&#x27;</span>:<span class="hljs-string">&#x27;emp-create-2025-10-24-550e8400-e29b-41d4-a716-446655440000&#x27;</span>,
+  <span class="hljs-string">&#x27;X-API-Key&#x27;</span>:<span class="hljs-string">&#x27;API_KEY&#x27;</span>
+};
+
+fetch(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/organizationStructure&#x27;</span>,
+{
+  <span class="hljs-attr">method</span>: <span class="hljs-string">&#x27;POST&#x27;</span>,
+  <span class="hljs-attr">body</span>: inputBody,
+  <span class="hljs-attr">headers</span>: headers
+})
+.then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">res</span>) </span>{
+    <span class="hljs-keyword">return</span> res.json();
+}).then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">body</span>) </span>{
+    <span class="hljs-built_in">console</span>.log(body);
+});
+
+</code></pre>
+<pre class="highlight tab tab-python"><code><span class="hljs-keyword">import</span> requests
+headers = {
+  <span class="hljs-string">&#x27;Content-Type&#x27;</span>: <span class="hljs-string">&#x27;application/json&#x27;</span>,
+  <span class="hljs-string">&#x27;Accept&#x27;</span>: <span class="hljs-string">&#x27;application/json&#x27;</span>,
+  <span class="hljs-string">&#x27;Idempotency-Key&#x27;</span>: <span class="hljs-string">&#x27;emp-create-2025-10-24-550e8400-e29b-41d4-a716-446655440000&#x27;</span>,
+  <span class="hljs-string">&#x27;X-API-Key&#x27;</span>: <span class="hljs-string">&#x27;API_KEY&#x27;</span>
+}
+
+r = requests.post(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/organizationStructure&#x27;</span>, headers = headers)
+
+<span class="hljs-built_in">print</span>(r.json())
+
+</code></pre>
+<pre class="highlight tab tab-shell"><code><span class="hljs-comment"># You can also use wget</span>
+curl -X POST https://mia-api.hrforte.com/v1/integration/hrf/organizationStructure \
+  -H <span class="hljs-string">&#x27;Content-Type: application/json&#x27;</span> \
+  -H <span class="hljs-string">&#x27;Accept: application/json&#x27;</span> \
+  -H <span class="hljs-string">&#x27;Idempotency-Key: emp-create-2025-10-24-550e8400-e29b-41d4-a716-446655440000&#x27;</span> \
+  -H <span class="hljs-string">&#x27;X-API-Key: API_KEY&#x27;</span>
+
+</code></pre>
+<p><code>POST /v1/integration/hrf/organizationStructure</code></p>
+<p>Create a new organization structure. This endpoint is designed for third-party systems to create organization structure data in the HR system. Note: parentId should be the external ID of the parent organization (or &quot;0&quot; for root).</p>
+<blockquote>
+<p>Body parameter</p>
+</blockquote>
+<pre class="highlight tab tab-json"><code>{
+  <span class="hljs-attr">&quot;externalId&quot;</span>: <span class="hljs-string">&quot;EXT-ORG-001&quot;</span>,
+  <span class="hljs-attr">&quot;code&quot;</span>: <span class="hljs-string">&quot;DEPT-001&quot;</span>,
+  <span class="hljs-attr">&quot;name&quot;</span>: <span class="hljs-string">&quot;Human Resources&quot;</span>,
+  <span class="hljs-attr">&quot;parentId&quot;</span>: <span class="hljs-string">&quot;0&quot;</span>,
+  <span class="hljs-attr">&quot;head&quot;</span>: <span class="hljs-number">456</span>
+}
+</code></pre>
+<h3 id="create-organization-structure-parameters">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>In</th>
+<th>Type</th>
+<th>Required</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Idempotency-Key</td>
+<td>header</td>
+<td>string</td>
+<td>false</td>
+<td>Idempotency key <code>(24h cache)</code></td>
+</tr>
+<tr>
+<td>body</td>
+<td>body</td>
+<td><a href="#schemacreateorganizationstructurepayloaddto">CreateOrganizationStructurePayloadDto</a></td>
+<td>true</td>
+<td>Organization structure creation payload</td>
+</tr>
+</tbody>
+</table>
+<h4 id="detailed-descriptions-31">Detailed descriptions</h4>
+<p><strong>Idempotency-Key</strong>: Idempotency key <code>(24h cache)</code></p>
+<ul>
+<li>Format: <code>{operation}-{date}-{uuid}</code></li>
+<li>Same key + same payload: <code>202 Accepted</code></li>
+<li>Same key + different payload: <code>409 Conflict</code></li>
+</ul>
+<blockquote>
+<p>Example responses</p>
+</blockquote>
+<blockquote>
+<p>202 Response</p>
+</blockquote>
+<pre class="highlight tab tab-json"><code>{
+  <span class="hljs-attr">&quot;success&quot;</span>: <span class="hljs-literal">true</span>,
+  <span class="hljs-attr">&quot;jobId&quot;</span>: <span class="hljs-string">&quot;create-employee-1698765432000&quot;</span>,
+  <span class="hljs-attr">&quot;incomingDataId&quot;</span>: <span class="hljs-string">&quot;1&quot;</span>,
+  <span class="hljs-attr">&quot;bullmqJobId&quot;</span>: <span class="hljs-string">&quot;123&quot;</span>,
+  <span class="hljs-attr">&quot;timestamp&quot;</span>: <span class="hljs-string">&quot;2024-10-31T08:30:00.000Z&quot;</span>,
+  <span class="hljs-attr">&quot;message&quot;</span>: <span class="hljs-string">&quot;Request accepted and queued for processing&quot;</span>
+}
+</code></pre>
+<h3 id="create-organization-structure-responses">Responses</h3>
+<table>
+<thead>
+<tr>
+<th>Status</th>
+<th>Meaning</th>
+<th>Description</th>
+<th>Schema</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>202</td>
+<td><a href="https://tools.ietf.org/html/rfc7231#section-6.3.3">Accepted</a></td>
+<td>Accepted - Request queued for processing</td>
+<td><a href="#schemajobacceptanceresponsedto">JobAcceptanceResponseDto</a></td>
+</tr>
+<tr>
+<td>400</td>
+<td><a href="https://tools.ietf.org/html/rfc7231#section-6.5.1">Bad Request</a></td>
+<td>Bad Request - Invalid payload data</td>
+<td>None</td>
+</tr>
+<tr>
+<td>401</td>
+<td><a href="https://tools.ietf.org/html/rfc7235#section-3.1">Unauthorized</a></td>
+<td>Unauthorized - Invalid or missing API Key</td>
+<td>None</td>
+</tr>
+<tr>
+<td>409</td>
+<td><a href="https://tools.ietf.org/html/rfc7231#section-6.5.8">Conflict</a></td>
+<td>Conflict - idempotency key already used with different payload</td>
+<td>None</td>
+</tr>
+</tbody>
+</table>
+<aside class="warning">
+To perform this operation, you must be authenticated by means of one of the following methods:
+X-API-Key ( Scopes: X-API-Key )
+</aside>
+<h2 id="get-all-organization-structures">Get all organization structures</h2>
+<p><a id="opIdPublicIntegrationOrganizationStructureController_getAllOrganizationStructures_v1"></a></p>
+<blockquote>
+<p>Code samples</p>
+</blockquote>
+<pre class="highlight tab tab-php"><code> <span class="hljs-string">&#x27;API_KEY&#x27;</span>,
+);
+
+<span class="hljs-variable">$client</span> = <span class="hljs-keyword">new</span> \GuzzleHttp\Client();
+
+<span class="hljs-comment">// Define array of request body.</span>
+<span class="hljs-variable">$request_body</span> = <span class="hljs-keyword">array</span>();
+
+<span class="hljs-keyword">try</span> {
+    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;GET&#x27;</span>,<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/organizationStructure&#x27;</span>, <span class="hljs-keyword">array</span>(
+        <span class="hljs-string">&#x27;headers&#x27;</span> =&gt; <span class="hljs-variable">$headers</span>,
+        <span class="hljs-string">&#x27;json&#x27;</span> =&gt; <span class="hljs-variable">$request_body</span>,
+       )
+    );
+    print_r(<span class="hljs-variable">$response</span>-&gt;getBody()-&gt;getContents());
+ }
+ <span class="hljs-keyword">catch</span> (\GuzzleHttp\<span class="hljs-built_in">Exception</span>\BadResponseException <span class="hljs-variable">$e</span>) {
+    <span class="hljs-comment">// handle exception or api errors.</span>
+    print_r(<span class="hljs-variable">$e</span>-&gt;getMessage());
+ }
+
+ <span class="hljs-comment">// ...</span>
+
+</code></pre>
+<pre class="highlight tab tab-javascript"><code>
+<span class="hljs-keyword">const</span> headers = {
+  <span class="hljs-string">&#x27;X-API-Key&#x27;</span>:<span class="hljs-string">&#x27;API_KEY&#x27;</span>
+};
+
+fetch(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/organizationStructure&#x27;</span>,
+{
+  <span class="hljs-attr">method</span>: <span class="hljs-string">&#x27;GET&#x27;</span>,
+
+  <span class="hljs-attr">headers</span>: headers
+})
+.then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">res</span>) </span>{
+    <span class="hljs-keyword">return</span> res.json();
+}).then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">body</span>) </span>{
+    <span class="hljs-built_in">console</span>.log(body);
+});
+
+</code></pre>
+<pre class="highlight tab tab-python"><code><span class="hljs-keyword">import</span> requests
+headers = {
+  <span class="hljs-string">&#x27;X-API-Key&#x27;</span>: <span class="hljs-string">&#x27;API_KEY&#x27;</span>
+}
+
+r = requests.get(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/organizationStructure&#x27;</span>, headers = headers)
+
+<span class="hljs-built_in">print</span>(r.json())
+
+</code></pre>
+<pre class="highlight tab tab-shell"><code><span class="hljs-comment"># You can also use wget</span>
+curl -X GET https://mia-api.hrforte.com/v1/integration/hrf/organizationStructure \
+  -H <span class="hljs-string">&#x27;X-API-Key: API_KEY&#x27;</span>
+
+</code></pre>
+<p><code>GET /v1/integration/hrf/organizationStructure</code></p>
+<p>Retrieve all organization structures for the company. Returns a list of organization structures with their external IDs.</p>
+<h3 id="get-all-organization-structures-responses">Responses</h3>
+<table>
+<thead>
+<tr>
+<th>Status</th>
+<th>Meaning</th>
+<th>Description</th>
+<th>Schema</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>200</td>
+<td><a href="https://tools.ietf.org/html/rfc7231#section-6.3.1">OK</a></td>
+<td>Organization structures retrieved successfully</td>
+<td>None</td>
+</tr>
+<tr>
+<td>401</td>
+<td><a href="https://tools.ietf.org/html/rfc7235#section-3.1">Unauthorized</a></td>
+<td>Unauthorized - Invalid or missing API Key</td>
+<td>None</td>
+</tr>
+</tbody>
+</table>
+<aside class="warning">
+To perform this operation, you must be authenticated by means of one of the following methods:
+X-API-Key ( Scopes: X-API-Key )
+</aside>
+<h2 id="unassign-employees-from-organization-structure">Unassign employees from organization structure</h2>
+<p><a id="opIdPublicIntegrationOrganizationStructureController_unassignEmployeesFromOrganizationStructure_v1"></a></p>
+<blockquote>
+<p>Code samples</p>
+</blockquote>
+<pre class="highlight tab tab-php"><code> <span class="hljs-string">&#x27;application/json&#x27;</span>,
+    <span class="hljs-string">&#x27;Accept&#x27;</span> =&gt; <span class="hljs-string">&#x27;application/json&#x27;</span>,
+    <span class="hljs-string">&#x27;Idempotency-Key&#x27;</span> =&gt; <span class="hljs-string">&#x27;emp-create-2025-10-24-550e8400-e29b-41d4-a716-446655440000&#x27;</span>,
+    <span class="hljs-string">&#x27;X-API-Key&#x27;</span> =&gt; <span class="hljs-string">&#x27;API_KEY&#x27;</span>,
+);
+
+<span class="hljs-variable">$client</span> = <span class="hljs-keyword">new</span> \GuzzleHttp\Client();
+
+<span class="hljs-comment">// Define array of request body.</span>
+<span class="hljs-variable">$request_body</span> = <span class="hljs-keyword">array</span>();
+
+<span class="hljs-keyword">try</span> {
+    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;PUT&#x27;</span>,<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/organizationStructure/unassignEmployees&#x27;</span>, <span class="hljs-keyword">array</span>(
+        <span class="hljs-string">&#x27;headers&#x27;</span> =&gt; <span class="hljs-variable">$headers</span>,
+        <span class="hljs-string">&#x27;json&#x27;</span> =&gt; <span class="hljs-variable">$request_body</span>,
+       )
+    );
+    print_r(<span class="hljs-variable">$response</span>-&gt;getBody()-&gt;getContents());
+ }
+ <span class="hljs-keyword">catch</span> (\GuzzleHttp\<span class="hljs-built_in">Exception</span>\BadResponseException <span class="hljs-variable">$e</span>) {
+    <span class="hljs-comment">// handle exception or api errors.</span>
+    print_r(<span class="hljs-variable">$e</span>-&gt;getMessage());
+ }
+
+ <span class="hljs-comment">// ...</span>
+
+</code></pre>
+<pre class="highlight tab tab-javascript"><code><span class="hljs-keyword">const</span> inputBody = <span class="hljs-string">&#x27;{
+  &quot;employeeIds&quot;: [
+    &quot;EXT-EMP-001&quot;,
+    &quot;EXT-EMP-002&quot;
+  ]
+}&#x27;</span>;
+<span class="hljs-keyword">const</span> headers = {
+  <span class="hljs-string">&#x27;Content-Type&#x27;</span>:<span class="hljs-string">&#x27;application/json&#x27;</span>,
+  <span class="hljs-string">&#x27;Accept&#x27;</span>:<span class="hljs-string">&#x27;application/json&#x27;</span>,
+  <span class="hljs-string">&#x27;Idempotency-Key&#x27;</span>:<span class="hljs-string">&#x27;emp-create-2025-10-24-550e8400-e29b-41d4-a716-446655440000&#x27;</span>,
+  <span class="hljs-string">&#x27;X-API-Key&#x27;</span>:<span class="hljs-string">&#x27;API_KEY&#x27;</span>
+};
+
+fetch(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/organizationStructure/unassignEmployees&#x27;</span>,
+{
+  <span class="hljs-attr">method</span>: <span class="hljs-string">&#x27;PUT&#x27;</span>,
+  <span class="hljs-attr">body</span>: inputBody,
+  <span class="hljs-attr">headers</span>: headers
+})
+.then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">res</span>) </span>{
+    <span class="hljs-keyword">return</span> res.json();
+}).then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">body</span>) </span>{
+    <span class="hljs-built_in">console</span>.log(body);
+});
+
+</code></pre>
+<pre class="highlight tab tab-python"><code><span class="hljs-keyword">import</span> requests
+headers = {
+  <span class="hljs-string">&#x27;Content-Type&#x27;</span>: <span class="hljs-string">&#x27;application/json&#x27;</span>,
+  <span class="hljs-string">&#x27;Accept&#x27;</span>: <span class="hljs-string">&#x27;application/json&#x27;</span>,
+  <span class="hljs-string">&#x27;Idempotency-Key&#x27;</span>: <span class="hljs-string">&#x27;emp-create-2025-10-24-550e8400-e29b-41d4-a716-446655440000&#x27;</span>,
+  <span class="hljs-string">&#x27;X-API-Key&#x27;</span>: <span class="hljs-string">&#x27;API_KEY&#x27;</span>
+}
+
+r = requests.put(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/organizationStructure/unassignEmployees&#x27;</span>, headers = headers)
+
+<span class="hljs-built_in">print</span>(r.json())
+
+</code></pre>
+<pre class="highlight tab tab-shell"><code><span class="hljs-comment"># You can also use wget</span>
+curl -X PUT https://mia-api.hrforte.com/v1/integration/hrf/organizationStructure/unassignEmployees \
+  -H <span class="hljs-string">&#x27;Content-Type: application/json&#x27;</span> \
+  -H <span class="hljs-string">&#x27;Accept: application/json&#x27;</span> \
+  -H <span class="hljs-string">&#x27;Idempotency-Key: emp-create-2025-10-24-550e8400-e29b-41d4-a716-446655440000&#x27;</span> \
+  -H <span class="hljs-string">&#x27;X-API-Key: API_KEY&#x27;</span>
+
+</code></pre>
+<p><code>PUT /v1/integration/hrf/organizationStructure/unassignEmployees</code></p>
+<p>Unassign multiple employees from their current organization structure using their external IDs. This will remove the organization assignment for the specified employees.</p>
+<blockquote>
+<p>Body parameter</p>
+</blockquote>
+<pre class="highlight tab tab-json"><code>{
+  <span class="hljs-attr">&quot;employeeIds&quot;</span>: [
+    <span class="hljs-string">&quot;EXT-EMP-001&quot;</span>,
+    <span class="hljs-string">&quot;EXT-EMP-002&quot;</span>
+  ]
+}
+</code></pre>
+<h3 id="unassign-employees-from-organization-structure-parameters">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>In</th>
+<th>Type</th>
+<th>Required</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Idempotency-Key</td>
+<td>header</td>
+<td>string</td>
+<td>false</td>
+<td>Idempotency key <code>(24h cache)</code></td>
+</tr>
+<tr>
+<td>body</td>
+<td>body</td>
+<td><a href="#schemaunassignemployeesfromorgstructuredto">UnassignEmployeesFromOrgStructureDto</a></td>
+<td>true</td>
+<td>Array of external employee IDs to unassign</td>
+</tr>
+</tbody>
+</table>
+<h4 id="detailed-descriptions-32">Detailed descriptions</h4>
+<p><strong>Idempotency-Key</strong>: Idempotency key <code>(24h cache)</code></p>
+<ul>
+<li>Format: <code>{operation}-{date}-{uuid}</code></li>
+<li>Same key + same payload: <code>202 Accepted</code></li>
+<li>Same key + different payload: <code>409 Conflict</code></li>
+</ul>
+<blockquote>
+<p>Example responses</p>
+</blockquote>
+<blockquote>
+<p>200 Response</p>
+</blockquote>
+<pre class="highlight tab tab-json"><code>{
+  <span class="hljs-attr">&quot;success&quot;</span>: <span class="hljs-literal">true</span>,
+  <span class="hljs-attr">&quot;unassignedCount&quot;</span>: <span class="hljs-number">2</span>,
+  <span class="hljs-attr">&quot;notFoundCount&quot;</span>: <span class="hljs-number">0</span>,
+  <span class="hljs-attr">&quot;notFoundEmployeeIds&quot;</span>: [],
+  <span class="hljs-attr">&quot;timestamp&quot;</span>: <span class="hljs-string">&quot;2024-11-12T10:30:00.000Z&quot;</span>
+}
+</code></pre>
+<h3 id="unassign-employees-from-organization-structure-responses">Responses</h3>
+<table>
+<thead>
+<tr>
+<th>Status</th>
+<th>Meaning</th>
+<th>Description</th>
+<th>Schema</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>200</td>
+<td><a href="https://tools.ietf.org/html/rfc7231#section-6.3.1">OK</a></td>
+<td>Employees unassigned successfully</td>
+<td>Inline</td>
+</tr>
+<tr>
+<td>202</td>
+<td><a href="https://tools.ietf.org/html/rfc7231#section-6.3.3">Accepted</a></td>
+<td>Request already processed</td>
+<td>None</td>
+</tr>
+<tr>
+<td>400</td>
+<td><a href="https://tools.ietf.org/html/rfc7231#section-6.5.1">Bad Request</a></td>
+<td>Bad Request - Invalid payload data</td>
+<td>None</td>
+</tr>
+<tr>
+<td>401</td>
+<td><a href="https://tools.ietf.org/html/rfc7235#section-3.1">Unauthorized</a></td>
+<td>Unauthorized - Invalid or missing API Key</td>
+<td>None</td>
+</tr>
+<tr>
+<td>404</td>
+<td><a href="https://tools.ietf.org/html/rfc7231#section-6.5.4">Not Found</a></td>
+<td>No employees found in the mapping</td>
+<td>None</td>
+</tr>
+<tr>
+<td>409</td>
+<td><a href="https://tools.ietf.org/html/rfc7231#section-6.5.8">Conflict</a></td>
+<td>Conflict - idempotency key already used with different payload</td>
+<td>None</td>
+</tr>
+</tbody>
+</table>
+<h3 id="unassign-employees-from-organization-structure-responseschema">Response Schema</h3>
+<p>Status Code <strong>200</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Required</th>
+<th>Restrictions</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>» success</td>
+<td>boolean</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>» unassignedCount</td>
+<td>number</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>» notFoundCount</td>
+<td>number</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>» notFoundEmployeeIds</td>
+<td>[string]</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>» timestamp</td>
+<td>string</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+</tbody>
+</table>
+<aside class="warning">
+To perform this operation, you must be authenticated by means of one of the following methods:
+X-API-Key ( Scopes: X-API-Key )
+</aside>
+<h2 id="get-organization-structure-by-external-id">Get organization structure by external ID</h2>
+<p><a id="opIdPublicIntegrationOrganizationStructureController_getOrganizationStructure_v1"></a></p>
+<blockquote>
+<p>Code samples</p>
+</blockquote>
+<pre class="highlight tab tab-php"><code> <span class="hljs-string">&#x27;API_KEY&#x27;</span>,
+);
+
+<span class="hljs-variable">$client</span> = <span class="hljs-keyword">new</span> \GuzzleHttp\Client();
+
+<span class="hljs-comment">// Define array of request body.</span>
+<span class="hljs-variable">$request_body</span> = <span class="hljs-keyword">array</span>();
+
+<span class="hljs-keyword">try</span> {
+    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;GET&#x27;</span>,<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/organizationStructure/{externalId}&#x27;</span>, <span class="hljs-keyword">array</span>(
+        <span class="hljs-string">&#x27;headers&#x27;</span> =&gt; <span class="hljs-variable">$headers</span>,
+        <span class="hljs-string">&#x27;json&#x27;</span> =&gt; <span class="hljs-variable">$request_body</span>,
+       )
+    );
+    print_r(<span class="hljs-variable">$response</span>-&gt;getBody()-&gt;getContents());
+ }
+ <span class="hljs-keyword">catch</span> (\GuzzleHttp\<span class="hljs-built_in">Exception</span>\BadResponseException <span class="hljs-variable">$e</span>) {
+    <span class="hljs-comment">// handle exception or api errors.</span>
+    print_r(<span class="hljs-variable">$e</span>-&gt;getMessage());
+ }
+
+ <span class="hljs-comment">// ...</span>
+
+</code></pre>
+<pre class="highlight tab tab-javascript"><code>
+<span class="hljs-keyword">const</span> headers = {
+  <span class="hljs-string">&#x27;X-API-Key&#x27;</span>:<span class="hljs-string">&#x27;API_KEY&#x27;</span>
+};
+
+fetch(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/organizationStructure/{externalId}&#x27;</span>,
+{
+  <span class="hljs-attr">method</span>: <span class="hljs-string">&#x27;GET&#x27;</span>,
+
+  <span class="hljs-attr">headers</span>: headers
+})
+.then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">res</span>) </span>{
+    <span class="hljs-keyword">return</span> res.json();
+}).then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">body</span>) </span>{
+    <span class="hljs-built_in">console</span>.log(body);
+});
+
+</code></pre>
+<pre class="highlight tab tab-python"><code><span class="hljs-keyword">import</span> requests
+headers = {
+  <span class="hljs-string">&#x27;X-API-Key&#x27;</span>: <span class="hljs-string">&#x27;API_KEY&#x27;</span>
+}
+
+r = requests.get(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/organizationStructure/{externalId}&#x27;</span>, headers = headers)
+
+<span class="hljs-built_in">print</span>(r.json())
+
+</code></pre>
+<pre class="highlight tab tab-shell"><code><span class="hljs-comment"># You can also use wget</span>
+curl -X GET https://mia-api.hrforte.com/v1/integration/hrf/organizationStructure/{externalId} \
+  -H <span class="hljs-string">&#x27;X-API-Key: API_KEY&#x27;</span>
+
+</code></pre>
+<p><code>GET /v1/integration/hrf/organizationStructure/{externalId}</code></p>
+<p>Retrieve organization structure information using your external ID. Returns organization structure data with external ID included.</p>
+<h3 id="get-organization-structure-by-external-id-parameters">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>In</th>
+<th>Type</th>
+<th>Required</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>externalId</td>
+<td>path</td>
+<td>string</td>
+<td>true</td>
+<td>none</td>
+</tr>
+</tbody>
+</table>
+<h3 id="get-organization-structure-by-external-id-responses">Responses</h3>
+<table>
+<thead>
+<tr>
+<th>Status</th>
+<th>Meaning</th>
+<th>Description</th>
+<th>Schema</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>200</td>
+<td><a href="https://tools.ietf.org/html/rfc7231#section-6.3.1">OK</a></td>
+<td>Organization structure found and returned successfully</td>
+<td>None</td>
+</tr>
+<tr>
+<td>401</td>
+<td><a href="https://tools.ietf.org/html/rfc7235#section-3.1">Unauthorized</a></td>
+<td>Unauthorized - Invalid or missing API Key</td>
+<td>None</td>
+</tr>
+<tr>
+<td>404</td>
+<td><a href="https://tools.ietf.org/html/rfc7231#section-6.5.4">Not Found</a></td>
+<td>Organization structure not found or mapping does not exist</td>
+<td>None</td>
+</tr>
+</tbody>
+</table>
+<aside class="warning">
+To perform this operation, you must be authenticated by means of one of the following methods:
+X-API-Key ( Scopes: X-API-Key )
+</aside>
+<h2 id="update-organization-structure-by-external-id">Update organization structure by external ID</h2>
+<p><a id="opIdPublicIntegrationOrganizationStructureController_updateOrganizationStructure_v1"></a></p>
+<blockquote>
+<p>Code samples</p>
+</blockquote>
+<pre class="highlight tab tab-php"><code> <span class="hljs-string">&#x27;application/json&#x27;</span>,
+    <span class="hljs-string">&#x27;Idempotency-Key&#x27;</span> =&gt; <span class="hljs-string">&#x27;emp-create-2025-10-24-550e8400-e29b-41d4-a716-446655440000&#x27;</span>,
+    <span class="hljs-string">&#x27;X-API-Key&#x27;</span> =&gt; <span class="hljs-string">&#x27;API_KEY&#x27;</span>,
+);
+
+<span class="hljs-variable">$client</span> = <span class="hljs-keyword">new</span> \GuzzleHttp\Client();
+
+<span class="hljs-comment">// Define array of request body.</span>
+<span class="hljs-variable">$request_body</span> = <span class="hljs-keyword">array</span>();
+
+<span class="hljs-keyword">try</span> {
+    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;PUT&#x27;</span>,<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/organizationStructure/{externalId}&#x27;</span>, <span class="hljs-keyword">array</span>(
+        <span class="hljs-string">&#x27;headers&#x27;</span> =&gt; <span class="hljs-variable">$headers</span>,
+        <span class="hljs-string">&#x27;json&#x27;</span> =&gt; <span class="hljs-variable">$request_body</span>,
+       )
+    );
+    print_r(<span class="hljs-variable">$response</span>-&gt;getBody()-&gt;getContents());
+ }
+ <span class="hljs-keyword">catch</span> (\GuzzleHttp\<span class="hljs-built_in">Exception</span>\BadResponseException <span class="hljs-variable">$e</span>) {
+    <span class="hljs-comment">// handle exception or api errors.</span>
+    print_r(<span class="hljs-variable">$e</span>-&gt;getMessage());
+ }
+
+ <span class="hljs-comment">// ...</span>
+
+</code></pre>
+<pre class="highlight tab tab-javascript"><code><span class="hljs-keyword">const</span> inputBody = <span class="hljs-string">&#x27;{
+  &quot;name&quot;: &quot;Human Resources Department (Updated)&quot;,
+  &quot;head&quot;: 200
+}&#x27;</span>;
+<span class="hljs-keyword">const</span> headers = {
+  <span class="hljs-string">&#x27;Content-Type&#x27;</span>:<span class="hljs-string">&#x27;application/json&#x27;</span>,
+  <span class="hljs-string">&#x27;Idempotency-Key&#x27;</span>:<span class="hljs-string">&#x27;emp-create-2025-10-24-550e8400-e29b-41d4-a716-446655440000&#x27;</span>,
+  <span class="hljs-string">&#x27;X-API-Key&#x27;</span>:<span class="hljs-string">&#x27;API_KEY&#x27;</span>
+};
+
+fetch(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/organizationStructure/{externalId}&#x27;</span>,
+{
+  <span class="hljs-attr">method</span>: <span class="hljs-string">&#x27;PUT&#x27;</span>,
+  <span class="hljs-attr">body</span>: inputBody,
+  <span class="hljs-attr">headers</span>: headers
+})
+.then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">res</span>) </span>{
+    <span class="hljs-keyword">return</span> res.json();
+}).then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">body</span>) </span>{
+    <span class="hljs-built_in">console</span>.log(body);
+});
+
+</code></pre>
+<pre class="highlight tab tab-python"><code><span class="hljs-keyword">import</span> requests
+headers = {
+  <span class="hljs-string">&#x27;Content-Type&#x27;</span>: <span class="hljs-string">&#x27;application/json&#x27;</span>,
+  <span class="hljs-string">&#x27;Idempotency-Key&#x27;</span>: <span class="hljs-string">&#x27;emp-create-2025-10-24-550e8400-e29b-41d4-a716-446655440000&#x27;</span>,
+  <span class="hljs-string">&#x27;X-API-Key&#x27;</span>: <span class="hljs-string">&#x27;API_KEY&#x27;</span>
+}
+
+r = requests.put(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/organizationStructure/{externalId}&#x27;</span>, headers = headers)
+
+<span class="hljs-built_in">print</span>(r.json())
+
+</code></pre>
+<pre class="highlight tab tab-shell"><code><span class="hljs-comment"># You can also use wget</span>
+curl -X PUT https://mia-api.hrforte.com/v1/integration/hrf/organizationStructure/{externalId} \
+  -H <span class="hljs-string">&#x27;Content-Type: application/json&#x27;</span> \
+  -H <span class="hljs-string">&#x27;Idempotency-Key: emp-create-2025-10-24-550e8400-e29b-41d4-a716-446655440000&#x27;</span> \
+  -H <span class="hljs-string">&#x27;X-API-Key: API_KEY&#x27;</span>
+
+</code></pre>
+<p><code>PUT /v1/integration/hrf/organizationStructure/{externalId}</code></p>
+<p>Update existing organization structure information using your external ID. Only the fields provided will be updated. Note: if updating parentId, provide the external ID of the new parent (or &quot;0&quot; for root).</p>
+<blockquote>
+<p>Body parameter</p>
+</blockquote>
+<pre class="highlight tab tab-json"><code>{
+  <span class="hljs-attr">&quot;name&quot;</span>: <span class="hljs-string">&quot;Human Resources Department (Updated)&quot;</span>,
+  <span class="hljs-attr">&quot;head&quot;</span>: <span class="hljs-number">200</span>
+}
+</code></pre>
+<h3 id="update-organization-structure-by-external-id-parameters">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>In</th>
+<th>Type</th>
+<th>Required</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>externalId</td>
+<td>path</td>
+<td>string</td>
+<td>true</td>
+<td>none</td>
+</tr>
+<tr>
+<td>Idempotency-Key</td>
+<td>header</td>
+<td>string</td>
+<td>false</td>
+<td>Idempotency key <code>(24h cache)</code></td>
+</tr>
+<tr>
+<td>body</td>
+<td>body</td>
+<td>object</td>
+<td>true</td>
+<td>Partial organization structure data to update</td>
+</tr>
+<tr>
+<td>» code</td>
+<td>body</td>
+<td>string</td>
+<td>false</td>
+<td>Organization code</td>
+</tr>
+<tr>
+<td>» name</td>
+<td>body</td>
+<td>string</td>
+<td>false</td>
+<td>Organization name</td>
+</tr>
+<tr>
+<td>» parentId</td>
+<td>body</td>
+<td>string</td>
+<td>false</td>
+<td>External ID of parent organization (or &quot;0&quot; for root)</td>
+</tr>
+<tr>
+<td>» head</td>
+<td>body</td>
+<td>number</td>
+<td>false</td>
+<td>Employee ID of department head</td>
+</tr>
+</tbody>
+</table>
+<h4 id="detailed-descriptions-33">Detailed descriptions</h4>
+<p><strong>Idempotency-Key</strong>: Idempotency key <code>(24h cache)</code></p>
+<ul>
+<li>Format: <code>{operation}-{date}-{uuid}</code></li>
+<li>Same key + same payload: <code>202 Accepted</code></li>
+<li>Same key + different payload: <code>409 Conflict</code></li>
+</ul>
+<h3 id="update-organization-structure-by-external-id-responses">Responses</h3>
+<table>
+<thead>
+<tr>
+<th>Status</th>
+<th>Meaning</th>
+<th>Description</th>
+<th>Schema</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>200</td>
+<td><a href="https://tools.ietf.org/html/rfc7231#section-6.3.1">OK</a></td>
+<td>Organization structure updated successfully</td>
+<td>None</td>
+</tr>
+<tr>
+<td>202</td>
+<td><a href="https://tools.ietf.org/html/rfc7231#section-6.3.3">Accepted</a></td>
+<td>Request already processed</td>
+<td>None</td>
+</tr>
+<tr>
+<td>400</td>
+<td><a href="https://tools.ietf.org/html/rfc7231#section-6.5.1">Bad Request</a></td>
+<td>Bad Request - Invalid payload data</td>
+<td>None</td>
+</tr>
+<tr>
+<td>401</td>
+<td><a href="https://tools.ietf.org/html/rfc7235#section-3.1">Unauthorized</a></td>
+<td>Unauthorized - Invalid or missing API Key</td>
+<td>None</td>
+</tr>
+<tr>
+<td>404</td>
+<td><a href="https://tools.ietf.org/html/rfc7231#section-6.5.4">Not Found</a></td>
+<td>Organization structure not found or mapping does not exist</td>
+<td>None</td>
+</tr>
+<tr>
+<td>409</td>
+<td><a href="https://tools.ietf.org/html/rfc7231#section-6.5.8">Conflict</a></td>
+<td>Conflict - idempotency key already used with different payload</td>
+<td>None</td>
+</tr>
+</tbody>
+</table>
+<aside class="warning">
+To perform this operation, you must be authenticated by means of one of the following methods:
+X-API-Key ( Scopes: X-API-Key )
+</aside>
+<h2 id="delete-organization-structure-by-external-id">Delete organization structure by external ID</h2>
+<p><a id="opIdPublicIntegrationOrganizationStructureController_deleteOrganizationStructure_v1"></a></p>
+<blockquote>
+<p>Code samples</p>
+</blockquote>
+<pre class="highlight tab tab-php"><code> <span class="hljs-string">&#x27;emp-create-2025-10-24-550e8400-e29b-41d4-a716-446655440000&#x27;</span>,
+    <span class="hljs-string">&#x27;X-API-Key&#x27;</span> =&gt; <span class="hljs-string">&#x27;API_KEY&#x27;</span>,
+);
+
+<span class="hljs-variable">$client</span> = <span class="hljs-keyword">new</span> \GuzzleHttp\Client();
+
+<span class="hljs-comment">// Define array of request body.</span>
+<span class="hljs-variable">$request_body</span> = <span class="hljs-keyword">array</span>();
+
+<span class="hljs-keyword">try</span> {
+    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;DELETE&#x27;</span>,<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/organizationStructure/{externalId}&#x27;</span>, <span class="hljs-keyword">array</span>(
+        <span class="hljs-string">&#x27;headers&#x27;</span> =&gt; <span class="hljs-variable">$headers</span>,
+        <span class="hljs-string">&#x27;json&#x27;</span> =&gt; <span class="hljs-variable">$request_body</span>,
+       )
+    );
+    print_r(<span class="hljs-variable">$response</span>-&gt;getBody()-&gt;getContents());
+ }
+ <span class="hljs-keyword">catch</span> (\GuzzleHttp\<span class="hljs-built_in">Exception</span>\BadResponseException <span class="hljs-variable">$e</span>) {
+    <span class="hljs-comment">// handle exception or api errors.</span>
+    print_r(<span class="hljs-variable">$e</span>-&gt;getMessage());
+ }
+
+ <span class="hljs-comment">// ...</span>
+
+</code></pre>
+<pre class="highlight tab tab-javascript"><code>
+<span class="hljs-keyword">const</span> headers = {
+  <span class="hljs-string">&#x27;Idempotency-Key&#x27;</span>:<span class="hljs-string">&#x27;emp-create-2025-10-24-550e8400-e29b-41d4-a716-446655440000&#x27;</span>,
+  <span class="hljs-string">&#x27;X-API-Key&#x27;</span>:<span class="hljs-string">&#x27;API_KEY&#x27;</span>
+};
+
+fetch(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/organizationStructure/{externalId}&#x27;</span>,
+{
+  <span class="hljs-attr">method</span>: <span class="hljs-string">&#x27;DELETE&#x27;</span>,
+
+  <span class="hljs-attr">headers</span>: headers
+})
+.then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">res</span>) </span>{
+    <span class="hljs-keyword">return</span> res.json();
+}).then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">body</span>) </span>{
+    <span class="hljs-built_in">console</span>.log(body);
+});
+
+</code></pre>
+<pre class="highlight tab tab-python"><code><span class="hljs-keyword">import</span> requests
+headers = {
+  <span class="hljs-string">&#x27;Idempotency-Key&#x27;</span>: <span class="hljs-string">&#x27;emp-create-2025-10-24-550e8400-e29b-41d4-a716-446655440000&#x27;</span>,
+  <span class="hljs-string">&#x27;X-API-Key&#x27;</span>: <span class="hljs-string">&#x27;API_KEY&#x27;</span>
+}
+
+r = requests.delete(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/organizationStructure/{externalId}&#x27;</span>, headers = headers)
+
+<span class="hljs-built_in">print</span>(r.json())
+
+</code></pre>
+<pre class="highlight tab tab-shell"><code><span class="hljs-comment"># You can also use wget</span>
+curl -X DELETE https://mia-api.hrforte.com/v1/integration/hrf/organizationStructure/{externalId} \
+  -H <span class="hljs-string">&#x27;Idempotency-Key: emp-create-2025-10-24-550e8400-e29b-41d4-a716-446655440000&#x27;</span> \
+  -H <span class="hljs-string">&#x27;X-API-Key: API_KEY&#x27;</span>
+
+</code></pre>
+<p><code>DELETE /v1/integration/hrf/organizationStructure/{externalId}</code></p>
+<p>Delete an organization structure using your external ID. This will remove the organization structure from the system.</p>
+<h3 id="delete-organization-structure-by-external-id-parameters">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>In</th>
+<th>Type</th>
+<th>Required</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>externalId</td>
+<td>path</td>
+<td>string</td>
+<td>true</td>
+<td>none</td>
+</tr>
+<tr>
+<td>Idempotency-Key</td>
+<td>header</td>
+<td>string</td>
+<td>false</td>
+<td>Idempotency key <code>(24h cache)</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="detailed-descriptions-34">Detailed descriptions</h4>
+<p><strong>Idempotency-Key</strong>: Idempotency key <code>(24h cache)</code></p>
+<ul>
+<li>Format: <code>{operation}-{date}-{uuid}</code></li>
+<li>Same key + same payload: <code>202 Accepted</code></li>
+<li>Same key + different payload: <code>409 Conflict</code></li>
+</ul>
+<h3 id="delete-organization-structure-by-external-id-responses">Responses</h3>
+<table>
+<thead>
+<tr>
+<th>Status</th>
+<th>Meaning</th>
+<th>Description</th>
+<th>Schema</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>200</td>
+<td><a href="https://tools.ietf.org/html/rfc7231#section-6.3.1">OK</a></td>
+<td>Organization structure deleted successfully</td>
+<td>None</td>
+</tr>
+<tr>
+<td>202</td>
+<td><a href="https://tools.ietf.org/html/rfc7231#section-6.3.3">Accepted</a></td>
+<td>Request already processed</td>
+<td>None</td>
+</tr>
+<tr>
+<td>401</td>
+<td><a href="https://tools.ietf.org/html/rfc7235#section-3.1">Unauthorized</a></td>
+<td>Unauthorized - Invalid or missing API Key</td>
+<td>None</td>
+</tr>
+<tr>
+<td>404</td>
+<td><a href="https://tools.ietf.org/html/rfc7231#section-6.5.4">Not Found</a></td>
+<td>Organization structure not found or mapping does not exist</td>
+<td>None</td>
+</tr>
+<tr>
+<td>409</td>
+<td><a href="https://tools.ietf.org/html/rfc7231#section-6.5.8">Conflict</a></td>
+<td>Conflict - idempotency key already used with different payload</td>
+<td>None</td>
+</tr>
+</tbody>
+</table>
+<aside class="warning">
+To perform this operation, you must be authenticated by means of one of the following methods:
+X-API-Key ( Scopes: X-API-Key )
+</aside>
+<h2 id="assign-employees-to-organization-structure">Assign employees to organization structure</h2>
+<p><a id="opIdPublicIntegrationOrganizationStructureController_assignEmployeesToOrganizationStructure_v1"></a></p>
+<blockquote>
+<p>Code samples</p>
+</blockquote>
+<pre class="highlight tab tab-php"><code> <span class="hljs-string">&#x27;application/json&#x27;</span>,
+    <span class="hljs-string">&#x27;Accept&#x27;</span> =&gt; <span class="hljs-string">&#x27;application/json&#x27;</span>,
+    <span class="hljs-string">&#x27;Idempotency-Key&#x27;</span> =&gt; <span class="hljs-string">&#x27;emp-create-2025-10-24-550e8400-e29b-41d4-a716-446655440000&#x27;</span>,
+    <span class="hljs-string">&#x27;X-API-Key&#x27;</span> =&gt; <span class="hljs-string">&#x27;API_KEY&#x27;</span>,
+);
+
+<span class="hljs-variable">$client</span> = <span class="hljs-keyword">new</span> \GuzzleHttp\Client();
+
+<span class="hljs-comment">// Define array of request body.</span>
+<span class="hljs-variable">$request_body</span> = <span class="hljs-keyword">array</span>();
+
+<span class="hljs-keyword">try</span> {
+    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;PUT&#x27;</span>,<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/organizationStructure/{externalId}/assignEmployees&#x27;</span>, <span class="hljs-keyword">array</span>(
+        <span class="hljs-string">&#x27;headers&#x27;</span> =&gt; <span class="hljs-variable">$headers</span>,
+        <span class="hljs-string">&#x27;json&#x27;</span> =&gt; <span class="hljs-variable">$request_body</span>,
+       )
+    );
+    print_r(<span class="hljs-variable">$response</span>-&gt;getBody()-&gt;getContents());
+ }
+ <span class="hljs-keyword">catch</span> (\GuzzleHttp\<span class="hljs-built_in">Exception</span>\BadResponseException <span class="hljs-variable">$e</span>) {
+    <span class="hljs-comment">// handle exception or api errors.</span>
+    print_r(<span class="hljs-variable">$e</span>-&gt;getMessage());
+ }
+
+ <span class="hljs-comment">// ...</span>
+
+</code></pre>
+<pre class="highlight tab tab-javascript"><code><span class="hljs-keyword">const</span> inputBody = <span class="hljs-string">&#x27;{
+  &quot;employeeIds&quot;: [
+    &quot;EXT-EMP-001&quot;,
+    &quot;EXT-EMP-002&quot;,
+    &quot;EXT-EMP-003&quot;
+  ]
+}&#x27;</span>;
+<span class="hljs-keyword">const</span> headers = {
+  <span class="hljs-string">&#x27;Content-Type&#x27;</span>:<span class="hljs-string">&#x27;application/json&#x27;</span>,
+  <span class="hljs-string">&#x27;Accept&#x27;</span>:<span class="hljs-string">&#x27;application/json&#x27;</span>,
+  <span class="hljs-string">&#x27;Idempotency-Key&#x27;</span>:<span class="hljs-string">&#x27;emp-create-2025-10-24-550e8400-e29b-41d4-a716-446655440000&#x27;</span>,
+  <span class="hljs-string">&#x27;X-API-Key&#x27;</span>:<span class="hljs-string">&#x27;API_KEY&#x27;</span>
+};
+
+fetch(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/organizationStructure/{externalId}/assignEmployees&#x27;</span>,
+{
+  <span class="hljs-attr">method</span>: <span class="hljs-string">&#x27;PUT&#x27;</span>,
+  <span class="hljs-attr">body</span>: inputBody,
+  <span class="hljs-attr">headers</span>: headers
+})
+.then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">res</span>) </span>{
+    <span class="hljs-keyword">return</span> res.json();
+}).then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">body</span>) </span>{
+    <span class="hljs-built_in">console</span>.log(body);
+});
+
+</code></pre>
+<pre class="highlight tab tab-python"><code><span class="hljs-keyword">import</span> requests
+headers = {
+  <span class="hljs-string">&#x27;Content-Type&#x27;</span>: <span class="hljs-string">&#x27;application/json&#x27;</span>,
+  <span class="hljs-string">&#x27;Accept&#x27;</span>: <span class="hljs-string">&#x27;application/json&#x27;</span>,
+  <span class="hljs-string">&#x27;Idempotency-Key&#x27;</span>: <span class="hljs-string">&#x27;emp-create-2025-10-24-550e8400-e29b-41d4-a716-446655440000&#x27;</span>,
+  <span class="hljs-string">&#x27;X-API-Key&#x27;</span>: <span class="hljs-string">&#x27;API_KEY&#x27;</span>
+}
+
+r = requests.put(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/organizationStructure/{externalId}/assignEmployees&#x27;</span>, headers = headers)
+
+<span class="hljs-built_in">print</span>(r.json())
+
+</code></pre>
+<pre class="highlight tab tab-shell"><code><span class="hljs-comment"># You can also use wget</span>
+curl -X PUT https://mia-api.hrforte.com/v1/integration/hrf/organizationStructure/{externalId}/assignEmployees \
+  -H <span class="hljs-string">&#x27;Content-Type: application/json&#x27;</span> \
+  -H <span class="hljs-string">&#x27;Accept: application/json&#x27;</span> \
+  -H <span class="hljs-string">&#x27;Idempotency-Key: emp-create-2025-10-24-550e8400-e29b-41d4-a716-446655440000&#x27;</span> \
+  -H <span class="hljs-string">&#x27;X-API-Key: API_KEY&#x27;</span>
+
+</code></pre>
+<p><code>PUT /v1/integration/hrf/organizationStructure/{externalId}/assignEmployees</code></p>
+<p>Assign multiple employees to an organization structure using their external IDs. This will update the organization assignment for the specified employees.</p>
+<blockquote>
+<p>Body parameter</p>
+</blockquote>
+<pre class="highlight tab tab-json"><code>{
+  <span class="hljs-attr">&quot;employeeIds&quot;</span>: [
+    <span class="hljs-string">&quot;EXT-EMP-001&quot;</span>,
+    <span class="hljs-string">&quot;EXT-EMP-002&quot;</span>,
+    <span class="hljs-string">&quot;EXT-EMP-003&quot;</span>
+  ]
+}
+</code></pre>
+<h3 id="assign-employees-to-organization-structure-parameters">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>In</th>
+<th>Type</th>
+<th>Required</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>externalId</td>
+<td>path</td>
+<td>string</td>
+<td>true</td>
+<td>none</td>
+</tr>
+<tr>
+<td>Idempotency-Key</td>
+<td>header</td>
+<td>string</td>
+<td>false</td>
+<td>Idempotency key <code>(24h cache)</code></td>
+</tr>
+<tr>
+<td>body</td>
+<td>body</td>
+<td><a href="#schemaassignemployeestoorgstructuredto">AssignEmployeesToOrgStructureDto</a></td>
+<td>true</td>
+<td>Array of external employee IDs to assign</td>
+</tr>
+</tbody>
+</table>
+<h4 id="detailed-descriptions-35">Detailed descriptions</h4>
+<p><strong>Idempotency-Key</strong>: Idempotency key <code>(24h cache)</code></p>
+<ul>
+<li>Format: <code>{operation}-{date}-{uuid}</code></li>
+<li>Same key + same payload: <code>202 Accepted</code></li>
+<li>Same key + different payload: <code>409 Conflict</code></li>
+</ul>
+<blockquote>
+<p>Example responses</p>
+</blockquote>
+<blockquote>
+<p>200 Response</p>
+</blockquote>
+<pre class="highlight tab tab-json"><code>{
+  <span class="hljs-attr">&quot;success&quot;</span>: <span class="hljs-literal">true</span>,
+  <span class="hljs-attr">&quot;organizationStructureExternalId&quot;</span>: <span class="hljs-string">&quot;EXT-ORG-001&quot;</span>,
+  <span class="hljs-attr">&quot;organizationStructureInternalId&quot;</span>: <span class="hljs-string">&quot;123&quot;</span>,
+  <span class="hljs-attr">&quot;assignedCount&quot;</span>: <span class="hljs-number">3</span>,
+  <span class="hljs-attr">&quot;notFoundCount&quot;</span>: <span class="hljs-number">0</span>,
+  <span class="hljs-attr">&quot;notFoundEmployeeIds&quot;</span>: [],
+  <span class="hljs-attr">&quot;timestamp&quot;</span>: <span class="hljs-string">&quot;2024-11-12T10:30:00.000Z&quot;</span>
+}
+</code></pre>
+<h3 id="assign-employees-to-organization-structure-responses">Responses</h3>
+<table>
+<thead>
+<tr>
+<th>Status</th>
+<th>Meaning</th>
+<th>Description</th>
+<th>Schema</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>200</td>
+<td><a href="https://tools.ietf.org/html/rfc7231#section-6.3.1">OK</a></td>
+<td>Employees assigned successfully</td>
+<td>Inline</td>
+</tr>
+<tr>
+<td>202</td>
+<td><a href="https://tools.ietf.org/html/rfc7231#section-6.3.3">Accepted</a></td>
+<td>Request already processed</td>
+<td>None</td>
+</tr>
+<tr>
+<td>400</td>
+<td><a href="https://tools.ietf.org/html/rfc7231#section-6.5.1">Bad Request</a></td>
+<td>Bad Request - Invalid payload data</td>
+<td>None</td>
+</tr>
+<tr>
+<td>401</td>
+<td><a href="https://tools.ietf.org/html/rfc7235#section-3.1">Unauthorized</a></td>
+<td>Unauthorized - Invalid or missing API Key</td>
+<td>None</td>
+</tr>
+<tr>
+<td>404</td>
+<td><a href="https://tools.ietf.org/html/rfc7231#section-6.5.4">Not Found</a></td>
+<td>Organization structure not found or no employees found</td>
+<td>None</td>
+</tr>
+<tr>
+<td>409</td>
+<td><a href="https://tools.ietf.org/html/rfc7231#section-6.5.8">Conflict</a></td>
+<td>Conflict - idempotency key already used with different payload</td>
+<td>None</td>
+</tr>
+</tbody>
+</table>
+<h3 id="assign-employees-to-organization-structure-responseschema">Response Schema</h3>
+<p>Status Code <strong>200</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Required</th>
+<th>Restrictions</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>» success</td>
+<td>boolean</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>» organizationStructureExternalId</td>
+<td>string</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>» organizationStructureInternalId</td>
+<td>string</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>» assignedCount</td>
+<td>number</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>» notFoundCount</td>
+<td>number</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>» notFoundEmployeeIds</td>
+<td>[string]</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>» timestamp</td>
+<td>string</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+</tbody>
+</table>
+<aside class="warning">
+To perform this operation, you must be authenticated by means of one of the following methods:
+X-API-Key ( Scopes: X-API-Key )
+</aside>
 <h1 id="schemas">Schemas</h1>
+<h2 id="tocs_leavingreasondto">LeavingReasonDto</h2>
+<p><a id="schemaleavingreasondto"></a>
+<a id="schema_LeavingReasonDto"></a>
+<a id="tocSleavingreasondto"></a>
+<a id="tocsleavingreasondto"></a></p>
+<pre class="highlight tab tab-json"><code>{
+  <span class="hljs-attr">&quot;id&quot;</span>: <span class="hljs-number">6141</span>,
+  <span class="hljs-attr">&quot;code&quot;</span>: <span class="hljs-string">&quot;LS-1000&quot;</span>,
+  <span class="hljs-attr">&quot;name&quot;</span>: <span class="hljs-string">&quot;Your values no longer align with the company mission&quot;</span>,
+  <span class="hljs-attr">&quot;inVoluntary&quot;</span>: <span class="hljs-literal">false</span>
+}
+
+</code></pre>
+<h3 id="properties">Properties</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Required</th>
+<th>Restrictions</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id</td>
+<td>number</td>
+<td>true</td>
+<td>none</td>
+<td>Unique identifier for the leaving reason</td>
+</tr>
+<tr>
+<td>code</td>
+<td>string</td>
+<td>true</td>
+<td>none</td>
+<td>Code for the leaving reason</td>
+</tr>
+<tr>
+<td>name</td>
+<td>string</td>
+<td>true</td>
+<td>none</td>
+<td>Display name for the leaving reason</td>
+</tr>
+<tr>
+<td>inVoluntary</td>
+<td>boolean</td>
+<td>true</td>
+<td>none</td>
+<td>Whether the leaving reason is involuntary</td>
+</tr>
+</tbody>
+</table>
 <h2 id="tocs_createemployeepayloaddto">CreateEmployeePayloadDto</h2>
 <p><a id="schemacreateemployeepayloaddto"></a>
 <a id="schema_CreateEmployeePayloadDto"></a>
@@ -13719,7 +16058,7 @@ X-API-Key ( Scopes: X-API-Key )
 }
 
 </code></pre>
-<h3 id="properties">Properties</h3>
+<h3 id="properties-2">Properties</h3>
 <table>
 <thead>
 <tr>
@@ -14112,7 +16451,7 @@ X-API-Key ( Scopes: X-API-Key )
 }
 
 </code></pre>
-<h3 id="properties-2">Properties</h3>
+<h3 id="properties-3">Properties</h3>
 <table>
 <thead>
 <tr>
@@ -14195,7 +16534,7 @@ X-API-Key ( Scopes: X-API-Key )
 }
 
 </code></pre>
-<h3 id="properties-3">Properties</h3>
+<h3 id="properties-4">Properties</h3>
 <table>
 <thead>
 <tr>
@@ -14243,7 +16582,7 @@ X-API-Key ( Scopes: X-API-Key )
 }
 
 </code></pre>
-<h3 id="properties-4">Properties</h3>
+<h3 id="properties-5">Properties</h3>
 <table>
 <thead>
 <tr>
@@ -14274,14 +16613,14 @@ X-API-Key ( Scopes: X-API-Key )
 <td>string</td>
 <td>false</td>
 <td>none</td>
-<td>Currency code (ISO 3-letter, max 3 characters)</td>
+<td>Currency code (ISO 3-letter, max 3 characters). Must match existing currency code in the system (Review endpoint /v1/integration/hrf/general/currencies)</td>
 </tr>
 <tr>
 <td>referenceNo</td>
 <td>string</td>
 <td>false</td>
 <td>none</td>
-<td>Contract reference number (max 50 characters)</td>
+<td>Contract reference number (max 50 characters). System-generated when not provided</td>
 </tr>
 <tr>
 <td>dateFrom</td>
@@ -14302,7 +16641,7 @@ X-API-Key ( Scopes: X-API-Key )
 <td>string</td>
 <td>false</td>
 <td>none</td>
-<td>Contract type (max 2 characters). Valid values: PI (Permanent/Indefinite), FT (Fixed Term), PR (Probation), etc.</td>
+<td>Contract type (max 2 characters). Valid values: PI (Permanent/Indefinite), FT (Fixed Term), PR (Probation), etc. Must match existing contract type in the system (Review endpoint /v1/integration/hrf/general/contract-types)</td>
 </tr>
 <tr>
 <td>entitledTaxRelief</td>
@@ -14337,7 +16676,7 @@ X-API-Key ( Scopes: X-API-Key )
 <td>string</td>
 <td>false</td>
 <td>none</td>
-<td>Applicable to Tax (Vietnam only, max 3 characters). Valid values: PGR (Progressive Tax), FLA (Flat Tax), etc.</td>
+<td>Applicable to Tax (Vietnam only, max 3 characters). Valid values: PGR (Progressive Tax), FLA (Flat Tax), etc. Must match existing applicable code in the system (Review endpoint /v1/integration/hrf/general/applicable-tax-types)</td>
 </tr>
 <tr>
 <td>commitment</td>
@@ -14351,7 +16690,7 @@ X-API-Key ( Scopes: X-API-Key )
 <td>number</td>
 <td>false</td>
 <td>none</td>
-<td>Socso Category (Malaysia only). Valid values from SOCSO CATEGORY master list</td>
+<td>Socso Category (Malaysia only). Must match existing SOCSO Category in the system (Review endpoint /v1/integration/hrf/general/employee/socso-category)</td>
 </tr>
 <tr>
 <td>veEpfRateEE</td>
@@ -14420,7 +16759,7 @@ X-API-Key ( Scopes: X-API-Key )
 }
 
 </code></pre>
-<h3 id="properties-5">Properties</h3>
+<h3 id="properties-6">Properties</h3>
 <table>
 <thead>
 <tr>
@@ -14502,7 +16841,7 @@ X-API-Key ( Scopes: X-API-Key )
 }
 
 </code></pre>
-<h3 id="properties-6">Properties</h3>
+<h3 id="properties-7">Properties</h3>
 <table>
 <thead>
 <tr>
@@ -14533,14 +16872,14 @@ X-API-Key ( Scopes: X-API-Key )
 <td>string</td>
 <td>true</td>
 <td>none</td>
-<td>Pay element code (company-specific or standard code)</td>
+<td>Pay element code (company-specific or standard code).Must match existing Pay element code in the system (Review endpoint /v1/integration/hrf/general/compensation/pay-element-mapping)</td>
 </tr>
 <tr>
 <td>currencyCode</td>
 <td>string</td>
 <td>true</td>
 <td>none</td>
-<td>Currency code (ISO 3-letter format)</td>
+<td>Currency code (ISO 3-letter format). Must match existing currency code in the system (Review endpoint /v1/integration/hrf/general/currencies)</td>
 </tr>
 <tr>
 <td>amount</td>
@@ -14561,14 +16900,14 @@ X-API-Key ( Scopes: X-API-Key )
 <td>string</td>
 <td>false</td>
 <td>none</td>
-<td>Cost center code</td>
+<td>Cost center code. Must match existing cost center code in the system</td>
 </tr>
 <tr>
 <td>costCenterName</td>
 <td>string</td>
 <td>false</td>
 <td>none</td>
-<td>Cost center name</td>
+<td>Cost center name. Must match existing cost center name in the system</td>
 </tr>
 <tr>
 <td>payTwiceMonthly</td>
@@ -14589,7 +16928,7 @@ X-API-Key ( Scopes: X-API-Key )
 <td>string</td>
 <td>false</td>
 <td>none</td>
-<td>Reference number</td>
+<td>Reference number. System-generated when not provided</td>
 </tr>
 <tr>
 <td>description</td>
@@ -14680,203 +17019,203 @@ X-API-Key ( Scopes: X-API-Key )
 <td>number</td>
 <td>false</td>
 <td>none</td>
-<td>[VN] Meal allowance amount</td>
+<td>Meal allowance amount (Vietnam only)</td>
 </tr>
 <tr>
 <td>vnPhone</td>
 <td>number</td>
 <td>false</td>
 <td>none</td>
-<td>[VN] Phone allowance amount</td>
+<td>Phone allowance amount (Vietnam only)</td>
 </tr>
 <tr>
 <td>vnTravel</td>
 <td>number</td>
 <td>false</td>
 <td>none</td>
-<td>[VN] Travel allowance amount</td>
+<td>Travel allowance amount (Vietnam only)</td>
 </tr>
 <tr>
 <td>vnPetrol</td>
 <td>number</td>
 <td>false</td>
 <td>none</td>
-<td>[VN] Petrol allowance amount</td>
+<td>Petrol allowance amount (Vietnam only)</td>
 </tr>
 <tr>
 <td>vnParking</td>
 <td>number</td>
 <td>false</td>
 <td>none</td>
-<td>[VN] Parking allowance amount</td>
+<td>Parking allowance amount (Vietnam only)</td>
 </tr>
 <tr>
 <td>vnHousing</td>
 <td>number</td>
 <td>false</td>
 <td>none</td>
-<td>[VN] Housing allowance amount</td>
+<td>Housing allowance amount (Vietnam only)</td>
 </tr>
 <tr>
 <td>vnTraining</td>
 <td>number</td>
 <td>false</td>
 <td>none</td>
-<td>[VN] Training allowance amount</td>
+<td>Training allowance amount (Vietnam only)</td>
 </tr>
 <tr>
 <td>myEpfEmployee</td>
 <td>number</td>
 <td>false</td>
 <td>none</td>
-<td>[MY] EPF Employee contribution</td>
+<td>EPF Employee contribution (Malaysia only)</td>
 </tr>
 <tr>
 <td>myEpfEmployer</td>
 <td>number</td>
 <td>false</td>
 <td>none</td>
-<td>[MY] EPF Employer contribution</td>
+<td>EPF Employer contribution (Malaysia only)</td>
 </tr>
 <tr>
 <td>mySocsoEmployee</td>
 <td>number</td>
 <td>false</td>
 <td>none</td>
-<td>[MY] SOCSO Employee contribution</td>
+<td>SOCSO Employee contribution (Malaysia only). Must match existing SOCSO value (Review v1/integration/hrf/general/employee/socso-category)</td>
 </tr>
 <tr>
 <td>mySocsoEmployer</td>
 <td>number</td>
 <td>false</td>
 <td>none</td>
-<td>[MY] SOCSO Employer contribution</td>
+<td>SOCSO Employer contribution (Malaysia only)</td>
 </tr>
 <tr>
 <td>myEisEmployee</td>
 <td>number</td>
 <td>false</td>
 <td>none</td>
-<td>[MY] EIS Employee contribution</td>
+<td>EIS Employee contribution (Malaysia only)</td>
 </tr>
 <tr>
 <td>myEisEmployer</td>
 <td>number</td>
 <td>false</td>
 <td>none</td>
-<td>[MY] EIS Employer contribution</td>
+<td>EIS Employer contribution (Malaysia only)</td>
 </tr>
 <tr>
 <td>phSssEmployee</td>
 <td>number</td>
 <td>false</td>
 <td>none</td>
-<td>[PH] SSS Employee contribution</td>
+<td>SSS Employee contribution (Philippines only)</td>
 </tr>
 <tr>
 <td>phSssEmployer</td>
 <td>number</td>
 <td>false</td>
 <td>none</td>
-<td>[PH] SSS Employer contribution</td>
+<td>SSS Employer contribution (Philippines only)</td>
 </tr>
 <tr>
 <td>phPhilHealthEmployee</td>
 <td>number</td>
 <td>false</td>
 <td>none</td>
-<td>[PH] PhilHealth Employee contribution</td>
+<td>PhilHealth Employee contribution (Philippines only)</td>
 </tr>
 <tr>
 <td>phPhilHealthEmployer</td>
 <td>number</td>
 <td>false</td>
 <td>none</td>
-<td>[PH] PhilHealth Employer contribution</td>
+<td>PhilHealth Employer contribution (Philippines only)</td>
 </tr>
 <tr>
 <td>phHdmfEmployee</td>
 <td>number</td>
 <td>false</td>
 <td>none</td>
-<td>[PH] HDMF Employee contribution</td>
+<td>HDMF Employee contribution (Philippines only)</td>
 </tr>
 <tr>
 <td>phHdmfEmployer</td>
 <td>number</td>
 <td>false</td>
 <td>none</td>
-<td>[PH] HDMF Employer contribution</td>
+<td>HDMF Employer contribution (Philippines only)</td>
 </tr>
 <tr>
 <td>khNssfEmployee</td>
 <td>number</td>
 <td>false</td>
 <td>none</td>
-<td>[KH] NSSF Employee contribution</td>
+<td>NSSF Employee contribution (Cambodia only)</td>
 </tr>
 <tr>
 <td>sgCpfEmployee</td>
 <td>number</td>
 <td>false</td>
 <td>none</td>
-<td>[SG] CPF Employee contribution</td>
+<td>CPF Employee contribution (Singapore only)</td>
 </tr>
 <tr>
 <td>sgCpfEmployer</td>
 <td>number</td>
 <td>false</td>
 <td>none</td>
-<td>[SG] CPF Employer contribution</td>
+<td>CPF Employer contribution (Singapore only)</td>
 </tr>
 <tr>
 <td>sgSdlEmployer</td>
 <td>number</td>
 <td>false</td>
 <td>none</td>
-<td>[SG] SDL Employer contribution</td>
+<td>SDL Employer contribution (Singapore only)</td>
 </tr>
 <tr>
 <td>thSocialSecurityEmployee</td>
 <td>number</td>
 <td>false</td>
 <td>none</td>
-<td>[TH] Social Security Employee contribution</td>
+<td>Social Security Employee contribution (Thailand only)</td>
 </tr>
 <tr>
 <td>thSocialSecurityEmployer</td>
 <td>number</td>
 <td>false</td>
 <td>none</td>
-<td>[TH] Social Security Employer contribution</td>
+<td>Social Security Employer contribution (Thailand only)</td>
 </tr>
 <tr>
 <td>thProvidentFundEmployee</td>
 <td>number</td>
 <td>false</td>
 <td>none</td>
-<td>[TH] Provident Fund Employee contribution</td>
+<td>Provident Fund Employee contribution (Thailand only)</td>
 </tr>
 <tr>
 <td>thProvidentFundEmployer</td>
 <td>number</td>
 <td>false</td>
 <td>none</td>
-<td>[TH] Provident Fund Employer contribution</td>
+<td>Provident Fund Employer contribution (Thailand only)</td>
 </tr>
 <tr>
 <td>hkMpfEmployee</td>
 <td>number</td>
 <td>false</td>
 <td>none</td>
-<td>[HK] MPF Employee contribution</td>
+<td>MPF Employee contribution (Hong Kong only)</td>
 </tr>
 <tr>
 <td>hkMpfEmployer</td>
 <td>number</td>
 <td>false</td>
 <td>none</td>
-<td>[HK] MPF Employer contribution</td>
+<td>MPF Employer contribution (Hong Kong only)</td>
 </tr>
 </tbody>
 </table>
@@ -14945,7 +17284,7 @@ X-API-Key ( Scopes: X-API-Key )
 }
 
 </code></pre>
-<h3 id="properties-7">Properties</h3>
+<h3 id="properties-8">Properties</h3>
 <table>
 <thead>
 <tr>
@@ -14979,7 +17318,7 @@ X-API-Key ( Scopes: X-API-Key )
 }
 
 </code></pre>
-<h3 id="properties-8">Properties</h3>
+<h3 id="properties-9">Properties</h3>
 <table>
 <thead>
 <tr>
@@ -15060,7 +17399,7 @@ X-API-Key ( Scopes: X-API-Key )
 }
 
 </code></pre>
-<h3 id="properties-9">Properties</h3>
+<h3 id="properties-10">Properties</h3>
 <table>
 <thead>
 <tr>
@@ -15446,21 +17785,13 @@ X-API-Key ( Scopes: X-API-Key )
   <span class="hljs-attr">&quot;workEmail&quot;</span>: <span class="hljs-string">&quot;john.doe@company.com&quot;</span>,
   <span class="hljs-attr">&quot;workPhone&quot;</span>: <span class="hljs-string">&quot;+65-6123-4567&quot;</span>,
   <span class="hljs-attr">&quot;workPhoneExt&quot;</span>: <span class="hljs-string">&quot;1234&quot;</span>,
-  <span class="hljs-attr">&quot;payrollGroupName&quot;</span>: <span class="hljs-string">&quot;Monthly Payroll&quot;</span>,
-  <span class="hljs-attr">&quot;cycleFrequencyName&quot;</span>: <span class="hljs-string">&quot;Monthly&quot;</span>,
-  <span class="hljs-attr">&quot;jobPositionName&quot;</span>: <span class="hljs-string">&quot;Senior Software Engineer&quot;</span>,
-  <span class="hljs-attr">&quot;jobGradeName&quot;</span>: <span class="hljs-string">&quot;Grade 5&quot;</span>,
-  <span class="hljs-attr">&quot;organizationElementName&quot;</span>: <span class="hljs-string">&quot;Engineering Department&quot;</span>,
-  <span class="hljs-attr">&quot;locationName&quot;</span>: <span class="hljs-string">&quot;Singapore Office&quot;</span>,
-  <span class="hljs-attr">&quot;costCenterName&quot;</span>: <span class="hljs-string">&quot;CC-ENG-001&quot;</span>,
   <span class="hljs-attr">&quot;reportingTo&quot;</span>: <span class="hljs-string">&quot;Jane Smith&quot;</span>,
   <span class="hljs-attr">&quot;alsoReportingTo&quot;</span>: <span class="hljs-string">&quot;Bob Johnson&quot;</span>,
-  <span class="hljs-attr">&quot;leavingReasonName&quot;</span>: <span class="hljs-string">&quot;Resignation&quot;</span>,
   <span class="hljs-attr">&quot;workRegion&quot;</span>: <span class="hljs-number">1</span>
 }
 
 </code></pre>
-<h3 id="properties-10">Properties</h3>
+<h3 id="properties-11">Properties</h3>
 <table>
 <thead>
 <tr>
@@ -15477,7 +17808,7 @@ X-API-Key ( Scopes: X-API-Key )
 <td>string</td>
 <td>true</td>
 <td>none</td>
-<td>External Employee ID (must exist in employee mapping). One work record per employee (1:1 relationship)</td>
+<td>External Employee ID (must exist in employee mapping)</td>
 </tr>
 <tr>
 <td>payCalculationMethod</td>
@@ -15536,55 +17867,6 @@ X-API-Key ( Scopes: X-API-Key )
 <td>Work phone extension (max 10 characters)</td>
 </tr>
 <tr>
-<td>payrollGroupName</td>
-<td>string</td>
-<td>false</td>
-<td>none</td>
-<td>Payroll Group Name (max 100 characters). Must match existing payroll group name in the system</td>
-</tr>
-<tr>
-<td>cycleFrequencyName</td>
-<td>string</td>
-<td>false</td>
-<td>none</td>
-<td>Cycle Frequency Name (max 100 characters). Must match existing cycle frequency name (e.g., Monthly, Bi-Weekly)</td>
-</tr>
-<tr>
-<td>jobPositionName</td>
-<td>string</td>
-<td>false</td>
-<td>none</td>
-<td>Job Position Name (max 100 characters). Must match existing job position name in the system</td>
-</tr>
-<tr>
-<td>jobGradeName</td>
-<td>string</td>
-<td>false</td>
-<td>none</td>
-<td>Job Grade Name (max 100 characters). Must match existing job grade name in the system</td>
-</tr>
-<tr>
-<td>organizationElementName</td>
-<td>string</td>
-<td>false</td>
-<td>none</td>
-<td>Organization Element Name (max 100 characters). Must match existing organization element/department name</td>
-</tr>
-<tr>
-<td>locationName</td>
-<td>string</td>
-<td>false</td>
-<td>none</td>
-<td>Location Name (max 100 characters). Must match existing location name in the system</td>
-</tr>
-<tr>
-<td>costCenterName</td>
-<td>string</td>
-<td>false</td>
-<td>none</td>
-<td>Cost Center Name (max 100 characters). Must match existing cost center name in the system</td>
-</tr>
-<tr>
 <td>reportingTo</td>
 <td>string</td>
 <td>false</td>
@@ -15597,13 +17879,6 @@ X-API-Key ( Scopes: X-API-Key )
 <td>false</td>
 <td>none</td>
 <td>Also Reporting To (Secondary manager's full name). Must match the fullNameLocal of an existing employee</td>
-</tr>
-<tr>
-<td>leavingReasonName</td>
-<td>string</td>
-<td>false</td>
-<td>none</td>
-<td>Leaving Reason Name (max 200 characters). Must match existing leaving reason name in the system</td>
 </tr>
 <tr>
 <td>workRegion</td>
@@ -15628,17 +17903,7 @@ X-API-Key ( Scopes: X-API-Key )
       <span class="hljs-attr">&quot;seniorityDate&quot;</span>: <span class="hljs-string">&quot;2024-01-15&quot;</span>,
       <span class="hljs-attr">&quot;workEmail&quot;</span>: <span class="hljs-string">&quot;john.doe@company.com&quot;</span>,
       <span class="hljs-attr">&quot;workPhone&quot;</span>: <span class="hljs-string">&quot;+65-6123-4567&quot;</span>,
-      <span class="hljs-attr">&quot;workPhoneExt&quot;</span>: <span class="hljs-string">&quot;1234&quot;</span>,
-      <span class="hljs-attr">&quot;payrollGroupName&quot;</span>: <span class="hljs-string">&quot;Monthly Payroll&quot;</span>,
-      <span class="hljs-attr">&quot;cycleFrequencyName&quot;</span>: <span class="hljs-string">&quot;Monthly&quot;</span>,
-      <span class="hljs-attr">&quot;jobPositionName&quot;</span>: <span class="hljs-string">&quot;Senior Software Engineer&quot;</span>,
-      <span class="hljs-attr">&quot;jobGradeName&quot;</span>: <span class="hljs-string">&quot;Grade 5&quot;</span>,
-      <span class="hljs-attr">&quot;organizationElementName&quot;</span>: <span class="hljs-string">&quot;Engineering Department&quot;</span>,
-      <span class="hljs-attr">&quot;locationName&quot;</span>: <span class="hljs-string">&quot;Singapore Office&quot;</span>,
-      <span class="hljs-attr">&quot;reportingTo&quot;</span>: <span class="hljs-string">&quot;Jane Smith&quot;</span>,
-      <span class="hljs-attr">&quot;alsoReportingTo&quot;</span>: <span class="hljs-string">&quot;Bob Johnson&quot;</span>,
-      <span class="hljs-attr">&quot;costCenterName&quot;</span>: <span class="hljs-string">&quot;CC-ENG-001&quot;</span>,
-      <span class="hljs-attr">&quot;workRegion&quot;</span>: <span class="hljs-number">1</span>
+      <span class="hljs-attr">&quot;workPhoneExt&quot;</span>: <span class="hljs-string">&quot;1234&quot;</span>
     },
     {
       <span class="hljs-attr">&quot;externalEmployeeId&quot;</span>: <span class="hljs-string">&quot;EXT-0060&quot;</span>,
@@ -15646,20 +17911,13 @@ X-API-Key ( Scopes: X-API-Key )
       <span class="hljs-attr">&quot;joiningDate&quot;</span>: <span class="hljs-string">&quot;2024-02-01&quot;</span>,
       <span class="hljs-attr">&quot;seniorityDate&quot;</span>: <span class="hljs-string">&quot;2024-02-01&quot;</span>,
       <span class="hljs-attr">&quot;workEmail&quot;</span>: <span class="hljs-string">&quot;jane.doe@company.com&quot;</span>,
-      <span class="hljs-attr">&quot;workPhone&quot;</span>: <span class="hljs-string">&quot;+65-6123-4568&quot;</span>,
-      <span class="hljs-attr">&quot;payrollGroupName&quot;</span>: <span class="hljs-string">&quot;Monthly Payroll&quot;</span>,
-      <span class="hljs-attr">&quot;cycleFrequencyName&quot;</span>: <span class="hljs-string">&quot;Monthly&quot;</span>,
-      <span class="hljs-attr">&quot;jobPositionName&quot;</span>: <span class="hljs-string">&quot;Software Engineer&quot;</span>,
-      <span class="hljs-attr">&quot;jobGradeName&quot;</span>: <span class="hljs-string">&quot;Grade 4&quot;</span>,
-      <span class="hljs-attr">&quot;organizationElementName&quot;</span>: <span class="hljs-string">&quot;Engineering Department&quot;</span>,
-      <span class="hljs-attr">&quot;locationName&quot;</span>: <span class="hljs-string">&quot;Singapore Office&quot;</span>,
-      <span class="hljs-attr">&quot;reportingTo&quot;</span>: <span class="hljs-string">&quot;Jane Smith&quot;</span>
+      <span class="hljs-attr">&quot;workPhone&quot;</span>: <span class="hljs-string">&quot;+65-6123-4568&quot;</span>
     }
   ]
 }
 
 </code></pre>
-<h3 id="properties-11">Properties</h3>
+<h3 id="properties-12">Properties</h3>
 <table>
 <thead>
 <tr>
@@ -15708,7 +17966,7 @@ X-API-Key ( Scopes: X-API-Key )
 }
 
 </code></pre>
-<h3 id="properties-12">Properties</h3>
+<h3 id="properties-13">Properties</h3>
 <table>
 <thead>
 <tr>
@@ -15732,7 +17990,7 @@ X-API-Key ( Scopes: X-API-Key )
 <td>string</td>
 <td>true</td>
 <td>none</td>
-<td>Relationship code (Required)</td>
+<td>Relationship code (Required). Must match existing Relationship code in the system (Review endpoint /v1/integration/hrf/general/relationships)</td>
 </tr>
 <tr>
 <td>dateOfBirth</td>
@@ -15844,7 +18102,7 @@ X-API-Key ( Scopes: X-API-Key )
 <td>string</td>
 <td>false</td>
 <td>none</td>
-<td>Education type (Malaysia only) - For children over 18 years old. ED=In education (A-Level, certificate, matriculation or preparatory courses), FS=Tertiary education (diploma, degree or higher)</td>
+<td>Education type (Malaysia only) - For children over 18 years old. Must match existing Education type in the system (Review endpoint /v1/integration/hrf/general/employee/edu-types)</td>
 </tr>
 <tr>
 <td>claimPercentage</td>
@@ -15875,7 +18133,7 @@ X-API-Key ( Scopes: X-API-Key )
 }
 
 </code></pre>
-<h3 id="properties-13">Properties</h3>
+<h3 id="properties-14">Properties</h3>
 <table>
 <thead>
 <tr>
@@ -15943,7 +18201,7 @@ X-API-Key ( Scopes: X-API-Key )
 }
 
 </code></pre>
-<h3 id="properties-14">Properties</h3>
+<h3 id="properties-15">Properties</h3>
 <table>
 <thead>
 <tr>
@@ -15974,7 +18232,7 @@ X-API-Key ( Scopes: X-API-Key )
 }
 
 </code></pre>
-<h3 id="properties-15">Properties</h3>
+<h3 id="properties-16">Properties</h3>
 <table>
 <thead>
 <tr>
@@ -16025,7 +18283,7 @@ X-API-Key ( Scopes: X-API-Key )
 }
 
 </code></pre>
-<h3 id="properties-16">Properties</h3>
+<h3 id="properties-17">Properties</h3>
 <table>
 <thead>
 <tr>
@@ -16200,7 +18458,7 @@ X-API-Key ( Scopes: X-API-Key )
 }
 
 </code></pre>
-<h3 id="properties-17">Properties</h3>
+<h3 id="properties-18">Properties</h3>
 <table>
 <thead>
 <tr>
@@ -16238,7 +18496,7 @@ X-API-Key ( Scopes: X-API-Key )
 }
 
 </code></pre>
-<h3 id="properties-18">Properties</h3>
+<h3 id="properties-19">Properties</h3>
 <table>
 <thead>
 <tr>
@@ -16272,7 +18530,7 @@ X-API-Key ( Scopes: X-API-Key )
 }
 
 </code></pre>
-<h3 id="properties-19">Properties</h3>
+<h3 id="properties-20">Properties</h3>
 <table>
 <thead>
 <tr>
@@ -16337,7 +18595,7 @@ X-API-Key ( Scopes: X-API-Key )
 }
 
 </code></pre>
-<h3 id="properties-20">Properties</h3>
+<h3 id="properties-21">Properties</h3>
 <table>
 <thead>
 <tr>
@@ -16358,8 +18616,235 @@ X-API-Key ( Scopes: X-API-Key )
 </tr>
 </tbody>
 </table>
+<h2 id="tocs_createjobgradepayloaddto">CreateJobGradePayloadDto</h2>
+<p><a id="schemacreatejobgradepayloaddto"></a>
+<a id="schema_CreateJobGradePayloadDto"></a>
+<a id="tocScreatejobgradepayloaddto"></a>
+<a id="tocscreatejobgradepayloaddto"></a></p>
+<pre class="highlight tab tab-json"><code>{
+  <span class="hljs-attr">&quot;externalId&quot;</span>: <span class="hljs-string">&quot;EXT-JG-001&quot;</span>,
+  <span class="hljs-attr">&quot;code&quot;</span>: <span class="hljs-string">&quot;JG-001&quot;</span>,
+  <span class="hljs-attr">&quot;name&quot;</span>: <span class="hljs-string">&quot;Grade A&quot;</span>
+}
+
+</code></pre>
+<h3 id="properties-22">Properties</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Required</th>
+<th>Restrictions</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>externalId</td>
+<td>string</td>
+<td>true</td>
+<td>none</td>
+<td>External ID for the job grade from your system. Used to map with internal job grade ID.</td>
+</tr>
+<tr>
+<td>code</td>
+<td>string</td>
+<td>true</td>
+<td>none</td>
+<td>Unique identifier code for the job grade (max 50 characters)</td>
+</tr>
+<tr>
+<td>name</td>
+<td>string</td>
+<td>true</td>
+<td>none</td>
+<td>Job grade name (max 100 characters)</td>
+</tr>
+</tbody>
+</table>
+<h2 id="tocs_bulkcreatejobgradepayloaddto">BulkCreateJobGradePayloadDto</h2>
+<p><a id="schemabulkcreatejobgradepayloaddto"></a>
+<a id="schema_BulkCreateJobGradePayloadDto"></a>
+<a id="tocSbulkcreatejobgradepayloaddto"></a>
+<a id="tocsbulkcreatejobgradepayloaddto"></a></p>
+<pre class="highlight tab tab-json"><code>{
+  <span class="hljs-attr">&quot;jobGrades&quot;</span>: [
+    {
+      <span class="hljs-attr">&quot;externalId&quot;</span>: <span class="hljs-string">&quot;EXT-JG-001&quot;</span>,
+      <span class="hljs-attr">&quot;code&quot;</span>: <span class="hljs-string">&quot;JG-001&quot;</span>,
+      <span class="hljs-attr">&quot;name&quot;</span>: <span class="hljs-string">&quot;Grade A&quot;</span>
+    },
+    {
+      <span class="hljs-attr">&quot;externalId&quot;</span>: <span class="hljs-string">&quot;EXT-JG-002&quot;</span>,
+      <span class="hljs-attr">&quot;code&quot;</span>: <span class="hljs-string">&quot;JG-002&quot;</span>,
+      <span class="hljs-attr">&quot;name&quot;</span>: <span class="hljs-string">&quot;Grade B&quot;</span>
+    }
+  ]
+}
+
+</code></pre>
+<h3 id="properties-23">Properties</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Required</th>
+<th>Restrictions</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>jobGrades</td>
+<td>[<a href="#schemacreatejobgradepayloaddto">CreateJobGradePayloadDto</a>]</td>
+<td>true</td>
+<td>none</td>
+<td>Array of job grades to create</td>
+</tr>
+</tbody>
+</table>
+<h2 id="tocs_createorganizationstructurepayloaddto">CreateOrganizationStructurePayloadDto</h2>
+<p><a id="schemacreateorganizationstructurepayloaddto"></a>
+<a id="schema_CreateOrganizationStructurePayloadDto"></a>
+<a id="tocScreateorganizationstructurepayloaddto"></a>
+<a id="tocscreateorganizationstructurepayloaddto"></a></p>
+<pre class="highlight tab tab-json"><code>{
+  <span class="hljs-attr">&quot;externalId&quot;</span>: <span class="hljs-string">&quot;EXT-ORG-001&quot;</span>,
+  <span class="hljs-attr">&quot;code&quot;</span>: <span class="hljs-string">&quot;DEPT-001&quot;</span>,
+  <span class="hljs-attr">&quot;name&quot;</span>: <span class="hljs-string">&quot;Human Resources&quot;</span>,
+  <span class="hljs-attr">&quot;parentId&quot;</span>: <span class="hljs-string">&quot;0&quot;</span>,
+  <span class="hljs-attr">&quot;head&quot;</span>: <span class="hljs-number">456</span>
+}
+
+</code></pre>
+<h3 id="properties-24">Properties</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Required</th>
+<th>Restrictions</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>externalId</td>
+<td>string</td>
+<td>true</td>
+<td>none</td>
+<td>External ID for the organization structure from your system. Used to map with internal organization structure ID.</td>
+</tr>
+<tr>
+<td>code</td>
+<td>string</td>
+<td>true</td>
+<td>none</td>
+<td>Unique identifier code for the organization (max 50 characters)</td>
+</tr>
+<tr>
+<td>name</td>
+<td>string</td>
+<td>true</td>
+<td>none</td>
+<td>Organization name (max 100 characters)</td>
+</tr>
+<tr>
+<td>parentId</td>
+<td>string</td>
+<td>true</td>
+<td>none</td>
+<td>Parent organization element external ID (use &quot;0&quot; for root, or external ID of parent organization)</td>
+</tr>
+<tr>
+<td>head</td>
+<td>number</td>
+<td>false</td>
+<td>none</td>
+<td>Employee ID of department head</td>
+</tr>
+</tbody>
+</table>
+<h2 id="tocs_unassignemployeesfromorgstructuredto">UnassignEmployeesFromOrgStructureDto</h2>
+<p><a id="schemaunassignemployeesfromorgstructuredto"></a>
+<a id="schema_UnassignEmployeesFromOrgStructureDto"></a>
+<a id="tocSunassignemployeesfromorgstructuredto"></a>
+<a id="tocsunassignemployeesfromorgstructuredto"></a></p>
+<pre class="highlight tab tab-json"><code>{
+  <span class="hljs-attr">&quot;employeeIds&quot;</span>: [
+    <span class="hljs-string">&quot;EXT-EMP-001&quot;</span>,
+    <span class="hljs-string">&quot;EXT-EMP-002&quot;</span>
+  ]
+}
+
+</code></pre>
+<h3 id="properties-25">Properties</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Required</th>
+<th>Restrictions</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>employeeIds</td>
+<td>[string]</td>
+<td>true</td>
+<td>none</td>
+<td>Array of external employee IDs to unassign from the organization structure</td>
+</tr>
+</tbody>
+</table>
+<h2 id="tocs_assignemployeestoorgstructuredto">AssignEmployeesToOrgStructureDto</h2>
+<p><a id="schemaassignemployeestoorgstructuredto"></a>
+<a id="schema_AssignEmployeesToOrgStructureDto"></a>
+<a id="tocSassignemployeestoorgstructuredto"></a>
+<a id="tocsassignemployeestoorgstructuredto"></a></p>
+<pre class="highlight tab tab-json"><code>{
+  <span class="hljs-attr">&quot;employeeIds&quot;</span>: [
+    <span class="hljs-string">&quot;EXT-EMP-001&quot;</span>,
+    <span class="hljs-string">&quot;EXT-EMP-002&quot;</span>,
+    <span class="hljs-string">&quot;EXT-EMP-003&quot;</span>
+  ]
+}
+
+</code></pre>
+<h3 id="properties-26">Properties</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Required</th>
+<th>Restrictions</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>employeeIds</td>
+<td>[string]</td>
+<td>true</td>
+<td>none</td>
+<td>Array of external employee IDs to assign to the organization structure</td>
+</tr>
+</tbody>
+</table>
 <!-- Renderer: Shins v2.6.0 -->
 <!-- Generator: Widdershins v4.0.1 -->
+<!-- backwards compatibility -->
+<!-- backwards compatibility -->
+<!-- backwards compatibility -->
+<!-- backwards compatibility -->
+<!-- backwards compatibility -->
+<!-- backwards compatibility -->
 <!-- backwards compatibility -->
 <!-- backwards compatibility -->
 <!-- backwards compatibility -->
