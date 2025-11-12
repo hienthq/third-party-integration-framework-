@@ -2327,7 +2327,7 @@ var n=this.pipeline.run(e.tokenizer(t)),r=new e.Vector,i=[],o=this._fields.reduc
 <p>Public API for external customers and third-party integrations. This documentation includes only the endpoints that are available for external use.</p>
 <p>Base URLs:</p>
 <ul>
-<li><a href="https://dev.hrforte.com">https://dev.hrforte.com</a></li>
+<li><a href="https://mia-api.hrforte.com">https://mia-api.hrforte.com</a></li>
 </ul>
 <h1 id="authentication">Authentication</h1>
 <ul>
@@ -2352,7 +2352,7 @@ var n=this.pipeline.run(e.tokenizer(t)),r=new e.Vector,i=[],o=this._fields.reduc
 <span class="hljs-variable">$request_body</span> = <span class="hljs-keyword">array</span>();
 
 <span class="hljs-keyword">try</span> {
-    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;GET&#x27;</span>,<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/health&#x27;</span>, <span class="hljs-keyword">array</span>(
+    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;GET&#x27;</span>,<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/health&#x27;</span>, <span class="hljs-keyword">array</span>(
         <span class="hljs-string">&#x27;headers&#x27;</span> =&gt; <span class="hljs-variable">$headers</span>,
         <span class="hljs-string">&#x27;json&#x27;</span> =&gt; <span class="hljs-variable">$request_body</span>,
        )
@@ -2372,7 +2372,7 @@ var n=this.pipeline.run(e.tokenizer(t)),r=new e.Vector,i=[],o=this._fields.reduc
   <span class="hljs-string">&#x27;X-API-Key&#x27;</span>:<span class="hljs-string">&#x27;API_KEY&#x27;</span>
 };
 
-fetch(<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/health&#x27;</span>,
+fetch(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/health&#x27;</span>,
 {
   <span class="hljs-attr">method</span>: <span class="hljs-string">&#x27;GET&#x27;</span>,
 
@@ -2390,13 +2390,13 @@ headers = {
   <span class="hljs-string">&#x27;X-API-Key&#x27;</span>: <span class="hljs-string">&#x27;API_KEY&#x27;</span>
 }
 
-r = requests.get(<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/health&#x27;</span>, headers = headers)
+r = requests.get(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/health&#x27;</span>, headers = headers)
 
 <span class="hljs-built_in">print</span>(r.json())
 
 </code></pre>
 <pre class="highlight tab tab-shell"><code><span class="hljs-comment"># You can also use wget</span>
-curl -X GET https://dev.hrforte.com/v1/integration/hrf/health \
+curl -X GET https://mia-api.hrforte.com/v1/integration/hrf/health \
   -H <span class="hljs-string">&#x27;X-API-Key: API_KEY&#x27;</span>
 
 </code></pre>
@@ -2447,7 +2447,7 @@ X-API-Key ( Scopes: X-API-Key )
 <span class="hljs-variable">$request_body</span> = <span class="hljs-keyword">array</span>();
 
 <span class="hljs-keyword">try</span> {
-    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;GET&#x27;</span>,<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/general/countries&#x27;</span>, <span class="hljs-keyword">array</span>(
+    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;GET&#x27;</span>,<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/general/countries&#x27;</span>, <span class="hljs-keyword">array</span>(
         <span class="hljs-string">&#x27;headers&#x27;</span> =&gt; <span class="hljs-variable">$headers</span>,
         <span class="hljs-string">&#x27;json&#x27;</span> =&gt; <span class="hljs-variable">$request_body</span>,
        )
@@ -2468,7 +2468,7 @@ X-API-Key ( Scopes: X-API-Key )
   <span class="hljs-string">&#x27;X-API-Key&#x27;</span>:<span class="hljs-string">&#x27;API_KEY&#x27;</span>
 };
 
-fetch(<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/general/countries&#x27;</span>,
+fetch(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/general/countries&#x27;</span>,
 {
   <span class="hljs-attr">method</span>: <span class="hljs-string">&#x27;GET&#x27;</span>,
 
@@ -2487,13 +2487,13 @@ headers = {
   <span class="hljs-string">&#x27;X-API-Key&#x27;</span>: <span class="hljs-string">&#x27;API_KEY&#x27;</span>
 }
 
-r = requests.get(<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/general/countries&#x27;</span>, headers = headers)
+r = requests.get(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/general/countries&#x27;</span>, headers = headers)
 
 <span class="hljs-built_in">print</span>(r.json())
 
 </code></pre>
 <pre class="highlight tab tab-shell"><code><span class="hljs-comment"># You can also use wget</span>
-curl -X GET https://dev.hrforte.com/v1/integration/hrf/general/countries \
+curl -X GET https://mia-api.hrforte.com/v1/integration/hrf/general/countries \
   -H <span class="hljs-string">&#x27;Accept: application/json&#x27;</span> \
   -H <span class="hljs-string">&#x27;X-API-Key: API_KEY&#x27;</span>
 
@@ -2587,7 +2587,7 @@ X-API-Key ( Scopes: X-API-Key )
 <span class="hljs-variable">$request_body</span> = <span class="hljs-keyword">array</span>();
 
 <span class="hljs-keyword">try</span> {
-    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;GET&#x27;</span>,<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/general/genders&#x27;</span>, <span class="hljs-keyword">array</span>(
+    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;GET&#x27;</span>,<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/general/genders&#x27;</span>, <span class="hljs-keyword">array</span>(
         <span class="hljs-string">&#x27;headers&#x27;</span> =&gt; <span class="hljs-variable">$headers</span>,
         <span class="hljs-string">&#x27;json&#x27;</span> =&gt; <span class="hljs-variable">$request_body</span>,
        )
@@ -2608,7 +2608,7 @@ X-API-Key ( Scopes: X-API-Key )
   <span class="hljs-string">&#x27;X-API-Key&#x27;</span>:<span class="hljs-string">&#x27;API_KEY&#x27;</span>
 };
 
-fetch(<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/general/genders&#x27;</span>,
+fetch(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/general/genders&#x27;</span>,
 {
   <span class="hljs-attr">method</span>: <span class="hljs-string">&#x27;GET&#x27;</span>,
 
@@ -2627,13 +2627,13 @@ headers = {
   <span class="hljs-string">&#x27;X-API-Key&#x27;</span>: <span class="hljs-string">&#x27;API_KEY&#x27;</span>
 }
 
-r = requests.get(<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/general/genders&#x27;</span>, headers = headers)
+r = requests.get(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/general/genders&#x27;</span>, headers = headers)
 
 <span class="hljs-built_in">print</span>(r.json())
 
 </code></pre>
 <pre class="highlight tab tab-shell"><code><span class="hljs-comment"># You can also use wget</span>
-curl -X GET https://dev.hrforte.com/v1/integration/hrf/general/genders \
+curl -X GET https://mia-api.hrforte.com/v1/integration/hrf/general/genders \
   -H <span class="hljs-string">&#x27;Accept: application/json&#x27;</span> \
   -H <span class="hljs-string">&#x27;X-API-Key: API_KEY&#x27;</span>
 
@@ -2702,7 +2702,7 @@ X-API-Key ( Scopes: X-API-Key )
 <span class="hljs-variable">$request_body</span> = <span class="hljs-keyword">array</span>();
 
 <span class="hljs-keyword">try</span> {
-    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;GET&#x27;</span>,<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/general/relationships&#x27;</span>, <span class="hljs-keyword">array</span>(
+    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;GET&#x27;</span>,<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/general/relationships&#x27;</span>, <span class="hljs-keyword">array</span>(
         <span class="hljs-string">&#x27;headers&#x27;</span> =&gt; <span class="hljs-variable">$headers</span>,
         <span class="hljs-string">&#x27;json&#x27;</span> =&gt; <span class="hljs-variable">$request_body</span>,
        )
@@ -2723,7 +2723,7 @@ X-API-Key ( Scopes: X-API-Key )
   <span class="hljs-string">&#x27;X-API-Key&#x27;</span>:<span class="hljs-string">&#x27;API_KEY&#x27;</span>
 };
 
-fetch(<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/general/relationships&#x27;</span>,
+fetch(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/general/relationships&#x27;</span>,
 {
   <span class="hljs-attr">method</span>: <span class="hljs-string">&#x27;GET&#x27;</span>,
 
@@ -2742,13 +2742,13 @@ headers = {
   <span class="hljs-string">&#x27;X-API-Key&#x27;</span>: <span class="hljs-string">&#x27;API_KEY&#x27;</span>
 }
 
-r = requests.get(<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/general/relationships&#x27;</span>, headers = headers)
+r = requests.get(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/general/relationships&#x27;</span>, headers = headers)
 
 <span class="hljs-built_in">print</span>(r.json())
 
 </code></pre>
 <pre class="highlight tab tab-shell"><code><span class="hljs-comment"># You can also use wget</span>
-curl -X GET https://dev.hrforte.com/v1/integration/hrf/general/relationships \
+curl -X GET https://mia-api.hrforte.com/v1/integration/hrf/general/relationships \
   -H <span class="hljs-string">&#x27;Accept: application/json&#x27;</span> \
   -H <span class="hljs-string">&#x27;X-API-Key: API_KEY&#x27;</span>
 
@@ -2825,7 +2825,7 @@ X-API-Key ( Scopes: X-API-Key )
 <span class="hljs-variable">$request_body</span> = <span class="hljs-keyword">array</span>();
 
 <span class="hljs-keyword">try</span> {
-    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;GET&#x27;</span>,<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/general/contract-types&#x27;</span>, <span class="hljs-keyword">array</span>(
+    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;GET&#x27;</span>,<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/general/contract-types&#x27;</span>, <span class="hljs-keyword">array</span>(
         <span class="hljs-string">&#x27;headers&#x27;</span> =&gt; <span class="hljs-variable">$headers</span>,
         <span class="hljs-string">&#x27;json&#x27;</span> =&gt; <span class="hljs-variable">$request_body</span>,
        )
@@ -2846,7 +2846,7 @@ X-API-Key ( Scopes: X-API-Key )
   <span class="hljs-string">&#x27;X-API-Key&#x27;</span>:<span class="hljs-string">&#x27;API_KEY&#x27;</span>
 };
 
-fetch(<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/general/contract-types&#x27;</span>,
+fetch(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/general/contract-types&#x27;</span>,
 {
   <span class="hljs-attr">method</span>: <span class="hljs-string">&#x27;GET&#x27;</span>,
 
@@ -2865,13 +2865,13 @@ headers = {
   <span class="hljs-string">&#x27;X-API-Key&#x27;</span>: <span class="hljs-string">&#x27;API_KEY&#x27;</span>
 }
 
-r = requests.get(<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/general/contract-types&#x27;</span>, headers = headers)
+r = requests.get(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/general/contract-types&#x27;</span>, headers = headers)
 
 <span class="hljs-built_in">print</span>(r.json())
 
 </code></pre>
 <pre class="highlight tab tab-shell"><code><span class="hljs-comment"># You can also use wget</span>
-curl -X GET https://dev.hrforte.com/v1/integration/hrf/general/contract-types \
+curl -X GET https://mia-api.hrforte.com/v1/integration/hrf/general/contract-types \
   -H <span class="hljs-string">&#x27;Accept: application/json&#x27;</span> \
   -H <span class="hljs-string">&#x27;X-API-Key: API_KEY&#x27;</span>
 
@@ -2948,7 +2948,7 @@ X-API-Key ( Scopes: X-API-Key )
 <span class="hljs-variable">$request_body</span> = <span class="hljs-keyword">array</span>();
 
 <span class="hljs-keyword">try</span> {
-    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;GET&#x27;</span>,<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/general/currencies&#x27;</span>, <span class="hljs-keyword">array</span>(
+    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;GET&#x27;</span>,<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/general/currencies&#x27;</span>, <span class="hljs-keyword">array</span>(
         <span class="hljs-string">&#x27;headers&#x27;</span> =&gt; <span class="hljs-variable">$headers</span>,
         <span class="hljs-string">&#x27;json&#x27;</span> =&gt; <span class="hljs-variable">$request_body</span>,
        )
@@ -2969,7 +2969,7 @@ X-API-Key ( Scopes: X-API-Key )
   <span class="hljs-string">&#x27;X-API-Key&#x27;</span>:<span class="hljs-string">&#x27;API_KEY&#x27;</span>
 };
 
-fetch(<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/general/currencies&#x27;</span>,
+fetch(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/general/currencies&#x27;</span>,
 {
   <span class="hljs-attr">method</span>: <span class="hljs-string">&#x27;GET&#x27;</span>,
 
@@ -2988,13 +2988,13 @@ headers = {
   <span class="hljs-string">&#x27;X-API-Key&#x27;</span>: <span class="hljs-string">&#x27;API_KEY&#x27;</span>
 }
 
-r = requests.get(<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/general/currencies&#x27;</span>, headers = headers)
+r = requests.get(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/general/currencies&#x27;</span>, headers = headers)
 
 <span class="hljs-built_in">print</span>(r.json())
 
 </code></pre>
 <pre class="highlight tab tab-shell"><code><span class="hljs-comment"># You can also use wget</span>
-curl -X GET https://dev.hrforte.com/v1/integration/hrf/general/currencies \
+curl -X GET https://mia-api.hrforte.com/v1/integration/hrf/general/currencies \
   -H <span class="hljs-string">&#x27;Accept: application/json&#x27;</span> \
   -H <span class="hljs-string">&#x27;X-API-Key: API_KEY&#x27;</span>
 
@@ -3067,7 +3067,7 @@ X-API-Key ( Scopes: X-API-Key )
 <span class="hljs-variable">$request_body</span> = <span class="hljs-keyword">array</span>();
 
 <span class="hljs-keyword">try</span> {
-    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;GET&#x27;</span>,<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/general/applicable-tax-types&#x27;</span>, <span class="hljs-keyword">array</span>(
+    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;GET&#x27;</span>,<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/general/applicable-tax-types&#x27;</span>, <span class="hljs-keyword">array</span>(
         <span class="hljs-string">&#x27;headers&#x27;</span> =&gt; <span class="hljs-variable">$headers</span>,
         <span class="hljs-string">&#x27;json&#x27;</span> =&gt; <span class="hljs-variable">$request_body</span>,
        )
@@ -3088,7 +3088,7 @@ X-API-Key ( Scopes: X-API-Key )
   <span class="hljs-string">&#x27;X-API-Key&#x27;</span>:<span class="hljs-string">&#x27;API_KEY&#x27;</span>
 };
 
-fetch(<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/general/applicable-tax-types&#x27;</span>,
+fetch(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/general/applicable-tax-types&#x27;</span>,
 {
   <span class="hljs-attr">method</span>: <span class="hljs-string">&#x27;GET&#x27;</span>,
 
@@ -3107,13 +3107,13 @@ headers = {
   <span class="hljs-string">&#x27;X-API-Key&#x27;</span>: <span class="hljs-string">&#x27;API_KEY&#x27;</span>
 }
 
-r = requests.get(<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/general/applicable-tax-types&#x27;</span>, headers = headers)
+r = requests.get(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/general/applicable-tax-types&#x27;</span>, headers = headers)
 
 <span class="hljs-built_in">print</span>(r.json())
 
 </code></pre>
 <pre class="highlight tab tab-shell"><code><span class="hljs-comment"># You can also use wget</span>
-curl -X GET https://dev.hrforte.com/v1/integration/hrf/general/applicable-tax-types \
+curl -X GET https://mia-api.hrforte.com/v1/integration/hrf/general/applicable-tax-types \
   -H <span class="hljs-string">&#x27;Accept: application/json&#x27;</span> \
   -H <span class="hljs-string">&#x27;X-API-Key: API_KEY&#x27;</span>
 
@@ -3190,7 +3190,7 @@ X-API-Key ( Scopes: X-API-Key )
 <span class="hljs-variable">$request_body</span> = <span class="hljs-keyword">array</span>();
 
 <span class="hljs-keyword">try</span> {
-    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;GET&#x27;</span>,<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/general/general/modules&#x27;</span>, <span class="hljs-keyword">array</span>(
+    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;GET&#x27;</span>,<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/general/general/modules&#x27;</span>, <span class="hljs-keyword">array</span>(
         <span class="hljs-string">&#x27;headers&#x27;</span> =&gt; <span class="hljs-variable">$headers</span>,
         <span class="hljs-string">&#x27;json&#x27;</span> =&gt; <span class="hljs-variable">$request_body</span>,
        )
@@ -3211,7 +3211,7 @@ X-API-Key ( Scopes: X-API-Key )
   <span class="hljs-string">&#x27;X-API-Key&#x27;</span>:<span class="hljs-string">&#x27;API_KEY&#x27;</span>
 };
 
-fetch(<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/general/general/modules&#x27;</span>,
+fetch(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/general/general/modules&#x27;</span>,
 {
   <span class="hljs-attr">method</span>: <span class="hljs-string">&#x27;GET&#x27;</span>,
 
@@ -3230,13 +3230,13 @@ headers = {
   <span class="hljs-string">&#x27;X-API-Key&#x27;</span>: <span class="hljs-string">&#x27;API_KEY&#x27;</span>
 }
 
-r = requests.get(<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/general/general/modules&#x27;</span>, headers = headers)
+r = requests.get(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/general/general/modules&#x27;</span>, headers = headers)
 
 <span class="hljs-built_in">print</span>(r.json())
 
 </code></pre>
 <pre class="highlight tab tab-shell"><code><span class="hljs-comment"># You can also use wget</span>
-curl -X GET https://dev.hrforte.com/v1/integration/hrf/general/general/modules \
+curl -X GET https://mia-api.hrforte.com/v1/integration/hrf/general/general/modules \
   -H <span class="hljs-string">&#x27;Accept: application/json&#x27;</span> \
   -H <span class="hljs-string">&#x27;X-API-Key: API_KEY&#x27;</span>
 
@@ -3309,7 +3309,7 @@ X-API-Key ( Scopes: X-API-Key )
 <span class="hljs-variable">$request_body</span> = <span class="hljs-keyword">array</span>();
 
 <span class="hljs-keyword">try</span> {
-    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;GET&#x27;</span>,<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/general/general/boolean-yes-no&#x27;</span>, <span class="hljs-keyword">array</span>(
+    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;GET&#x27;</span>,<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/general/general/boolean-yes-no&#x27;</span>, <span class="hljs-keyword">array</span>(
         <span class="hljs-string">&#x27;headers&#x27;</span> =&gt; <span class="hljs-variable">$headers</span>,
         <span class="hljs-string">&#x27;json&#x27;</span> =&gt; <span class="hljs-variable">$request_body</span>,
        )
@@ -3330,7 +3330,7 @@ X-API-Key ( Scopes: X-API-Key )
   <span class="hljs-string">&#x27;X-API-Key&#x27;</span>:<span class="hljs-string">&#x27;API_KEY&#x27;</span>
 };
 
-fetch(<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/general/general/boolean-yes-no&#x27;</span>,
+fetch(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/general/general/boolean-yes-no&#x27;</span>,
 {
   <span class="hljs-attr">method</span>: <span class="hljs-string">&#x27;GET&#x27;</span>,
 
@@ -3349,13 +3349,13 @@ headers = {
   <span class="hljs-string">&#x27;X-API-Key&#x27;</span>: <span class="hljs-string">&#x27;API_KEY&#x27;</span>
 }
 
-r = requests.get(<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/general/general/boolean-yes-no&#x27;</span>, headers = headers)
+r = requests.get(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/general/general/boolean-yes-no&#x27;</span>, headers = headers)
 
 <span class="hljs-built_in">print</span>(r.json())
 
 </code></pre>
 <pre class="highlight tab tab-shell"><code><span class="hljs-comment"># You can also use wget</span>
-curl -X GET https://dev.hrforte.com/v1/integration/hrf/general/general/boolean-yes-no \
+curl -X GET https://mia-api.hrforte.com/v1/integration/hrf/general/general/boolean-yes-no \
   -H <span class="hljs-string">&#x27;Accept: application/json&#x27;</span> \
   -H <span class="hljs-string">&#x27;X-API-Key: API_KEY&#x27;</span>
 
@@ -3424,7 +3424,7 @@ X-API-Key ( Scopes: X-API-Key )
 <span class="hljs-variable">$request_body</span> = <span class="hljs-keyword">array</span>();
 
 <span class="hljs-keyword">try</span> {
-    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;GET&#x27;</span>,<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/general/general/boolean-open-closed&#x27;</span>, <span class="hljs-keyword">array</span>(
+    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;GET&#x27;</span>,<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/general/general/boolean-open-closed&#x27;</span>, <span class="hljs-keyword">array</span>(
         <span class="hljs-string">&#x27;headers&#x27;</span> =&gt; <span class="hljs-variable">$headers</span>,
         <span class="hljs-string">&#x27;json&#x27;</span> =&gt; <span class="hljs-variable">$request_body</span>,
        )
@@ -3445,7 +3445,7 @@ X-API-Key ( Scopes: X-API-Key )
   <span class="hljs-string">&#x27;X-API-Key&#x27;</span>:<span class="hljs-string">&#x27;API_KEY&#x27;</span>
 };
 
-fetch(<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/general/general/boolean-open-closed&#x27;</span>,
+fetch(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/general/general/boolean-open-closed&#x27;</span>,
 {
   <span class="hljs-attr">method</span>: <span class="hljs-string">&#x27;GET&#x27;</span>,
 
@@ -3464,13 +3464,13 @@ headers = {
   <span class="hljs-string">&#x27;X-API-Key&#x27;</span>: <span class="hljs-string">&#x27;API_KEY&#x27;</span>
 }
 
-r = requests.get(<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/general/general/boolean-open-closed&#x27;</span>, headers = headers)
+r = requests.get(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/general/general/boolean-open-closed&#x27;</span>, headers = headers)
 
 <span class="hljs-built_in">print</span>(r.json())
 
 </code></pre>
 <pre class="highlight tab tab-shell"><code><span class="hljs-comment"># You can also use wget</span>
-curl -X GET https://dev.hrforte.com/v1/integration/hrf/general/general/boolean-open-closed \
+curl -X GET https://mia-api.hrforte.com/v1/integration/hrf/general/general/boolean-open-closed \
   -H <span class="hljs-string">&#x27;Accept: application/json&#x27;</span> \
   -H <span class="hljs-string">&#x27;X-API-Key: API_KEY&#x27;</span>
 
@@ -3539,7 +3539,7 @@ X-API-Key ( Scopes: X-API-Key )
 <span class="hljs-variable">$request_body</span> = <span class="hljs-keyword">array</span>();
 
 <span class="hljs-keyword">try</span> {
-    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;GET&#x27;</span>,<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/general/employee/calculate-by&#x27;</span>, <span class="hljs-keyword">array</span>(
+    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;GET&#x27;</span>,<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/general/employee/calculate-by&#x27;</span>, <span class="hljs-keyword">array</span>(
         <span class="hljs-string">&#x27;headers&#x27;</span> =&gt; <span class="hljs-variable">$headers</span>,
         <span class="hljs-string">&#x27;json&#x27;</span> =&gt; <span class="hljs-variable">$request_body</span>,
        )
@@ -3560,7 +3560,7 @@ X-API-Key ( Scopes: X-API-Key )
   <span class="hljs-string">&#x27;X-API-Key&#x27;</span>:<span class="hljs-string">&#x27;API_KEY&#x27;</span>
 };
 
-fetch(<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/general/employee/calculate-by&#x27;</span>,
+fetch(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/general/employee/calculate-by&#x27;</span>,
 {
   <span class="hljs-attr">method</span>: <span class="hljs-string">&#x27;GET&#x27;</span>,
 
@@ -3579,13 +3579,13 @@ headers = {
   <span class="hljs-string">&#x27;X-API-Key&#x27;</span>: <span class="hljs-string">&#x27;API_KEY&#x27;</span>
 }
 
-r = requests.get(<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/general/employee/calculate-by&#x27;</span>, headers = headers)
+r = requests.get(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/general/employee/calculate-by&#x27;</span>, headers = headers)
 
 <span class="hljs-built_in">print</span>(r.json())
 
 </code></pre>
 <pre class="highlight tab tab-shell"><code><span class="hljs-comment"># You can also use wget</span>
-curl -X GET https://dev.hrforte.com/v1/integration/hrf/general/employee/calculate-by \
+curl -X GET https://mia-api.hrforte.com/v1/integration/hrf/general/employee/calculate-by \
   -H <span class="hljs-string">&#x27;Accept: application/json&#x27;</span> \
   -H <span class="hljs-string">&#x27;X-API-Key: API_KEY&#x27;</span>
 
@@ -3658,7 +3658,7 @@ X-API-Key ( Scopes: X-API-Key )
 <span class="hljs-variable">$request_body</span> = <span class="hljs-keyword">array</span>();
 
 <span class="hljs-keyword">try</span> {
-    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;GET&#x27;</span>,<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/general/employee/titles&#x27;</span>, <span class="hljs-keyword">array</span>(
+    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;GET&#x27;</span>,<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/general/employee/titles&#x27;</span>, <span class="hljs-keyword">array</span>(
         <span class="hljs-string">&#x27;headers&#x27;</span> =&gt; <span class="hljs-variable">$headers</span>,
         <span class="hljs-string">&#x27;json&#x27;</span> =&gt; <span class="hljs-variable">$request_body</span>,
        )
@@ -3679,7 +3679,7 @@ X-API-Key ( Scopes: X-API-Key )
   <span class="hljs-string">&#x27;X-API-Key&#x27;</span>:<span class="hljs-string">&#x27;API_KEY&#x27;</span>
 };
 
-fetch(<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/general/employee/titles&#x27;</span>,
+fetch(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/general/employee/titles&#x27;</span>,
 {
   <span class="hljs-attr">method</span>: <span class="hljs-string">&#x27;GET&#x27;</span>,
 
@@ -3698,13 +3698,13 @@ headers = {
   <span class="hljs-string">&#x27;X-API-Key&#x27;</span>: <span class="hljs-string">&#x27;API_KEY&#x27;</span>
 }
 
-r = requests.get(<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/general/employee/titles&#x27;</span>, headers = headers)
+r = requests.get(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/general/employee/titles&#x27;</span>, headers = headers)
 
 <span class="hljs-built_in">print</span>(r.json())
 
 </code></pre>
 <pre class="highlight tab tab-shell"><code><span class="hljs-comment"># You can also use wget</span>
-curl -X GET https://dev.hrforte.com/v1/integration/hrf/general/employee/titles \
+curl -X GET https://mia-api.hrforte.com/v1/integration/hrf/general/employee/titles \
   -H <span class="hljs-string">&#x27;Accept: application/json&#x27;</span> \
   -H <span class="hljs-string">&#x27;X-API-Key: API_KEY&#x27;</span>
 
@@ -3777,7 +3777,7 @@ X-API-Key ( Scopes: X-API-Key )
 <span class="hljs-variable">$request_body</span> = <span class="hljs-keyword">array</span>();
 
 <span class="hljs-keyword">try</span> {
-    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;GET&#x27;</span>,<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/general/employee/edu-types&#x27;</span>, <span class="hljs-keyword">array</span>(
+    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;GET&#x27;</span>,<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/general/employee/edu-types&#x27;</span>, <span class="hljs-keyword">array</span>(
         <span class="hljs-string">&#x27;headers&#x27;</span> =&gt; <span class="hljs-variable">$headers</span>,
         <span class="hljs-string">&#x27;json&#x27;</span> =&gt; <span class="hljs-variable">$request_body</span>,
        )
@@ -3798,7 +3798,7 @@ X-API-Key ( Scopes: X-API-Key )
   <span class="hljs-string">&#x27;X-API-Key&#x27;</span>:<span class="hljs-string">&#x27;API_KEY&#x27;</span>
 };
 
-fetch(<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/general/employee/edu-types&#x27;</span>,
+fetch(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/general/employee/edu-types&#x27;</span>,
 {
   <span class="hljs-attr">method</span>: <span class="hljs-string">&#x27;GET&#x27;</span>,
 
@@ -3817,13 +3817,13 @@ headers = {
   <span class="hljs-string">&#x27;X-API-Key&#x27;</span>: <span class="hljs-string">&#x27;API_KEY&#x27;</span>
 }
 
-r = requests.get(<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/general/employee/edu-types&#x27;</span>, headers = headers)
+r = requests.get(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/general/employee/edu-types&#x27;</span>, headers = headers)
 
 <span class="hljs-built_in">print</span>(r.json())
 
 </code></pre>
 <pre class="highlight tab tab-shell"><code><span class="hljs-comment"># You can also use wget</span>
-curl -X GET https://dev.hrforte.com/v1/integration/hrf/general/employee/edu-types \
+curl -X GET https://mia-api.hrforte.com/v1/integration/hrf/general/employee/edu-types \
   -H <span class="hljs-string">&#x27;Accept: application/json&#x27;</span> \
   -H <span class="hljs-string">&#x27;X-API-Key: API_KEY&#x27;</span>
 
@@ -3896,7 +3896,7 @@ X-API-Key ( Scopes: X-API-Key )
 <span class="hljs-variable">$request_body</span> = <span class="hljs-keyword">array</span>();
 
 <span class="hljs-keyword">try</span> {
-    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;GET&#x27;</span>,<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/general/employee/claim-percent&#x27;</span>, <span class="hljs-keyword">array</span>(
+    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;GET&#x27;</span>,<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/general/employee/claim-percent&#x27;</span>, <span class="hljs-keyword">array</span>(
         <span class="hljs-string">&#x27;headers&#x27;</span> =&gt; <span class="hljs-variable">$headers</span>,
         <span class="hljs-string">&#x27;json&#x27;</span> =&gt; <span class="hljs-variable">$request_body</span>,
        )
@@ -3917,7 +3917,7 @@ X-API-Key ( Scopes: X-API-Key )
   <span class="hljs-string">&#x27;X-API-Key&#x27;</span>:<span class="hljs-string">&#x27;API_KEY&#x27;</span>
 };
 
-fetch(<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/general/employee/claim-percent&#x27;</span>,
+fetch(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/general/employee/claim-percent&#x27;</span>,
 {
   <span class="hljs-attr">method</span>: <span class="hljs-string">&#x27;GET&#x27;</span>,
 
@@ -3936,13 +3936,13 @@ headers = {
   <span class="hljs-string">&#x27;X-API-Key&#x27;</span>: <span class="hljs-string">&#x27;API_KEY&#x27;</span>
 }
 
-r = requests.get(<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/general/employee/claim-percent&#x27;</span>, headers = headers)
+r = requests.get(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/general/employee/claim-percent&#x27;</span>, headers = headers)
 
 <span class="hljs-built_in">print</span>(r.json())
 
 </code></pre>
 <pre class="highlight tab tab-shell"><code><span class="hljs-comment"># You can also use wget</span>
-curl -X GET https://dev.hrforte.com/v1/integration/hrf/general/employee/claim-percent \
+curl -X GET https://mia-api.hrforte.com/v1/integration/hrf/general/employee/claim-percent \
   -H <span class="hljs-string">&#x27;Accept: application/json&#x27;</span> \
   -H <span class="hljs-string">&#x27;X-API-Key: API_KEY&#x27;</span>
 
@@ -4015,7 +4015,7 @@ X-API-Key ( Scopes: X-API-Key )
 <span class="hljs-variable">$request_body</span> = <span class="hljs-keyword">array</span>();
 
 <span class="hljs-keyword">try</span> {
-    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;GET&#x27;</span>,<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/general/employee/socso-category&#x27;</span>, <span class="hljs-keyword">array</span>(
+    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;GET&#x27;</span>,<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/general/employee/socso-category&#x27;</span>, <span class="hljs-keyword">array</span>(
         <span class="hljs-string">&#x27;headers&#x27;</span> =&gt; <span class="hljs-variable">$headers</span>,
         <span class="hljs-string">&#x27;json&#x27;</span> =&gt; <span class="hljs-variable">$request_body</span>,
        )
@@ -4036,7 +4036,7 @@ X-API-Key ( Scopes: X-API-Key )
   <span class="hljs-string">&#x27;X-API-Key&#x27;</span>:<span class="hljs-string">&#x27;API_KEY&#x27;</span>
 };
 
-fetch(<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/general/employee/socso-category&#x27;</span>,
+fetch(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/general/employee/socso-category&#x27;</span>,
 {
   <span class="hljs-attr">method</span>: <span class="hljs-string">&#x27;GET&#x27;</span>,
 
@@ -4055,13 +4055,13 @@ headers = {
   <span class="hljs-string">&#x27;X-API-Key&#x27;</span>: <span class="hljs-string">&#x27;API_KEY&#x27;</span>
 }
 
-r = requests.get(<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/general/employee/socso-category&#x27;</span>, headers = headers)
+r = requests.get(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/general/employee/socso-category&#x27;</span>, headers = headers)
 
 <span class="hljs-built_in">print</span>(r.json())
 
 </code></pre>
 <pre class="highlight tab tab-shell"><code><span class="hljs-comment"># You can also use wget</span>
-curl -X GET https://dev.hrforte.com/v1/integration/hrf/general/employee/socso-category \
+curl -X GET https://mia-api.hrforte.com/v1/integration/hrf/general/employee/socso-category \
   -H <span class="hljs-string">&#x27;Accept: application/json&#x27;</span> \
   -H <span class="hljs-string">&#x27;X-API-Key: API_KEY&#x27;</span>
 
@@ -4134,7 +4134,7 @@ X-API-Key ( Scopes: X-API-Key )
 <span class="hljs-variable">$request_body</span> = <span class="hljs-keyword">array</span>();
 
 <span class="hljs-keyword">try</span> {
-    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;GET&#x27;</span>,<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/general/employee/custom-field-types&#x27;</span>, <span class="hljs-keyword">array</span>(
+    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;GET&#x27;</span>,<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/general/employee/custom-field-types&#x27;</span>, <span class="hljs-keyword">array</span>(
         <span class="hljs-string">&#x27;headers&#x27;</span> =&gt; <span class="hljs-variable">$headers</span>,
         <span class="hljs-string">&#x27;json&#x27;</span> =&gt; <span class="hljs-variable">$request_body</span>,
        )
@@ -4155,7 +4155,7 @@ X-API-Key ( Scopes: X-API-Key )
   <span class="hljs-string">&#x27;X-API-Key&#x27;</span>:<span class="hljs-string">&#x27;API_KEY&#x27;</span>
 };
 
-fetch(<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/general/employee/custom-field-types&#x27;</span>,
+fetch(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/general/employee/custom-field-types&#x27;</span>,
 {
   <span class="hljs-attr">method</span>: <span class="hljs-string">&#x27;GET&#x27;</span>,
 
@@ -4174,13 +4174,13 @@ headers = {
   <span class="hljs-string">&#x27;X-API-Key&#x27;</span>: <span class="hljs-string">&#x27;API_KEY&#x27;</span>
 }
 
-r = requests.get(<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/general/employee/custom-field-types&#x27;</span>, headers = headers)
+r = requests.get(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/general/employee/custom-field-types&#x27;</span>, headers = headers)
 
 <span class="hljs-built_in">print</span>(r.json())
 
 </code></pre>
 <pre class="highlight tab tab-shell"><code><span class="hljs-comment"># You can also use wget</span>
-curl -X GET https://dev.hrforte.com/v1/integration/hrf/general/employee/custom-field-types \
+curl -X GET https://mia-api.hrforte.com/v1/integration/hrf/general/employee/custom-field-types \
   -H <span class="hljs-string">&#x27;Accept: application/json&#x27;</span> \
   -H <span class="hljs-string">&#x27;X-API-Key: API_KEY&#x27;</span>
 
@@ -4257,7 +4257,7 @@ X-API-Key ( Scopes: X-API-Key )
 <span class="hljs-variable">$request_body</span> = <span class="hljs-keyword">array</span>();
 
 <span class="hljs-keyword">try</span> {
-    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;GET&#x27;</span>,<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/general/employee/id-types&#x27;</span>, <span class="hljs-keyword">array</span>(
+    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;GET&#x27;</span>,<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/general/employee/id-types&#x27;</span>, <span class="hljs-keyword">array</span>(
         <span class="hljs-string">&#x27;headers&#x27;</span> =&gt; <span class="hljs-variable">$headers</span>,
         <span class="hljs-string">&#x27;json&#x27;</span> =&gt; <span class="hljs-variable">$request_body</span>,
        )
@@ -4278,7 +4278,7 @@ X-API-Key ( Scopes: X-API-Key )
   <span class="hljs-string">&#x27;X-API-Key&#x27;</span>:<span class="hljs-string">&#x27;API_KEY&#x27;</span>
 };
 
-fetch(<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/general/employee/id-types&#x27;</span>,
+fetch(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/general/employee/id-types&#x27;</span>,
 {
   <span class="hljs-attr">method</span>: <span class="hljs-string">&#x27;GET&#x27;</span>,
 
@@ -4297,13 +4297,13 @@ headers = {
   <span class="hljs-string">&#x27;X-API-Key&#x27;</span>: <span class="hljs-string">&#x27;API_KEY&#x27;</span>
 }
 
-r = requests.get(<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/general/employee/id-types&#x27;</span>, headers = headers)
+r = requests.get(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/general/employee/id-types&#x27;</span>, headers = headers)
 
 <span class="hljs-built_in">print</span>(r.json())
 
 </code></pre>
 <pre class="highlight tab tab-shell"><code><span class="hljs-comment"># You can also use wget</span>
-curl -X GET https://dev.hrforte.com/v1/integration/hrf/general/employee/id-types \
+curl -X GET https://mia-api.hrforte.com/v1/integration/hrf/general/employee/id-types \
   -H <span class="hljs-string">&#x27;Accept: application/json&#x27;</span> \
   -H <span class="hljs-string">&#x27;X-API-Key: API_KEY&#x27;</span>
 
@@ -4372,7 +4372,7 @@ X-API-Key ( Scopes: X-API-Key )
 <span class="hljs-variable">$request_body</span> = <span class="hljs-keyword">array</span>();
 
 <span class="hljs-keyword">try</span> {
-    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;GET&#x27;</span>,<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/general/employee/workregions&#x27;</span>, <span class="hljs-keyword">array</span>(
+    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;GET&#x27;</span>,<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/general/employee/workregions&#x27;</span>, <span class="hljs-keyword">array</span>(
         <span class="hljs-string">&#x27;headers&#x27;</span> =&gt; <span class="hljs-variable">$headers</span>,
         <span class="hljs-string">&#x27;json&#x27;</span> =&gt; <span class="hljs-variable">$request_body</span>,
        )
@@ -4393,7 +4393,7 @@ X-API-Key ( Scopes: X-API-Key )
   <span class="hljs-string">&#x27;X-API-Key&#x27;</span>:<span class="hljs-string">&#x27;API_KEY&#x27;</span>
 };
 
-fetch(<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/general/employee/workregions&#x27;</span>,
+fetch(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/general/employee/workregions&#x27;</span>,
 {
   <span class="hljs-attr">method</span>: <span class="hljs-string">&#x27;GET&#x27;</span>,
 
@@ -4412,13 +4412,13 @@ headers = {
   <span class="hljs-string">&#x27;X-API-Key&#x27;</span>: <span class="hljs-string">&#x27;API_KEY&#x27;</span>
 }
 
-r = requests.get(<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/general/employee/workregions&#x27;</span>, headers = headers)
+r = requests.get(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/general/employee/workregions&#x27;</span>, headers = headers)
 
 <span class="hljs-built_in">print</span>(r.json())
 
 </code></pre>
 <pre class="highlight tab tab-shell"><code><span class="hljs-comment"># You can also use wget</span>
-curl -X GET https://dev.hrforte.com/v1/integration/hrf/general/employee/workregions \
+curl -X GET https://mia-api.hrforte.com/v1/integration/hrf/general/employee/workregions \
   -H <span class="hljs-string">&#x27;Accept: application/json&#x27;</span> \
   -H <span class="hljs-string">&#x27;X-API-Key: API_KEY&#x27;</span>
 
@@ -4491,7 +4491,7 @@ X-API-Key ( Scopes: X-API-Key )
 <span class="hljs-variable">$request_body</span> = <span class="hljs-keyword">array</span>();
 
 <span class="hljs-keyword">try</span> {
-    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;GET&#x27;</span>,<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/general/payroll/manual-input-fields/{countryCode}&#x27;</span>, <span class="hljs-keyword">array</span>(
+    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;GET&#x27;</span>,<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/general/payroll/manual-input-fields/{countryCode}&#x27;</span>, <span class="hljs-keyword">array</span>(
         <span class="hljs-string">&#x27;headers&#x27;</span> =&gt; <span class="hljs-variable">$headers</span>,
         <span class="hljs-string">&#x27;json&#x27;</span> =&gt; <span class="hljs-variable">$request_body</span>,
        )
@@ -4512,7 +4512,7 @@ X-API-Key ( Scopes: X-API-Key )
   <span class="hljs-string">&#x27;X-API-Key&#x27;</span>:<span class="hljs-string">&#x27;API_KEY&#x27;</span>
 };
 
-fetch(<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/general/payroll/manual-input-fields/{countryCode}&#x27;</span>,
+fetch(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/general/payroll/manual-input-fields/{countryCode}&#x27;</span>,
 {
   <span class="hljs-attr">method</span>: <span class="hljs-string">&#x27;GET&#x27;</span>,
 
@@ -4531,13 +4531,13 @@ headers = {
   <span class="hljs-string">&#x27;X-API-Key&#x27;</span>: <span class="hljs-string">&#x27;API_KEY&#x27;</span>
 }
 
-r = requests.get(<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/general/payroll/manual-input-fields/{countryCode}&#x27;</span>, headers = headers)
+r = requests.get(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/general/payroll/manual-input-fields/{countryCode}&#x27;</span>, headers = headers)
 
 <span class="hljs-built_in">print</span>(r.json())
 
 </code></pre>
 <pre class="highlight tab tab-shell"><code><span class="hljs-comment"># You can also use wget</span>
-curl -X GET https://dev.hrforte.com/v1/integration/hrf/general/payroll/manual-input-fields/{countryCode} \
+curl -X GET https://mia-api.hrforte.com/v1/integration/hrf/general/payroll/manual-input-fields/{countryCode} \
   -H <span class="hljs-string">&#x27;Accept: application/json&#x27;</span> \
   -H <span class="hljs-string">&#x27;X-API-Key: API_KEY&#x27;</span>
 
@@ -4627,7 +4627,7 @@ X-API-Key ( Scopes: X-API-Key )
 <span class="hljs-variable">$request_body</span> = <span class="hljs-keyword">array</span>();
 
 <span class="hljs-keyword">try</span> {
-    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;GET&#x27;</span>,<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/general/compensation/pay-element-mapping/{companyId}&#x27;</span>, <span class="hljs-keyword">array</span>(
+    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;GET&#x27;</span>,<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/general/compensation/pay-element-mapping/{companyId}&#x27;</span>, <span class="hljs-keyword">array</span>(
         <span class="hljs-string">&#x27;headers&#x27;</span> =&gt; <span class="hljs-variable">$headers</span>,
         <span class="hljs-string">&#x27;json&#x27;</span> =&gt; <span class="hljs-variable">$request_body</span>,
        )
@@ -4648,7 +4648,7 @@ X-API-Key ( Scopes: X-API-Key )
   <span class="hljs-string">&#x27;X-API-Key&#x27;</span>:<span class="hljs-string">&#x27;API_KEY&#x27;</span>
 };
 
-fetch(<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/general/compensation/pay-element-mapping/{companyId}&#x27;</span>,
+fetch(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/general/compensation/pay-element-mapping/{companyId}&#x27;</span>,
 {
   <span class="hljs-attr">method</span>: <span class="hljs-string">&#x27;GET&#x27;</span>,
 
@@ -4667,13 +4667,13 @@ headers = {
   <span class="hljs-string">&#x27;X-API-Key&#x27;</span>: <span class="hljs-string">&#x27;API_KEY&#x27;</span>
 }
 
-r = requests.get(<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/general/compensation/pay-element-mapping/{companyId}&#x27;</span>, headers = headers)
+r = requests.get(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/general/compensation/pay-element-mapping/{companyId}&#x27;</span>, headers = headers)
 
 <span class="hljs-built_in">print</span>(r.json())
 
 </code></pre>
 <pre class="highlight tab tab-shell"><code><span class="hljs-comment"># You can also use wget</span>
-curl -X GET https://dev.hrforte.com/v1/integration/hrf/general/compensation/pay-element-mapping/{companyId} \
+curl -X GET https://mia-api.hrforte.com/v1/integration/hrf/general/compensation/pay-element-mapping/{companyId} \
   -H <span class="hljs-string">&#x27;Accept: application/json&#x27;</span> \
   -H <span class="hljs-string">&#x27;X-API-Key: API_KEY&#x27;</span>
 
@@ -4763,7 +4763,7 @@ X-API-Key ( Scopes: X-API-Key )
 <span class="hljs-variable">$request_body</span> = <span class="hljs-keyword">array</span>();
 
 <span class="hljs-keyword">try</span> {
-    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;GET&#x27;</span>,<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/general/claim/status&#x27;</span>, <span class="hljs-keyword">array</span>(
+    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;GET&#x27;</span>,<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/general/claim/status&#x27;</span>, <span class="hljs-keyword">array</span>(
         <span class="hljs-string">&#x27;headers&#x27;</span> =&gt; <span class="hljs-variable">$headers</span>,
         <span class="hljs-string">&#x27;json&#x27;</span> =&gt; <span class="hljs-variable">$request_body</span>,
        )
@@ -4784,7 +4784,7 @@ X-API-Key ( Scopes: X-API-Key )
   <span class="hljs-string">&#x27;X-API-Key&#x27;</span>:<span class="hljs-string">&#x27;API_KEY&#x27;</span>
 };
 
-fetch(<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/general/claim/status&#x27;</span>,
+fetch(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/general/claim/status&#x27;</span>,
 {
   <span class="hljs-attr">method</span>: <span class="hljs-string">&#x27;GET&#x27;</span>,
 
@@ -4803,13 +4803,13 @@ headers = {
   <span class="hljs-string">&#x27;X-API-Key&#x27;</span>: <span class="hljs-string">&#x27;API_KEY&#x27;</span>
 }
 
-r = requests.get(<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/general/claim/status&#x27;</span>, headers = headers)
+r = requests.get(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/general/claim/status&#x27;</span>, headers = headers)
 
 <span class="hljs-built_in">print</span>(r.json())
 
 </code></pre>
 <pre class="highlight tab tab-shell"><code><span class="hljs-comment"># You can also use wget</span>
-curl -X GET https://dev.hrforte.com/v1/integration/hrf/general/claim/status \
+curl -X GET https://mia-api.hrforte.com/v1/integration/hrf/general/claim/status \
   -H <span class="hljs-string">&#x27;Accept: application/json&#x27;</span> \
   -H <span class="hljs-string">&#x27;X-API-Key: API_KEY&#x27;</span>
 
@@ -4890,7 +4890,7 @@ X-API-Key ( Scopes: X-API-Key )
 <span class="hljs-variable">$request_body</span> = <span class="hljs-keyword">array</span>();
 
 <span class="hljs-keyword">try</span> {
-    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;GET&#x27;</span>,<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/general/payroll-group/work-day-types&#x27;</span>, <span class="hljs-keyword">array</span>(
+    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;GET&#x27;</span>,<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/general/payroll-group/work-day-types&#x27;</span>, <span class="hljs-keyword">array</span>(
         <span class="hljs-string">&#x27;headers&#x27;</span> =&gt; <span class="hljs-variable">$headers</span>,
         <span class="hljs-string">&#x27;json&#x27;</span> =&gt; <span class="hljs-variable">$request_body</span>,
        )
@@ -4911,7 +4911,7 @@ X-API-Key ( Scopes: X-API-Key )
   <span class="hljs-string">&#x27;X-API-Key&#x27;</span>:<span class="hljs-string">&#x27;API_KEY&#x27;</span>
 };
 
-fetch(<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/general/payroll-group/work-day-types&#x27;</span>,
+fetch(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/general/payroll-group/work-day-types&#x27;</span>,
 {
   <span class="hljs-attr">method</span>: <span class="hljs-string">&#x27;GET&#x27;</span>,
 
@@ -4930,13 +4930,13 @@ headers = {
   <span class="hljs-string">&#x27;X-API-Key&#x27;</span>: <span class="hljs-string">&#x27;API_KEY&#x27;</span>
 }
 
-r = requests.get(<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/general/payroll-group/work-day-types&#x27;</span>, headers = headers)
+r = requests.get(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/general/payroll-group/work-day-types&#x27;</span>, headers = headers)
 
 <span class="hljs-built_in">print</span>(r.json())
 
 </code></pre>
 <pre class="highlight tab tab-shell"><code><span class="hljs-comment"># You can also use wget</span>
-curl -X GET https://dev.hrforte.com/v1/integration/hrf/general/payroll-group/work-day-types \
+curl -X GET https://mia-api.hrforte.com/v1/integration/hrf/general/payroll-group/work-day-types \
   -H <span class="hljs-string">&#x27;Accept: application/json&#x27;</span> \
   -H <span class="hljs-string">&#x27;X-API-Key: API_KEY&#x27;</span>
 
@@ -5009,7 +5009,7 @@ X-API-Key ( Scopes: X-API-Key )
 <span class="hljs-variable">$request_body</span> = <span class="hljs-keyword">array</span>();
 
 <span class="hljs-keyword">try</span> {
-    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;GET&#x27;</span>,<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/general/payroll-group/work-day-templates&#x27;</span>, <span class="hljs-keyword">array</span>(
+    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;GET&#x27;</span>,<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/general/payroll-group/work-day-templates&#x27;</span>, <span class="hljs-keyword">array</span>(
         <span class="hljs-string">&#x27;headers&#x27;</span> =&gt; <span class="hljs-variable">$headers</span>,
         <span class="hljs-string">&#x27;json&#x27;</span> =&gt; <span class="hljs-variable">$request_body</span>,
        )
@@ -5030,7 +5030,7 @@ X-API-Key ( Scopes: X-API-Key )
   <span class="hljs-string">&#x27;X-API-Key&#x27;</span>:<span class="hljs-string">&#x27;API_KEY&#x27;</span>
 };
 
-fetch(<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/general/payroll-group/work-day-templates&#x27;</span>,
+fetch(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/general/payroll-group/work-day-templates&#x27;</span>,
 {
   <span class="hljs-attr">method</span>: <span class="hljs-string">&#x27;GET&#x27;</span>,
 
@@ -5049,13 +5049,13 @@ headers = {
   <span class="hljs-string">&#x27;X-API-Key&#x27;</span>: <span class="hljs-string">&#x27;API_KEY&#x27;</span>
 }
 
-r = requests.get(<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/general/payroll-group/work-day-templates&#x27;</span>, headers = headers)
+r = requests.get(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/general/payroll-group/work-day-templates&#x27;</span>, headers = headers)
 
 <span class="hljs-built_in">print</span>(r.json())
 
 </code></pre>
 <pre class="highlight tab tab-shell"><code><span class="hljs-comment"># You can also use wget</span>
-curl -X GET https://dev.hrforte.com/v1/integration/hrf/general/payroll-group/work-day-templates \
+curl -X GET https://mia-api.hrforte.com/v1/integration/hrf/general/payroll-group/work-day-templates \
   -H <span class="hljs-string">&#x27;Accept: application/json&#x27;</span> \
   -H <span class="hljs-string">&#x27;X-API-Key: API_KEY&#x27;</span>
 
@@ -5132,7 +5132,7 @@ X-API-Key ( Scopes: X-API-Key )
 <span class="hljs-variable">$request_body</span> = <span class="hljs-keyword">array</span>();
 
 <span class="hljs-keyword">try</span> {
-    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;GET&#x27;</span>,<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/general/payroll-group-type/types&#x27;</span>, <span class="hljs-keyword">array</span>(
+    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;GET&#x27;</span>,<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/general/payroll-group-type/types&#x27;</span>, <span class="hljs-keyword">array</span>(
         <span class="hljs-string">&#x27;headers&#x27;</span> =&gt; <span class="hljs-variable">$headers</span>,
         <span class="hljs-string">&#x27;json&#x27;</span> =&gt; <span class="hljs-variable">$request_body</span>,
        )
@@ -5153,7 +5153,7 @@ X-API-Key ( Scopes: X-API-Key )
   <span class="hljs-string">&#x27;X-API-Key&#x27;</span>:<span class="hljs-string">&#x27;API_KEY&#x27;</span>
 };
 
-fetch(<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/general/payroll-group-type/types&#x27;</span>,
+fetch(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/general/payroll-group-type/types&#x27;</span>,
 {
   <span class="hljs-attr">method</span>: <span class="hljs-string">&#x27;GET&#x27;</span>,
 
@@ -5172,13 +5172,13 @@ headers = {
   <span class="hljs-string">&#x27;X-API-Key&#x27;</span>: <span class="hljs-string">&#x27;API_KEY&#x27;</span>
 }
 
-r = requests.get(<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/general/payroll-group-type/types&#x27;</span>, headers = headers)
+r = requests.get(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/general/payroll-group-type/types&#x27;</span>, headers = headers)
 
 <span class="hljs-built_in">print</span>(r.json())
 
 </code></pre>
 <pre class="highlight tab tab-shell"><code><span class="hljs-comment"># You can also use wget</span>
-curl -X GET https://dev.hrforte.com/v1/integration/hrf/general/payroll-group-type/types \
+curl -X GET https://mia-api.hrforte.com/v1/integration/hrf/general/payroll-group-type/types \
   -H <span class="hljs-string">&#x27;Accept: application/json&#x27;</span> \
   -H <span class="hljs-string">&#x27;X-API-Key: API_KEY&#x27;</span>
 
@@ -5247,7 +5247,7 @@ X-API-Key ( Scopes: X-API-Key )
 <span class="hljs-variable">$request_body</span> = <span class="hljs-keyword">array</span>();
 
 <span class="hljs-keyword">try</span> {
-    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;GET&#x27;</span>,<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/general/activity-log/programs&#x27;</span>, <span class="hljs-keyword">array</span>(
+    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;GET&#x27;</span>,<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/general/activity-log/programs&#x27;</span>, <span class="hljs-keyword">array</span>(
         <span class="hljs-string">&#x27;headers&#x27;</span> =&gt; <span class="hljs-variable">$headers</span>,
         <span class="hljs-string">&#x27;json&#x27;</span> =&gt; <span class="hljs-variable">$request_body</span>,
        )
@@ -5268,7 +5268,7 @@ X-API-Key ( Scopes: X-API-Key )
   <span class="hljs-string">&#x27;X-API-Key&#x27;</span>:<span class="hljs-string">&#x27;API_KEY&#x27;</span>
 };
 
-fetch(<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/general/activity-log/programs&#x27;</span>,
+fetch(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/general/activity-log/programs&#x27;</span>,
 {
   <span class="hljs-attr">method</span>: <span class="hljs-string">&#x27;GET&#x27;</span>,
 
@@ -5287,13 +5287,13 @@ headers = {
   <span class="hljs-string">&#x27;X-API-Key&#x27;</span>: <span class="hljs-string">&#x27;API_KEY&#x27;</span>
 }
 
-r = requests.get(<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/general/activity-log/programs&#x27;</span>, headers = headers)
+r = requests.get(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/general/activity-log/programs&#x27;</span>, headers = headers)
 
 <span class="hljs-built_in">print</span>(r.json())
 
 </code></pre>
 <pre class="highlight tab tab-shell"><code><span class="hljs-comment"># You can also use wget</span>
-curl -X GET https://dev.hrforte.com/v1/integration/hrf/general/activity-log/programs \
+curl -X GET https://mia-api.hrforte.com/v1/integration/hrf/general/activity-log/programs \
   -H <span class="hljs-string">&#x27;Accept: application/json&#x27;</span> \
   -H <span class="hljs-string">&#x27;X-API-Key: API_KEY&#x27;</span>
 
@@ -5362,7 +5362,7 @@ X-API-Key ( Scopes: X-API-Key )
 <span class="hljs-variable">$request_body</span> = <span class="hljs-keyword">array</span>();
 
 <span class="hljs-keyword">try</span> {
-    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;GET&#x27;</span>,<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/general/probation-policy/pay-options&#x27;</span>, <span class="hljs-keyword">array</span>(
+    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;GET&#x27;</span>,<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/general/probation-policy/pay-options&#x27;</span>, <span class="hljs-keyword">array</span>(
         <span class="hljs-string">&#x27;headers&#x27;</span> =&gt; <span class="hljs-variable">$headers</span>,
         <span class="hljs-string">&#x27;json&#x27;</span> =&gt; <span class="hljs-variable">$request_body</span>,
        )
@@ -5383,7 +5383,7 @@ X-API-Key ( Scopes: X-API-Key )
   <span class="hljs-string">&#x27;X-API-Key&#x27;</span>:<span class="hljs-string">&#x27;API_KEY&#x27;</span>
 };
 
-fetch(<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/general/probation-policy/pay-options&#x27;</span>,
+fetch(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/general/probation-policy/pay-options&#x27;</span>,
 {
   <span class="hljs-attr">method</span>: <span class="hljs-string">&#x27;GET&#x27;</span>,
 
@@ -5402,13 +5402,13 @@ headers = {
   <span class="hljs-string">&#x27;X-API-Key&#x27;</span>: <span class="hljs-string">&#x27;API_KEY&#x27;</span>
 }
 
-r = requests.get(<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/general/probation-policy/pay-options&#x27;</span>, headers = headers)
+r = requests.get(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/general/probation-policy/pay-options&#x27;</span>, headers = headers)
 
 <span class="hljs-built_in">print</span>(r.json())
 
 </code></pre>
 <pre class="highlight tab tab-shell"><code><span class="hljs-comment"># You can also use wget</span>
-curl -X GET https://dev.hrforte.com/v1/integration/hrf/general/probation-policy/pay-options \
+curl -X GET https://mia-api.hrforte.com/v1/integration/hrf/general/probation-policy/pay-options \
   -H <span class="hljs-string">&#x27;Accept: application/json&#x27;</span> \
   -H <span class="hljs-string">&#x27;X-API-Key: API_KEY&#x27;</span>
 
@@ -5477,7 +5477,7 @@ X-API-Key ( Scopes: X-API-Key )
 <span class="hljs-variable">$request_body</span> = <span class="hljs-keyword">array</span>();
 
 <span class="hljs-keyword">try</span> {
-    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;GET&#x27;</span>,<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/general/holiday-type&#x27;</span>, <span class="hljs-keyword">array</span>(
+    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;GET&#x27;</span>,<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/general/holiday-type&#x27;</span>, <span class="hljs-keyword">array</span>(
         <span class="hljs-string">&#x27;headers&#x27;</span> =&gt; <span class="hljs-variable">$headers</span>,
         <span class="hljs-string">&#x27;json&#x27;</span> =&gt; <span class="hljs-variable">$request_body</span>,
        )
@@ -5498,7 +5498,7 @@ X-API-Key ( Scopes: X-API-Key )
   <span class="hljs-string">&#x27;X-API-Key&#x27;</span>:<span class="hljs-string">&#x27;API_KEY&#x27;</span>
 };
 
-fetch(<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/general/holiday-type&#x27;</span>,
+fetch(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/general/holiday-type&#x27;</span>,
 {
   <span class="hljs-attr">method</span>: <span class="hljs-string">&#x27;GET&#x27;</span>,
 
@@ -5517,13 +5517,13 @@ headers = {
   <span class="hljs-string">&#x27;X-API-Key&#x27;</span>: <span class="hljs-string">&#x27;API_KEY&#x27;</span>
 }
 
-r = requests.get(<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/general/holiday-type&#x27;</span>, headers = headers)
+r = requests.get(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/general/holiday-type&#x27;</span>, headers = headers)
 
 <span class="hljs-built_in">print</span>(r.json())
 
 </code></pre>
 <pre class="highlight tab tab-shell"><code><span class="hljs-comment"># You can also use wget</span>
-curl -X GET https://dev.hrforte.com/v1/integration/hrf/general/holiday-type \
+curl -X GET https://mia-api.hrforte.com/v1/integration/hrf/general/holiday-type \
   -H <span class="hljs-string">&#x27;Accept: application/json&#x27;</span> \
   -H <span class="hljs-string">&#x27;X-API-Key: API_KEY&#x27;</span>
 
@@ -5596,7 +5596,7 @@ X-API-Key ( Scopes: X-API-Key )
 <span class="hljs-variable">$request_body</span> = <span class="hljs-keyword">array</span>();
 
 <span class="hljs-keyword">try</span> {
-    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;GET&#x27;</span>,<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/general/claim-limit-type&#x27;</span>, <span class="hljs-keyword">array</span>(
+    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;GET&#x27;</span>,<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/general/claim-limit-type&#x27;</span>, <span class="hljs-keyword">array</span>(
         <span class="hljs-string">&#x27;headers&#x27;</span> =&gt; <span class="hljs-variable">$headers</span>,
         <span class="hljs-string">&#x27;json&#x27;</span> =&gt; <span class="hljs-variable">$request_body</span>,
        )
@@ -5617,7 +5617,7 @@ X-API-Key ( Scopes: X-API-Key )
   <span class="hljs-string">&#x27;X-API-Key&#x27;</span>:<span class="hljs-string">&#x27;API_KEY&#x27;</span>
 };
 
-fetch(<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/general/claim-limit-type&#x27;</span>,
+fetch(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/general/claim-limit-type&#x27;</span>,
 {
   <span class="hljs-attr">method</span>: <span class="hljs-string">&#x27;GET&#x27;</span>,
 
@@ -5636,13 +5636,13 @@ headers = {
   <span class="hljs-string">&#x27;X-API-Key&#x27;</span>: <span class="hljs-string">&#x27;API_KEY&#x27;</span>
 }
 
-r = requests.get(<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/general/claim-limit-type&#x27;</span>, headers = headers)
+r = requests.get(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/general/claim-limit-type&#x27;</span>, headers = headers)
 
 <span class="hljs-built_in">print</span>(r.json())
 
 </code></pre>
 <pre class="highlight tab tab-shell"><code><span class="hljs-comment"># You can also use wget</span>
-curl -X GET https://dev.hrforte.com/v1/integration/hrf/general/claim-limit-type \
+curl -X GET https://mia-api.hrforte.com/v1/integration/hrf/general/claim-limit-type \
   -H <span class="hljs-string">&#x27;Accept: application/json&#x27;</span> \
   -H <span class="hljs-string">&#x27;X-API-Key: API_KEY&#x27;</span>
 
@@ -5719,7 +5719,7 @@ X-API-Key ( Scopes: X-API-Key )
 <span class="hljs-variable">$request_body</span> = <span class="hljs-keyword">array</span>();
 
 <span class="hljs-keyword">try</span> {
-    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;GET&#x27;</span>,<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/general/claim-prorate-type&#x27;</span>, <span class="hljs-keyword">array</span>(
+    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;GET&#x27;</span>,<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/general/claim-prorate-type&#x27;</span>, <span class="hljs-keyword">array</span>(
         <span class="hljs-string">&#x27;headers&#x27;</span> =&gt; <span class="hljs-variable">$headers</span>,
         <span class="hljs-string">&#x27;json&#x27;</span> =&gt; <span class="hljs-variable">$request_body</span>,
        )
@@ -5740,7 +5740,7 @@ X-API-Key ( Scopes: X-API-Key )
   <span class="hljs-string">&#x27;X-API-Key&#x27;</span>:<span class="hljs-string">&#x27;API_KEY&#x27;</span>
 };
 
-fetch(<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/general/claim-prorate-type&#x27;</span>,
+fetch(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/general/claim-prorate-type&#x27;</span>,
 {
   <span class="hljs-attr">method</span>: <span class="hljs-string">&#x27;GET&#x27;</span>,
 
@@ -5759,13 +5759,13 @@ headers = {
   <span class="hljs-string">&#x27;X-API-Key&#x27;</span>: <span class="hljs-string">&#x27;API_KEY&#x27;</span>
 }
 
-r = requests.get(<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/general/claim-prorate-type&#x27;</span>, headers = headers)
+r = requests.get(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/general/claim-prorate-type&#x27;</span>, headers = headers)
 
 <span class="hljs-built_in">print</span>(r.json())
 
 </code></pre>
 <pre class="highlight tab tab-shell"><code><span class="hljs-comment"># You can also use wget</span>
-curl -X GET https://dev.hrforte.com/v1/integration/hrf/general/claim-prorate-type \
+curl -X GET https://mia-api.hrforte.com/v1/integration/hrf/general/claim-prorate-type \
   -H <span class="hljs-string">&#x27;Accept: application/json&#x27;</span> \
   -H <span class="hljs-string">&#x27;X-API-Key: API_KEY&#x27;</span>
 
@@ -5838,7 +5838,7 @@ X-API-Key ( Scopes: X-API-Key )
 <span class="hljs-variable">$request_body</span> = <span class="hljs-keyword">array</span>();
 
 <span class="hljs-keyword">try</span> {
-    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;GET&#x27;</span>,<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/general/claim-prorate-calendar&#x27;</span>, <span class="hljs-keyword">array</span>(
+    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;GET&#x27;</span>,<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/general/claim-prorate-calendar&#x27;</span>, <span class="hljs-keyword">array</span>(
         <span class="hljs-string">&#x27;headers&#x27;</span> =&gt; <span class="hljs-variable">$headers</span>,
         <span class="hljs-string">&#x27;json&#x27;</span> =&gt; <span class="hljs-variable">$request_body</span>,
        )
@@ -5859,7 +5859,7 @@ X-API-Key ( Scopes: X-API-Key )
   <span class="hljs-string">&#x27;X-API-Key&#x27;</span>:<span class="hljs-string">&#x27;API_KEY&#x27;</span>
 };
 
-fetch(<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/general/claim-prorate-calendar&#x27;</span>,
+fetch(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/general/claim-prorate-calendar&#x27;</span>,
 {
   <span class="hljs-attr">method</span>: <span class="hljs-string">&#x27;GET&#x27;</span>,
 
@@ -5878,13 +5878,13 @@ headers = {
   <span class="hljs-string">&#x27;X-API-Key&#x27;</span>: <span class="hljs-string">&#x27;API_KEY&#x27;</span>
 }
 
-r = requests.get(<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/general/claim-prorate-calendar&#x27;</span>, headers = headers)
+r = requests.get(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/general/claim-prorate-calendar&#x27;</span>, headers = headers)
 
 <span class="hljs-built_in">print</span>(r.json())
 
 </code></pre>
 <pre class="highlight tab tab-shell"><code><span class="hljs-comment"># You can also use wget</span>
-curl -X GET https://dev.hrforte.com/v1/integration/hrf/general/claim-prorate-calendar \
+curl -X GET https://mia-api.hrforte.com/v1/integration/hrf/general/claim-prorate-calendar \
   -H <span class="hljs-string">&#x27;Accept: application/json&#x27;</span> \
   -H <span class="hljs-string">&#x27;X-API-Key: API_KEY&#x27;</span>
 
@@ -5961,7 +5961,7 @@ X-API-Key ( Scopes: X-API-Key )
 <span class="hljs-variable">$request_body</span> = <span class="hljs-keyword">array</span>();
 
 <span class="hljs-keyword">try</span> {
-    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;GET&#x27;</span>,<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/general/pension-payout&#x27;</span>, <span class="hljs-keyword">array</span>(
+    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;GET&#x27;</span>,<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/general/pension-payout&#x27;</span>, <span class="hljs-keyword">array</span>(
         <span class="hljs-string">&#x27;headers&#x27;</span> =&gt; <span class="hljs-variable">$headers</span>,
         <span class="hljs-string">&#x27;json&#x27;</span> =&gt; <span class="hljs-variable">$request_body</span>,
        )
@@ -5982,7 +5982,7 @@ X-API-Key ( Scopes: X-API-Key )
   <span class="hljs-string">&#x27;X-API-Key&#x27;</span>:<span class="hljs-string">&#x27;API_KEY&#x27;</span>
 };
 
-fetch(<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/general/pension-payout&#x27;</span>,
+fetch(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/general/pension-payout&#x27;</span>,
 {
   <span class="hljs-attr">method</span>: <span class="hljs-string">&#x27;GET&#x27;</span>,
 
@@ -6001,13 +6001,13 @@ headers = {
   <span class="hljs-string">&#x27;X-API-Key&#x27;</span>: <span class="hljs-string">&#x27;API_KEY&#x27;</span>
 }
 
-r = requests.get(<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/general/pension-payout&#x27;</span>, headers = headers)
+r = requests.get(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/general/pension-payout&#x27;</span>, headers = headers)
 
 <span class="hljs-built_in">print</span>(r.json())
 
 </code></pre>
 <pre class="highlight tab tab-shell"><code><span class="hljs-comment"># You can also use wget</span>
-curl -X GET https://dev.hrforte.com/v1/integration/hrf/general/pension-payout \
+curl -X GET https://mia-api.hrforte.com/v1/integration/hrf/general/pension-payout \
   -H <span class="hljs-string">&#x27;Accept: application/json&#x27;</span> \
   -H <span class="hljs-string">&#x27;X-API-Key: API_KEY&#x27;</span>
 
@@ -6076,7 +6076,7 @@ X-API-Key ( Scopes: X-API-Key )
 <span class="hljs-variable">$request_body</span> = <span class="hljs-keyword">array</span>();
 
 <span class="hljs-keyword">try</span> {
-    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;GET&#x27;</span>,<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/general/pension-date-type-company&#x27;</span>, <span class="hljs-keyword">array</span>(
+    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;GET&#x27;</span>,<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/general/pension-date-type-company&#x27;</span>, <span class="hljs-keyword">array</span>(
         <span class="hljs-string">&#x27;headers&#x27;</span> =&gt; <span class="hljs-variable">$headers</span>,
         <span class="hljs-string">&#x27;json&#x27;</span> =&gt; <span class="hljs-variable">$request_body</span>,
        )
@@ -6097,7 +6097,7 @@ X-API-Key ( Scopes: X-API-Key )
   <span class="hljs-string">&#x27;X-API-Key&#x27;</span>:<span class="hljs-string">&#x27;API_KEY&#x27;</span>
 };
 
-fetch(<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/general/pension-date-type-company&#x27;</span>,
+fetch(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/general/pension-date-type-company&#x27;</span>,
 {
   <span class="hljs-attr">method</span>: <span class="hljs-string">&#x27;GET&#x27;</span>,
 
@@ -6116,13 +6116,13 @@ headers = {
   <span class="hljs-string">&#x27;X-API-Key&#x27;</span>: <span class="hljs-string">&#x27;API_KEY&#x27;</span>
 }
 
-r = requests.get(<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/general/pension-date-type-company&#x27;</span>, headers = headers)
+r = requests.get(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/general/pension-date-type-company&#x27;</span>, headers = headers)
 
 <span class="hljs-built_in">print</span>(r.json())
 
 </code></pre>
 <pre class="highlight tab tab-shell"><code><span class="hljs-comment"># You can also use wget</span>
-curl -X GET https://dev.hrforte.com/v1/integration/hrf/general/pension-date-type-company \
+curl -X GET https://mia-api.hrforte.com/v1/integration/hrf/general/pension-date-type-company \
   -H <span class="hljs-string">&#x27;Accept: application/json&#x27;</span> \
   -H <span class="hljs-string">&#x27;X-API-Key: API_KEY&#x27;</span>
 
@@ -6195,7 +6195,7 @@ X-API-Key ( Scopes: X-API-Key )
 <span class="hljs-variable">$request_body</span> = <span class="hljs-keyword">array</span>();
 
 <span class="hljs-keyword">try</span> {
-    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;GET&#x27;</span>,<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/general/pension-date-type-employee&#x27;</span>, <span class="hljs-keyword">array</span>(
+    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;GET&#x27;</span>,<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/general/pension-date-type-employee&#x27;</span>, <span class="hljs-keyword">array</span>(
         <span class="hljs-string">&#x27;headers&#x27;</span> =&gt; <span class="hljs-variable">$headers</span>,
         <span class="hljs-string">&#x27;json&#x27;</span> =&gt; <span class="hljs-variable">$request_body</span>,
        )
@@ -6216,7 +6216,7 @@ X-API-Key ( Scopes: X-API-Key )
   <span class="hljs-string">&#x27;X-API-Key&#x27;</span>:<span class="hljs-string">&#x27;API_KEY&#x27;</span>
 };
 
-fetch(<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/general/pension-date-type-employee&#x27;</span>,
+fetch(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/general/pension-date-type-employee&#x27;</span>,
 {
   <span class="hljs-attr">method</span>: <span class="hljs-string">&#x27;GET&#x27;</span>,
 
@@ -6235,13 +6235,13 @@ headers = {
   <span class="hljs-string">&#x27;X-API-Key&#x27;</span>: <span class="hljs-string">&#x27;API_KEY&#x27;</span>
 }
 
-r = requests.get(<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/general/pension-date-type-employee&#x27;</span>, headers = headers)
+r = requests.get(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/general/pension-date-type-employee&#x27;</span>, headers = headers)
 
 <span class="hljs-built_in">print</span>(r.json())
 
 </code></pre>
 <pre class="highlight tab tab-shell"><code><span class="hljs-comment"># You can also use wget</span>
-curl -X GET https://dev.hrforte.com/v1/integration/hrf/general/pension-date-type-employee \
+curl -X GET https://mia-api.hrforte.com/v1/integration/hrf/general/pension-date-type-employee \
   -H <span class="hljs-string">&#x27;Accept: application/json&#x27;</span> \
   -H <span class="hljs-string">&#x27;X-API-Key: API_KEY&#x27;</span>
 
@@ -6310,7 +6310,7 @@ X-API-Key ( Scopes: X-API-Key )
 <span class="hljs-variable">$request_body</span> = <span class="hljs-keyword">array</span>();
 
 <span class="hljs-keyword">try</span> {
-    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;GET&#x27;</span>,<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/general/loan-repay-option&#x27;</span>, <span class="hljs-keyword">array</span>(
+    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;GET&#x27;</span>,<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/general/loan-repay-option&#x27;</span>, <span class="hljs-keyword">array</span>(
         <span class="hljs-string">&#x27;headers&#x27;</span> =&gt; <span class="hljs-variable">$headers</span>,
         <span class="hljs-string">&#x27;json&#x27;</span> =&gt; <span class="hljs-variable">$request_body</span>,
        )
@@ -6331,7 +6331,7 @@ X-API-Key ( Scopes: X-API-Key )
   <span class="hljs-string">&#x27;X-API-Key&#x27;</span>:<span class="hljs-string">&#x27;API_KEY&#x27;</span>
 };
 
-fetch(<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/general/loan-repay-option&#x27;</span>,
+fetch(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/general/loan-repay-option&#x27;</span>,
 {
   <span class="hljs-attr">method</span>: <span class="hljs-string">&#x27;GET&#x27;</span>,
 
@@ -6350,13 +6350,13 @@ headers = {
   <span class="hljs-string">&#x27;X-API-Key&#x27;</span>: <span class="hljs-string">&#x27;API_KEY&#x27;</span>
 }
 
-r = requests.get(<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/general/loan-repay-option&#x27;</span>, headers = headers)
+r = requests.get(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/general/loan-repay-option&#x27;</span>, headers = headers)
 
 <span class="hljs-built_in">print</span>(r.json())
 
 </code></pre>
 <pre class="highlight tab tab-shell"><code><span class="hljs-comment"># You can also use wget</span>
-curl -X GET https://dev.hrforte.com/v1/integration/hrf/general/loan-repay-option \
+curl -X GET https://mia-api.hrforte.com/v1/integration/hrf/general/loan-repay-option \
   -H <span class="hljs-string">&#x27;Accept: application/json&#x27;</span> \
   -H <span class="hljs-string">&#x27;X-API-Key: API_KEY&#x27;</span>
 
@@ -6429,7 +6429,7 @@ X-API-Key ( Scopes: X-API-Key )
 <span class="hljs-variable">$request_body</span> = <span class="hljs-keyword">array</span>();
 
 <span class="hljs-keyword">try</span> {
-    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;GET&#x27;</span>,<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/general/all&#x27;</span>, <span class="hljs-keyword">array</span>(
+    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;GET&#x27;</span>,<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/general/all&#x27;</span>, <span class="hljs-keyword">array</span>(
         <span class="hljs-string">&#x27;headers&#x27;</span> =&gt; <span class="hljs-variable">$headers</span>,
         <span class="hljs-string">&#x27;json&#x27;</span> =&gt; <span class="hljs-variable">$request_body</span>,
        )
@@ -6450,7 +6450,7 @@ X-API-Key ( Scopes: X-API-Key )
   <span class="hljs-string">&#x27;X-API-Key&#x27;</span>:<span class="hljs-string">&#x27;API_KEY&#x27;</span>
 };
 
-fetch(<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/general/all&#x27;</span>,
+fetch(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/general/all&#x27;</span>,
 {
   <span class="hljs-attr">method</span>: <span class="hljs-string">&#x27;GET&#x27;</span>,
 
@@ -6469,13 +6469,13 @@ headers = {
   <span class="hljs-string">&#x27;X-API-Key&#x27;</span>: <span class="hljs-string">&#x27;API_KEY&#x27;</span>
 }
 
-r = requests.get(<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/general/all&#x27;</span>, headers = headers)
+r = requests.get(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/general/all&#x27;</span>, headers = headers)
 
 <span class="hljs-built_in">print</span>(r.json())
 
 </code></pre>
 <pre class="highlight tab tab-shell"><code><span class="hljs-comment"># You can also use wget</span>
-curl -X GET https://dev.hrforte.com/v1/integration/hrf/general/all \
+curl -X GET https://mia-api.hrforte.com/v1/integration/hrf/general/all \
   -H <span class="hljs-string">&#x27;Accept: application/json&#x27;</span> \
   -H <span class="hljs-string">&#x27;X-API-Key: API_KEY&#x27;</span>
 
@@ -6757,7 +6757,7 @@ X-API-Key ( Scopes: X-API-Key )
 <span class="hljs-variable">$request_body</span> = <span class="hljs-keyword">array</span>();
 
 <span class="hljs-keyword">try</span> {
-    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;POST&#x27;</span>,<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/employee&#x27;</span>, <span class="hljs-keyword">array</span>(
+    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;POST&#x27;</span>,<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/employee&#x27;</span>, <span class="hljs-keyword">array</span>(
         <span class="hljs-string">&#x27;headers&#x27;</span> =&gt; <span class="hljs-variable">$headers</span>,
         <span class="hljs-string">&#x27;json&#x27;</span> =&gt; <span class="hljs-variable">$request_body</span>,
        )
@@ -6833,7 +6833,7 @@ X-API-Key ( Scopes: X-API-Key )
   <span class="hljs-string">&#x27;X-API-Key&#x27;</span>:<span class="hljs-string">&#x27;API_KEY&#x27;</span>
 };
 
-fetch(<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/employee&#x27;</span>,
+fetch(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/employee&#x27;</span>,
 {
   <span class="hljs-attr">method</span>: <span class="hljs-string">&#x27;POST&#x27;</span>,
   <span class="hljs-attr">body</span>: inputBody,
@@ -6854,13 +6854,13 @@ headers = {
   <span class="hljs-string">&#x27;X-API-Key&#x27;</span>: <span class="hljs-string">&#x27;API_KEY&#x27;</span>
 }
 
-r = requests.post(<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/employee&#x27;</span>, headers = headers)
+r = requests.post(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/employee&#x27;</span>, headers = headers)
 
 <span class="hljs-built_in">print</span>(r.json())
 
 </code></pre>
 <pre class="highlight tab tab-shell"><code><span class="hljs-comment"># You can also use wget</span>
-curl -X POST https://dev.hrforte.com/v1/integration/hrf/employee \
+curl -X POST https://mia-api.hrforte.com/v1/integration/hrf/employee \
   -H <span class="hljs-string">&#x27;Content-Type: application/json&#x27;</span> \
   -H <span class="hljs-string">&#x27;Accept: application/json&#x27;</span> \
   -H <span class="hljs-string">&#x27;Idempotency-Key: emp-create-2025-10-24-550e8400-e29b-41d4-a716-446655440000&#x27;</span> \
@@ -7035,7 +7035,7 @@ X-API-Key ( Scopes: X-API-Key )
 <span class="hljs-variable">$request_body</span> = <span class="hljs-keyword">array</span>();
 
 <span class="hljs-keyword">try</span> {
-    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;POST&#x27;</span>,<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/employee/bulk&#x27;</span>, <span class="hljs-keyword">array</span>(
+    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;POST&#x27;</span>,<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/employee/bulk&#x27;</span>, <span class="hljs-keyword">array</span>(
         <span class="hljs-string">&#x27;headers&#x27;</span> =&gt; <span class="hljs-variable">$headers</span>,
         <span class="hljs-string">&#x27;json&#x27;</span> =&gt; <span class="hljs-variable">$request_body</span>,
        )
@@ -7077,7 +7077,7 @@ X-API-Key ( Scopes: X-API-Key )
   <span class="hljs-string">&#x27;X-API-Key&#x27;</span>:<span class="hljs-string">&#x27;API_KEY&#x27;</span>
 };
 
-fetch(<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/employee/bulk&#x27;</span>,
+fetch(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/employee/bulk&#x27;</span>,
 {
   <span class="hljs-attr">method</span>: <span class="hljs-string">&#x27;POST&#x27;</span>,
   <span class="hljs-attr">body</span>: inputBody,
@@ -7098,13 +7098,13 @@ headers = {
   <span class="hljs-string">&#x27;X-API-Key&#x27;</span>: <span class="hljs-string">&#x27;API_KEY&#x27;</span>
 }
 
-r = requests.post(<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/employee/bulk&#x27;</span>, headers = headers)
+r = requests.post(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/employee/bulk&#x27;</span>, headers = headers)
 
 <span class="hljs-built_in">print</span>(r.json())
 
 </code></pre>
 <pre class="highlight tab tab-shell"><code><span class="hljs-comment"># You can also use wget</span>
-curl -X POST https://dev.hrforte.com/v1/integration/hrf/employee/bulk \
+curl -X POST https://mia-api.hrforte.com/v1/integration/hrf/employee/bulk \
   -H <span class="hljs-string">&#x27;Content-Type: application/json&#x27;</span> \
   -H <span class="hljs-string">&#x27;Accept: application/json&#x27;</span> \
   -H <span class="hljs-string">&#x27;Idempotency-Key: emp-create-2025-10-24-550e8400-e29b-41d4-a716-446655440000&#x27;</span> \
@@ -7245,7 +7245,7 @@ X-API-Key ( Scopes: X-API-Key )
 <span class="hljs-variable">$request_body</span> = <span class="hljs-keyword">array</span>();
 
 <span class="hljs-keyword">try</span> {
-    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;DELETE&#x27;</span>,<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/employee/bulk&#x27;</span>, <span class="hljs-keyword">array</span>(
+    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;DELETE&#x27;</span>,<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/employee/bulk&#x27;</span>, <span class="hljs-keyword">array</span>(
         <span class="hljs-string">&#x27;headers&#x27;</span> =&gt; <span class="hljs-variable">$headers</span>,
         <span class="hljs-string">&#x27;json&#x27;</span> =&gt; <span class="hljs-variable">$request_body</span>,
        )
@@ -7274,7 +7274,7 @@ X-API-Key ( Scopes: X-API-Key )
   <span class="hljs-string">&#x27;X-API-Key&#x27;</span>:<span class="hljs-string">&#x27;API_KEY&#x27;</span>
 };
 
-fetch(<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/employee/bulk&#x27;</span>,
+fetch(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/employee/bulk&#x27;</span>,
 {
   <span class="hljs-attr">method</span>: <span class="hljs-string">&#x27;DELETE&#x27;</span>,
   <span class="hljs-attr">body</span>: inputBody,
@@ -7295,13 +7295,13 @@ headers = {
   <span class="hljs-string">&#x27;X-API-Key&#x27;</span>: <span class="hljs-string">&#x27;API_KEY&#x27;</span>
 }
 
-r = requests.delete(<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/employee/bulk&#x27;</span>, headers = headers)
+r = requests.delete(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/employee/bulk&#x27;</span>, headers = headers)
 
 <span class="hljs-built_in">print</span>(r.json())
 
 </code></pre>
 <pre class="highlight tab tab-shell"><code><span class="hljs-comment"># You can also use wget</span>
-curl -X DELETE https://dev.hrforte.com/v1/integration/hrf/employee/bulk \
+curl -X DELETE https://mia-api.hrforte.com/v1/integration/hrf/employee/bulk \
   -H <span class="hljs-string">&#x27;Content-Type: application/json&#x27;</span> \
   -H <span class="hljs-string">&#x27;Accept: application/json&#x27;</span> \
   -H <span class="hljs-string">&#x27;Idempotency-Key: emp-create-2025-10-24-550e8400-e29b-41d4-a716-446655440000&#x27;</span> \
@@ -7574,7 +7574,7 @@ X-API-Key ( Scopes: X-API-Key )
 <span class="hljs-variable">$request_body</span> = <span class="hljs-keyword">array</span>();
 
 <span class="hljs-keyword">try</span> {
-    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;GET&#x27;</span>,<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/employee/{externalId}&#x27;</span>, <span class="hljs-keyword">array</span>(
+    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;GET&#x27;</span>,<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/employee/{externalId}&#x27;</span>, <span class="hljs-keyword">array</span>(
         <span class="hljs-string">&#x27;headers&#x27;</span> =&gt; <span class="hljs-variable">$headers</span>,
         <span class="hljs-string">&#x27;json&#x27;</span> =&gt; <span class="hljs-variable">$request_body</span>,
        )
@@ -7594,7 +7594,7 @@ X-API-Key ( Scopes: X-API-Key )
   <span class="hljs-string">&#x27;X-API-Key&#x27;</span>:<span class="hljs-string">&#x27;API_KEY&#x27;</span>
 };
 
-fetch(<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/employee/{externalId}&#x27;</span>,
+fetch(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/employee/{externalId}&#x27;</span>,
 {
   <span class="hljs-attr">method</span>: <span class="hljs-string">&#x27;GET&#x27;</span>,
 
@@ -7612,13 +7612,13 @@ headers = {
   <span class="hljs-string">&#x27;X-API-Key&#x27;</span>: <span class="hljs-string">&#x27;API_KEY&#x27;</span>
 }
 
-r = requests.get(<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/employee/{externalId}&#x27;</span>, headers = headers)
+r = requests.get(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/employee/{externalId}&#x27;</span>, headers = headers)
 
 <span class="hljs-built_in">print</span>(r.json())
 
 </code></pre>
 <pre class="highlight tab tab-shell"><code><span class="hljs-comment"># You can also use wget</span>
-curl -X GET https://dev.hrforte.com/v1/integration/hrf/employee/{externalId} \
+curl -X GET https://mia-api.hrforte.com/v1/integration/hrf/employee/{externalId} \
   -H <span class="hljs-string">&#x27;X-API-Key: API_KEY&#x27;</span>
 
 </code></pre>
@@ -7696,7 +7696,7 @@ X-API-Key ( Scopes: X-API-Key )
 <span class="hljs-variable">$request_body</span> = <span class="hljs-keyword">array</span>();
 
 <span class="hljs-keyword">try</span> {
-    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;PUT&#x27;</span>,<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/employee/{externalId}&#x27;</span>, <span class="hljs-keyword">array</span>(
+    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;PUT&#x27;</span>,<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/employee/{externalId}&#x27;</span>, <span class="hljs-keyword">array</span>(
         <span class="hljs-string">&#x27;headers&#x27;</span> =&gt; <span class="hljs-variable">$headers</span>,
         <span class="hljs-string">&#x27;json&#x27;</span> =&gt; <span class="hljs-variable">$request_body</span>,
        )
@@ -7771,7 +7771,7 @@ X-API-Key ( Scopes: X-API-Key )
   <span class="hljs-string">&#x27;X-API-Key&#x27;</span>:<span class="hljs-string">&#x27;API_KEY&#x27;</span>
 };
 
-fetch(<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/employee/{externalId}&#x27;</span>,
+fetch(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/employee/{externalId}&#x27;</span>,
 {
   <span class="hljs-attr">method</span>: <span class="hljs-string">&#x27;PUT&#x27;</span>,
   <span class="hljs-attr">body</span>: inputBody,
@@ -7791,13 +7791,13 @@ headers = {
   <span class="hljs-string">&#x27;X-API-Key&#x27;</span>: <span class="hljs-string">&#x27;API_KEY&#x27;</span>
 }
 
-r = requests.put(<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/employee/{externalId}&#x27;</span>, headers = headers)
+r = requests.put(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/employee/{externalId}&#x27;</span>, headers = headers)
 
 <span class="hljs-built_in">print</span>(r.json())
 
 </code></pre>
 <pre class="highlight tab tab-shell"><code><span class="hljs-comment"># You can also use wget</span>
-curl -X PUT https://dev.hrforte.com/v1/integration/hrf/employee/{externalId} \
+curl -X PUT https://mia-api.hrforte.com/v1/integration/hrf/employee/{externalId} \
   -H <span class="hljs-string">&#x27;Content-Type: application/json&#x27;</span> \
   -H <span class="hljs-string">&#x27;Idempotency-Key: emp-create-2025-10-24-550e8400-e29b-41d4-a716-446655440000&#x27;</span> \
   -H <span class="hljs-string">&#x27;X-API-Key: API_KEY&#x27;</span>
@@ -7973,7 +7973,7 @@ X-API-Key ( Scopes: X-API-Key )
 <span class="hljs-variable">$request_body</span> = <span class="hljs-keyword">array</span>();
 
 <span class="hljs-keyword">try</span> {
-    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;DELETE&#x27;</span>,<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/employee/{externalId}&#x27;</span>, <span class="hljs-keyword">array</span>(
+    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;DELETE&#x27;</span>,<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/employee/{externalId}&#x27;</span>, <span class="hljs-keyword">array</span>(
         <span class="hljs-string">&#x27;headers&#x27;</span> =&gt; <span class="hljs-variable">$headers</span>,
         <span class="hljs-string">&#x27;json&#x27;</span> =&gt; <span class="hljs-variable">$request_body</span>,
        )
@@ -7994,7 +7994,7 @@ X-API-Key ( Scopes: X-API-Key )
   <span class="hljs-string">&#x27;X-API-Key&#x27;</span>:<span class="hljs-string">&#x27;API_KEY&#x27;</span>
 };
 
-fetch(<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/employee/{externalId}&#x27;</span>,
+fetch(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/employee/{externalId}&#x27;</span>,
 {
   <span class="hljs-attr">method</span>: <span class="hljs-string">&#x27;DELETE&#x27;</span>,
 
@@ -8013,13 +8013,13 @@ headers = {
   <span class="hljs-string">&#x27;X-API-Key&#x27;</span>: <span class="hljs-string">&#x27;API_KEY&#x27;</span>
 }
 
-r = requests.delete(<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/employee/{externalId}&#x27;</span>, headers = headers)
+r = requests.delete(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/employee/{externalId}&#x27;</span>, headers = headers)
 
 <span class="hljs-built_in">print</span>(r.json())
 
 </code></pre>
 <pre class="highlight tab tab-shell"><code><span class="hljs-comment"># You can also use wget</span>
-curl -X DELETE https://dev.hrforte.com/v1/integration/hrf/employee/{externalId} \
+curl -X DELETE https://mia-api.hrforte.com/v1/integration/hrf/employee/{externalId} \
   -H <span class="hljs-string">&#x27;Idempotency-Key: emp-create-2025-10-24-550e8400-e29b-41d4-a716-446655440000&#x27;</span> \
   -H <span class="hljs-string">&#x27;X-API-Key: API_KEY&#x27;</span>
 
@@ -8126,7 +8126,7 @@ X-API-Key ( Scopes: X-API-Key )
 <span class="hljs-variable">$request_body</span> = <span class="hljs-keyword">array</span>();
 
 <span class="hljs-keyword">try</span> {
-    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;POST&#x27;</span>,<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/contract&#x27;</span>, <span class="hljs-keyword">array</span>(
+    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;POST&#x27;</span>,<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/contract&#x27;</span>, <span class="hljs-keyword">array</span>(
         <span class="hljs-string">&#x27;headers&#x27;</span> =&gt; <span class="hljs-variable">$headers</span>,
         <span class="hljs-string">&#x27;json&#x27;</span> =&gt; <span class="hljs-variable">$request_body</span>,
        )
@@ -8168,7 +8168,7 @@ X-API-Key ( Scopes: X-API-Key )
   <span class="hljs-string">&#x27;X-API-Key&#x27;</span>:<span class="hljs-string">&#x27;API_KEY&#x27;</span>
 };
 
-fetch(<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/contract&#x27;</span>,
+fetch(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/contract&#x27;</span>,
 {
   <span class="hljs-attr">method</span>: <span class="hljs-string">&#x27;POST&#x27;</span>,
   <span class="hljs-attr">body</span>: inputBody,
@@ -8189,13 +8189,13 @@ headers = {
   <span class="hljs-string">&#x27;X-API-Key&#x27;</span>: <span class="hljs-string">&#x27;API_KEY&#x27;</span>
 }
 
-r = requests.post(<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/contract&#x27;</span>, headers = headers)
+r = requests.post(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/contract&#x27;</span>, headers = headers)
 
 <span class="hljs-built_in">print</span>(r.json())
 
 </code></pre>
 <pre class="highlight tab tab-shell"><code><span class="hljs-comment"># You can also use wget</span>
-curl -X POST https://dev.hrforte.com/v1/integration/hrf/contract \
+curl -X POST https://mia-api.hrforte.com/v1/integration/hrf/contract \
   -H <span class="hljs-string">&#x27;Content-Type: application/json&#x27;</span> \
   -H <span class="hljs-string">&#x27;Accept: application/json&#x27;</span> \
   -H <span class="hljs-string">&#x27;Idempotency-Key: emp-create-2025-10-24-550e8400-e29b-41d4-a716-446655440000&#x27;</span> \
@@ -8336,7 +8336,7 @@ X-API-Key ( Scopes: X-API-Key )
 <span class="hljs-variable">$request_body</span> = <span class="hljs-keyword">array</span>();
 
 <span class="hljs-keyword">try</span> {
-    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;POST&#x27;</span>,<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/contract/bulk&#x27;</span>, <span class="hljs-keyword">array</span>(
+    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;POST&#x27;</span>,<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/contract/bulk&#x27;</span>, <span class="hljs-keyword">array</span>(
         <span class="hljs-string">&#x27;headers&#x27;</span> =&gt; <span class="hljs-variable">$headers</span>,
         <span class="hljs-string">&#x27;json&#x27;</span> =&gt; <span class="hljs-variable">$request_body</span>,
        )
@@ -8388,7 +8388,7 @@ X-API-Key ( Scopes: X-API-Key )
   <span class="hljs-string">&#x27;X-API-Key&#x27;</span>:<span class="hljs-string">&#x27;API_KEY&#x27;</span>
 };
 
-fetch(<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/contract/bulk&#x27;</span>,
+fetch(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/contract/bulk&#x27;</span>,
 {
   <span class="hljs-attr">method</span>: <span class="hljs-string">&#x27;POST&#x27;</span>,
   <span class="hljs-attr">body</span>: inputBody,
@@ -8409,13 +8409,13 @@ headers = {
   <span class="hljs-string">&#x27;X-API-Key&#x27;</span>: <span class="hljs-string">&#x27;API_KEY&#x27;</span>
 }
 
-r = requests.post(<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/contract/bulk&#x27;</span>, headers = headers)
+r = requests.post(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/contract/bulk&#x27;</span>, headers = headers)
 
 <span class="hljs-built_in">print</span>(r.json())
 
 </code></pre>
 <pre class="highlight tab tab-shell"><code><span class="hljs-comment"># You can also use wget</span>
-curl -X POST https://dev.hrforte.com/v1/integration/hrf/contract/bulk \
+curl -X POST https://mia-api.hrforte.com/v1/integration/hrf/contract/bulk \
   -H <span class="hljs-string">&#x27;Content-Type: application/json&#x27;</span> \
   -H <span class="hljs-string">&#x27;Accept: application/json&#x27;</span> \
   -H <span class="hljs-string">&#x27;Idempotency-Key: emp-create-2025-10-24-550e8400-e29b-41d4-a716-446655440000&#x27;</span> \
@@ -8566,7 +8566,7 @@ X-API-Key ( Scopes: X-API-Key )
 <span class="hljs-variable">$request_body</span> = <span class="hljs-keyword">array</span>();
 
 <span class="hljs-keyword">try</span> {
-    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;DELETE&#x27;</span>,<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/contract/bulk&#x27;</span>, <span class="hljs-keyword">array</span>(
+    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;DELETE&#x27;</span>,<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/contract/bulk&#x27;</span>, <span class="hljs-keyword">array</span>(
         <span class="hljs-string">&#x27;headers&#x27;</span> =&gt; <span class="hljs-variable">$headers</span>,
         <span class="hljs-string">&#x27;json&#x27;</span> =&gt; <span class="hljs-variable">$request_body</span>,
        )
@@ -8595,7 +8595,7 @@ X-API-Key ( Scopes: X-API-Key )
   <span class="hljs-string">&#x27;X-API-Key&#x27;</span>:<span class="hljs-string">&#x27;API_KEY&#x27;</span>
 };
 
-fetch(<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/contract/bulk&#x27;</span>,
+fetch(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/contract/bulk&#x27;</span>,
 {
   <span class="hljs-attr">method</span>: <span class="hljs-string">&#x27;DELETE&#x27;</span>,
   <span class="hljs-attr">body</span>: inputBody,
@@ -8616,13 +8616,13 @@ headers = {
   <span class="hljs-string">&#x27;X-API-Key&#x27;</span>: <span class="hljs-string">&#x27;API_KEY&#x27;</span>
 }
 
-r = requests.delete(<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/contract/bulk&#x27;</span>, headers = headers)
+r = requests.delete(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/contract/bulk&#x27;</span>, headers = headers)
 
 <span class="hljs-built_in">print</span>(r.json())
 
 </code></pre>
 <pre class="highlight tab tab-shell"><code><span class="hljs-comment"># You can also use wget</span>
-curl -X DELETE https://dev.hrforte.com/v1/integration/hrf/contract/bulk \
+curl -X DELETE https://mia-api.hrforte.com/v1/integration/hrf/contract/bulk \
   -H <span class="hljs-string">&#x27;Content-Type: application/json&#x27;</span> \
   -H <span class="hljs-string">&#x27;Accept: application/json&#x27;</span> \
   -H <span class="hljs-string">&#x27;Idempotency-Key: emp-create-2025-10-24-550e8400-e29b-41d4-a716-446655440000&#x27;</span> \
@@ -8844,7 +8844,7 @@ X-API-Key ( Scopes: X-API-Key )
 <span class="hljs-variable">$request_body</span> = <span class="hljs-keyword">array</span>();
 
 <span class="hljs-keyword">try</span> {
-    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;GET&#x27;</span>,<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/contract/{externalId}&#x27;</span>, <span class="hljs-keyword">array</span>(
+    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;GET&#x27;</span>,<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/contract/{externalId}&#x27;</span>, <span class="hljs-keyword">array</span>(
         <span class="hljs-string">&#x27;headers&#x27;</span> =&gt; <span class="hljs-variable">$headers</span>,
         <span class="hljs-string">&#x27;json&#x27;</span> =&gt; <span class="hljs-variable">$request_body</span>,
        )
@@ -8864,7 +8864,7 @@ X-API-Key ( Scopes: X-API-Key )
   <span class="hljs-string">&#x27;X-API-Key&#x27;</span>:<span class="hljs-string">&#x27;API_KEY&#x27;</span>
 };
 
-fetch(<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/contract/{externalId}&#x27;</span>,
+fetch(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/contract/{externalId}&#x27;</span>,
 {
   <span class="hljs-attr">method</span>: <span class="hljs-string">&#x27;GET&#x27;</span>,
 
@@ -8882,13 +8882,13 @@ headers = {
   <span class="hljs-string">&#x27;X-API-Key&#x27;</span>: <span class="hljs-string">&#x27;API_KEY&#x27;</span>
 }
 
-r = requests.get(<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/contract/{externalId}&#x27;</span>, headers = headers)
+r = requests.get(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/contract/{externalId}&#x27;</span>, headers = headers)
 
 <span class="hljs-built_in">print</span>(r.json())
 
 </code></pre>
 <pre class="highlight tab tab-shell"><code><span class="hljs-comment"># You can also use wget</span>
-curl -X GET https://dev.hrforte.com/v1/integration/hrf/contract/{externalId} \
+curl -X GET https://mia-api.hrforte.com/v1/integration/hrf/contract/{externalId} \
   -H <span class="hljs-string">&#x27;X-API-Key: API_KEY&#x27;</span>
 
 </code></pre>
@@ -8966,7 +8966,7 @@ X-API-Key ( Scopes: X-API-Key )
 <span class="hljs-variable">$request_body</span> = <span class="hljs-keyword">array</span>();
 
 <span class="hljs-keyword">try</span> {
-    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;PUT&#x27;</span>,<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/contract/{externalId}&#x27;</span>, <span class="hljs-keyword">array</span>(
+    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;PUT&#x27;</span>,<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/contract/{externalId}&#x27;</span>, <span class="hljs-keyword">array</span>(
         <span class="hljs-string">&#x27;headers&#x27;</span> =&gt; <span class="hljs-variable">$headers</span>,
         <span class="hljs-string">&#x27;json&#x27;</span> =&gt; <span class="hljs-variable">$request_body</span>,
        )
@@ -9007,7 +9007,7 @@ X-API-Key ( Scopes: X-API-Key )
   <span class="hljs-string">&#x27;X-API-Key&#x27;</span>:<span class="hljs-string">&#x27;API_KEY&#x27;</span>
 };
 
-fetch(<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/contract/{externalId}&#x27;</span>,
+fetch(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/contract/{externalId}&#x27;</span>,
 {
   <span class="hljs-attr">method</span>: <span class="hljs-string">&#x27;PUT&#x27;</span>,
   <span class="hljs-attr">body</span>: inputBody,
@@ -9027,13 +9027,13 @@ headers = {
   <span class="hljs-string">&#x27;X-API-Key&#x27;</span>: <span class="hljs-string">&#x27;API_KEY&#x27;</span>
 }
 
-r = requests.put(<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/contract/{externalId}&#x27;</span>, headers = headers)
+r = requests.put(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/contract/{externalId}&#x27;</span>, headers = headers)
 
 <span class="hljs-built_in">print</span>(r.json())
 
 </code></pre>
 <pre class="highlight tab tab-shell"><code><span class="hljs-comment"># You can also use wget</span>
-curl -X PUT https://dev.hrforte.com/v1/integration/hrf/contract/{externalId} \
+curl -X PUT https://mia-api.hrforte.com/v1/integration/hrf/contract/{externalId} \
   -H <span class="hljs-string">&#x27;Content-Type: application/json&#x27;</span> \
   -H <span class="hljs-string">&#x27;Idempotency-Key: emp-create-2025-10-24-550e8400-e29b-41d4-a716-446655440000&#x27;</span> \
   -H <span class="hljs-string">&#x27;X-API-Key: API_KEY&#x27;</span>
@@ -9175,7 +9175,7 @@ X-API-Key ( Scopes: X-API-Key )
 <span class="hljs-variable">$request_body</span> = <span class="hljs-keyword">array</span>();
 
 <span class="hljs-keyword">try</span> {
-    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;DELETE&#x27;</span>,<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/contract/{externalId}&#x27;</span>, <span class="hljs-keyword">array</span>(
+    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;DELETE&#x27;</span>,<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/contract/{externalId}&#x27;</span>, <span class="hljs-keyword">array</span>(
         <span class="hljs-string">&#x27;headers&#x27;</span> =&gt; <span class="hljs-variable">$headers</span>,
         <span class="hljs-string">&#x27;json&#x27;</span> =&gt; <span class="hljs-variable">$request_body</span>,
        )
@@ -9196,7 +9196,7 @@ X-API-Key ( Scopes: X-API-Key )
   <span class="hljs-string">&#x27;X-API-Key&#x27;</span>:<span class="hljs-string">&#x27;API_KEY&#x27;</span>
 };
 
-fetch(<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/contract/{externalId}&#x27;</span>,
+fetch(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/contract/{externalId}&#x27;</span>,
 {
   <span class="hljs-attr">method</span>: <span class="hljs-string">&#x27;DELETE&#x27;</span>,
 
@@ -9215,13 +9215,13 @@ headers = {
   <span class="hljs-string">&#x27;X-API-Key&#x27;</span>: <span class="hljs-string">&#x27;API_KEY&#x27;</span>
 }
 
-r = requests.delete(<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/contract/{externalId}&#x27;</span>, headers = headers)
+r = requests.delete(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/contract/{externalId}&#x27;</span>, headers = headers)
 
 <span class="hljs-built_in">print</span>(r.json())
 
 </code></pre>
 <pre class="highlight tab tab-shell"><code><span class="hljs-comment"># You can also use wget</span>
-curl -X DELETE https://dev.hrforte.com/v1/integration/hrf/contract/{externalId} \
+curl -X DELETE https://mia-api.hrforte.com/v1/integration/hrf/contract/{externalId} \
   -H <span class="hljs-string">&#x27;Idempotency-Key: emp-create-2025-10-24-550e8400-e29b-41d4-a716-446655440000&#x27;</span> \
   -H <span class="hljs-string">&#x27;X-API-Key: API_KEY&#x27;</span>
 
@@ -9328,7 +9328,7 @@ X-API-Key ( Scopes: X-API-Key )
 <span class="hljs-variable">$request_body</span> = <span class="hljs-keyword">array</span>();
 
 <span class="hljs-keyword">try</span> {
-    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;POST&#x27;</span>,<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/compensation&#x27;</span>, <span class="hljs-keyword">array</span>(
+    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;POST&#x27;</span>,<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/compensation&#x27;</span>, <span class="hljs-keyword">array</span>(
         <span class="hljs-string">&#x27;headers&#x27;</span> =&gt; <span class="hljs-variable">$headers</span>,
         <span class="hljs-string">&#x27;json&#x27;</span> =&gt; <span class="hljs-variable">$request_body</span>,
        )
@@ -9404,7 +9404,7 @@ X-API-Key ( Scopes: X-API-Key )
   <span class="hljs-string">&#x27;X-API-Key&#x27;</span>:<span class="hljs-string">&#x27;API_KEY&#x27;</span>
 };
 
-fetch(<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/compensation&#x27;</span>,
+fetch(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/compensation&#x27;</span>,
 {
   <span class="hljs-attr">method</span>: <span class="hljs-string">&#x27;POST&#x27;</span>,
   <span class="hljs-attr">body</span>: inputBody,
@@ -9425,13 +9425,13 @@ headers = {
   <span class="hljs-string">&#x27;X-API-Key&#x27;</span>: <span class="hljs-string">&#x27;API_KEY&#x27;</span>
 }
 
-r = requests.post(<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/compensation&#x27;</span>, headers = headers)
+r = requests.post(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/compensation&#x27;</span>, headers = headers)
 
 <span class="hljs-built_in">print</span>(r.json())
 
 </code></pre>
 <pre class="highlight tab tab-shell"><code><span class="hljs-comment"># You can also use wget</span>
-curl -X POST https://dev.hrforte.com/v1/integration/hrf/compensation \
+curl -X POST https://mia-api.hrforte.com/v1/integration/hrf/compensation \
   -H <span class="hljs-string">&#x27;Content-Type: application/json&#x27;</span> \
   -H <span class="hljs-string">&#x27;Accept: application/json&#x27;</span> \
   -H <span class="hljs-string">&#x27;Idempotency-Key: emp-create-2025-10-24-550e8400-e29b-41d4-a716-446655440000&#x27;</span> \
@@ -9606,7 +9606,7 @@ X-API-Key ( Scopes: X-API-Key )
 <span class="hljs-variable">$request_body</span> = <span class="hljs-keyword">array</span>();
 
 <span class="hljs-keyword">try</span> {
-    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;POST&#x27;</span>,<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/compensation/bulk&#x27;</span>, <span class="hljs-keyword">array</span>(
+    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;POST&#x27;</span>,<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/compensation/bulk&#x27;</span>, <span class="hljs-keyword">array</span>(
         <span class="hljs-string">&#x27;headers&#x27;</span> =&gt; <span class="hljs-variable">$headers</span>,
         <span class="hljs-string">&#x27;json&#x27;</span> =&gt; <span class="hljs-variable">$request_body</span>,
        )
@@ -9686,7 +9686,7 @@ X-API-Key ( Scopes: X-API-Key )
   <span class="hljs-string">&#x27;X-API-Key&#x27;</span>:<span class="hljs-string">&#x27;API_KEY&#x27;</span>
 };
 
-fetch(<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/compensation/bulk&#x27;</span>,
+fetch(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/compensation/bulk&#x27;</span>,
 {
   <span class="hljs-attr">method</span>: <span class="hljs-string">&#x27;POST&#x27;</span>,
   <span class="hljs-attr">body</span>: inputBody,
@@ -9707,13 +9707,13 @@ headers = {
   <span class="hljs-string">&#x27;X-API-Key&#x27;</span>: <span class="hljs-string">&#x27;API_KEY&#x27;</span>
 }
 
-r = requests.post(<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/compensation/bulk&#x27;</span>, headers = headers)
+r = requests.post(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/compensation/bulk&#x27;</span>, headers = headers)
 
 <span class="hljs-built_in">print</span>(r.json())
 
 </code></pre>
 <pre class="highlight tab tab-shell"><code><span class="hljs-comment"># You can also use wget</span>
-curl -X POST https://dev.hrforte.com/v1/integration/hrf/compensation/bulk \
+curl -X POST https://mia-api.hrforte.com/v1/integration/hrf/compensation/bulk \
   -H <span class="hljs-string">&#x27;Content-Type: application/json&#x27;</span> \
   -H <span class="hljs-string">&#x27;Accept: application/json&#x27;</span> \
   -H <span class="hljs-string">&#x27;Idempotency-Key: emp-create-2025-10-24-550e8400-e29b-41d4-a716-446655440000&#x27;</span> \
@@ -9892,7 +9892,7 @@ X-API-Key ( Scopes: X-API-Key )
 <span class="hljs-variable">$request_body</span> = <span class="hljs-keyword">array</span>();
 
 <span class="hljs-keyword">try</span> {
-    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;DELETE&#x27;</span>,<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/compensation/bulk&#x27;</span>, <span class="hljs-keyword">array</span>(
+    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;DELETE&#x27;</span>,<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/compensation/bulk&#x27;</span>, <span class="hljs-keyword">array</span>(
         <span class="hljs-string">&#x27;headers&#x27;</span> =&gt; <span class="hljs-variable">$headers</span>,
         <span class="hljs-string">&#x27;json&#x27;</span> =&gt; <span class="hljs-variable">$request_body</span>,
        )
@@ -9920,7 +9920,7 @@ X-API-Key ( Scopes: X-API-Key )
   <span class="hljs-string">&#x27;X-API-Key&#x27;</span>:<span class="hljs-string">&#x27;API_KEY&#x27;</span>
 };
 
-fetch(<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/compensation/bulk&#x27;</span>,
+fetch(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/compensation/bulk&#x27;</span>,
 {
   <span class="hljs-attr">method</span>: <span class="hljs-string">&#x27;DELETE&#x27;</span>,
   <span class="hljs-attr">body</span>: inputBody,
@@ -9941,13 +9941,13 @@ headers = {
   <span class="hljs-string">&#x27;X-API-Key&#x27;</span>: <span class="hljs-string">&#x27;API_KEY&#x27;</span>
 }
 
-r = requests.delete(<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/compensation/bulk&#x27;</span>, headers = headers)
+r = requests.delete(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/compensation/bulk&#x27;</span>, headers = headers)
 
 <span class="hljs-built_in">print</span>(r.json())
 
 </code></pre>
 <pre class="highlight tab tab-shell"><code><span class="hljs-comment"># You can also use wget</span>
-curl -X DELETE https://dev.hrforte.com/v1/integration/hrf/compensation/bulk \
+curl -X DELETE https://mia-api.hrforte.com/v1/integration/hrf/compensation/bulk \
   -H <span class="hljs-string">&#x27;Content-Type: application/json&#x27;</span> \
   -H <span class="hljs-string">&#x27;Accept: application/json&#x27;</span> \
   -H <span class="hljs-string">&#x27;Idempotency-Key: emp-create-2025-10-24-550e8400-e29b-41d4-a716-446655440000&#x27;</span> \
@@ -10161,7 +10161,7 @@ X-API-Key ( Scopes: X-API-Key )
 <span class="hljs-variable">$request_body</span> = <span class="hljs-keyword">array</span>();
 
 <span class="hljs-keyword">try</span> {
-    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;GET&#x27;</span>,<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/compensation/{externalId}&#x27;</span>, <span class="hljs-keyword">array</span>(
+    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;GET&#x27;</span>,<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/compensation/{externalId}&#x27;</span>, <span class="hljs-keyword">array</span>(
         <span class="hljs-string">&#x27;headers&#x27;</span> =&gt; <span class="hljs-variable">$headers</span>,
         <span class="hljs-string">&#x27;json&#x27;</span> =&gt; <span class="hljs-variable">$request_body</span>,
        )
@@ -10181,7 +10181,7 @@ X-API-Key ( Scopes: X-API-Key )
   <span class="hljs-string">&#x27;X-API-Key&#x27;</span>:<span class="hljs-string">&#x27;API_KEY&#x27;</span>
 };
 
-fetch(<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/compensation/{externalId}&#x27;</span>,
+fetch(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/compensation/{externalId}&#x27;</span>,
 {
   <span class="hljs-attr">method</span>: <span class="hljs-string">&#x27;GET&#x27;</span>,
 
@@ -10199,13 +10199,13 @@ headers = {
   <span class="hljs-string">&#x27;X-API-Key&#x27;</span>: <span class="hljs-string">&#x27;API_KEY&#x27;</span>
 }
 
-r = requests.get(<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/compensation/{externalId}&#x27;</span>, headers = headers)
+r = requests.get(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/compensation/{externalId}&#x27;</span>, headers = headers)
 
 <span class="hljs-built_in">print</span>(r.json())
 
 </code></pre>
 <pre class="highlight tab tab-shell"><code><span class="hljs-comment"># You can also use wget</span>
-curl -X GET https://dev.hrforte.com/v1/integration/hrf/compensation/{externalId} \
+curl -X GET https://mia-api.hrforte.com/v1/integration/hrf/compensation/{externalId} \
   -H <span class="hljs-string">&#x27;X-API-Key: API_KEY&#x27;</span>
 
 </code></pre>
@@ -10283,7 +10283,7 @@ X-API-Key ( Scopes: X-API-Key )
 <span class="hljs-variable">$request_body</span> = <span class="hljs-keyword">array</span>();
 
 <span class="hljs-keyword">try</span> {
-    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;PUT&#x27;</span>,<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/compensation/{externalId}&#x27;</span>, <span class="hljs-keyword">array</span>(
+    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;PUT&#x27;</span>,<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/compensation/{externalId}&#x27;</span>, <span class="hljs-keyword">array</span>(
         <span class="hljs-string">&#x27;headers&#x27;</span> =&gt; <span class="hljs-variable">$headers</span>,
         <span class="hljs-string">&#x27;json&#x27;</span> =&gt; <span class="hljs-variable">$request_body</span>,
        )
@@ -10357,7 +10357,7 @@ X-API-Key ( Scopes: X-API-Key )
   <span class="hljs-string">&#x27;X-API-Key&#x27;</span>:<span class="hljs-string">&#x27;API_KEY&#x27;</span>
 };
 
-fetch(<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/compensation/{externalId}&#x27;</span>,
+fetch(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/compensation/{externalId}&#x27;</span>,
 {
   <span class="hljs-attr">method</span>: <span class="hljs-string">&#x27;PUT&#x27;</span>,
   <span class="hljs-attr">body</span>: inputBody,
@@ -10377,13 +10377,13 @@ headers = {
   <span class="hljs-string">&#x27;X-API-Key&#x27;</span>: <span class="hljs-string">&#x27;API_KEY&#x27;</span>
 }
 
-r = requests.put(<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/compensation/{externalId}&#x27;</span>, headers = headers)
+r = requests.put(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/compensation/{externalId}&#x27;</span>, headers = headers)
 
 <span class="hljs-built_in">print</span>(r.json())
 
 </code></pre>
 <pre class="highlight tab tab-shell"><code><span class="hljs-comment"># You can also use wget</span>
-curl -X PUT https://dev.hrforte.com/v1/integration/hrf/compensation/{externalId} \
+curl -X PUT https://mia-api.hrforte.com/v1/integration/hrf/compensation/{externalId} \
   -H <span class="hljs-string">&#x27;Content-Type: application/json&#x27;</span> \
   -H <span class="hljs-string">&#x27;Idempotency-Key: emp-create-2025-10-24-550e8400-e29b-41d4-a716-446655440000&#x27;</span> \
   -H <span class="hljs-string">&#x27;X-API-Key: API_KEY&#x27;</span>
@@ -10558,7 +10558,7 @@ X-API-Key ( Scopes: X-API-Key )
 <span class="hljs-variable">$request_body</span> = <span class="hljs-keyword">array</span>();
 
 <span class="hljs-keyword">try</span> {
-    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;DELETE&#x27;</span>,<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/compensation/{externalId}&#x27;</span>, <span class="hljs-keyword">array</span>(
+    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;DELETE&#x27;</span>,<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/compensation/{externalId}&#x27;</span>, <span class="hljs-keyword">array</span>(
         <span class="hljs-string">&#x27;headers&#x27;</span> =&gt; <span class="hljs-variable">$headers</span>,
         <span class="hljs-string">&#x27;json&#x27;</span> =&gt; <span class="hljs-variable">$request_body</span>,
        )
@@ -10579,7 +10579,7 @@ X-API-Key ( Scopes: X-API-Key )
   <span class="hljs-string">&#x27;X-API-Key&#x27;</span>:<span class="hljs-string">&#x27;API_KEY&#x27;</span>
 };
 
-fetch(<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/compensation/{externalId}&#x27;</span>,
+fetch(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/compensation/{externalId}&#x27;</span>,
 {
   <span class="hljs-attr">method</span>: <span class="hljs-string">&#x27;DELETE&#x27;</span>,
 
@@ -10598,13 +10598,13 @@ headers = {
   <span class="hljs-string">&#x27;X-API-Key&#x27;</span>: <span class="hljs-string">&#x27;API_KEY&#x27;</span>
 }
 
-r = requests.delete(<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/compensation/{externalId}&#x27;</span>, headers = headers)
+r = requests.delete(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/compensation/{externalId}&#x27;</span>, headers = headers)
 
 <span class="hljs-built_in">print</span>(r.json())
 
 </code></pre>
 <pre class="highlight tab tab-shell"><code><span class="hljs-comment"># You can also use wget</span>
-curl -X DELETE https://dev.hrforte.com/v1/integration/hrf/compensation/{externalId} \
+curl -X DELETE https://mia-api.hrforte.com/v1/integration/hrf/compensation/{externalId} \
   -H <span class="hljs-string">&#x27;Idempotency-Key: emp-create-2025-10-24-550e8400-e29b-41d4-a716-446655440000&#x27;</span> \
   -H <span class="hljs-string">&#x27;X-API-Key: API_KEY&#x27;</span>
 
@@ -10711,7 +10711,7 @@ X-API-Key ( Scopes: X-API-Key )
 <span class="hljs-variable">$request_body</span> = <span class="hljs-keyword">array</span>();
 
 <span class="hljs-keyword">try</span> {
-    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;POST&#x27;</span>,<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/work&#x27;</span>, <span class="hljs-keyword">array</span>(
+    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;POST&#x27;</span>,<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/work&#x27;</span>, <span class="hljs-keyword">array</span>(
         <span class="hljs-string">&#x27;headers&#x27;</span> =&gt; <span class="hljs-variable">$headers</span>,
         <span class="hljs-string">&#x27;json&#x27;</span> =&gt; <span class="hljs-variable">$request_body</span>,
        )
@@ -10755,7 +10755,7 @@ X-API-Key ( Scopes: X-API-Key )
   <span class="hljs-string">&#x27;X-API-Key&#x27;</span>:<span class="hljs-string">&#x27;API_KEY&#x27;</span>
 };
 
-fetch(<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/work&#x27;</span>,
+fetch(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/work&#x27;</span>,
 {
   <span class="hljs-attr">method</span>: <span class="hljs-string">&#x27;POST&#x27;</span>,
   <span class="hljs-attr">body</span>: inputBody,
@@ -10776,13 +10776,13 @@ headers = {
   <span class="hljs-string">&#x27;X-API-Key&#x27;</span>: <span class="hljs-string">&#x27;API_KEY&#x27;</span>
 }
 
-r = requests.post(<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/work&#x27;</span>, headers = headers)
+r = requests.post(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/work&#x27;</span>, headers = headers)
 
 <span class="hljs-built_in">print</span>(r.json())
 
 </code></pre>
 <pre class="highlight tab tab-shell"><code><span class="hljs-comment"># You can also use wget</span>
-curl -X POST https://dev.hrforte.com/v1/integration/hrf/work \
+curl -X POST https://mia-api.hrforte.com/v1/integration/hrf/work \
   -H <span class="hljs-string">&#x27;Content-Type: application/json&#x27;</span> \
   -H <span class="hljs-string">&#x27;Accept: application/json&#x27;</span> \
   -H <span class="hljs-string">&#x27;Idempotency-Key: emp-create-2025-10-24-550e8400-e29b-41d4-a716-446655440000&#x27;</span> \
@@ -10925,7 +10925,7 @@ X-API-Key ( Scopes: X-API-Key )
 <span class="hljs-variable">$request_body</span> = <span class="hljs-keyword">array</span>();
 
 <span class="hljs-keyword">try</span> {
-    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;POST&#x27;</span>,<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/work/bulk&#x27;</span>, <span class="hljs-keyword">array</span>(
+    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;POST&#x27;</span>,<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/work/bulk&#x27;</span>, <span class="hljs-keyword">array</span>(
         <span class="hljs-string">&#x27;headers&#x27;</span> =&gt; <span class="hljs-variable">$headers</span>,
         <span class="hljs-string">&#x27;json&#x27;</span> =&gt; <span class="hljs-variable">$request_body</span>,
        )
@@ -10985,7 +10985,7 @@ X-API-Key ( Scopes: X-API-Key )
   <span class="hljs-string">&#x27;X-API-Key&#x27;</span>:<span class="hljs-string">&#x27;API_KEY&#x27;</span>
 };
 
-fetch(<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/work/bulk&#x27;</span>,
+fetch(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/work/bulk&#x27;</span>,
 {
   <span class="hljs-attr">method</span>: <span class="hljs-string">&#x27;POST&#x27;</span>,
   <span class="hljs-attr">body</span>: inputBody,
@@ -11006,13 +11006,13 @@ headers = {
   <span class="hljs-string">&#x27;X-API-Key&#x27;</span>: <span class="hljs-string">&#x27;API_KEY&#x27;</span>
 }
 
-r = requests.post(<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/work/bulk&#x27;</span>, headers = headers)
+r = requests.post(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/work/bulk&#x27;</span>, headers = headers)
 
 <span class="hljs-built_in">print</span>(r.json())
 
 </code></pre>
 <pre class="highlight tab tab-shell"><code><span class="hljs-comment"># You can also use wget</span>
-curl -X POST https://dev.hrforte.com/v1/integration/hrf/work/bulk \
+curl -X POST https://mia-api.hrforte.com/v1/integration/hrf/work/bulk \
   -H <span class="hljs-string">&#x27;Content-Type: application/json&#x27;</span> \
   -H <span class="hljs-string">&#x27;Accept: application/json&#x27;</span> \
   -H <span class="hljs-string">&#x27;Idempotency-Key: emp-create-2025-10-24-550e8400-e29b-41d4-a716-446655440000&#x27;</span> \
@@ -11168,7 +11168,7 @@ X-API-Key ( Scopes: X-API-Key )
 <span class="hljs-variable">$request_body</span> = <span class="hljs-keyword">array</span>();
 
 <span class="hljs-keyword">try</span> {
-    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;GET&#x27;</span>,<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/work/{externalEmployeeId}&#x27;</span>, <span class="hljs-keyword">array</span>(
+    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;GET&#x27;</span>,<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/work/{externalEmployeeId}&#x27;</span>, <span class="hljs-keyword">array</span>(
         <span class="hljs-string">&#x27;headers&#x27;</span> =&gt; <span class="hljs-variable">$headers</span>,
         <span class="hljs-string">&#x27;json&#x27;</span> =&gt; <span class="hljs-variable">$request_body</span>,
        )
@@ -11188,7 +11188,7 @@ X-API-Key ( Scopes: X-API-Key )
   <span class="hljs-string">&#x27;X-API-Key&#x27;</span>:<span class="hljs-string">&#x27;API_KEY&#x27;</span>
 };
 
-fetch(<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/work/{externalEmployeeId}&#x27;</span>,
+fetch(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/work/{externalEmployeeId}&#x27;</span>,
 {
   <span class="hljs-attr">method</span>: <span class="hljs-string">&#x27;GET&#x27;</span>,
 
@@ -11206,13 +11206,13 @@ headers = {
   <span class="hljs-string">&#x27;X-API-Key&#x27;</span>: <span class="hljs-string">&#x27;API_KEY&#x27;</span>
 }
 
-r = requests.get(<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/work/{externalEmployeeId}&#x27;</span>, headers = headers)
+r = requests.get(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/work/{externalEmployeeId}&#x27;</span>, headers = headers)
 
 <span class="hljs-built_in">print</span>(r.json())
 
 </code></pre>
 <pre class="highlight tab tab-shell"><code><span class="hljs-comment"># You can also use wget</span>
-curl -X GET https://dev.hrforte.com/v1/integration/hrf/work/{externalEmployeeId} \
+curl -X GET https://mia-api.hrforte.com/v1/integration/hrf/work/{externalEmployeeId} \
   -H <span class="hljs-string">&#x27;X-API-Key: API_KEY&#x27;</span>
 
 </code></pre>
@@ -11290,7 +11290,7 @@ X-API-Key ( Scopes: X-API-Key )
 <span class="hljs-variable">$request_body</span> = <span class="hljs-keyword">array</span>();
 
 <span class="hljs-keyword">try</span> {
-    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;PUT&#x27;</span>,<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/work/{externalEmployeeId}&#x27;</span>, <span class="hljs-keyword">array</span>(
+    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;PUT&#x27;</span>,<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/work/{externalEmployeeId}&#x27;</span>, <span class="hljs-keyword">array</span>(
         <span class="hljs-string">&#x27;headers&#x27;</span> =&gt; <span class="hljs-variable">$headers</span>,
         <span class="hljs-string">&#x27;json&#x27;</span> =&gt; <span class="hljs-variable">$request_body</span>,
        )
@@ -11333,7 +11333,7 @@ X-API-Key ( Scopes: X-API-Key )
   <span class="hljs-string">&#x27;X-API-Key&#x27;</span>:<span class="hljs-string">&#x27;API_KEY&#x27;</span>
 };
 
-fetch(<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/work/{externalEmployeeId}&#x27;</span>,
+fetch(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/work/{externalEmployeeId}&#x27;</span>,
 {
   <span class="hljs-attr">method</span>: <span class="hljs-string">&#x27;PUT&#x27;</span>,
   <span class="hljs-attr">body</span>: inputBody,
@@ -11353,13 +11353,13 @@ headers = {
   <span class="hljs-string">&#x27;X-API-Key&#x27;</span>: <span class="hljs-string">&#x27;API_KEY&#x27;</span>
 }
 
-r = requests.put(<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/work/{externalEmployeeId}&#x27;</span>, headers = headers)
+r = requests.put(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/work/{externalEmployeeId}&#x27;</span>, headers = headers)
 
 <span class="hljs-built_in">print</span>(r.json())
 
 </code></pre>
 <pre class="highlight tab tab-shell"><code><span class="hljs-comment"># You can also use wget</span>
-curl -X PUT https://dev.hrforte.com/v1/integration/hrf/work/{externalEmployeeId} \
+curl -X PUT https://mia-api.hrforte.com/v1/integration/hrf/work/{externalEmployeeId} \
   -H <span class="hljs-string">&#x27;Content-Type: application/json&#x27;</span> \
   -H <span class="hljs-string">&#x27;Idempotency-Key: emp-create-2025-10-24-550e8400-e29b-41d4-a716-446655440000&#x27;</span> \
   -H <span class="hljs-string">&#x27;X-API-Key: API_KEY&#x27;</span>
@@ -11506,7 +11506,7 @@ X-API-Key ( Scopes: X-API-Key )
 <span class="hljs-variable">$request_body</span> = <span class="hljs-keyword">array</span>();
 
 <span class="hljs-keyword">try</span> {
-    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;POST&#x27;</span>,<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/dependent&#x27;</span>, <span class="hljs-keyword">array</span>(
+    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;POST&#x27;</span>,<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/dependent&#x27;</span>, <span class="hljs-keyword">array</span>(
         <span class="hljs-string">&#x27;headers&#x27;</span> =&gt; <span class="hljs-variable">$headers</span>,
         <span class="hljs-string">&#x27;json&#x27;</span> =&gt; <span class="hljs-variable">$request_body</span>,
        )
@@ -11541,7 +11541,7 @@ X-API-Key ( Scopes: X-API-Key )
   <span class="hljs-string">&#x27;X-API-Key&#x27;</span>:<span class="hljs-string">&#x27;API_KEY&#x27;</span>
 };
 
-fetch(<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/dependent&#x27;</span>,
+fetch(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/dependent&#x27;</span>,
 {
   <span class="hljs-attr">method</span>: <span class="hljs-string">&#x27;POST&#x27;</span>,
   <span class="hljs-attr">body</span>: inputBody,
@@ -11562,13 +11562,13 @@ headers = {
   <span class="hljs-string">&#x27;X-API-Key&#x27;</span>: <span class="hljs-string">&#x27;API_KEY&#x27;</span>
 }
 
-r = requests.post(<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/dependent&#x27;</span>, headers = headers)
+r = requests.post(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/dependent&#x27;</span>, headers = headers)
 
 <span class="hljs-built_in">print</span>(r.json())
 
 </code></pre>
 <pre class="highlight tab tab-shell"><code><span class="hljs-comment"># You can also use wget</span>
-curl -X POST https://dev.hrforte.com/v1/integration/hrf/dependent \
+curl -X POST https://mia-api.hrforte.com/v1/integration/hrf/dependent \
   -H <span class="hljs-string">&#x27;Content-Type: application/json&#x27;</span> \
   -H <span class="hljs-string">&#x27;Accept: application/json&#x27;</span> \
   -H <span class="hljs-string">&#x27;Idempotency-Key: emp-create-2025-10-24-550e8400-e29b-41d4-a716-446655440000&#x27;</span> \
@@ -11702,7 +11702,7 @@ X-API-Key ( Scopes: X-API-Key )
 <span class="hljs-variable">$request_body</span> = <span class="hljs-keyword">array</span>();
 
 <span class="hljs-keyword">try</span> {
-    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;POST&#x27;</span>,<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/dependent/bulk&#x27;</span>, <span class="hljs-keyword">array</span>(
+    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;POST&#x27;</span>,<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/dependent/bulk&#x27;</span>, <span class="hljs-keyword">array</span>(
         <span class="hljs-string">&#x27;headers&#x27;</span> =&gt; <span class="hljs-variable">$headers</span>,
         <span class="hljs-string">&#x27;json&#x27;</span> =&gt; <span class="hljs-variable">$request_body</span>,
        )
@@ -11750,7 +11750,7 @@ X-API-Key ( Scopes: X-API-Key )
   <span class="hljs-string">&#x27;X-API-Key&#x27;</span>:<span class="hljs-string">&#x27;API_KEY&#x27;</span>
 };
 
-fetch(<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/dependent/bulk&#x27;</span>,
+fetch(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/dependent/bulk&#x27;</span>,
 {
   <span class="hljs-attr">method</span>: <span class="hljs-string">&#x27;POST&#x27;</span>,
   <span class="hljs-attr">body</span>: inputBody,
@@ -11771,13 +11771,13 @@ headers = {
   <span class="hljs-string">&#x27;X-API-Key&#x27;</span>: <span class="hljs-string">&#x27;API_KEY&#x27;</span>
 }
 
-r = requests.post(<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/dependent/bulk&#x27;</span>, headers = headers)
+r = requests.post(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/dependent/bulk&#x27;</span>, headers = headers)
 
 <span class="hljs-built_in">print</span>(r.json())
 
 </code></pre>
 <pre class="highlight tab tab-shell"><code><span class="hljs-comment"># You can also use wget</span>
-curl -X POST https://dev.hrforte.com/v1/integration/hrf/dependent/bulk \
+curl -X POST https://mia-api.hrforte.com/v1/integration/hrf/dependent/bulk \
   -H <span class="hljs-string">&#x27;Content-Type: application/json&#x27;</span> \
   -H <span class="hljs-string">&#x27;Accept: application/json&#x27;</span> \
   -H <span class="hljs-string">&#x27;Idempotency-Key: emp-create-2025-10-24-550e8400-e29b-41d4-a716-446655440000&#x27;</span> \
@@ -11924,7 +11924,7 @@ X-API-Key ( Scopes: X-API-Key )
 <span class="hljs-variable">$request_body</span> = <span class="hljs-keyword">array</span>();
 
 <span class="hljs-keyword">try</span> {
-    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;DELETE&#x27;</span>,<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/dependent/bulk&#x27;</span>, <span class="hljs-keyword">array</span>(
+    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;DELETE&#x27;</span>,<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/dependent/bulk&#x27;</span>, <span class="hljs-keyword">array</span>(
         <span class="hljs-string">&#x27;headers&#x27;</span> =&gt; <span class="hljs-variable">$headers</span>,
         <span class="hljs-string">&#x27;json&#x27;</span> =&gt; <span class="hljs-variable">$request_body</span>,
        )
@@ -11953,7 +11953,7 @@ X-API-Key ( Scopes: X-API-Key )
   <span class="hljs-string">&#x27;X-API-Key&#x27;</span>:<span class="hljs-string">&#x27;API_KEY&#x27;</span>
 };
 
-fetch(<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/dependent/bulk&#x27;</span>,
+fetch(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/dependent/bulk&#x27;</span>,
 {
   <span class="hljs-attr">method</span>: <span class="hljs-string">&#x27;DELETE&#x27;</span>,
   <span class="hljs-attr">body</span>: inputBody,
@@ -11974,13 +11974,13 @@ headers = {
   <span class="hljs-string">&#x27;X-API-Key&#x27;</span>: <span class="hljs-string">&#x27;API_KEY&#x27;</span>
 }
 
-r = requests.delete(<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/dependent/bulk&#x27;</span>, headers = headers)
+r = requests.delete(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/dependent/bulk&#x27;</span>, headers = headers)
 
 <span class="hljs-built_in">print</span>(r.json())
 
 </code></pre>
 <pre class="highlight tab tab-shell"><code><span class="hljs-comment"># You can also use wget</span>
-curl -X DELETE https://dev.hrforte.com/v1/integration/hrf/dependent/bulk \
+curl -X DELETE https://mia-api.hrforte.com/v1/integration/hrf/dependent/bulk \
   -H <span class="hljs-string">&#x27;Content-Type: application/json&#x27;</span> \
   -H <span class="hljs-string">&#x27;Accept: application/json&#x27;</span> \
   -H <span class="hljs-string">&#x27;Idempotency-Key: emp-create-2025-10-24-550e8400-e29b-41d4-a716-446655440000&#x27;</span> \
@@ -12196,7 +12196,7 @@ X-API-Key ( Scopes: X-API-Key )
 <span class="hljs-variable">$request_body</span> = <span class="hljs-keyword">array</span>();
 
 <span class="hljs-keyword">try</span> {
-    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;GET&#x27;</span>,<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/dependent/{externalId}&#x27;</span>, <span class="hljs-keyword">array</span>(
+    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;GET&#x27;</span>,<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/dependent/{externalId}&#x27;</span>, <span class="hljs-keyword">array</span>(
         <span class="hljs-string">&#x27;headers&#x27;</span> =&gt; <span class="hljs-variable">$headers</span>,
         <span class="hljs-string">&#x27;json&#x27;</span> =&gt; <span class="hljs-variable">$request_body</span>,
        )
@@ -12219,7 +12219,7 @@ X-API-Key ( Scopes: X-API-Key )
   <span class="hljs-string">&#x27;X-API-Key&#x27;</span>:<span class="hljs-string">&#x27;API_KEY&#x27;</span>
 };
 
-fetch(<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/dependent/{externalId}&#x27;</span>,
+fetch(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/dependent/{externalId}&#x27;</span>,
 {
   <span class="hljs-attr">method</span>: <span class="hljs-string">&#x27;GET&#x27;</span>,
   <span class="hljs-attr">body</span>: inputBody,
@@ -12238,13 +12238,13 @@ headers = {
   <span class="hljs-string">&#x27;X-API-Key&#x27;</span>: <span class="hljs-string">&#x27;API_KEY&#x27;</span>
 }
 
-r = requests.get(<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/dependent/{externalId}&#x27;</span>, headers = headers)
+r = requests.get(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/dependent/{externalId}&#x27;</span>, headers = headers)
 
 <span class="hljs-built_in">print</span>(r.json())
 
 </code></pre>
 <pre class="highlight tab tab-shell"><code><span class="hljs-comment"># You can also use wget</span>
-curl -X GET https://dev.hrforte.com/v1/integration/hrf/dependent/{externalId} \
+curl -X GET https://mia-api.hrforte.com/v1/integration/hrf/dependent/{externalId} \
   -H <span class="hljs-string">&#x27;Content-Type: application/json&#x27;</span> \
   -H <span class="hljs-string">&#x27;X-API-Key: API_KEY&#x27;</span>
 
@@ -12343,7 +12343,7 @@ X-API-Key ( Scopes: X-API-Key )
 <span class="hljs-variable">$request_body</span> = <span class="hljs-keyword">array</span>();
 
 <span class="hljs-keyword">try</span> {
-    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;PUT&#x27;</span>,<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/dependent/{externalId}&#x27;</span>, <span class="hljs-keyword">array</span>(
+    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;PUT&#x27;</span>,<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/dependent/{externalId}&#x27;</span>, <span class="hljs-keyword">array</span>(
         <span class="hljs-string">&#x27;headers&#x27;</span> =&gt; <span class="hljs-variable">$headers</span>,
         <span class="hljs-string">&#x27;json&#x27;</span> =&gt; <span class="hljs-variable">$request_body</span>,
        )
@@ -12387,7 +12387,7 @@ X-API-Key ( Scopes: X-API-Key )
   <span class="hljs-string">&#x27;X-API-Key&#x27;</span>:<span class="hljs-string">&#x27;API_KEY&#x27;</span>
 };
 
-fetch(<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/dependent/{externalId}&#x27;</span>,
+fetch(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/dependent/{externalId}&#x27;</span>,
 {
   <span class="hljs-attr">method</span>: <span class="hljs-string">&#x27;PUT&#x27;</span>,
   <span class="hljs-attr">body</span>: inputBody,
@@ -12407,13 +12407,13 @@ headers = {
   <span class="hljs-string">&#x27;X-API-Key&#x27;</span>: <span class="hljs-string">&#x27;API_KEY&#x27;</span>
 }
 
-r = requests.put(<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/dependent/{externalId}&#x27;</span>, headers = headers)
+r = requests.put(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/dependent/{externalId}&#x27;</span>, headers = headers)
 
 <span class="hljs-built_in">print</span>(r.json())
 
 </code></pre>
 <pre class="highlight tab tab-shell"><code><span class="hljs-comment"># You can also use wget</span>
-curl -X PUT https://dev.hrforte.com/v1/integration/hrf/dependent/{externalId} \
+curl -X PUT https://mia-api.hrforte.com/v1/integration/hrf/dependent/{externalId} \
   -H <span class="hljs-string">&#x27;Content-Type: application/json&#x27;</span> \
   -H <span class="hljs-string">&#x27;Idempotency-Key: emp-create-2025-10-24-550e8400-e29b-41d4-a716-446655440000&#x27;</span> \
   -H <span class="hljs-string">&#x27;X-API-Key: API_KEY&#x27;</span>
@@ -12559,7 +12559,7 @@ X-API-Key ( Scopes: X-API-Key )
 <span class="hljs-variable">$request_body</span> = <span class="hljs-keyword">array</span>();
 
 <span class="hljs-keyword">try</span> {
-    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;DELETE&#x27;</span>,<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/dependent/{externalId}&#x27;</span>, <span class="hljs-keyword">array</span>(
+    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;DELETE&#x27;</span>,<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/dependent/{externalId}&#x27;</span>, <span class="hljs-keyword">array</span>(
         <span class="hljs-string">&#x27;headers&#x27;</span> =&gt; <span class="hljs-variable">$headers</span>,
         <span class="hljs-string">&#x27;json&#x27;</span> =&gt; <span class="hljs-variable">$request_body</span>,
        )
@@ -12583,7 +12583,7 @@ X-API-Key ( Scopes: X-API-Key )
   <span class="hljs-string">&#x27;X-API-Key&#x27;</span>:<span class="hljs-string">&#x27;API_KEY&#x27;</span>
 };
 
-fetch(<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/dependent/{externalId}&#x27;</span>,
+fetch(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/dependent/{externalId}&#x27;</span>,
 {
   <span class="hljs-attr">method</span>: <span class="hljs-string">&#x27;DELETE&#x27;</span>,
   <span class="hljs-attr">body</span>: inputBody,
@@ -12603,13 +12603,13 @@ headers = {
   <span class="hljs-string">&#x27;X-API-Key&#x27;</span>: <span class="hljs-string">&#x27;API_KEY&#x27;</span>
 }
 
-r = requests.delete(<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/dependent/{externalId}&#x27;</span>, headers = headers)
+r = requests.delete(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/dependent/{externalId}&#x27;</span>, headers = headers)
 
 <span class="hljs-built_in">print</span>(r.json())
 
 </code></pre>
 <pre class="highlight tab tab-shell"><code><span class="hljs-comment"># You can also use wget</span>
-curl -X DELETE https://dev.hrforte.com/v1/integration/hrf/dependent/{externalId} \
+curl -X DELETE https://mia-api.hrforte.com/v1/integration/hrf/dependent/{externalId} \
   -H <span class="hljs-string">&#x27;Content-Type: application/json&#x27;</span> \
   -H <span class="hljs-string">&#x27;Idempotency-Key: emp-create-2025-10-24-550e8400-e29b-41d4-a716-446655440000&#x27;</span> \
   -H <span class="hljs-string">&#x27;X-API-Key: API_KEY&#x27;</span>
@@ -12737,7 +12737,7 @@ X-API-Key ( Scopes: X-API-Key )
 <span class="hljs-variable">$request_body</span> = <span class="hljs-keyword">array</span>();
 
 <span class="hljs-keyword">try</span> {
-    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;POST&#x27;</span>,<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/jobPosition&#x27;</span>, <span class="hljs-keyword">array</span>(
+    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;POST&#x27;</span>,<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/jobPosition&#x27;</span>, <span class="hljs-keyword">array</span>(
         <span class="hljs-string">&#x27;headers&#x27;</span> =&gt; <span class="hljs-variable">$headers</span>,
         <span class="hljs-string">&#x27;json&#x27;</span> =&gt; <span class="hljs-variable">$request_body</span>,
        )
@@ -12765,7 +12765,7 @@ X-API-Key ( Scopes: X-API-Key )
   <span class="hljs-string">&#x27;X-API-Key&#x27;</span>:<span class="hljs-string">&#x27;API_KEY&#x27;</span>
 };
 
-fetch(<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/jobPosition&#x27;</span>,
+fetch(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/jobPosition&#x27;</span>,
 {
   <span class="hljs-attr">method</span>: <span class="hljs-string">&#x27;POST&#x27;</span>,
   <span class="hljs-attr">body</span>: inputBody,
@@ -12786,13 +12786,13 @@ headers = {
   <span class="hljs-string">&#x27;X-API-Key&#x27;</span>: <span class="hljs-string">&#x27;API_KEY&#x27;</span>
 }
 
-r = requests.post(<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/jobPosition&#x27;</span>, headers = headers)
+r = requests.post(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/jobPosition&#x27;</span>, headers = headers)
 
 <span class="hljs-built_in">print</span>(r.json())
 
 </code></pre>
 <pre class="highlight tab tab-shell"><code><span class="hljs-comment"># You can also use wget</span>
-curl -X POST https://dev.hrforte.com/v1/integration/hrf/jobPosition \
+curl -X POST https://mia-api.hrforte.com/v1/integration/hrf/jobPosition \
   -H <span class="hljs-string">&#x27;Content-Type: application/json&#x27;</span> \
   -H <span class="hljs-string">&#x27;Accept: application/json&#x27;</span> \
   -H <span class="hljs-string">&#x27;Idempotency-Key: emp-create-2025-10-24-550e8400-e29b-41d4-a716-446655440000&#x27;</span> \
@@ -12916,7 +12916,7 @@ X-API-Key ( Scopes: X-API-Key )
 <span class="hljs-variable">$request_body</span> = <span class="hljs-keyword">array</span>();
 
 <span class="hljs-keyword">try</span> {
-    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;GET&#x27;</span>,<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/jobPosition&#x27;</span>, <span class="hljs-keyword">array</span>(
+    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;GET&#x27;</span>,<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/jobPosition&#x27;</span>, <span class="hljs-keyword">array</span>(
         <span class="hljs-string">&#x27;headers&#x27;</span> =&gt; <span class="hljs-variable">$headers</span>,
         <span class="hljs-string">&#x27;json&#x27;</span> =&gt; <span class="hljs-variable">$request_body</span>,
        )
@@ -12936,7 +12936,7 @@ X-API-Key ( Scopes: X-API-Key )
   <span class="hljs-string">&#x27;X-API-Key&#x27;</span>:<span class="hljs-string">&#x27;API_KEY&#x27;</span>
 };
 
-fetch(<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/jobPosition&#x27;</span>,
+fetch(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/jobPosition&#x27;</span>,
 {
   <span class="hljs-attr">method</span>: <span class="hljs-string">&#x27;GET&#x27;</span>,
 
@@ -12954,13 +12954,13 @@ headers = {
   <span class="hljs-string">&#x27;X-API-Key&#x27;</span>: <span class="hljs-string">&#x27;API_KEY&#x27;</span>
 }
 
-r = requests.get(<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/jobPosition&#x27;</span>, headers = headers)
+r = requests.get(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/jobPosition&#x27;</span>, headers = headers)
 
 <span class="hljs-built_in">print</span>(r.json())
 
 </code></pre>
 <pre class="highlight tab tab-shell"><code><span class="hljs-comment"># You can also use wget</span>
-curl -X GET https://dev.hrforte.com/v1/integration/hrf/jobPosition \
+curl -X GET https://mia-api.hrforte.com/v1/integration/hrf/jobPosition \
   -H <span class="hljs-string">&#x27;X-API-Key: API_KEY&#x27;</span>
 
 </code></pre>
@@ -13009,7 +13009,7 @@ X-API-Key ( Scopes: X-API-Key )
 <span class="hljs-variable">$request_body</span> = <span class="hljs-keyword">array</span>();
 
 <span class="hljs-keyword">try</span> {
-    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;GET&#x27;</span>,<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/jobPosition/{externalId}&#x27;</span>, <span class="hljs-keyword">array</span>(
+    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;GET&#x27;</span>,<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/jobPosition/{externalId}&#x27;</span>, <span class="hljs-keyword">array</span>(
         <span class="hljs-string">&#x27;headers&#x27;</span> =&gt; <span class="hljs-variable">$headers</span>,
         <span class="hljs-string">&#x27;json&#x27;</span> =&gt; <span class="hljs-variable">$request_body</span>,
        )
@@ -13029,7 +13029,7 @@ X-API-Key ( Scopes: X-API-Key )
   <span class="hljs-string">&#x27;X-API-Key&#x27;</span>:<span class="hljs-string">&#x27;API_KEY&#x27;</span>
 };
 
-fetch(<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/jobPosition/{externalId}&#x27;</span>,
+fetch(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/jobPosition/{externalId}&#x27;</span>,
 {
   <span class="hljs-attr">method</span>: <span class="hljs-string">&#x27;GET&#x27;</span>,
 
@@ -13047,13 +13047,13 @@ headers = {
   <span class="hljs-string">&#x27;X-API-Key&#x27;</span>: <span class="hljs-string">&#x27;API_KEY&#x27;</span>
 }
 
-r = requests.get(<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/jobPosition/{externalId}&#x27;</span>, headers = headers)
+r = requests.get(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/jobPosition/{externalId}&#x27;</span>, headers = headers)
 
 <span class="hljs-built_in">print</span>(r.json())
 
 </code></pre>
 <pre class="highlight tab tab-shell"><code><span class="hljs-comment"># You can also use wget</span>
-curl -X GET https://dev.hrforte.com/v1/integration/hrf/jobPosition/{externalId} \
+curl -X GET https://mia-api.hrforte.com/v1/integration/hrf/jobPosition/{externalId} \
   -H <span class="hljs-string">&#x27;X-API-Key: API_KEY&#x27;</span>
 
 </code></pre>
@@ -13131,7 +13131,7 @@ X-API-Key ( Scopes: X-API-Key )
 <span class="hljs-variable">$request_body</span> = <span class="hljs-keyword">array</span>();
 
 <span class="hljs-keyword">try</span> {
-    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;PUT&#x27;</span>,<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/jobPosition/{externalId}&#x27;</span>, <span class="hljs-keyword">array</span>(
+    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;PUT&#x27;</span>,<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/jobPosition/{externalId}&#x27;</span>, <span class="hljs-keyword">array</span>(
         <span class="hljs-string">&#x27;headers&#x27;</span> =&gt; <span class="hljs-variable">$headers</span>,
         <span class="hljs-string">&#x27;json&#x27;</span> =&gt; <span class="hljs-variable">$request_body</span>,
        )
@@ -13155,7 +13155,7 @@ X-API-Key ( Scopes: X-API-Key )
   <span class="hljs-string">&#x27;X-API-Key&#x27;</span>:<span class="hljs-string">&#x27;API_KEY&#x27;</span>
 };
 
-fetch(<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/jobPosition/{externalId}&#x27;</span>,
+fetch(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/jobPosition/{externalId}&#x27;</span>,
 {
   <span class="hljs-attr">method</span>: <span class="hljs-string">&#x27;PUT&#x27;</span>,
   <span class="hljs-attr">body</span>: inputBody,
@@ -13175,13 +13175,13 @@ headers = {
   <span class="hljs-string">&#x27;X-API-Key&#x27;</span>: <span class="hljs-string">&#x27;API_KEY&#x27;</span>
 }
 
-r = requests.put(<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/jobPosition/{externalId}&#x27;</span>, headers = headers)
+r = requests.put(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/jobPosition/{externalId}&#x27;</span>, headers = headers)
 
 <span class="hljs-built_in">print</span>(r.json())
 
 </code></pre>
 <pre class="highlight tab tab-shell"><code><span class="hljs-comment"># You can also use wget</span>
-curl -X PUT https://dev.hrforte.com/v1/integration/hrf/jobPosition/{externalId} \
+curl -X PUT https://mia-api.hrforte.com/v1/integration/hrf/jobPosition/{externalId} \
   -H <span class="hljs-string">&#x27;Content-Type: application/json&#x27;</span> \
   -H <span class="hljs-string">&#x27;Idempotency-Key: emp-create-2025-10-24-550e8400-e29b-41d4-a716-446655440000&#x27;</span> \
   -H <span class="hljs-string">&#x27;X-API-Key: API_KEY&#x27;</span>
@@ -13320,7 +13320,7 @@ X-API-Key ( Scopes: X-API-Key )
 <span class="hljs-variable">$request_body</span> = <span class="hljs-keyword">array</span>();
 
 <span class="hljs-keyword">try</span> {
-    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;DELETE&#x27;</span>,<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/jobPosition/{externalId}&#x27;</span>, <span class="hljs-keyword">array</span>(
+    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;DELETE&#x27;</span>,<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/jobPosition/{externalId}&#x27;</span>, <span class="hljs-keyword">array</span>(
         <span class="hljs-string">&#x27;headers&#x27;</span> =&gt; <span class="hljs-variable">$headers</span>,
         <span class="hljs-string">&#x27;json&#x27;</span> =&gt; <span class="hljs-variable">$request_body</span>,
        )
@@ -13341,7 +13341,7 @@ X-API-Key ( Scopes: X-API-Key )
   <span class="hljs-string">&#x27;X-API-Key&#x27;</span>:<span class="hljs-string">&#x27;API_KEY&#x27;</span>
 };
 
-fetch(<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/jobPosition/{externalId}&#x27;</span>,
+fetch(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/jobPosition/{externalId}&#x27;</span>,
 {
   <span class="hljs-attr">method</span>: <span class="hljs-string">&#x27;DELETE&#x27;</span>,
 
@@ -13360,13 +13360,13 @@ headers = {
   <span class="hljs-string">&#x27;X-API-Key&#x27;</span>: <span class="hljs-string">&#x27;API_KEY&#x27;</span>
 }
 
-r = requests.delete(<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/jobPosition/{externalId}&#x27;</span>, headers = headers)
+r = requests.delete(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/jobPosition/{externalId}&#x27;</span>, headers = headers)
 
 <span class="hljs-built_in">print</span>(r.json())
 
 </code></pre>
 <pre class="highlight tab tab-shell"><code><span class="hljs-comment"># You can also use wget</span>
-curl -X DELETE https://dev.hrforte.com/v1/integration/hrf/jobPosition/{externalId} \
+curl -X DELETE https://mia-api.hrforte.com/v1/integration/hrf/jobPosition/{externalId} \
   -H <span class="hljs-string">&#x27;Idempotency-Key: emp-create-2025-10-24-550e8400-e29b-41d4-a716-446655440000&#x27;</span> \
   -H <span class="hljs-string">&#x27;X-API-Key: API_KEY&#x27;</span>
 
@@ -13472,7 +13472,7 @@ X-API-Key ( Scopes: X-API-Key )
 <span class="hljs-variable">$request_body</span> = <span class="hljs-keyword">array</span>();
 
 <span class="hljs-keyword">try</span> {
-    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;POST&#x27;</span>,<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/jobPosition/bulk&#x27;</span>, <span class="hljs-keyword">array</span>(
+    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;POST&#x27;</span>,<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/jobPosition/bulk&#x27;</span>, <span class="hljs-keyword">array</span>(
         <span class="hljs-string">&#x27;headers&#x27;</span> =&gt; <span class="hljs-variable">$headers</span>,
         <span class="hljs-string">&#x27;json&#x27;</span> =&gt; <span class="hljs-variable">$request_body</span>,
        )
@@ -13510,7 +13510,7 @@ X-API-Key ( Scopes: X-API-Key )
   <span class="hljs-string">&#x27;X-API-Key&#x27;</span>:<span class="hljs-string">&#x27;API_KEY&#x27;</span>
 };
 
-fetch(<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/jobPosition/bulk&#x27;</span>,
+fetch(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/jobPosition/bulk&#x27;</span>,
 {
   <span class="hljs-attr">method</span>: <span class="hljs-string">&#x27;POST&#x27;</span>,
   <span class="hljs-attr">body</span>: inputBody,
@@ -13531,13 +13531,13 @@ headers = {
   <span class="hljs-string">&#x27;X-API-Key&#x27;</span>: <span class="hljs-string">&#x27;API_KEY&#x27;</span>
 }
 
-r = requests.post(<span class="hljs-string">&#x27;https://dev.hrforte.com/v1/integration/hrf/jobPosition/bulk&#x27;</span>, headers = headers)
+r = requests.post(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/jobPosition/bulk&#x27;</span>, headers = headers)
 
 <span class="hljs-built_in">print</span>(r.json())
 
 </code></pre>
 <pre class="highlight tab tab-shell"><code><span class="hljs-comment"># You can also use wget</span>
-curl -X POST https://dev.hrforte.com/v1/integration/hrf/jobPosition/bulk \
+curl -X POST https://mia-api.hrforte.com/v1/integration/hrf/jobPosition/bulk \
   -H <span class="hljs-string">&#x27;Content-Type: application/json&#x27;</span> \
   -H <span class="hljs-string">&#x27;Accept: application/json&#x27;</span> \
   -H <span class="hljs-string">&#x27;Idempotency-Key: emp-create-2025-10-24-550e8400-e29b-41d4-a716-446655440000&#x27;</span> \
