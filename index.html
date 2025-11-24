@@ -1506,6 +1506,9 @@ var n=this.pipeline.run(e.tokenizer(t)),r=new e.Vector,i=[],o=this._fields.reduc
 <!-- backwards compatibility -->
 <!-- backwards compatibility -->
 <!-- backwards compatibility -->
+<!-- backwards compatibility -->
+<!-- backwards compatibility -->
+<!-- backwards compatibility -->
   <link rel="icon" type="image/png" href="/logo.svg" sizes="32x32">
 <style>
 /* Try It Button and Interface Styles */
@@ -1921,6 +1924,11 @@ var n=this.pipeline.run(e.tokenizer(t)),r=new e.Vector,i=[],o=this._fields.reduc
                 
                   <li>
                     <a href="#get-leaving-reasons-by-company" class="toc-h2 toc-link" data-title="">Get leaving reasons by company</a>
+                    
+                  </li>
+                
+                  <li>
+                    <a href="#get-employee-local-data-ui-configuration" class="toc-h2 toc-link" data-title="">Get employee local data UI configuration</a>
                     
                   </li>
                 
@@ -2403,6 +2411,16 @@ var n=this.pipeline.run(e.tokenizer(t)),r=new e.Vector,i=[],o=this._fields.reduc
                   </li>
                 
                   <li>
+                    <a href="#tocs_fieldoptiondto" class="toc-h2 toc-link" data-title="">FieldOptionDto</a>
+                    
+                  </li>
+                
+                  <li>
+                    <a href="#tocs_employeelocaldataresponsedto" class="toc-h2 toc-link" data-title="">EmployeeLocalDataResponseDto</a>
+                    
+                  </li>
+                
+                  <li>
                     <a href="#tocs_createemployeepayloaddto" class="toc-h2 toc-link" data-title="">CreateEmployeePayloadDto</a>
                     
                   </li>
@@ -2414,6 +2432,11 @@ var n=this.pipeline.run(e.tokenizer(t)),r=new e.Vector,i=[],o=this._fields.reduc
                 
                   <li>
                     <a href="#tocs_bulkcreateemployeepayloaddto" class="toc-h2 toc-link" data-title="">BulkCreateEmployeePayloadDto</a>
+                    
+                  </li>
+                
+                  <li>
+                    <a href="#tocs_updateemployeepayloaddto" class="toc-h2 toc-link" data-title="">UpdateEmployeePayloadDto</a>
                     
                   </li>
                 
@@ -5169,6 +5192,171 @@ curl -X GET https://mia-api.hrforte.com/v1/integration/hrf/general/leaving-reaso
 <td>true</td>
 <td>none</td>
 <td>Whether the leaving reason is involuntary</td>
+</tr>
+</tbody>
+</table>
+<aside class="warning">
+To perform this operation, you must be authenticated by means of one of the following methods:
+X-API-Key ( Scopes: X-API-Key )
+</aside>
+<h2 id="get-employee-local-data-ui-configuration">Get employee local data UI configuration</h2>
+<p><a id="opIdPublicIntegrationReferenceController_getEmployeeLocalData_v1"></a></p>
+<blockquote>
+<p>Code samples</p>
+</blockquote>
+<pre class="highlight tab tab-php"><code> <span class="hljs-string">&#x27;application/json&#x27;</span>,
+    <span class="hljs-string">&#x27;X-API-Key&#x27;</span> =&gt; <span class="hljs-string">&#x27;API_KEY&#x27;</span>,
+);
+
+<span class="hljs-variable">$client</span> = <span class="hljs-keyword">new</span> \GuzzleHttp\Client();
+
+<span class="hljs-comment">// Define array of request body.</span>
+<span class="hljs-variable">$request_body</span> = <span class="hljs-keyword">array</span>();
+
+<span class="hljs-keyword">try</span> {
+    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;GET&#x27;</span>,<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/general/employee-local-data&#x27;</span>, <span class="hljs-keyword">array</span>(
+        <span class="hljs-string">&#x27;headers&#x27;</span> =&gt; <span class="hljs-variable">$headers</span>,
+        <span class="hljs-string">&#x27;json&#x27;</span> =&gt; <span class="hljs-variable">$request_body</span>,
+       )
+    );
+    print_r(<span class="hljs-variable">$response</span>-&gt;getBody()-&gt;getContents());
+ }
+ <span class="hljs-keyword">catch</span> (\GuzzleHttp\<span class="hljs-built_in">Exception</span>\BadResponseException <span class="hljs-variable">$e</span>) {
+    <span class="hljs-comment">// handle exception or api errors.</span>
+    print_r(<span class="hljs-variable">$e</span>-&gt;getMessage());
+ }
+
+ <span class="hljs-comment">// ...</span>
+
+</code></pre>
+<pre class="highlight tab tab-javascript"><code>
+<span class="hljs-keyword">const</span> headers = {
+  <span class="hljs-string">&#x27;Accept&#x27;</span>:<span class="hljs-string">&#x27;application/json&#x27;</span>,
+  <span class="hljs-string">&#x27;X-API-Key&#x27;</span>:<span class="hljs-string">&#x27;API_KEY&#x27;</span>
+};
+
+fetch(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/general/employee-local-data&#x27;</span>,
+{
+  <span class="hljs-attr">method</span>: <span class="hljs-string">&#x27;GET&#x27;</span>,
+
+  <span class="hljs-attr">headers</span>: headers
+})
+.then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">res</span>) </span>{
+    <span class="hljs-keyword">return</span> res.json();
+}).then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">body</span>) </span>{
+    <span class="hljs-built_in">console</span>.log(body);
+});
+
+</code></pre>
+<pre class="highlight tab tab-python"><code><span class="hljs-keyword">import</span> requests
+headers = {
+  <span class="hljs-string">&#x27;Accept&#x27;</span>: <span class="hljs-string">&#x27;application/json&#x27;</span>,
+  <span class="hljs-string">&#x27;X-API-Key&#x27;</span>: <span class="hljs-string">&#x27;API_KEY&#x27;</span>
+}
+
+r = requests.get(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/general/employee-local-data&#x27;</span>, headers = headers)
+
+<span class="hljs-built_in">print</span>(r.json())
+
+</code></pre>
+<pre class="highlight tab tab-shell"><code><span class="hljs-comment"># You can also use wget</span>
+curl -X GET https://mia-api.hrforte.com/v1/integration/hrf/general/employee-local-data \
+  -H <span class="hljs-string">&#x27;Accept: application/json&#x27;</span> \
+  -H <span class="hljs-string">&#x27;X-API-Key: API_KEY&#x27;</span>
+
+</code></pre>
+<p><code>GET /v1/integration/hrf/general/employee-local-data</code></p>
+<p>Retrieve the UI configuration for employee local data fields specific to the company. This includes field definitions, data types, available options, and validation rules.</p>
+<blockquote>
+<p>Example responses</p>
+</blockquote>
+<blockquote>
+<p>200 Response</p>
+</blockquote>
+<pre class="highlight tab tab-json"><code>[
+  {
+    <span class="hljs-attr">&quot;name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+    <span class="hljs-attr">&quot;value&quot;</span>: [
+      {
+        <span class="hljs-attr">&quot;value&quot;</span>: <span class="hljs-number">0</span>,
+        <span class="hljs-attr">&quot;label&quot;</span>: <span class="hljs-string">&quot;Standard Employment&quot;</span>
+      }
+    ]
+  }
+]
+</code></pre>
+<h3 id="get-employee-local-data-ui-configuration-responses">Responses</h3>
+<table>
+<thead>
+<tr>
+<th>Status</th>
+<th>Meaning</th>
+<th>Description</th>
+<th>Schema</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>200</td>
+<td><a href="https://tools.ietf.org/html/rfc7231#section-6.3.1">OK</a></td>
+<td>Successfully retrieved employee local data UI configuration</td>
+<td>Inline</td>
+</tr>
+<tr>
+<td>401</td>
+<td><a href="https://tools.ietf.org/html/rfc7235#section-3.1">Unauthorized</a></td>
+<td>Unauthorized - Invalid or missing API Key</td>
+<td>None</td>
+</tr>
+</tbody>
+</table>
+<h3 id="get-employee-local-data-ui-configuration-responseschema">Response Schema</h3>
+<p>Status Code <strong>200</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Required</th>
+<th>Restrictions</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>anonymous</em></td>
+<td>[<a href="#schemaemployeelocaldataresponsedto">EmployeeLocalDataResponseDto</a>]</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>» name</td>
+<td>string</td>
+<td>true</td>
+<td>none</td>
+<td>Employee local data field name</td>
+</tr>
+<tr>
+<td>» value</td>
+<td>[<a href="#schemafieldoptiondto">FieldOptionDto</a>]</td>
+<td>true</td>
+<td>none</td>
+<td>Available options for select fields</td>
+</tr>
+<tr>
+<td>»» value</td>
+<td>number</td>
+<td>true</td>
+<td>none</td>
+<td>Option value</td>
+</tr>
+<tr>
+<td>»» label</td>
+<td>string</td>
+<td>true</td>
+<td>none</td>
+<td>Option name</td>
 </tr>
 </tbody>
 </table>
@@ -8284,7 +8472,16 @@ X-API-Key ( Scopes: X-API-Key )
   &quot;hdmfNo&quot;: &quot;HDMF123456&quot;,
   &quot;dateContributeShui&quot;: &quot;2020-01-01&quot;,
   &quot;familyCode&quot;: &quot;FAM001&quot;,
-  &quot;active&quot;: &quot;true&quot;
+  &quot;active&quot;: &quot;true&quot;,
+  &quot;taxCategory&quot;: &quot;0&quot;,
+  &quot;isPermanentResident&quot;: &quot;0&quot;,
+  &quot;nonMalaysianEpfMemberType&quot;: &quot;0&quot;,
+  &quot;cpfCategory&quot;: &quot;1&quot;,
+  &quot;shgFundCode&quot;: &quot;1&quot;,
+  &quot;shgFundStartDate&quot;: &quot;2020-01-01&quot;,
+  &quot;mpfAccountType&quot;: &quot;1&quot;,
+  &quot;mpfSchemeCode&quot;: &quot;1&quot;,
+  &quot;mpfSchemeJoinDate&quot;: &quot;2020-01-01&quot;
 }&#x27;</span>;
 <span class="hljs-keyword">const</span> headers = {
   <span class="hljs-string">&#x27;Content-Type&#x27;</span>:<span class="hljs-string">&#x27;application/json&#x27;</span>,
@@ -8381,7 +8578,16 @@ curl -X PUT https://mia-api.hrforte.com/v1/integration/hrf/employee/{externalId}
   <span class="hljs-attr">&quot;hdmfNo&quot;</span>: <span class="hljs-string">&quot;HDMF123456&quot;</span>,
   <span class="hljs-attr">&quot;dateContributeShui&quot;</span>: <span class="hljs-string">&quot;2020-01-01&quot;</span>,
   <span class="hljs-attr">&quot;familyCode&quot;</span>: <span class="hljs-string">&quot;FAM001&quot;</span>,
-  <span class="hljs-attr">&quot;active&quot;</span>: <span class="hljs-string">&quot;true&quot;</span>
+  <span class="hljs-attr">&quot;active&quot;</span>: <span class="hljs-string">&quot;true&quot;</span>,
+  <span class="hljs-attr">&quot;taxCategory&quot;</span>: <span class="hljs-string">&quot;0&quot;</span>,
+  <span class="hljs-attr">&quot;isPermanentResident&quot;</span>: <span class="hljs-string">&quot;0&quot;</span>,
+  <span class="hljs-attr">&quot;nonMalaysianEpfMemberType&quot;</span>: <span class="hljs-string">&quot;0&quot;</span>,
+  <span class="hljs-attr">&quot;cpfCategory&quot;</span>: <span class="hljs-string">&quot;1&quot;</span>,
+  <span class="hljs-attr">&quot;shgFundCode&quot;</span>: <span class="hljs-string">&quot;1&quot;</span>,
+  <span class="hljs-attr">&quot;shgFundStartDate&quot;</span>: <span class="hljs-string">&quot;2020-01-01&quot;</span>,
+  <span class="hljs-attr">&quot;mpfAccountType&quot;</span>: <span class="hljs-string">&quot;1&quot;</span>,
+  <span class="hljs-attr">&quot;mpfSchemeCode&quot;</span>: <span class="hljs-string">&quot;1&quot;</span>,
+  <span class="hljs-attr">&quot;mpfSchemeJoinDate&quot;</span>: <span class="hljs-string">&quot;2020-01-01&quot;</span>
 }
 </code></pre>
 <h3 id="update-employee-by-external-id-parameters">Parameters</h3>
@@ -8413,7 +8619,7 @@ curl -X PUT https://mia-api.hrforte.com/v1/integration/hrf/employee/{externalId}
 <tr>
 <td>body</td>
 <td>body</td>
-<td><a href="#schemacreateemployeepayloaddto">CreateEmployeePayloadDto</a></td>
+<td><a href="#schemaupdateemployeepayloaddto">UpdateEmployeePayloadDto</a></td>
 <td>true</td>
 <td>Partial employee data to update</td>
 </tr>
@@ -18121,6 +18327,89 @@ X-API-Key ( Scopes: X-API-Key )
 </tr>
 </tbody>
 </table>
+<h2 id="tocs_fieldoptiondto">FieldOptionDto</h2>
+<p><a id="schemafieldoptiondto"></a>
+<a id="schema_FieldOptionDto"></a>
+<a id="tocSfieldoptiondto"></a>
+<a id="tocsfieldoptiondto"></a></p>
+<pre class="highlight tab tab-json"><code>{
+  <span class="hljs-attr">&quot;value&quot;</span>: <span class="hljs-number">0</span>,
+  <span class="hljs-attr">&quot;label&quot;</span>: <span class="hljs-string">&quot;Standard Employment&quot;</span>
+}
+
+</code></pre>
+<h3 id="properties-2">Properties</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Required</th>
+<th>Restrictions</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>value</td>
+<td>number</td>
+<td>true</td>
+<td>none</td>
+<td>Option value</td>
+</tr>
+<tr>
+<td>label</td>
+<td>string</td>
+<td>true</td>
+<td>none</td>
+<td>Option name</td>
+</tr>
+</tbody>
+</table>
+<h2 id="tocs_employeelocaldataresponsedto">EmployeeLocalDataResponseDto</h2>
+<p><a id="schemaemployeelocaldataresponsedto"></a>
+<a id="schema_EmployeeLocalDataResponseDto"></a>
+<a id="tocSemployeelocaldataresponsedto"></a>
+<a id="tocsemployeelocaldataresponsedto"></a></p>
+<pre class="highlight tab tab-json"><code>{
+  <span class="hljs-attr">&quot;name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;value&quot;</span>: [
+    {
+      <span class="hljs-attr">&quot;value&quot;</span>: <span class="hljs-number">0</span>,
+      <span class="hljs-attr">&quot;label&quot;</span>: <span class="hljs-string">&quot;Standard Employment&quot;</span>
+    }
+  ]
+}
+
+</code></pre>
+<h3 id="properties-3">Properties</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Required</th>
+<th>Restrictions</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>name</td>
+<td>string</td>
+<td>true</td>
+<td>none</td>
+<td>Employee local data field name</td>
+</tr>
+<tr>
+<td>value</td>
+<td>[<a href="#schemafieldoptiondto">FieldOptionDto</a>]</td>
+<td>true</td>
+<td>none</td>
+<td>Available options for select fields</td>
+</tr>
+</tbody>
+</table>
 <h2 id="tocs_createemployeepayloaddto">CreateEmployeePayloadDto</h2>
 <p><a id="schemacreateemployeepayloaddto"></a>
 <a id="schema_CreateEmployeePayloadDto"></a>
@@ -18182,7 +18471,7 @@ X-API-Key ( Scopes: X-API-Key )
 }
 
 </code></pre>
-<h3 id="properties-2">Properties</h3>
+<h3 id="properties-4">Properties</h3>
 <table>
 <thead>
 <tr>
@@ -18575,7 +18864,7 @@ X-API-Key ( Scopes: X-API-Key )
 }
 
 </code></pre>
-<h3 id="properties-3">Properties</h3>
+<h3 id="properties-5">Properties</h3>
 <table>
 <thead>
 <tr>
@@ -18658,7 +18947,7 @@ X-API-Key ( Scopes: X-API-Key )
 }
 
 </code></pre>
-<h3 id="properties-4">Properties</h3>
+<h3 id="properties-6">Properties</h3>
 <table>
 <thead>
 <tr>
@@ -18676,6 +18965,517 @@ X-API-Key ( Scopes: X-API-Key )
 <td>true</td>
 <td>none</td>
 <td>Array of employees to create</td>
+</tr>
+</tbody>
+</table>
+<h2 id="tocs_updateemployeepayloaddto">UpdateEmployeePayloadDto</h2>
+<p><a id="schemaupdateemployeepayloaddto"></a>
+<a id="schema_UpdateEmployeePayloadDto"></a>
+<a id="tocSupdateemployeepayloaddto"></a>
+<a id="tocsupdateemployeepayloaddto"></a></p>
+<pre class="highlight tab tab-json"><code>{
+  <span class="hljs-attr">&quot;employeeRef&quot;</span>: <span class="hljs-string">&quot;EMP001&quot;</span>,
+  <span class="hljs-attr">&quot;externalId&quot;</span>: <span class="hljs-string">&quot;EMP001&quot;</span>,
+  <span class="hljs-attr">&quot;firstNameLocal&quot;</span>: <span class="hljs-string">&quot;John&quot;</span>,
+  <span class="hljs-attr">&quot;middleNameLocal&quot;</span>: <span class="hljs-string">&quot;Michael&quot;</span>,
+  <span class="hljs-attr">&quot;lastNameLocal&quot;</span>: <span class="hljs-string">&quot;Doe&quot;</span>,
+  <span class="hljs-attr">&quot;fullNameLocal&quot;</span>: <span class="hljs-string">&quot;John Doe&quot;</span>,
+  <span class="hljs-attr">&quot;dateofBirth&quot;</span>: <span class="hljs-string">&quot;1990-01-01&quot;</span>,
+  <span class="hljs-attr">&quot;employeeNo&quot;</span>: <span class="hljs-string">&quot;E12345&quot;</span>,
+  <span class="hljs-attr">&quot;email&quot;</span>: <span class="hljs-string">&quot;john.doe@company.com&quot;</span>,
+  <span class="hljs-attr">&quot;title&quot;</span>: <span class="hljs-string">&quot;Mr.&quot;</span>,
+  <span class="hljs-attr">&quot;firstNameEnglish&quot;</span>: <span class="hljs-string">&quot;John&quot;</span>,
+  <span class="hljs-attr">&quot;middleNameEnglish&quot;</span>: <span class="hljs-string">&quot;Michael&quot;</span>,
+  <span class="hljs-attr">&quot;lastNameEnglish&quot;</span>: <span class="hljs-string">&quot;Doe&quot;</span>,
+  <span class="hljs-attr">&quot;fullNameEnglish&quot;</span>: <span class="hljs-string">&quot;John Doe&quot;</span>,
+  <span class="hljs-attr">&quot;nickName&quot;</span>: <span class="hljs-string">&quot;Johnny&quot;</span>,
+  <span class="hljs-attr">&quot;maritalStatus&quot;</span>: <span class="hljs-string">&quot;Single&quot;</span>,
+  <span class="hljs-attr">&quot;telephone&quot;</span>: <span class="hljs-string">&quot;+1234567890&quot;</span>,
+  <span class="hljs-attr">&quot;gender&quot;</span>: <span class="hljs-string">&quot;M&quot;</span>,
+  <span class="hljs-attr">&quot;personalEmail&quot;</span>: <span class="hljs-string">&quot;personal@email.com&quot;</span>,
+  <span class="hljs-attr">&quot;mobile&quot;</span>: <span class="hljs-string">&quot;+1234567890&quot;</span>,
+  <span class="hljs-attr">&quot;nationalityCode&quot;</span>: <span class="hljs-string">&quot;VN&quot;</span>,
+  <span class="hljs-attr">&quot;bankName&quot;</span>: <span class="hljs-string">&quot;Vietcombank&quot;</span>,
+  <span class="hljs-attr">&quot;bankCode&quot;</span>: <span class="hljs-string">&quot;VCB&quot;</span>,
+  <span class="hljs-attr">&quot;bankAccountNo&quot;</span>: <span class="hljs-string">&quot;1234567890&quot;</span>,
+  <span class="hljs-attr">&quot;bankAccountName&quot;</span>: <span class="hljs-string">&quot;John Doe&quot;</span>,
+  <span class="hljs-attr">&quot;isDisabled&quot;</span>: <span class="hljs-literal">false</span>,
+  <span class="hljs-attr">&quot;healthInsuranceNo&quot;</span>: <span class="hljs-string">&quot;HI123456&quot;</span>,
+  <span class="hljs-attr">&quot;taxCode&quot;</span>: <span class="hljs-string">&quot;TAX123456&quot;</span>,
+  <span class="hljs-attr">&quot;socialSecurityNo&quot;</span>: <span class="hljs-string">&quot;SS123456&quot;</span>,
+  <span class="hljs-attr">&quot;pensionFundNo&quot;</span>: <span class="hljs-string">&quot;PF123456&quot;</span>,
+  <span class="hljs-attr">&quot;nationalId&quot;</span>: <span class="hljs-string">&quot;ID123456&quot;</span>,
+  <span class="hljs-attr">&quot;nationalIdExpiry&quot;</span>: <span class="hljs-string">&quot;2030-01-01&quot;</span>,
+  <span class="hljs-attr">&quot;passportNo&quot;</span>: <span class="hljs-string">&quot;P123456&quot;</span>,
+  <span class="hljs-attr">&quot;passportExpiry&quot;</span>: <span class="hljs-string">&quot;2030-01-01&quot;</span>,
+  <span class="hljs-attr">&quot;currentStreet&quot;</span>: <span class="hljs-string">&quot;123 Main St&quot;</span>,
+  <span class="hljs-attr">&quot;currentZip&quot;</span>: <span class="hljs-string">&quot;10000&quot;</span>,
+  <span class="hljs-attr">&quot;currentCity&quot;</span>: <span class="hljs-string">&quot;Hanoi&quot;</span>,
+  <span class="hljs-attr">&quot;currentProvinceName&quot;</span>: <span class="hljs-string">&quot;Hanoi&quot;</span>,
+  <span class="hljs-attr">&quot;currentDistrictName&quot;</span>: <span class="hljs-string">&quot;Ba Dinh&quot;</span>,
+  <span class="hljs-attr">&quot;currentWardName&quot;</span>: <span class="hljs-string">&quot;Ward 1&quot;</span>,
+  <span class="hljs-attr">&quot;currentCountry&quot;</span>: <span class="hljs-string">&quot;VN&quot;</span>,
+  <span class="hljs-attr">&quot;permanentStreet&quot;</span>: <span class="hljs-string">&quot;456 Second St&quot;</span>,
+  <span class="hljs-attr">&quot;permanentZip&quot;</span>: <span class="hljs-string">&quot;20000&quot;</span>,
+  <span class="hljs-attr">&quot;permanentCity&quot;</span>: <span class="hljs-string">&quot;HCMC&quot;</span>,
+  <span class="hljs-attr">&quot;permanentProvinceName&quot;</span>: <span class="hljs-string">&quot;HCMC&quot;</span>,
+  <span class="hljs-attr">&quot;permanentDistrictName&quot;</span>: <span class="hljs-string">&quot;District 1&quot;</span>,
+  <span class="hljs-attr">&quot;permanentWardName&quot;</span>: <span class="hljs-string">&quot;Ward 1&quot;</span>,
+  <span class="hljs-attr">&quot;permanentCountry&quot;</span>: <span class="hljs-string">&quot;VN&quot;</span>,
+  <span class="hljs-attr">&quot;hdmfNo&quot;</span>: <span class="hljs-string">&quot;HDMF123456&quot;</span>,
+  <span class="hljs-attr">&quot;dateContributeShui&quot;</span>: <span class="hljs-string">&quot;2020-01-01&quot;</span>,
+  <span class="hljs-attr">&quot;familyCode&quot;</span>: <span class="hljs-string">&quot;FAM001&quot;</span>,
+  <span class="hljs-attr">&quot;active&quot;</span>: <span class="hljs-string">&quot;true&quot;</span>,
+  <span class="hljs-attr">&quot;taxCategory&quot;</span>: <span class="hljs-string">&quot;0&quot;</span>,
+  <span class="hljs-attr">&quot;isPermanentResident&quot;</span>: <span class="hljs-string">&quot;0&quot;</span>,
+  <span class="hljs-attr">&quot;nonMalaysianEpfMemberType&quot;</span>: <span class="hljs-string">&quot;0&quot;</span>,
+  <span class="hljs-attr">&quot;cpfCategory&quot;</span>: <span class="hljs-string">&quot;1&quot;</span>,
+  <span class="hljs-attr">&quot;shgFundCode&quot;</span>: <span class="hljs-string">&quot;1&quot;</span>,
+  <span class="hljs-attr">&quot;shgFundStartDate&quot;</span>: <span class="hljs-string">&quot;2020-01-01&quot;</span>,
+  <span class="hljs-attr">&quot;mpfAccountType&quot;</span>: <span class="hljs-string">&quot;1&quot;</span>,
+  <span class="hljs-attr">&quot;mpfSchemeCode&quot;</span>: <span class="hljs-string">&quot;1&quot;</span>,
+  <span class="hljs-attr">&quot;mpfSchemeJoinDate&quot;</span>: <span class="hljs-string">&quot;2020-01-01&quot;</span>
+}
+
+</code></pre>
+<h3 id="properties-7">Properties</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Required</th>
+<th>Restrictions</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>employeeRef</td>
+<td>string</td>
+<td>false</td>
+<td>none</td>
+<td>Employee reference</td>
+</tr>
+<tr>
+<td>externalId</td>
+<td>string</td>
+<td>false</td>
+<td>none</td>
+<td>Employee reference</td>
+</tr>
+<tr>
+<td>firstNameLocal</td>
+<td>string</td>
+<td>false</td>
+<td>none</td>
+<td>First name in local language (Required)</td>
+</tr>
+<tr>
+<td>middleNameLocal</td>
+<td>string</td>
+<td>false</td>
+<td>none</td>
+<td>Middle name in local language</td>
+</tr>
+<tr>
+<td>lastNameLocal</td>
+<td>string</td>
+<td>false</td>
+<td>none</td>
+<td>Last name in local language (Required)</td>
+</tr>
+<tr>
+<td>fullNameLocal</td>
+<td>string</td>
+<td>false</td>
+<td>none</td>
+<td>Full name in local language (Required)</td>
+</tr>
+<tr>
+<td>dateofBirth</td>
+<td>string</td>
+<td>false</td>
+<td>none</td>
+<td>Birth date (yyyy-MM-dd)</td>
+</tr>
+<tr>
+<td>employeeNo</td>
+<td>string</td>
+<td>false</td>
+<td>none</td>
+<td>Employee number</td>
+</tr>
+<tr>
+<td>email</td>
+<td>string</td>
+<td>false</td>
+<td>none</td>
+<td>Employee email</td>
+</tr>
+<tr>
+<td>title</td>
+<td>string</td>
+<td>false</td>
+<td>none</td>
+<td>Title</td>
+</tr>
+<tr>
+<td>firstNameEnglish</td>
+<td>string</td>
+<td>false</td>
+<td>none</td>
+<td>First name in English</td>
+</tr>
+<tr>
+<td>middleNameEnglish</td>
+<td>string</td>
+<td>false</td>
+<td>none</td>
+<td>Middle name in English</td>
+</tr>
+<tr>
+<td>lastNameEnglish</td>
+<td>string</td>
+<td>false</td>
+<td>none</td>
+<td>Last name in English</td>
+</tr>
+<tr>
+<td>fullNameEnglish</td>
+<td>string</td>
+<td>false</td>
+<td>none</td>
+<td>Full name in English</td>
+</tr>
+<tr>
+<td>nickName</td>
+<td>string</td>
+<td>false</td>
+<td>none</td>
+<td>Nick name</td>
+</tr>
+<tr>
+<td>maritalStatus</td>
+<td>string</td>
+<td>false</td>
+<td>none</td>
+<td>Marital status</td>
+</tr>
+<tr>
+<td>telephone</td>
+<td>string</td>
+<td>false</td>
+<td>none</td>
+<td>Telephone number</td>
+</tr>
+<tr>
+<td>gender</td>
+<td>string</td>
+<td>false</td>
+<td>none</td>
+<td>Gender</td>
+</tr>
+<tr>
+<td>personalEmail</td>
+<td>string</td>
+<td>false</td>
+<td>none</td>
+<td>Personal email</td>
+</tr>
+<tr>
+<td>mobile</td>
+<td>string</td>
+<td>false</td>
+<td>none</td>
+<td>Mobile number</td>
+</tr>
+<tr>
+<td>nationalityCode</td>
+<td>string</td>
+<td>false</td>
+<td>none</td>
+<td>Nationality code (ISO 2-letter)</td>
+</tr>
+<tr>
+<td>bankName</td>
+<td>string</td>
+<td>false</td>
+<td>none</td>
+<td>Bank name</td>
+</tr>
+<tr>
+<td>bankCode</td>
+<td>string</td>
+<td>false</td>
+<td>none</td>
+<td>Bank code</td>
+</tr>
+<tr>
+<td>bankAccountNo</td>
+<td>string</td>
+<td>false</td>
+<td>none</td>
+<td>Bank account number</td>
+</tr>
+<tr>
+<td>bankAccountName</td>
+<td>string</td>
+<td>false</td>
+<td>none</td>
+<td>Bank account name</td>
+</tr>
+<tr>
+<td>isDisabled</td>
+<td>boolean</td>
+<td>false</td>
+<td>none</td>
+<td>Is a disabled person?</td>
+</tr>
+<tr>
+<td>healthInsuranceNo</td>
+<td>string</td>
+<td>false</td>
+<td>none</td>
+<td>Health insurance number</td>
+</tr>
+<tr>
+<td>taxCode</td>
+<td>string</td>
+<td>false</td>
+<td>none</td>
+<td>Tax code</td>
+</tr>
+<tr>
+<td>socialSecurityNo</td>
+<td>string</td>
+<td>false</td>
+<td>none</td>
+<td>Social security number</td>
+</tr>
+<tr>
+<td>pensionFundNo</td>
+<td>string</td>
+<td>false</td>
+<td>none</td>
+<td>Pension fund number</td>
+</tr>
+<tr>
+<td>nationalId</td>
+<td>string</td>
+<td>false</td>
+<td>none</td>
+<td>National ID number</td>
+</tr>
+<tr>
+<td>nationalIdExpiry</td>
+<td>string</td>
+<td>false</td>
+<td>none</td>
+<td>National ID expiry date (yyyy-MM-dd)</td>
+</tr>
+<tr>
+<td>passportNo</td>
+<td>string</td>
+<td>false</td>
+<td>none</td>
+<td>Passport number</td>
+</tr>
+<tr>
+<td>passportExpiry</td>
+<td>string</td>
+<td>false</td>
+<td>none</td>
+<td>Passport expiry date (yyyy-MM-dd)</td>
+</tr>
+<tr>
+<td>currentStreet</td>
+<td>string</td>
+<td>false</td>
+<td>none</td>
+<td>Current street address</td>
+</tr>
+<tr>
+<td>currentZip</td>
+<td>string</td>
+<td>false</td>
+<td>none</td>
+<td>Current zip code</td>
+</tr>
+<tr>
+<td>currentCity</td>
+<td>string</td>
+<td>false</td>
+<td>none</td>
+<td>Current city</td>
+</tr>
+<tr>
+<td>currentProvinceName</td>
+<td>string</td>
+<td>false</td>
+<td>none</td>
+<td>Current province</td>
+</tr>
+<tr>
+<td>currentDistrictName</td>
+<td>string</td>
+<td>false</td>
+<td>none</td>
+<td>Current district</td>
+</tr>
+<tr>
+<td>currentWardName</td>
+<td>string</td>
+<td>false</td>
+<td>none</td>
+<td>Current ward</td>
+</tr>
+<tr>
+<td>currentCountry</td>
+<td>string</td>
+<td>false</td>
+<td>none</td>
+<td>Current country code (ISO 2-letter)</td>
+</tr>
+<tr>
+<td>permanentStreet</td>
+<td>string</td>
+<td>false</td>
+<td>none</td>
+<td>Permanent street address</td>
+</tr>
+<tr>
+<td>permanentZip</td>
+<td>string</td>
+<td>false</td>
+<td>none</td>
+<td>Permanent zip code</td>
+</tr>
+<tr>
+<td>permanentCity</td>
+<td>string</td>
+<td>false</td>
+<td>none</td>
+<td>Permanent city</td>
+</tr>
+<tr>
+<td>permanentProvinceName</td>
+<td>string</td>
+<td>false</td>
+<td>none</td>
+<td>Permanent province</td>
+</tr>
+<tr>
+<td>permanentDistrictName</td>
+<td>string</td>
+<td>false</td>
+<td>none</td>
+<td>Permanent district</td>
+</tr>
+<tr>
+<td>permanentWardName</td>
+<td>string</td>
+<td>false</td>
+<td>none</td>
+<td>Permanent ward</td>
+</tr>
+<tr>
+<td>permanentCountry</td>
+<td>string</td>
+<td>false</td>
+<td>none</td>
+<td>Permanent country code (ISO 2-letter)</td>
+</tr>
+<tr>
+<td>hdmfNo</td>
+<td>string</td>
+<td>false</td>
+<td>none</td>
+<td>HDMF number (For Philippines only)</td>
+</tr>
+<tr>
+<td>dateContributeShui</td>
+<td>string</td>
+<td>false</td>
+<td>none</td>
+<td>Date contribute SHUI (For Vietnam only) (yyyy-MM-dd)</td>
+</tr>
+<tr>
+<td>familyCode</td>
+<td>string</td>
+<td>false</td>
+<td>none</td>
+<td>Family code (For Vietnam only)</td>
+</tr>
+<tr>
+<td>active</td>
+<td>boolean</td>
+<td>false</td>
+<td>none</td>
+<td>Active employee</td>
+</tr>
+<tr>
+<td>taxCategory</td>
+<td>number</td>
+<td>false</td>
+<td>none</td>
+<td>Tax Category (For Malaysia only). Must match existing Tax Category in the system (Review endpoint v1/integration/hrf/general/employee-local-data)</td>
+</tr>
+<tr>
+<td>isPermanentResident</td>
+<td>number</td>
+<td>false</td>
+<td>none</td>
+<td>Is Malaysia Permanent Resident (For Malaysia only). Must match value (0: No, 1: Yes) in the system (Review endpoint v1/integration/hrf/general/employee-local-data)</td>
+</tr>
+<tr>
+<td>nonMalaysianEpfMemberType</td>
+<td>number</td>
+<td>false</td>
+<td>none</td>
+<td>Non Malaysian Epf Member Category (For Malaysia only). Must match Non Malaysian Epf Member Category in the system (Review endpoint v1/integration/hrf/general/employee-local-data)</td>
+</tr>
+<tr>
+<td>cpfCategory</td>
+<td>number</td>
+<td>false</td>
+<td>none</td>
+<td>CPF Category (For Singapore only). Must match CPF Category in the system (Review endpoint v1/integration/hrf/general/employee-local-data)</td>
+</tr>
+<tr>
+<td>shgFundCode</td>
+<td>number</td>
+<td>false</td>
+<td>none</td>
+<td>Self-Help Group (SHG) Fund (For Singapore only). Must match Self-Help Group (SHG) Fund in the system (Review endpoint v1/integration/hrf/general/employee-local-data)</td>
+</tr>
+<tr>
+<td>shgFundStartDate</td>
+<td>string</td>
+<td>false</td>
+<td>none</td>
+<td>Date start contribute Self-Help Group (SHG) Fund (For Singapore only). Must match Date start contribute Self-Help Group (SHG) Fund in the system (Review endpoint v1/integration/hrf/general/employee-local-data)</td>
+</tr>
+<tr>
+<td>mpfAccountType</td>
+<td>number</td>
+<td>false</td>
+<td>none</td>
+<td>Account Type for MPF (For Hong Kong only). Must match Account Type for MPF in the system (Review endpoint v1/integration/hrf/general/employee-local-data)</td>
+</tr>
+<tr>
+<td>mpfSchemeCode</td>
+<td>number</td>
+<td>false</td>
+<td>none</td>
+<td>Employee Scheme Registration No (For Hong Kong only). Must match Employee Scheme Registration No in the system (Review endpoint v1/integration/hrf/general/employee-local-data)</td>
+</tr>
+<tr>
+<td>mpfSchemeJoinDate</td>
+<td>string</td>
+<td>false</td>
+<td>none</td>
+<td>Date of Joining MPF Scheme (For Hong Kong only). Must match Date of Joining MPF Scheme in the system (Review endpoint v1/integration/hrf/general/employee-local-data)</td>
 </tr>
 </tbody>
 </table>
@@ -18706,7 +19506,7 @@ X-API-Key ( Scopes: X-API-Key )
 }
 
 </code></pre>
-<h3 id="properties-5">Properties</h3>
+<h3 id="properties-8">Properties</h3>
 <table>
 <thead>
 <tr>
@@ -18883,7 +19683,7 @@ X-API-Key ( Scopes: X-API-Key )
 }
 
 </code></pre>
-<h3 id="properties-6">Properties</h3>
+<h3 id="properties-9">Properties</h3>
 <table>
 <thead>
 <tr>
@@ -18965,7 +19765,7 @@ X-API-Key ( Scopes: X-API-Key )
 }
 
 </code></pre>
-<h3 id="properties-7">Properties</h3>
+<h3 id="properties-10">Properties</h3>
 <table>
 <thead>
 <tr>
@@ -19408,7 +20208,7 @@ X-API-Key ( Scopes: X-API-Key )
 }
 
 </code></pre>
-<h3 id="properties-8">Properties</h3>
+<h3 id="properties-11">Properties</h3>
 <table>
 <thead>
 <tr>
@@ -19442,7 +20242,7 @@ X-API-Key ( Scopes: X-API-Key )
 }
 
 </code></pre>
-<h3 id="properties-9">Properties</h3>
+<h3 id="properties-12">Properties</h3>
 <table>
 <thead>
 <tr>
@@ -19523,7 +20323,7 @@ X-API-Key ( Scopes: X-API-Key )
 }
 
 </code></pre>
-<h3 id="properties-10">Properties</h3>
+<h3 id="properties-13">Properties</h3>
 <table>
 <thead>
 <tr>
@@ -19915,7 +20715,7 @@ X-API-Key ( Scopes: X-API-Key )
 }
 
 </code></pre>
-<h3 id="properties-11">Properties</h3>
+<h3 id="properties-14">Properties</h3>
 <table>
 <thead>
 <tr>
@@ -20041,7 +20841,7 @@ X-API-Key ( Scopes: X-API-Key )
 }
 
 </code></pre>
-<h3 id="properties-12">Properties</h3>
+<h3 id="properties-15">Properties</h3>
 <table>
 <thead>
 <tr>
@@ -20090,7 +20890,7 @@ X-API-Key ( Scopes: X-API-Key )
 }
 
 </code></pre>
-<h3 id="properties-13">Properties</h3>
+<h3 id="properties-16">Properties</h3>
 <table>
 <thead>
 <tr>
@@ -20257,7 +21057,7 @@ X-API-Key ( Scopes: X-API-Key )
 }
 
 </code></pre>
-<h3 id="properties-14">Properties</h3>
+<h3 id="properties-17">Properties</h3>
 <table>
 <thead>
 <tr>
@@ -20325,7 +21125,7 @@ X-API-Key ( Scopes: X-API-Key )
 }
 
 </code></pre>
-<h3 id="properties-15">Properties</h3>
+<h3 id="properties-18">Properties</h3>
 <table>
 <thead>
 <tr>
@@ -20356,7 +21156,7 @@ X-API-Key ( Scopes: X-API-Key )
 }
 
 </code></pre>
-<h3 id="properties-16">Properties</h3>
+<h3 id="properties-19">Properties</h3>
 <table>
 <thead>
 <tr>
@@ -20407,7 +21207,7 @@ X-API-Key ( Scopes: X-API-Key )
 }
 
 </code></pre>
-<h3 id="properties-17">Properties</h3>
+<h3 id="properties-20">Properties</h3>
 <table>
 <thead>
 <tr>
@@ -20582,7 +21382,7 @@ X-API-Key ( Scopes: X-API-Key )
 }
 
 </code></pre>
-<h3 id="properties-18">Properties</h3>
+<h3 id="properties-21">Properties</h3>
 <table>
 <thead>
 <tr>
@@ -20620,7 +21420,7 @@ X-API-Key ( Scopes: X-API-Key )
 }
 
 </code></pre>
-<h3 id="properties-19">Properties</h3>
+<h3 id="properties-22">Properties</h3>
 <table>
 <thead>
 <tr>
@@ -20654,7 +21454,7 @@ X-API-Key ( Scopes: X-API-Key )
 }
 
 </code></pre>
-<h3 id="properties-20">Properties</h3>
+<h3 id="properties-23">Properties</h3>
 <table>
 <thead>
 <tr>
@@ -20719,7 +21519,7 @@ X-API-Key ( Scopes: X-API-Key )
 }
 
 </code></pre>
-<h3 id="properties-21">Properties</h3>
+<h3 id="properties-24">Properties</h3>
 <table>
 <thead>
 <tr>
@@ -20752,7 +21552,7 @@ X-API-Key ( Scopes: X-API-Key )
 }
 
 </code></pre>
-<h3 id="properties-22">Properties</h3>
+<h3 id="properties-25">Properties</h3>
 <table>
 <thead>
 <tr>
@@ -20808,7 +21608,7 @@ X-API-Key ( Scopes: X-API-Key )
 }
 
 </code></pre>
-<h3 id="properties-23">Properties</h3>
+<h3 id="properties-26">Properties</h3>
 <table>
 <thead>
 <tr>
@@ -20843,7 +21643,7 @@ X-API-Key ( Scopes: X-API-Key )
 }
 
 </code></pre>
-<h3 id="properties-24">Properties</h3>
+<h3 id="properties-27">Properties</h3>
 <table>
 <thead>
 <tr>
@@ -20905,7 +21705,7 @@ X-API-Key ( Scopes: X-API-Key )
 }
 
 </code></pre>
-<h3 id="properties-25">Properties</h3>
+<h3 id="properties-28">Properties</h3>
 <table>
 <thead>
 <tr>
@@ -20940,7 +21740,7 @@ X-API-Key ( Scopes: X-API-Key )
 }
 
 </code></pre>
-<h3 id="properties-26">Properties</h3>
+<h3 id="properties-29">Properties</h3>
 <table>
 <thead>
 <tr>
@@ -20975,7 +21775,7 @@ X-API-Key ( Scopes: X-API-Key )
 }
 
 </code></pre>
-<h3 id="properties-27">Properties</h3>
+<h3 id="properties-30">Properties</h3>
 <table>
 <thead>
 <tr>
@@ -21041,7 +21841,7 @@ X-API-Key ( Scopes: X-API-Key )
 }
 
 </code></pre>
-<h3 id="properties-28">Properties</h3>
+<h3 id="properties-31">Properties</h3>
 <table>
 <thead>
 <tr>
@@ -21125,7 +21925,7 @@ X-API-Key ( Scopes: X-API-Key )
 }
 
 </code></pre>
-<h3 id="properties-29">Properties</h3>
+<h3 id="properties-32">Properties</h3>
 <table>
 <thead>
 <tr>
@@ -21192,7 +21992,7 @@ X-API-Key ( Scopes: X-API-Key )
 }
 
 </code></pre>
-<h3 id="properties-30">Properties</h3>
+<h3 id="properties-33">Properties</h3>
 <table>
 <thead>
 <tr>
@@ -21228,7 +22028,7 @@ X-API-Key ( Scopes: X-API-Key )
 }
 
 </code></pre>
-<h3 id="properties-31">Properties</h3>
+<h3 id="properties-34">Properties</h3>
 <table>
 <thead>
 <tr>
@@ -21301,7 +22101,7 @@ X-API-Key ( Scopes: X-API-Key )
 }
 
 </code></pre>
-<h3 id="properties-32">Properties</h3>
+<h3 id="properties-35">Properties</h3>
 <table>
 <thead>
 <tr>
@@ -21384,7 +22184,7 @@ X-API-Key ( Scopes: X-API-Key )
 }
 
 </code></pre>
-<h3 id="properties-33">Properties</h3>
+<h3 id="properties-36">Properties</h3>
 <table>
 <thead>
 <tr>
@@ -21438,7 +22238,7 @@ X-API-Key ( Scopes: X-API-Key )
 }
 
 </code></pre>
-<h3 id="properties-34">Properties</h3>
+<h3 id="properties-37">Properties</h3>
 <table>
 <thead>
 <tr>
@@ -21486,7 +22286,7 @@ X-API-Key ( Scopes: X-API-Key )
 }
 
 </code></pre>
-<h3 id="properties-35">Properties</h3>
+<h3 id="properties-38">Properties</h3>
 <table>
 <thead>
 <tr>
@@ -21524,7 +22324,7 @@ X-API-Key ( Scopes: X-API-Key )
 }
 
 </code></pre>
-<h3 id="properties-36">Properties</h3>
+<h3 id="properties-39">Properties</h3>
 <table>
 <thead>
 <tr>
@@ -21615,7 +22415,7 @@ X-API-Key ( Scopes: X-API-Key )
 }
 
 </code></pre>
-<h3 id="properties-37">Properties</h3>
+<h3 id="properties-40">Properties</h3>
 <table>
 <thead>
 <tr>
@@ -21730,7 +22530,7 @@ X-API-Key ( Scopes: X-API-Key )
 }
 
 </code></pre>
-<h3 id="properties-38">Properties</h3>
+<h3 id="properties-41">Properties</h3>
 <table>
 <thead>
 <tr>
@@ -21821,7 +22621,7 @@ X-API-Key ( Scopes: X-API-Key )
 }
 
 </code></pre>
-<h3 id="properties-39">Properties</h3>
+<h3 id="properties-42">Properties</h3>
 <table>
 <thead>
 <tr>
@@ -21844,6 +22644,9 @@ X-API-Key ( Scopes: X-API-Key )
 </table>
 <!-- Renderer: Shins v2.6.0 -->
 <!-- Generator: Widdershins v4.0.1 -->
+<!-- backwards compatibility -->
+<!-- backwards compatibility -->
+<!-- backwards compatibility -->
 <!-- backwards compatibility -->
 <!-- backwards compatibility -->
 <!-- backwards compatibility -->
