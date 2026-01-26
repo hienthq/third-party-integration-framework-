@@ -1559,8 +1559,6 @@ var n=this.pipeline.run(e.tokenizer(t)),r=new e.Vector,i=[],o=this._fields.reduc
 <!-- backwards compatibility -->
 <!-- backwards compatibility -->
 <!-- backwards compatibility -->
-<!-- backwards compatibility -->
-<!-- backwards compatibility -->
   <link rel="icon" type="image/png" href="/logo.svg" sizes="32x32">
 <style>
 /* Try It Button and Interface Styles */
@@ -2668,25 +2666,6 @@ var n=this.pipeline.run(e.tokenizer(t)),r=new e.Vector,i=[],o=this._fields.reduc
           </li>
         
           <li>
-            <a href="#hr-forte-public-integration-api-external-integration-base64-encoding" class="toc-h1 toc-link" data-title="External Integration Base64 Encoding">External Integration Base64 Encoding</a>
-            
-              <ul class="toc-list-h2">
-                
-                  <li>
-                    <a href="#encode-a-string-to-base64" class="toc-h2 toc-link" data-title="">Encode a string to base64</a>
-                    
-                  </li>
-                
-                  <li>
-                    <a href="#decode-a-base64-string" class="toc-h2 toc-link" data-title="">Decode a base64 string</a>
-                    
-                  </li>
-                
-              </ul>
-            
-          </li>
-        
-          <li>
             <a href="#schemas" class="toc-h1 toc-link" data-title="Schemas">Schemas</a>
             
               <ul class="toc-list-h2">
@@ -3151,16 +3130,6 @@ var n=this.pipeline.run(e.tokenizer(t)),r=new e.Vector,i=[],o=this._fields.reduc
                     
                   </li>
                 
-                  <li>
-                    <a href="#tocs_encodebase64dto" class="toc-h2 toc-link" data-title="">EncodeBase64Dto</a>
-                    
-                  </li>
-                
-                  <li>
-                    <a href="#tocs_decodebase64dto" class="toc-h2 toc-link" data-title="">DecodeBase64Dto</a>
-                    
-                  </li>
-                
               </ul>
             
           </li>
@@ -3183,7 +3152,7 @@ var n=this.pipeline.run(e.tokenizer(t)),r=new e.Vector,i=[],o=this._fields.reduc
 <p>Public API for external customers and third-party integrations. This documentation includes only the endpoints that are available for external use.</p>
 <p>Base URLs:</p>
 <ul>
-<li><a href="https://mia-api.hrforte.com">https://mia-api.hrforte.com</a></li>
+<li><a href="https://mia-api.hrforte.com/">https://mia-api.hrforte.com/</a></li>
 </ul>
 <h1 id="authentication">Authentication</h1>
 <ul>
@@ -8198,7 +8167,11 @@ X-API-Key ( Scopes: X-API-Key )
   &quot;hdmfNo&quot;: &quot;HDMF123456&quot;,
   &quot;dateContributeShui&quot;: &quot;2020-01-01&quot;,
   &quot;familyCode&quot;: &quot;FAM001&quot;,
-  &quot;active&quot;: &quot;true&quot;
+  &quot;active&quot;: &quot;true&quot;,
+  &quot;cycleFrequencyCode&quot;: &quot;5DAYWEEK&quot;,
+  &quot;prorationRuleCode&quot;: &quot;MONTH-31&quot;,
+  &quot;cycleFrequencyId&quot;: 0,
+  &quot;prorationRuleId&quot;: 0
 }&#x27;</span>;
 <span class="hljs-keyword">const</span> headers = {
   <span class="hljs-string">&#x27;Content-Type&#x27;</span>:<span class="hljs-string">&#x27;application/json&#x27;</span>,
@@ -8298,7 +8271,11 @@ curl -X POST https://mia-api.hrforte.com/v1/integration/hrf/employee \
   <span class="hljs-attr">&quot;hdmfNo&quot;</span>: <span class="hljs-string">&quot;HDMF123456&quot;</span>,
   <span class="hljs-attr">&quot;dateContributeShui&quot;</span>: <span class="hljs-string">&quot;2020-01-01&quot;</span>,
   <span class="hljs-attr">&quot;familyCode&quot;</span>: <span class="hljs-string">&quot;FAM001&quot;</span>,
-  <span class="hljs-attr">&quot;active&quot;</span>: <span class="hljs-string">&quot;true&quot;</span>
+  <span class="hljs-attr">&quot;active&quot;</span>: <span class="hljs-string">&quot;true&quot;</span>,
+  <span class="hljs-attr">&quot;cycleFrequencyCode&quot;</span>: <span class="hljs-string">&quot;5DAYWEEK&quot;</span>,
+  <span class="hljs-attr">&quot;prorationRuleCode&quot;</span>: <span class="hljs-string">&quot;MONTH-31&quot;</span>,
+  <span class="hljs-attr">&quot;cycleFrequencyId&quot;</span>: <span class="hljs-number">0</span>,
+  <span class="hljs-attr">&quot;prorationRuleId&quot;</span>: <span class="hljs-number">0</span>
 }
 </code></pre>
 <h3 id="create-employee-parameters">Parameters</h3>
@@ -9138,6 +9115,8 @@ X-API-Key ( Scopes: X-API-Key )
   &quot;dateContributeShui&quot;: &quot;2020-01-01&quot;,
   &quot;familyCode&quot;: &quot;FAM001&quot;,
   &quot;active&quot;: &quot;true&quot;,
+  &quot;cycleFrequencyCode&quot;: &quot;5DAYWEEK&quot;,
+  &quot;prorationRuleCode&quot;: &quot;MONTH-31&quot;,
   &quot;taxCategory&quot;: &quot;0&quot;,
   &quot;isPermanentResident&quot;: &quot;0&quot;,
   &quot;nonMalaysianEpfMemberType&quot;: &quot;0&quot;,
@@ -9244,6 +9223,8 @@ curl -X PUT https://mia-api.hrforte.com/v1/integration/hrf/employee/{externalId}
   <span class="hljs-attr">&quot;dateContributeShui&quot;</span>: <span class="hljs-string">&quot;2020-01-01&quot;</span>,
   <span class="hljs-attr">&quot;familyCode&quot;</span>: <span class="hljs-string">&quot;FAM001&quot;</span>,
   <span class="hljs-attr">&quot;active&quot;</span>: <span class="hljs-string">&quot;true&quot;</span>,
+  <span class="hljs-attr">&quot;cycleFrequencyCode&quot;</span>: <span class="hljs-string">&quot;5DAYWEEK&quot;</span>,
+  <span class="hljs-attr">&quot;prorationRuleCode&quot;</span>: <span class="hljs-string">&quot;MONTH-31&quot;</span>,
   <span class="hljs-attr">&quot;taxCategory&quot;</span>: <span class="hljs-string">&quot;0&quot;</span>,
   <span class="hljs-attr">&quot;isPermanentResident&quot;</span>: <span class="hljs-string">&quot;0&quot;</span>,
   <span class="hljs-attr">&quot;nonMalaysianEpfMemberType&quot;</span>: <span class="hljs-string">&quot;0&quot;</span>,
@@ -10759,35 +10740,21 @@ X-API-Key ( Scopes: X-API-Key )
   &quot;hi&quot;: true,
   &quot;ui&quot;: false,
   &quot;siai&quot;: false,
-  &quot;vnMeal&quot;: 500000,
-  &quot;vnPhone&quot;: 200000,
-  &quot;vnTravel&quot;: 1000000,
-  &quot;vnPetrol&quot;: 300000,
-  &quot;vnParking&quot;: 100000,
-  &quot;vnHousing&quot;: 2000000,
-  &quot;vnTraining&quot;: 500000,
-  &quot;myEpfEmployee&quot;: 500,
-  &quot;myEpfEmployer&quot;: 600,
-  &quot;mySocsoEmployee&quot;: 20,
-  &quot;mySocsoEmployer&quot;: 50,
-  &quot;myEisEmployee&quot;: 10,
-  &quot;myEisEmployer&quot;: 10,
-  &quot;phSssEmployee&quot;: 400,
-  &quot;phSssEmployer&quot;: 800,
-  &quot;phPhilHealthEmployee&quot;: 200,
-  &quot;phPhilHealthEmployer&quot;: 200,
-  &quot;phHdmfEmployee&quot;: 100,
-  &quot;phHdmfEmployer&quot;: 100,
-  &quot;khNssfEmployee&quot;: 50,
-  &quot;sgCpfEmployee&quot;: 1000,
-  &quot;sgCpfEmployer&quot;: 850,
-  &quot;sgSdlEmployer&quot;: 25,
-  &quot;thSocialSecurityEmployee&quot;: 300,
-  &quot;thSocialSecurityEmployer&quot;: 300,
-  &quot;thProvidentFundEmployee&quot;: 200,
-  &quot;thProvidentFundEmployer&quot;: 200,
-  &quot;hkMpfEmployee&quot;: 750,
-  &quot;hkMpfEmployer&quot;: 750
+  &quot;myEpf&quot;: true,
+  &quot;mySocso&quot;: true,
+  &quot;myEis&quot;: true,
+  &quot;myHrdf&quot;: false,
+  &quot;phSss&quot;: true,
+  &quot;phPhilHealth&quot;: true,
+  &quot;phHdmf&quot;: true,
+  &quot;khNssf&quot;: true,
+  &quot;khOcr&quot;: true,
+  &quot;khHealthCare&quot;: true,
+  &quot;sgCpf&quot;: true,
+  &quot;sgSdl&quot;: true,
+  &quot;sgShg&quot;: false,
+  &quot;thSss&quot;: true,
+  &quot;hkEpf&quot;: true
 }&#x27;</span>;
 <span class="hljs-keyword">const</span> headers = {
   <span class="hljs-string">&#x27;Content-Type&#x27;</span>:<span class="hljs-string">&#x27;application/json&#x27;</span>,
@@ -10859,35 +10826,21 @@ curl -X POST https://mia-api.hrforte.com/v1/integration/hrf/compensation \
   <span class="hljs-attr">&quot;hi&quot;</span>: <span class="hljs-literal">true</span>,
   <span class="hljs-attr">&quot;ui&quot;</span>: <span class="hljs-literal">false</span>,
   <span class="hljs-attr">&quot;siai&quot;</span>: <span class="hljs-literal">false</span>,
-  <span class="hljs-attr">&quot;vnMeal&quot;</span>: <span class="hljs-number">500000</span>,
-  <span class="hljs-attr">&quot;vnPhone&quot;</span>: <span class="hljs-number">200000</span>,
-  <span class="hljs-attr">&quot;vnTravel&quot;</span>: <span class="hljs-number">1000000</span>,
-  <span class="hljs-attr">&quot;vnPetrol&quot;</span>: <span class="hljs-number">300000</span>,
-  <span class="hljs-attr">&quot;vnParking&quot;</span>: <span class="hljs-number">100000</span>,
-  <span class="hljs-attr">&quot;vnHousing&quot;</span>: <span class="hljs-number">2000000</span>,
-  <span class="hljs-attr">&quot;vnTraining&quot;</span>: <span class="hljs-number">500000</span>,
-  <span class="hljs-attr">&quot;myEpfEmployee&quot;</span>: <span class="hljs-number">500</span>,
-  <span class="hljs-attr">&quot;myEpfEmployer&quot;</span>: <span class="hljs-number">600</span>,
-  <span class="hljs-attr">&quot;mySocsoEmployee&quot;</span>: <span class="hljs-number">20</span>,
-  <span class="hljs-attr">&quot;mySocsoEmployer&quot;</span>: <span class="hljs-number">50</span>,
-  <span class="hljs-attr">&quot;myEisEmployee&quot;</span>: <span class="hljs-number">10</span>,
-  <span class="hljs-attr">&quot;myEisEmployer&quot;</span>: <span class="hljs-number">10</span>,
-  <span class="hljs-attr">&quot;phSssEmployee&quot;</span>: <span class="hljs-number">400</span>,
-  <span class="hljs-attr">&quot;phSssEmployer&quot;</span>: <span class="hljs-number">800</span>,
-  <span class="hljs-attr">&quot;phPhilHealthEmployee&quot;</span>: <span class="hljs-number">200</span>,
-  <span class="hljs-attr">&quot;phPhilHealthEmployer&quot;</span>: <span class="hljs-number">200</span>,
-  <span class="hljs-attr">&quot;phHdmfEmployee&quot;</span>: <span class="hljs-number">100</span>,
-  <span class="hljs-attr">&quot;phHdmfEmployer&quot;</span>: <span class="hljs-number">100</span>,
-  <span class="hljs-attr">&quot;khNssfEmployee&quot;</span>: <span class="hljs-number">50</span>,
-  <span class="hljs-attr">&quot;sgCpfEmployee&quot;</span>: <span class="hljs-number">1000</span>,
-  <span class="hljs-attr">&quot;sgCpfEmployer&quot;</span>: <span class="hljs-number">850</span>,
-  <span class="hljs-attr">&quot;sgSdlEmployer&quot;</span>: <span class="hljs-number">25</span>,
-  <span class="hljs-attr">&quot;thSocialSecurityEmployee&quot;</span>: <span class="hljs-number">300</span>,
-  <span class="hljs-attr">&quot;thSocialSecurityEmployer&quot;</span>: <span class="hljs-number">300</span>,
-  <span class="hljs-attr">&quot;thProvidentFundEmployee&quot;</span>: <span class="hljs-number">200</span>,
-  <span class="hljs-attr">&quot;thProvidentFundEmployer&quot;</span>: <span class="hljs-number">200</span>,
-  <span class="hljs-attr">&quot;hkMpfEmployee&quot;</span>: <span class="hljs-number">750</span>,
-  <span class="hljs-attr">&quot;hkMpfEmployer&quot;</span>: <span class="hljs-number">750</span>
+  <span class="hljs-attr">&quot;myEpf&quot;</span>: <span class="hljs-literal">true</span>,
+  <span class="hljs-attr">&quot;mySocso&quot;</span>: <span class="hljs-literal">true</span>,
+  <span class="hljs-attr">&quot;myEis&quot;</span>: <span class="hljs-literal">true</span>,
+  <span class="hljs-attr">&quot;myHrdf&quot;</span>: <span class="hljs-literal">false</span>,
+  <span class="hljs-attr">&quot;phSss&quot;</span>: <span class="hljs-literal">true</span>,
+  <span class="hljs-attr">&quot;phPhilHealth&quot;</span>: <span class="hljs-literal">true</span>,
+  <span class="hljs-attr">&quot;phHdmf&quot;</span>: <span class="hljs-literal">true</span>,
+  <span class="hljs-attr">&quot;khNssf&quot;</span>: <span class="hljs-literal">true</span>,
+  <span class="hljs-attr">&quot;khOcr&quot;</span>: <span class="hljs-literal">true</span>,
+  <span class="hljs-attr">&quot;khHealthCare&quot;</span>: <span class="hljs-literal">true</span>,
+  <span class="hljs-attr">&quot;sgCpf&quot;</span>: <span class="hljs-literal">true</span>,
+  <span class="hljs-attr">&quot;sgSdl&quot;</span>: <span class="hljs-literal">true</span>,
+  <span class="hljs-attr">&quot;sgShg&quot;</span>: <span class="hljs-literal">false</span>,
+  <span class="hljs-attr">&quot;thSss&quot;</span>: <span class="hljs-literal">true</span>,
+  <span class="hljs-attr">&quot;hkEpf&quot;</span>: <span class="hljs-literal">true</span>
 }
 </code></pre>
 <h3 id="create-compensation-parameters">Parameters</h3>
@@ -11039,35 +10992,21 @@ X-API-Key ( Scopes: X-API-Key )
       &quot;hi&quot;: true,
       &quot;ui&quot;: false,
       &quot;siai&quot;: false,
-      &quot;vnMeal&quot;: 500000,
-      &quot;vnPhone&quot;: 200000,
-      &quot;vnTravel&quot;: 1000000,
-      &quot;vnPetrol&quot;: 300000,
-      &quot;vnParking&quot;: 100000,
-      &quot;vnHousing&quot;: 2000000,
-      &quot;vnTraining&quot;: 500000,
-      &quot;myEpfEmployee&quot;: 500,
-      &quot;myEpfEmployer&quot;: 600,
-      &quot;mySocsoEmployee&quot;: 20,
-      &quot;mySocsoEmployer&quot;: 50,
-      &quot;myEisEmployee&quot;: 10,
-      &quot;myEisEmployer&quot;: 10,
-      &quot;phSssEmployee&quot;: 400,
-      &quot;phSssEmployer&quot;: 800,
-      &quot;phPhilHealthEmployee&quot;: 200,
-      &quot;phPhilHealthEmployer&quot;: 200,
-      &quot;phHdmfEmployee&quot;: 100,
-      &quot;phHdmfEmployer&quot;: 100,
-      &quot;khNssfEmployee&quot;: 50,
-      &quot;sgCpfEmployee&quot;: 1000,
-      &quot;sgCpfEmployer&quot;: 850,
-      &quot;sgSdlEmployer&quot;: 25,
-      &quot;thSocialSecurityEmployee&quot;: 300,
-      &quot;thSocialSecurityEmployer&quot;: 300,
-      &quot;thProvidentFundEmployee&quot;: 200,
-      &quot;thProvidentFundEmployer&quot;: 200,
-      &quot;hkMpfEmployee&quot;: 750,
-      &quot;hkMpfEmployer&quot;: 750
+      &quot;myEpf&quot;: true,
+      &quot;mySocso&quot;: true,
+      &quot;myEis&quot;: true,
+      &quot;myHrdf&quot;: false,
+      &quot;phSss&quot;: true,
+      &quot;phPhilHealth&quot;: true,
+      &quot;phHdmf&quot;: true,
+      &quot;khNssf&quot;: true,
+      &quot;khOcr&quot;: true,
+      &quot;khHealthCare&quot;: true,
+      &quot;sgCpf&quot;: true,
+      &quot;sgSdl&quot;: true,
+      &quot;sgShg&quot;: false,
+      &quot;thSss&quot;: true,
+      &quot;hkEpf&quot;: true
     }
   ]
 }&#x27;</span>;
@@ -11143,35 +11082,21 @@ curl -X POST https://mia-api.hrforte.com/v1/integration/hrf/compensation/bulk \
       <span class="hljs-attr">&quot;hi&quot;</span>: <span class="hljs-literal">true</span>,
       <span class="hljs-attr">&quot;ui&quot;</span>: <span class="hljs-literal">false</span>,
       <span class="hljs-attr">&quot;siai&quot;</span>: <span class="hljs-literal">false</span>,
-      <span class="hljs-attr">&quot;vnMeal&quot;</span>: <span class="hljs-number">500000</span>,
-      <span class="hljs-attr">&quot;vnPhone&quot;</span>: <span class="hljs-number">200000</span>,
-      <span class="hljs-attr">&quot;vnTravel&quot;</span>: <span class="hljs-number">1000000</span>,
-      <span class="hljs-attr">&quot;vnPetrol&quot;</span>: <span class="hljs-number">300000</span>,
-      <span class="hljs-attr">&quot;vnParking&quot;</span>: <span class="hljs-number">100000</span>,
-      <span class="hljs-attr">&quot;vnHousing&quot;</span>: <span class="hljs-number">2000000</span>,
-      <span class="hljs-attr">&quot;vnTraining&quot;</span>: <span class="hljs-number">500000</span>,
-      <span class="hljs-attr">&quot;myEpfEmployee&quot;</span>: <span class="hljs-number">500</span>,
-      <span class="hljs-attr">&quot;myEpfEmployer&quot;</span>: <span class="hljs-number">600</span>,
-      <span class="hljs-attr">&quot;mySocsoEmployee&quot;</span>: <span class="hljs-number">20</span>,
-      <span class="hljs-attr">&quot;mySocsoEmployer&quot;</span>: <span class="hljs-number">50</span>,
-      <span class="hljs-attr">&quot;myEisEmployee&quot;</span>: <span class="hljs-number">10</span>,
-      <span class="hljs-attr">&quot;myEisEmployer&quot;</span>: <span class="hljs-number">10</span>,
-      <span class="hljs-attr">&quot;phSssEmployee&quot;</span>: <span class="hljs-number">400</span>,
-      <span class="hljs-attr">&quot;phSssEmployer&quot;</span>: <span class="hljs-number">800</span>,
-      <span class="hljs-attr">&quot;phPhilHealthEmployee&quot;</span>: <span class="hljs-number">200</span>,
-      <span class="hljs-attr">&quot;phPhilHealthEmployer&quot;</span>: <span class="hljs-number">200</span>,
-      <span class="hljs-attr">&quot;phHdmfEmployee&quot;</span>: <span class="hljs-number">100</span>,
-      <span class="hljs-attr">&quot;phHdmfEmployer&quot;</span>: <span class="hljs-number">100</span>,
-      <span class="hljs-attr">&quot;khNssfEmployee&quot;</span>: <span class="hljs-number">50</span>,
-      <span class="hljs-attr">&quot;sgCpfEmployee&quot;</span>: <span class="hljs-number">1000</span>,
-      <span class="hljs-attr">&quot;sgCpfEmployer&quot;</span>: <span class="hljs-number">850</span>,
-      <span class="hljs-attr">&quot;sgSdlEmployer&quot;</span>: <span class="hljs-number">25</span>,
-      <span class="hljs-attr">&quot;thSocialSecurityEmployee&quot;</span>: <span class="hljs-number">300</span>,
-      <span class="hljs-attr">&quot;thSocialSecurityEmployer&quot;</span>: <span class="hljs-number">300</span>,
-      <span class="hljs-attr">&quot;thProvidentFundEmployee&quot;</span>: <span class="hljs-number">200</span>,
-      <span class="hljs-attr">&quot;thProvidentFundEmployer&quot;</span>: <span class="hljs-number">200</span>,
-      <span class="hljs-attr">&quot;hkMpfEmployee&quot;</span>: <span class="hljs-number">750</span>,
-      <span class="hljs-attr">&quot;hkMpfEmployer&quot;</span>: <span class="hljs-number">750</span>
+      <span class="hljs-attr">&quot;myEpf&quot;</span>: <span class="hljs-literal">true</span>,
+      <span class="hljs-attr">&quot;mySocso&quot;</span>: <span class="hljs-literal">true</span>,
+      <span class="hljs-attr">&quot;myEis&quot;</span>: <span class="hljs-literal">true</span>,
+      <span class="hljs-attr">&quot;myHrdf&quot;</span>: <span class="hljs-literal">false</span>,
+      <span class="hljs-attr">&quot;phSss&quot;</span>: <span class="hljs-literal">true</span>,
+      <span class="hljs-attr">&quot;phPhilHealth&quot;</span>: <span class="hljs-literal">true</span>,
+      <span class="hljs-attr">&quot;phHdmf&quot;</span>: <span class="hljs-literal">true</span>,
+      <span class="hljs-attr">&quot;khNssf&quot;</span>: <span class="hljs-literal">true</span>,
+      <span class="hljs-attr">&quot;khOcr&quot;</span>: <span class="hljs-literal">true</span>,
+      <span class="hljs-attr">&quot;khHealthCare&quot;</span>: <span class="hljs-literal">true</span>,
+      <span class="hljs-attr">&quot;sgCpf&quot;</span>: <span class="hljs-literal">true</span>,
+      <span class="hljs-attr">&quot;sgSdl&quot;</span>: <span class="hljs-literal">true</span>,
+      <span class="hljs-attr">&quot;sgShg&quot;</span>: <span class="hljs-literal">false</span>,
+      <span class="hljs-attr">&quot;thSss&quot;</span>: <span class="hljs-literal">true</span>,
+      <span class="hljs-attr">&quot;hkEpf&quot;</span>: <span class="hljs-literal">true</span>
     }
   ]
 }
@@ -11713,35 +11638,21 @@ X-API-Key ( Scopes: X-API-Key )
   &quot;hi&quot;: true,
   &quot;ui&quot;: false,
   &quot;siai&quot;: false,
-  &quot;vnMeal&quot;: 0,
-  &quot;vnPhone&quot;: 0,
-  &quot;vnTravel&quot;: 0,
-  &quot;vnPetrol&quot;: 0,
-  &quot;vnParking&quot;: 0,
-  &quot;vnHousing&quot;: 0,
-  &quot;vnTraining&quot;: 0,
-  &quot;myEpfEmployee&quot;: 0,
-  &quot;myEpfEmployer&quot;: 0,
-  &quot;mySocsoEmployee&quot;: 0,
-  &quot;mySocsoEmployer&quot;: 0,
-  &quot;myEisEmployee&quot;: 0,
-  &quot;myEisEmployer&quot;: 0,
-  &quot;phSssEmployee&quot;: 0,
-  &quot;phSssEmployer&quot;: 0,
-  &quot;phPhilHealthEmployee&quot;: 0,
-  &quot;phPhilHealthEmployer&quot;: 0,
-  &quot;phHdmfEmployee&quot;: 0,
-  &quot;phHdmfEmployer&quot;: 0,
-  &quot;khNssfEmployee&quot;: 0,
-  &quot;sgCpfEmployee&quot;: 0,
-  &quot;sgCpfEmployer&quot;: 0,
-  &quot;sgSdlEmployer&quot;: 0,
-  &quot;thSocialSecurityEmployee&quot;: 0,
-  &quot;thSocialSecurityEmployer&quot;: 0,
-  &quot;thProvidentFundEmployee&quot;: 0,
-  &quot;thProvidentFundEmployer&quot;: 0,
-  &quot;hkMpfEmployee&quot;: 0,
-  &quot;hkMpfEmployer&quot;: 0
+  &quot;myEpf&quot;: true,
+  &quot;mySocso&quot;: true,
+  &quot;myEis&quot;: true,
+  &quot;myHrdf&quot;: true,
+  &quot;phSss&quot;: true,
+  &quot;phPhilHealth&quot;: true,
+  &quot;phHdmf&quot;: true,
+  &quot;khNssf&quot;: true,
+  &quot;khOcr&quot;: true,
+  &quot;khHealthCare&quot;: true,
+  &quot;sgCpf&quot;: true,
+  &quot;sgSdl&quot;: true,
+  &quot;sgShg&quot;: true,
+  &quot;thSss&quot;: true,
+  &quot;hkEpf&quot;: true
 }&#x27;</span>;
 <span class="hljs-keyword">const</span> headers = {
   <span class="hljs-string">&#x27;Content-Type&#x27;</span>:<span class="hljs-string">&#x27;application/json&#x27;</span>,
@@ -11809,35 +11720,21 @@ curl -X PUT https://mia-api.hrforte.com/v1/integration/hrf/compensation/{externa
   <span class="hljs-attr">&quot;hi&quot;</span>: <span class="hljs-literal">true</span>,
   <span class="hljs-attr">&quot;ui&quot;</span>: <span class="hljs-literal">false</span>,
   <span class="hljs-attr">&quot;siai&quot;</span>: <span class="hljs-literal">false</span>,
-  <span class="hljs-attr">&quot;vnMeal&quot;</span>: <span class="hljs-number">0</span>,
-  <span class="hljs-attr">&quot;vnPhone&quot;</span>: <span class="hljs-number">0</span>,
-  <span class="hljs-attr">&quot;vnTravel&quot;</span>: <span class="hljs-number">0</span>,
-  <span class="hljs-attr">&quot;vnPetrol&quot;</span>: <span class="hljs-number">0</span>,
-  <span class="hljs-attr">&quot;vnParking&quot;</span>: <span class="hljs-number">0</span>,
-  <span class="hljs-attr">&quot;vnHousing&quot;</span>: <span class="hljs-number">0</span>,
-  <span class="hljs-attr">&quot;vnTraining&quot;</span>: <span class="hljs-number">0</span>,
-  <span class="hljs-attr">&quot;myEpfEmployee&quot;</span>: <span class="hljs-number">0</span>,
-  <span class="hljs-attr">&quot;myEpfEmployer&quot;</span>: <span class="hljs-number">0</span>,
-  <span class="hljs-attr">&quot;mySocsoEmployee&quot;</span>: <span class="hljs-number">0</span>,
-  <span class="hljs-attr">&quot;mySocsoEmployer&quot;</span>: <span class="hljs-number">0</span>,
-  <span class="hljs-attr">&quot;myEisEmployee&quot;</span>: <span class="hljs-number">0</span>,
-  <span class="hljs-attr">&quot;myEisEmployer&quot;</span>: <span class="hljs-number">0</span>,
-  <span class="hljs-attr">&quot;phSssEmployee&quot;</span>: <span class="hljs-number">0</span>,
-  <span class="hljs-attr">&quot;phSssEmployer&quot;</span>: <span class="hljs-number">0</span>,
-  <span class="hljs-attr">&quot;phPhilHealthEmployee&quot;</span>: <span class="hljs-number">0</span>,
-  <span class="hljs-attr">&quot;phPhilHealthEmployer&quot;</span>: <span class="hljs-number">0</span>,
-  <span class="hljs-attr">&quot;phHdmfEmployee&quot;</span>: <span class="hljs-number">0</span>,
-  <span class="hljs-attr">&quot;phHdmfEmployer&quot;</span>: <span class="hljs-number">0</span>,
-  <span class="hljs-attr">&quot;khNssfEmployee&quot;</span>: <span class="hljs-number">0</span>,
-  <span class="hljs-attr">&quot;sgCpfEmployee&quot;</span>: <span class="hljs-number">0</span>,
-  <span class="hljs-attr">&quot;sgCpfEmployer&quot;</span>: <span class="hljs-number">0</span>,
-  <span class="hljs-attr">&quot;sgSdlEmployer&quot;</span>: <span class="hljs-number">0</span>,
-  <span class="hljs-attr">&quot;thSocialSecurityEmployee&quot;</span>: <span class="hljs-number">0</span>,
-  <span class="hljs-attr">&quot;thSocialSecurityEmployer&quot;</span>: <span class="hljs-number">0</span>,
-  <span class="hljs-attr">&quot;thProvidentFundEmployee&quot;</span>: <span class="hljs-number">0</span>,
-  <span class="hljs-attr">&quot;thProvidentFundEmployer&quot;</span>: <span class="hljs-number">0</span>,
-  <span class="hljs-attr">&quot;hkMpfEmployee&quot;</span>: <span class="hljs-number">0</span>,
-  <span class="hljs-attr">&quot;hkMpfEmployer&quot;</span>: <span class="hljs-number">0</span>
+  <span class="hljs-attr">&quot;myEpf&quot;</span>: <span class="hljs-literal">true</span>,
+  <span class="hljs-attr">&quot;mySocso&quot;</span>: <span class="hljs-literal">true</span>,
+  <span class="hljs-attr">&quot;myEis&quot;</span>: <span class="hljs-literal">true</span>,
+  <span class="hljs-attr">&quot;myHrdf&quot;</span>: <span class="hljs-literal">true</span>,
+  <span class="hljs-attr">&quot;phSss&quot;</span>: <span class="hljs-literal">true</span>,
+  <span class="hljs-attr">&quot;phPhilHealth&quot;</span>: <span class="hljs-literal">true</span>,
+  <span class="hljs-attr">&quot;phHdmf&quot;</span>: <span class="hljs-literal">true</span>,
+  <span class="hljs-attr">&quot;khNssf&quot;</span>: <span class="hljs-literal">true</span>,
+  <span class="hljs-attr">&quot;khOcr&quot;</span>: <span class="hljs-literal">true</span>,
+  <span class="hljs-attr">&quot;khHealthCare&quot;</span>: <span class="hljs-literal">true</span>,
+  <span class="hljs-attr">&quot;sgCpf&quot;</span>: <span class="hljs-literal">true</span>,
+  <span class="hljs-attr">&quot;sgSdl&quot;</span>: <span class="hljs-literal">true</span>,
+  <span class="hljs-attr">&quot;sgShg&quot;</span>: <span class="hljs-literal">true</span>,
+  <span class="hljs-attr">&quot;thSss&quot;</span>: <span class="hljs-literal">true</span>,
+  <span class="hljs-attr">&quot;hkEpf&quot;</span>: <span class="hljs-literal">true</span>
 }
 </code></pre>
 <h3 id="update-compensation-by-external-id-parameters">Parameters</h3>
@@ -12459,6 +12356,8 @@ X-API-Key ( Scopes: X-API-Key )
   &quot;workEmail&quot;: &quot;john.doe@company.com&quot;,
   &quot;workPhone&quot;: &quot;+65-6123-4567&quot;,
   &quot;workPhoneExt&quot;: &quot;1234&quot;,
+  &quot;payrollGroupName&quot;: &quot;Monthly Payroll&quot;,
+  &quot;cycleFrequencyName&quot;: &quot;Monthly&quot;,
   &quot;reportingTo&quot;: &quot;Jane Smith&quot;,
   &quot;alsoReportingTo&quot;: &quot;Bob Johnson&quot;,
   &quot;workRegion&quot;: 1
@@ -12516,6 +12415,8 @@ curl -X PUT https://mia-api.hrforte.com/v1/integration/hrf/work/{externalEmploye
   <span class="hljs-attr">&quot;workEmail&quot;</span>: <span class="hljs-string">&quot;john.doe@company.com&quot;</span>,
   <span class="hljs-attr">&quot;workPhone&quot;</span>: <span class="hljs-string">&quot;+65-6123-4567&quot;</span>,
   <span class="hljs-attr">&quot;workPhoneExt&quot;</span>: <span class="hljs-string">&quot;1234&quot;</span>,
+  <span class="hljs-attr">&quot;payrollGroupName&quot;</span>: <span class="hljs-string">&quot;Monthly Payroll&quot;</span>,
+  <span class="hljs-attr">&quot;cycleFrequencyName&quot;</span>: <span class="hljs-string">&quot;Monthly&quot;</span>,
   <span class="hljs-attr">&quot;reportingTo&quot;</span>: <span class="hljs-string">&quot;Jane Smith&quot;</span>,
   <span class="hljs-attr">&quot;alsoReportingTo&quot;</span>: <span class="hljs-string">&quot;Bob Johnson&quot;</span>,
   <span class="hljs-attr">&quot;workRegion&quot;</span>: <span class="hljs-number">1</span>
@@ -24830,309 +24731,6 @@ curl -X GET https://mia-api.hrforte.com/v1/integration/hrf/pay-element-categorie
 To perform this operation, you must be authenticated by means of one of the following methods:
 X-API-Key
 </aside>
-<h1 id="hr-forte-public-integration-api-external-integration-base64-encoding">External Integration Base64 Encoding</h1>
-<h2 id="encode-a-string-to-base64">Encode a string to base64</h2>
-<p><a id="opIdBase64EncodingController_encodeString_v1"></a></p>
-<blockquote>
-<p>Code samples</p>
-</blockquote>
-<pre class="highlight tab tab-php"><code> <span class="hljs-string">&#x27;application/json&#x27;</span>,
-    <span class="hljs-string">&#x27;Accept&#x27;</span> =&gt; <span class="hljs-string">&#x27;application/json&#x27;</span>,
-);
-
-<span class="hljs-variable">$client</span> = <span class="hljs-keyword">new</span> \GuzzleHttp\Client();
-
-<span class="hljs-comment">// Define array of request body.</span>
-<span class="hljs-variable">$request_body</span> = <span class="hljs-keyword">array</span>();
-
-<span class="hljs-keyword">try</span> {
-    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;POST&#x27;</span>,<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/base64/encode&#x27;</span>, <span class="hljs-keyword">array</span>(
-        <span class="hljs-string">&#x27;headers&#x27;</span> =&gt; <span class="hljs-variable">$headers</span>,
-        <span class="hljs-string">&#x27;json&#x27;</span> =&gt; <span class="hljs-variable">$request_body</span>,
-       )
-    );
-    print_r(<span class="hljs-variable">$response</span>-&gt;getBody()-&gt;getContents());
- }
- <span class="hljs-keyword">catch</span> (\GuzzleHttp\<span class="hljs-built_in">Exception</span>\BadResponseException <span class="hljs-variable">$e</span>) {
-    <span class="hljs-comment">// handle exception or api errors.</span>
-    print_r(<span class="hljs-variable">$e</span>-&gt;getMessage());
- }
-
- <span class="hljs-comment">// ...</span>
-
-</code></pre>
-<pre class="highlight tab tab-javascript"><code><span class="hljs-keyword">const</span> inputBody = <span class="hljs-string">&#x27;{
-  &quot;text&quot;: &quot;Hello World&quot;
-}&#x27;</span>;
-<span class="hljs-keyword">const</span> headers = {
-  <span class="hljs-string">&#x27;Content-Type&#x27;</span>:<span class="hljs-string">&#x27;application/json&#x27;</span>,
-  <span class="hljs-string">&#x27;Accept&#x27;</span>:<span class="hljs-string">&#x27;application/json&#x27;</span>
-};
-
-fetch(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/base64/encode&#x27;</span>,
-{
-  <span class="hljs-attr">method</span>: <span class="hljs-string">&#x27;POST&#x27;</span>,
-  <span class="hljs-attr">body</span>: inputBody,
-  <span class="hljs-attr">headers</span>: headers
-})
-.then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">res</span>) </span>{
-    <span class="hljs-keyword">return</span> res.json();
-}).then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">body</span>) </span>{
-    <span class="hljs-built_in">console</span>.log(body);
-});
-
-</code></pre>
-<pre class="highlight tab tab-python"><code><span class="hljs-keyword">import</span> requests
-headers = {
-  <span class="hljs-string">&#x27;Content-Type&#x27;</span>: <span class="hljs-string">&#x27;application/json&#x27;</span>,
-  <span class="hljs-string">&#x27;Accept&#x27;</span>: <span class="hljs-string">&#x27;application/json&#x27;</span>
-}
-
-r = requests.post(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/base64/encode&#x27;</span>, headers = headers)
-
-<span class="hljs-built_in">print</span>(r.json())
-
-</code></pre>
-<pre class="highlight tab tab-shell"><code><span class="hljs-comment"># You can also use wget</span>
-curl -X POST https://mia-api.hrforte.com/v1/integration/hrf/base64/encode \
-  -H <span class="hljs-string">&#x27;Content-Type: application/json&#x27;</span> \
-  -H <span class="hljs-string">&#x27;Accept: application/json&#x27;</span>
-
-</code></pre>
-<p><code>POST /v1/integration/hrf/base64/encode</code></p>
-<blockquote>
-<p>Body parameter</p>
-</blockquote>
-<pre class="highlight tab tab-json"><code>{
-  <span class="hljs-attr">&quot;text&quot;</span>: <span class="hljs-string">&quot;Hello World&quot;</span>
-}
-</code></pre>
-<h3 id="encode-a-string-to-base64-parameters">Parameters</h3>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>In</th>
-<th>Type</th>
-<th>Required</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>body</td>
-<td>body</td>
-<td><a href="#schemaencodebase64dto">EncodeBase64Dto</a></td>
-<td>true</td>
-<td>none</td>
-</tr>
-</tbody>
-</table>
-<blockquote>
-<p>Example responses</p>
-</blockquote>
-<blockquote>
-<p>200 Response</p>
-</blockquote>
-<pre class="highlight tab tab-json"><code>{
-  <span class="hljs-attr">&quot;encodedText&quot;</span>: <span class="hljs-string">&quot;SGVsbG8gV29ybGQ=&quot;</span>
-}
-</code></pre>
-<h3 id="encode-a-string-to-base64-responses">Responses</h3>
-<table>
-<thead>
-<tr>
-<th>Status</th>
-<th>Meaning</th>
-<th>Description</th>
-<th>Schema</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>200</td>
-<td><a href="https://tools.ietf.org/html/rfc7231#section-6.3.1">OK</a></td>
-<td>String successfully encoded</td>
-<td>Inline</td>
-</tr>
-</tbody>
-</table>
-<h3 id="encode-a-string-to-base64-responseschema">Response Schema</h3>
-<p>Status Code <strong>200</strong></p>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Required</th>
-<th>Restrictions</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>» encodedText</td>
-<td>string</td>
-<td>false</td>
-<td>none</td>
-<td>none</td>
-</tr>
-</tbody>
-</table>
-<aside class="success">
-This operation does not require authentication
-</aside>
-<h2 id="decode-a-base64-string">Decode a base64 string</h2>
-<p><a id="opIdBase64EncodingController_decodeString_v1"></a></p>
-<blockquote>
-<p>Code samples</p>
-</blockquote>
-<pre class="highlight tab tab-php"><code> <span class="hljs-string">&#x27;application/json&#x27;</span>,
-    <span class="hljs-string">&#x27;Accept&#x27;</span> =&gt; <span class="hljs-string">&#x27;application/json&#x27;</span>,
-);
-
-<span class="hljs-variable">$client</span> = <span class="hljs-keyword">new</span> \GuzzleHttp\Client();
-
-<span class="hljs-comment">// Define array of request body.</span>
-<span class="hljs-variable">$request_body</span> = <span class="hljs-keyword">array</span>();
-
-<span class="hljs-keyword">try</span> {
-    <span class="hljs-variable">$response</span> = <span class="hljs-variable">$client</span>-&gt;request(<span class="hljs-string">&#x27;POST&#x27;</span>,<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/base64/decode&#x27;</span>, <span class="hljs-keyword">array</span>(
-        <span class="hljs-string">&#x27;headers&#x27;</span> =&gt; <span class="hljs-variable">$headers</span>,
-        <span class="hljs-string">&#x27;json&#x27;</span> =&gt; <span class="hljs-variable">$request_body</span>,
-       )
-    );
-    print_r(<span class="hljs-variable">$response</span>-&gt;getBody()-&gt;getContents());
- }
- <span class="hljs-keyword">catch</span> (\GuzzleHttp\<span class="hljs-built_in">Exception</span>\BadResponseException <span class="hljs-variable">$e</span>) {
-    <span class="hljs-comment">// handle exception or api errors.</span>
-    print_r(<span class="hljs-variable">$e</span>-&gt;getMessage());
- }
-
- <span class="hljs-comment">// ...</span>
-
-</code></pre>
-<pre class="highlight tab tab-javascript"><code><span class="hljs-keyword">const</span> inputBody = <span class="hljs-string">&#x27;{
-  &quot;encodedText&quot;: &quot;SGVsbG8gV29ybGQ=&quot;
-}&#x27;</span>;
-<span class="hljs-keyword">const</span> headers = {
-  <span class="hljs-string">&#x27;Content-Type&#x27;</span>:<span class="hljs-string">&#x27;application/json&#x27;</span>,
-  <span class="hljs-string">&#x27;Accept&#x27;</span>:<span class="hljs-string">&#x27;application/json&#x27;</span>
-};
-
-fetch(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/base64/decode&#x27;</span>,
-{
-  <span class="hljs-attr">method</span>: <span class="hljs-string">&#x27;POST&#x27;</span>,
-  <span class="hljs-attr">body</span>: inputBody,
-  <span class="hljs-attr">headers</span>: headers
-})
-.then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">res</span>) </span>{
-    <span class="hljs-keyword">return</span> res.json();
-}).then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">body</span>) </span>{
-    <span class="hljs-built_in">console</span>.log(body);
-});
-
-</code></pre>
-<pre class="highlight tab tab-python"><code><span class="hljs-keyword">import</span> requests
-headers = {
-  <span class="hljs-string">&#x27;Content-Type&#x27;</span>: <span class="hljs-string">&#x27;application/json&#x27;</span>,
-  <span class="hljs-string">&#x27;Accept&#x27;</span>: <span class="hljs-string">&#x27;application/json&#x27;</span>
-}
-
-r = requests.post(<span class="hljs-string">&#x27;https://mia-api.hrforte.com/v1/integration/hrf/base64/decode&#x27;</span>, headers = headers)
-
-<span class="hljs-built_in">print</span>(r.json())
-
-</code></pre>
-<pre class="highlight tab tab-shell"><code><span class="hljs-comment"># You can also use wget</span>
-curl -X POST https://mia-api.hrforte.com/v1/integration/hrf/base64/decode \
-  -H <span class="hljs-string">&#x27;Content-Type: application/json&#x27;</span> \
-  -H <span class="hljs-string">&#x27;Accept: application/json&#x27;</span>
-
-</code></pre>
-<p><code>POST /v1/integration/hrf/base64/decode</code></p>
-<blockquote>
-<p>Body parameter</p>
-</blockquote>
-<pre class="highlight tab tab-json"><code>{
-  <span class="hljs-attr">&quot;encodedText&quot;</span>: <span class="hljs-string">&quot;SGVsbG8gV29ybGQ=&quot;</span>
-}
-</code></pre>
-<h3 id="decode-a-base64-string-parameters">Parameters</h3>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>In</th>
-<th>Type</th>
-<th>Required</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>body</td>
-<td>body</td>
-<td><a href="#schemadecodebase64dto">DecodeBase64Dto</a></td>
-<td>true</td>
-<td>none</td>
-</tr>
-</tbody>
-</table>
-<blockquote>
-<p>Example responses</p>
-</blockquote>
-<blockquote>
-<p>200 Response</p>
-</blockquote>
-<pre class="highlight tab tab-json"><code>{
-  <span class="hljs-attr">&quot;decodedText&quot;</span>: <span class="hljs-string">&quot;Hello World&quot;</span>
-}
-</code></pre>
-<h3 id="decode-a-base64-string-responses">Responses</h3>
-<table>
-<thead>
-<tr>
-<th>Status</th>
-<th>Meaning</th>
-<th>Description</th>
-<th>Schema</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>200</td>
-<td><a href="https://tools.ietf.org/html/rfc7231#section-6.3.1">OK</a></td>
-<td>Base64 string successfully decoded</td>
-<td>Inline</td>
-</tr>
-</tbody>
-</table>
-<h3 id="decode-a-base64-string-responseschema">Response Schema</h3>
-<p>Status Code <strong>200</strong></p>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Required</th>
-<th>Restrictions</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>» decodedText</td>
-<td>string</td>
-<td>false</td>
-<td>none</td>
-<td>none</td>
-</tr>
-</tbody>
-</table>
-<aside class="success">
-This operation does not require authentication
-</aside>
 <h1 id="schemas">Schemas</h1>
 <h2 id="tocs_leavingreasondto">LeavingReasonDto</h2>
 <p><a id="schemaleavingreasondto"></a>
@@ -25329,7 +24927,11 @@ This operation does not require authentication
   <span class="hljs-attr">&quot;hdmfNo&quot;</span>: <span class="hljs-string">&quot;HDMF123456&quot;</span>,
   <span class="hljs-attr">&quot;dateContributeShui&quot;</span>: <span class="hljs-string">&quot;2020-01-01&quot;</span>,
   <span class="hljs-attr">&quot;familyCode&quot;</span>: <span class="hljs-string">&quot;FAM001&quot;</span>,
-  <span class="hljs-attr">&quot;active&quot;</span>: <span class="hljs-string">&quot;true&quot;</span>
+  <span class="hljs-attr">&quot;active&quot;</span>: <span class="hljs-string">&quot;true&quot;</span>,
+  <span class="hljs-attr">&quot;cycleFrequencyCode&quot;</span>: <span class="hljs-string">&quot;5DAYWEEK&quot;</span>,
+  <span class="hljs-attr">&quot;prorationRuleCode&quot;</span>: <span class="hljs-string">&quot;MONTH-31&quot;</span>,
+  <span class="hljs-attr">&quot;cycleFrequencyId&quot;</span>: <span class="hljs-number">0</span>,
+  <span class="hljs-attr">&quot;prorationRuleId&quot;</span>: <span class="hljs-number">0</span>
 }
 
 </code></pre>
@@ -25709,6 +25311,34 @@ This operation does not require authentication
 <td>none</td>
 <td>Active employee</td>
 </tr>
+<tr>
+<td>cycleFrequencyCode</td>
+<td>string</td>
+<td>false</td>
+<td>none</td>
+<td>Cycle Frequency</td>
+</tr>
+<tr>
+<td>prorationRuleCode</td>
+<td>string</td>
+<td>false</td>
+<td>none</td>
+<td>Proration Rule</td>
+</tr>
+<tr>
+<td>cycleFrequencyId</td>
+<td>number</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>prorationRuleId</td>
+<td>number</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
 </tbody>
 </table>
 <h2 id="tocs_jobacceptanceresponsedto">JobAcceptanceResponseDto</h2>
@@ -25888,6 +25518,8 @@ This operation does not require authentication
   <span class="hljs-attr">&quot;dateContributeShui&quot;</span>: <span class="hljs-string">&quot;2020-01-01&quot;</span>,
   <span class="hljs-attr">&quot;familyCode&quot;</span>: <span class="hljs-string">&quot;FAM001&quot;</span>,
   <span class="hljs-attr">&quot;active&quot;</span>: <span class="hljs-string">&quot;true&quot;</span>,
+  <span class="hljs-attr">&quot;cycleFrequencyCode&quot;</span>: <span class="hljs-string">&quot;5DAYWEEK&quot;</span>,
+  <span class="hljs-attr">&quot;prorationRuleCode&quot;</span>: <span class="hljs-string">&quot;MONTH-31&quot;</span>,
   <span class="hljs-attr">&quot;taxCategory&quot;</span>: <span class="hljs-string">&quot;0&quot;</span>,
   <span class="hljs-attr">&quot;isPermanentResident&quot;</span>: <span class="hljs-string">&quot;0&quot;</span>,
   <span class="hljs-attr">&quot;nonMalaysianEpfMemberType&quot;</span>: <span class="hljs-string">&quot;0&quot;</span>,
@@ -26277,6 +25909,20 @@ This operation does not require authentication
 <td>Active employee</td>
 </tr>
 <tr>
+<td>cycleFrequencyCode</td>
+<td>string</td>
+<td>false</td>
+<td>none</td>
+<td>Cycle Frequency</td>
+</tr>
+<tr>
+<td>prorationRuleCode</td>
+<td>string</td>
+<td>false</td>
+<td>none</td>
+<td>Proration Rule</td>
+</tr>
+<tr>
 <td>taxCategory</td>
 <td>number</td>
 <td>false</td>
@@ -26595,35 +26241,21 @@ This operation does not require authentication
   <span class="hljs-attr">&quot;hi&quot;</span>: <span class="hljs-literal">true</span>,
   <span class="hljs-attr">&quot;ui&quot;</span>: <span class="hljs-literal">false</span>,
   <span class="hljs-attr">&quot;siai&quot;</span>: <span class="hljs-literal">false</span>,
-  <span class="hljs-attr">&quot;vnMeal&quot;</span>: <span class="hljs-number">500000</span>,
-  <span class="hljs-attr">&quot;vnPhone&quot;</span>: <span class="hljs-number">200000</span>,
-  <span class="hljs-attr">&quot;vnTravel&quot;</span>: <span class="hljs-number">1000000</span>,
-  <span class="hljs-attr">&quot;vnPetrol&quot;</span>: <span class="hljs-number">300000</span>,
-  <span class="hljs-attr">&quot;vnParking&quot;</span>: <span class="hljs-number">100000</span>,
-  <span class="hljs-attr">&quot;vnHousing&quot;</span>: <span class="hljs-number">2000000</span>,
-  <span class="hljs-attr">&quot;vnTraining&quot;</span>: <span class="hljs-number">500000</span>,
-  <span class="hljs-attr">&quot;myEpfEmployee&quot;</span>: <span class="hljs-number">500</span>,
-  <span class="hljs-attr">&quot;myEpfEmployer&quot;</span>: <span class="hljs-number">600</span>,
-  <span class="hljs-attr">&quot;mySocsoEmployee&quot;</span>: <span class="hljs-number">20</span>,
-  <span class="hljs-attr">&quot;mySocsoEmployer&quot;</span>: <span class="hljs-number">50</span>,
-  <span class="hljs-attr">&quot;myEisEmployee&quot;</span>: <span class="hljs-number">10</span>,
-  <span class="hljs-attr">&quot;myEisEmployer&quot;</span>: <span class="hljs-number">10</span>,
-  <span class="hljs-attr">&quot;phSssEmployee&quot;</span>: <span class="hljs-number">400</span>,
-  <span class="hljs-attr">&quot;phSssEmployer&quot;</span>: <span class="hljs-number">800</span>,
-  <span class="hljs-attr">&quot;phPhilHealthEmployee&quot;</span>: <span class="hljs-number">200</span>,
-  <span class="hljs-attr">&quot;phPhilHealthEmployer&quot;</span>: <span class="hljs-number">200</span>,
-  <span class="hljs-attr">&quot;phHdmfEmployee&quot;</span>: <span class="hljs-number">100</span>,
-  <span class="hljs-attr">&quot;phHdmfEmployer&quot;</span>: <span class="hljs-number">100</span>,
-  <span class="hljs-attr">&quot;khNssfEmployee&quot;</span>: <span class="hljs-number">50</span>,
-  <span class="hljs-attr">&quot;sgCpfEmployee&quot;</span>: <span class="hljs-number">1000</span>,
-  <span class="hljs-attr">&quot;sgCpfEmployer&quot;</span>: <span class="hljs-number">850</span>,
-  <span class="hljs-attr">&quot;sgSdlEmployer&quot;</span>: <span class="hljs-number">25</span>,
-  <span class="hljs-attr">&quot;thSocialSecurityEmployee&quot;</span>: <span class="hljs-number">300</span>,
-  <span class="hljs-attr">&quot;thSocialSecurityEmployer&quot;</span>: <span class="hljs-number">300</span>,
-  <span class="hljs-attr">&quot;thProvidentFundEmployee&quot;</span>: <span class="hljs-number">200</span>,
-  <span class="hljs-attr">&quot;thProvidentFundEmployer&quot;</span>: <span class="hljs-number">200</span>,
-  <span class="hljs-attr">&quot;hkMpfEmployee&quot;</span>: <span class="hljs-number">750</span>,
-  <span class="hljs-attr">&quot;hkMpfEmployer&quot;</span>: <span class="hljs-number">750</span>
+  <span class="hljs-attr">&quot;myEpf&quot;</span>: <span class="hljs-literal">true</span>,
+  <span class="hljs-attr">&quot;mySocso&quot;</span>: <span class="hljs-literal">true</span>,
+  <span class="hljs-attr">&quot;myEis&quot;</span>: <span class="hljs-literal">true</span>,
+  <span class="hljs-attr">&quot;myHrdf&quot;</span>: <span class="hljs-literal">false</span>,
+  <span class="hljs-attr">&quot;phSss&quot;</span>: <span class="hljs-literal">true</span>,
+  <span class="hljs-attr">&quot;phPhilHealth&quot;</span>: <span class="hljs-literal">true</span>,
+  <span class="hljs-attr">&quot;phHdmf&quot;</span>: <span class="hljs-literal">true</span>,
+  <span class="hljs-attr">&quot;khNssf&quot;</span>: <span class="hljs-literal">true</span>,
+  <span class="hljs-attr">&quot;khOcr&quot;</span>: <span class="hljs-literal">true</span>,
+  <span class="hljs-attr">&quot;khHealthCare&quot;</span>: <span class="hljs-literal">true</span>,
+  <span class="hljs-attr">&quot;sgCpf&quot;</span>: <span class="hljs-literal">true</span>,
+  <span class="hljs-attr">&quot;sgSdl&quot;</span>: <span class="hljs-literal">true</span>,
+  <span class="hljs-attr">&quot;sgShg&quot;</span>: <span class="hljs-literal">false</span>,
+  <span class="hljs-attr">&quot;thSss&quot;</span>: <span class="hljs-literal">true</span>,
+  <span class="hljs-attr">&quot;hkEpf&quot;</span>: <span class="hljs-literal">true</span>
 }
 
 </code></pre>
@@ -26801,207 +26433,109 @@ This operation does not require authentication
 <td>SIAI (true/false)</td>
 </tr>
 <tr>
-<td>vnMeal</td>
-<td>number</td>
+<td>myEpf</td>
+<td>boolean</td>
 <td>false</td>
 <td>none</td>
-<td>Meal allowance amount (Vietnam only)</td>
+<td>EPF - Employees Provident Fund flag (Malaysia only). Format: Boolean (1 or 0)</td>
 </tr>
 <tr>
-<td>vnPhone</td>
-<td>number</td>
+<td>mySocso</td>
+<td>boolean</td>
 <td>false</td>
 <td>none</td>
-<td>Phone allowance amount (Vietnam only)</td>
+<td>SOCSO - Social Security Organisation flag (Malaysia only). Format: Boolean (1 or 0)</td>
 </tr>
 <tr>
-<td>vnTravel</td>
-<td>number</td>
+<td>myEis</td>
+<td>boolean</td>
 <td>false</td>
 <td>none</td>
-<td>Travel allowance amount (Vietnam only)</td>
+<td>EIS - Employment Insurance System flag (Malaysia only). Format: Boolean (1 or 0)</td>
 </tr>
 <tr>
-<td>vnPetrol</td>
-<td>number</td>
+<td>myHrdf</td>
+<td>boolean</td>
 <td>false</td>
 <td>none</td>
-<td>Petrol allowance amount (Vietnam only)</td>
+<td>HRDF - Human Resources Development Fund flag (Malaysia only). Format: Boolean (1 or 0)</td>
 </tr>
 <tr>
-<td>vnParking</td>
-<td>number</td>
+<td>phSss</td>
+<td>boolean</td>
 <td>false</td>
 <td>none</td>
-<td>Parking allowance amount (Vietnam only)</td>
+<td>SSS - Social Security System flag (Philippines only). Format: Boolean (1 or 0)</td>
 </tr>
 <tr>
-<td>vnHousing</td>
-<td>number</td>
+<td>phPhilHealth</td>
+<td>boolean</td>
 <td>false</td>
 <td>none</td>
-<td>Housing allowance amount (Vietnam only)</td>
+<td>PHIL HEALTH - PhilHealth flag (Philippines only). Format: Boolean (1 or 0)</td>
 </tr>
 <tr>
-<td>vnTraining</td>
-<td>number</td>
+<td>phHdmf</td>
+<td>boolean</td>
 <td>false</td>
 <td>none</td>
-<td>Training allowance amount (Vietnam only)</td>
+<td>HDMF - Home Development Mutual Fund flag (Philippines only). Format: Boolean (1 or 0)</td>
 </tr>
 <tr>
-<td>myEpfEmployee</td>
-<td>number</td>
+<td>khNssf</td>
+<td>boolean</td>
 <td>false</td>
 <td>none</td>
-<td>EPF Employee contribution (Malaysia only)</td>
+<td>NSSF - National Social Security Fund flag (Cambodia only). Format: Boolean (1 or 0)</td>
 </tr>
 <tr>
-<td>myEpfEmployer</td>
-<td>number</td>
+<td>khOcr</td>
+<td>boolean</td>
 <td>false</td>
 <td>none</td>
-<td>EPF Employer contribution (Malaysia only)</td>
+<td>OCR - Occupational Risk flag (Cambodia only). Format: Boolean (1 or 0)</td>
 </tr>
 <tr>
-<td>mySocsoEmployee</td>
-<td>number</td>
+<td>khHealthCare</td>
+<td>boolean</td>
 <td>false</td>
 <td>none</td>
-<td>SOCSO Employee contribution (Malaysia only). Must match existing SOCSO value (Review v1/integration/hrf/general/employee/socso-category)</td>
+<td>HEALTH CARE flag (Cambodia only). Format: Boolean (1 or 0)</td>
 </tr>
 <tr>
-<td>mySocsoEmployer</td>
-<td>number</td>
+<td>sgCpf</td>
+<td>boolean</td>
 <td>false</td>
 <td>none</td>
-<td>SOCSO Employer contribution (Malaysia only)</td>
+<td>CPF - Central Provident Fund flag (Singapore only). Format: Boolean (1 or 0)</td>
 </tr>
 <tr>
-<td>myEisEmployee</td>
-<td>number</td>
+<td>sgSdl</td>
+<td>boolean</td>
 <td>false</td>
 <td>none</td>
-<td>EIS Employee contribution (Malaysia only)</td>
+<td>SDL - Skills Development Levy flag (Singapore only). Format: Boolean (1 or 0)</td>
 </tr>
 <tr>
-<td>myEisEmployer</td>
-<td>number</td>
+<td>sgShg</td>
+<td>boolean</td>
 <td>false</td>
 <td>none</td>
-<td>EIS Employer contribution (Malaysia only)</td>
+<td>SHG - Self Help Group flag (Singapore only). Format: Boolean (1 or 0)</td>
 </tr>
 <tr>
-<td>phSssEmployee</td>
-<td>number</td>
+<td>thSss</td>
+<td>boolean</td>
 <td>false</td>
 <td>none</td>
-<td>SSS Employee contribution (Philippines only)</td>
+<td>SSS - Social Security flag (Thailand only). Format: Boolean (1 or 0)</td>
 </tr>
 <tr>
-<td>phSssEmployer</td>
-<td>number</td>
+<td>hkEpf</td>
+<td>boolean</td>
 <td>false</td>
 <td>none</td>
-<td>SSS Employer contribution (Philippines only)</td>
-</tr>
-<tr>
-<td>phPhilHealthEmployee</td>
-<td>number</td>
-<td>false</td>
-<td>none</td>
-<td>PhilHealth Employee contribution (Philippines only)</td>
-</tr>
-<tr>
-<td>phPhilHealthEmployer</td>
-<td>number</td>
-<td>false</td>
-<td>none</td>
-<td>PhilHealth Employer contribution (Philippines only)</td>
-</tr>
-<tr>
-<td>phHdmfEmployee</td>
-<td>number</td>
-<td>false</td>
-<td>none</td>
-<td>HDMF Employee contribution (Philippines only)</td>
-</tr>
-<tr>
-<td>phHdmfEmployer</td>
-<td>number</td>
-<td>false</td>
-<td>none</td>
-<td>HDMF Employer contribution (Philippines only)</td>
-</tr>
-<tr>
-<td>khNssfEmployee</td>
-<td>number</td>
-<td>false</td>
-<td>none</td>
-<td>NSSF Employee contribution (Cambodia only)</td>
-</tr>
-<tr>
-<td>sgCpfEmployee</td>
-<td>number</td>
-<td>false</td>
-<td>none</td>
-<td>CPF Employee contribution (Singapore only)</td>
-</tr>
-<tr>
-<td>sgCpfEmployer</td>
-<td>number</td>
-<td>false</td>
-<td>none</td>
-<td>CPF Employer contribution (Singapore only)</td>
-</tr>
-<tr>
-<td>sgSdlEmployer</td>
-<td>number</td>
-<td>false</td>
-<td>none</td>
-<td>SDL Employer contribution (Singapore only)</td>
-</tr>
-<tr>
-<td>thSocialSecurityEmployee</td>
-<td>number</td>
-<td>false</td>
-<td>none</td>
-<td>Social Security Employee contribution (Thailand only)</td>
-</tr>
-<tr>
-<td>thSocialSecurityEmployer</td>
-<td>number</td>
-<td>false</td>
-<td>none</td>
-<td>Social Security Employer contribution (Thailand only)</td>
-</tr>
-<tr>
-<td>thProvidentFundEmployee</td>
-<td>number</td>
-<td>false</td>
-<td>none</td>
-<td>Provident Fund Employee contribution (Thailand only)</td>
-</tr>
-<tr>
-<td>thProvidentFundEmployer</td>
-<td>number</td>
-<td>false</td>
-<td>none</td>
-<td>Provident Fund Employer contribution (Thailand only)</td>
-</tr>
-<tr>
-<td>hkMpfEmployee</td>
-<td>number</td>
-<td>false</td>
-<td>none</td>
-<td>MPF Employee contribution (Hong Kong only)</td>
-</tr>
-<tr>
-<td>hkMpfEmployer</td>
-<td>number</td>
-<td>false</td>
-<td>none</td>
-<td>MPF Employer contribution (Hong Kong only)</td>
+<td>EPF - Mandatory Provident Fund (MPF) flag (Hong Kong only). Format: Boolean (1 or 0)</td>
 </tr>
 </tbody>
 </table>
@@ -27036,35 +26570,21 @@ This operation does not require authentication
       <span class="hljs-attr">&quot;hi&quot;</span>: <span class="hljs-literal">true</span>,
       <span class="hljs-attr">&quot;ui&quot;</span>: <span class="hljs-literal">false</span>,
       <span class="hljs-attr">&quot;siai&quot;</span>: <span class="hljs-literal">false</span>,
-      <span class="hljs-attr">&quot;vnMeal&quot;</span>: <span class="hljs-number">500000</span>,
-      <span class="hljs-attr">&quot;vnPhone&quot;</span>: <span class="hljs-number">200000</span>,
-      <span class="hljs-attr">&quot;vnTravel&quot;</span>: <span class="hljs-number">1000000</span>,
-      <span class="hljs-attr">&quot;vnPetrol&quot;</span>: <span class="hljs-number">300000</span>,
-      <span class="hljs-attr">&quot;vnParking&quot;</span>: <span class="hljs-number">100000</span>,
-      <span class="hljs-attr">&quot;vnHousing&quot;</span>: <span class="hljs-number">2000000</span>,
-      <span class="hljs-attr">&quot;vnTraining&quot;</span>: <span class="hljs-number">500000</span>,
-      <span class="hljs-attr">&quot;myEpfEmployee&quot;</span>: <span class="hljs-number">500</span>,
-      <span class="hljs-attr">&quot;myEpfEmployer&quot;</span>: <span class="hljs-number">600</span>,
-      <span class="hljs-attr">&quot;mySocsoEmployee&quot;</span>: <span class="hljs-number">20</span>,
-      <span class="hljs-attr">&quot;mySocsoEmployer&quot;</span>: <span class="hljs-number">50</span>,
-      <span class="hljs-attr">&quot;myEisEmployee&quot;</span>: <span class="hljs-number">10</span>,
-      <span class="hljs-attr">&quot;myEisEmployer&quot;</span>: <span class="hljs-number">10</span>,
-      <span class="hljs-attr">&quot;phSssEmployee&quot;</span>: <span class="hljs-number">400</span>,
-      <span class="hljs-attr">&quot;phSssEmployer&quot;</span>: <span class="hljs-number">800</span>,
-      <span class="hljs-attr">&quot;phPhilHealthEmployee&quot;</span>: <span class="hljs-number">200</span>,
-      <span class="hljs-attr">&quot;phPhilHealthEmployer&quot;</span>: <span class="hljs-number">200</span>,
-      <span class="hljs-attr">&quot;phHdmfEmployee&quot;</span>: <span class="hljs-number">100</span>,
-      <span class="hljs-attr">&quot;phHdmfEmployer&quot;</span>: <span class="hljs-number">100</span>,
-      <span class="hljs-attr">&quot;khNssfEmployee&quot;</span>: <span class="hljs-number">50</span>,
-      <span class="hljs-attr">&quot;sgCpfEmployee&quot;</span>: <span class="hljs-number">1000</span>,
-      <span class="hljs-attr">&quot;sgCpfEmployer&quot;</span>: <span class="hljs-number">850</span>,
-      <span class="hljs-attr">&quot;sgSdlEmployer&quot;</span>: <span class="hljs-number">25</span>,
-      <span class="hljs-attr">&quot;thSocialSecurityEmployee&quot;</span>: <span class="hljs-number">300</span>,
-      <span class="hljs-attr">&quot;thSocialSecurityEmployer&quot;</span>: <span class="hljs-number">300</span>,
-      <span class="hljs-attr">&quot;thProvidentFundEmployee&quot;</span>: <span class="hljs-number">200</span>,
-      <span class="hljs-attr">&quot;thProvidentFundEmployer&quot;</span>: <span class="hljs-number">200</span>,
-      <span class="hljs-attr">&quot;hkMpfEmployee&quot;</span>: <span class="hljs-number">750</span>,
-      <span class="hljs-attr">&quot;hkMpfEmployer&quot;</span>: <span class="hljs-number">750</span>
+      <span class="hljs-attr">&quot;myEpf&quot;</span>: <span class="hljs-literal">true</span>,
+      <span class="hljs-attr">&quot;mySocso&quot;</span>: <span class="hljs-literal">true</span>,
+      <span class="hljs-attr">&quot;myEis&quot;</span>: <span class="hljs-literal">true</span>,
+      <span class="hljs-attr">&quot;myHrdf&quot;</span>: <span class="hljs-literal">false</span>,
+      <span class="hljs-attr">&quot;phSss&quot;</span>: <span class="hljs-literal">true</span>,
+      <span class="hljs-attr">&quot;phPhilHealth&quot;</span>: <span class="hljs-literal">true</span>,
+      <span class="hljs-attr">&quot;phHdmf&quot;</span>: <span class="hljs-literal">true</span>,
+      <span class="hljs-attr">&quot;khNssf&quot;</span>: <span class="hljs-literal">true</span>,
+      <span class="hljs-attr">&quot;khOcr&quot;</span>: <span class="hljs-literal">true</span>,
+      <span class="hljs-attr">&quot;khHealthCare&quot;</span>: <span class="hljs-literal">true</span>,
+      <span class="hljs-attr">&quot;sgCpf&quot;</span>: <span class="hljs-literal">true</span>,
+      <span class="hljs-attr">&quot;sgSdl&quot;</span>: <span class="hljs-literal">true</span>,
+      <span class="hljs-attr">&quot;sgShg&quot;</span>: <span class="hljs-literal">false</span>,
+      <span class="hljs-attr">&quot;thSss&quot;</span>: <span class="hljs-literal">true</span>,
+      <span class="hljs-attr">&quot;hkEpf&quot;</span>: <span class="hljs-literal">true</span>
     }
   ]
 }
@@ -27153,35 +26673,21 @@ This operation does not require authentication
   <span class="hljs-attr">&quot;hi&quot;</span>: <span class="hljs-literal">true</span>,
   <span class="hljs-attr">&quot;ui&quot;</span>: <span class="hljs-literal">false</span>,
   <span class="hljs-attr">&quot;siai&quot;</span>: <span class="hljs-literal">false</span>,
-  <span class="hljs-attr">&quot;vnMeal&quot;</span>: <span class="hljs-number">0</span>,
-  <span class="hljs-attr">&quot;vnPhone&quot;</span>: <span class="hljs-number">0</span>,
-  <span class="hljs-attr">&quot;vnTravel&quot;</span>: <span class="hljs-number">0</span>,
-  <span class="hljs-attr">&quot;vnPetrol&quot;</span>: <span class="hljs-number">0</span>,
-  <span class="hljs-attr">&quot;vnParking&quot;</span>: <span class="hljs-number">0</span>,
-  <span class="hljs-attr">&quot;vnHousing&quot;</span>: <span class="hljs-number">0</span>,
-  <span class="hljs-attr">&quot;vnTraining&quot;</span>: <span class="hljs-number">0</span>,
-  <span class="hljs-attr">&quot;myEpfEmployee&quot;</span>: <span class="hljs-number">0</span>,
-  <span class="hljs-attr">&quot;myEpfEmployer&quot;</span>: <span class="hljs-number">0</span>,
-  <span class="hljs-attr">&quot;mySocsoEmployee&quot;</span>: <span class="hljs-number">0</span>,
-  <span class="hljs-attr">&quot;mySocsoEmployer&quot;</span>: <span class="hljs-number">0</span>,
-  <span class="hljs-attr">&quot;myEisEmployee&quot;</span>: <span class="hljs-number">0</span>,
-  <span class="hljs-attr">&quot;myEisEmployer&quot;</span>: <span class="hljs-number">0</span>,
-  <span class="hljs-attr">&quot;phSssEmployee&quot;</span>: <span class="hljs-number">0</span>,
-  <span class="hljs-attr">&quot;phSssEmployer&quot;</span>: <span class="hljs-number">0</span>,
-  <span class="hljs-attr">&quot;phPhilHealthEmployee&quot;</span>: <span class="hljs-number">0</span>,
-  <span class="hljs-attr">&quot;phPhilHealthEmployer&quot;</span>: <span class="hljs-number">0</span>,
-  <span class="hljs-attr">&quot;phHdmfEmployee&quot;</span>: <span class="hljs-number">0</span>,
-  <span class="hljs-attr">&quot;phHdmfEmployer&quot;</span>: <span class="hljs-number">0</span>,
-  <span class="hljs-attr">&quot;khNssfEmployee&quot;</span>: <span class="hljs-number">0</span>,
-  <span class="hljs-attr">&quot;sgCpfEmployee&quot;</span>: <span class="hljs-number">0</span>,
-  <span class="hljs-attr">&quot;sgCpfEmployer&quot;</span>: <span class="hljs-number">0</span>,
-  <span class="hljs-attr">&quot;sgSdlEmployer&quot;</span>: <span class="hljs-number">0</span>,
-  <span class="hljs-attr">&quot;thSocialSecurityEmployee&quot;</span>: <span class="hljs-number">0</span>,
-  <span class="hljs-attr">&quot;thSocialSecurityEmployer&quot;</span>: <span class="hljs-number">0</span>,
-  <span class="hljs-attr">&quot;thProvidentFundEmployee&quot;</span>: <span class="hljs-number">0</span>,
-  <span class="hljs-attr">&quot;thProvidentFundEmployer&quot;</span>: <span class="hljs-number">0</span>,
-  <span class="hljs-attr">&quot;hkMpfEmployee&quot;</span>: <span class="hljs-number">0</span>,
-  <span class="hljs-attr">&quot;hkMpfEmployer&quot;</span>: <span class="hljs-number">0</span>
+  <span class="hljs-attr">&quot;myEpf&quot;</span>: <span class="hljs-literal">true</span>,
+  <span class="hljs-attr">&quot;mySocso&quot;</span>: <span class="hljs-literal">true</span>,
+  <span class="hljs-attr">&quot;myEis&quot;</span>: <span class="hljs-literal">true</span>,
+  <span class="hljs-attr">&quot;myHrdf&quot;</span>: <span class="hljs-literal">true</span>,
+  <span class="hljs-attr">&quot;phSss&quot;</span>: <span class="hljs-literal">true</span>,
+  <span class="hljs-attr">&quot;phPhilHealth&quot;</span>: <span class="hljs-literal">true</span>,
+  <span class="hljs-attr">&quot;phHdmf&quot;</span>: <span class="hljs-literal">true</span>,
+  <span class="hljs-attr">&quot;khNssf&quot;</span>: <span class="hljs-literal">true</span>,
+  <span class="hljs-attr">&quot;khOcr&quot;</span>: <span class="hljs-literal">true</span>,
+  <span class="hljs-attr">&quot;khHealthCare&quot;</span>: <span class="hljs-literal">true</span>,
+  <span class="hljs-attr">&quot;sgCpf&quot;</span>: <span class="hljs-literal">true</span>,
+  <span class="hljs-attr">&quot;sgSdl&quot;</span>: <span class="hljs-literal">true</span>,
+  <span class="hljs-attr">&quot;sgShg&quot;</span>: <span class="hljs-literal">true</span>,
+  <span class="hljs-attr">&quot;thSss&quot;</span>: <span class="hljs-literal">true</span>,
+  <span class="hljs-attr">&quot;hkEpf&quot;</span>: <span class="hljs-literal">true</span>
 }
 
 </code></pre>
@@ -27352,204 +26858,106 @@ This operation does not require authentication
 <td>SIAI (true/false)</td>
 </tr>
 <tr>
-<td>vnMeal</td>
-<td>number</td>
+<td>myEpf</td>
+<td>boolean</td>
 <td>false</td>
 <td>none</td>
 <td>none</td>
 </tr>
 <tr>
-<td>vnPhone</td>
-<td>number</td>
+<td>mySocso</td>
+<td>boolean</td>
 <td>false</td>
 <td>none</td>
 <td>none</td>
 </tr>
 <tr>
-<td>vnTravel</td>
-<td>number</td>
+<td>myEis</td>
+<td>boolean</td>
 <td>false</td>
 <td>none</td>
 <td>none</td>
 </tr>
 <tr>
-<td>vnPetrol</td>
-<td>number</td>
+<td>myHrdf</td>
+<td>boolean</td>
 <td>false</td>
 <td>none</td>
 <td>none</td>
 </tr>
 <tr>
-<td>vnParking</td>
-<td>number</td>
+<td>phSss</td>
+<td>boolean</td>
 <td>false</td>
 <td>none</td>
 <td>none</td>
 </tr>
 <tr>
-<td>vnHousing</td>
-<td>number</td>
+<td>phPhilHealth</td>
+<td>boolean</td>
 <td>false</td>
 <td>none</td>
 <td>none</td>
 </tr>
 <tr>
-<td>vnTraining</td>
-<td>number</td>
+<td>phHdmf</td>
+<td>boolean</td>
 <td>false</td>
 <td>none</td>
 <td>none</td>
 </tr>
 <tr>
-<td>myEpfEmployee</td>
-<td>number</td>
+<td>khNssf</td>
+<td>boolean</td>
 <td>false</td>
 <td>none</td>
 <td>none</td>
 </tr>
 <tr>
-<td>myEpfEmployer</td>
-<td>number</td>
+<td>khOcr</td>
+<td>boolean</td>
 <td>false</td>
 <td>none</td>
 <td>none</td>
 </tr>
 <tr>
-<td>mySocsoEmployee</td>
-<td>number</td>
+<td>khHealthCare</td>
+<td>boolean</td>
 <td>false</td>
 <td>none</td>
 <td>none</td>
 </tr>
 <tr>
-<td>mySocsoEmployer</td>
-<td>number</td>
+<td>sgCpf</td>
+<td>boolean</td>
 <td>false</td>
 <td>none</td>
 <td>none</td>
 </tr>
 <tr>
-<td>myEisEmployee</td>
-<td>number</td>
+<td>sgSdl</td>
+<td>boolean</td>
 <td>false</td>
 <td>none</td>
 <td>none</td>
 </tr>
 <tr>
-<td>myEisEmployer</td>
-<td>number</td>
+<td>sgShg</td>
+<td>boolean</td>
 <td>false</td>
 <td>none</td>
 <td>none</td>
 </tr>
 <tr>
-<td>phSssEmployee</td>
-<td>number</td>
+<td>thSss</td>
+<td>boolean</td>
 <td>false</td>
 <td>none</td>
 <td>none</td>
 </tr>
 <tr>
-<td>phSssEmployer</td>
-<td>number</td>
-<td>false</td>
-<td>none</td>
-<td>none</td>
-</tr>
-<tr>
-<td>phPhilHealthEmployee</td>
-<td>number</td>
-<td>false</td>
-<td>none</td>
-<td>none</td>
-</tr>
-<tr>
-<td>phPhilHealthEmployer</td>
-<td>number</td>
-<td>false</td>
-<td>none</td>
-<td>none</td>
-</tr>
-<tr>
-<td>phHdmfEmployee</td>
-<td>number</td>
-<td>false</td>
-<td>none</td>
-<td>none</td>
-</tr>
-<tr>
-<td>phHdmfEmployer</td>
-<td>number</td>
-<td>false</td>
-<td>none</td>
-<td>none</td>
-</tr>
-<tr>
-<td>khNssfEmployee</td>
-<td>number</td>
-<td>false</td>
-<td>none</td>
-<td>none</td>
-</tr>
-<tr>
-<td>sgCpfEmployee</td>
-<td>number</td>
-<td>false</td>
-<td>none</td>
-<td>none</td>
-</tr>
-<tr>
-<td>sgCpfEmployer</td>
-<td>number</td>
-<td>false</td>
-<td>none</td>
-<td>none</td>
-</tr>
-<tr>
-<td>sgSdlEmployer</td>
-<td>number</td>
-<td>false</td>
-<td>none</td>
-<td>none</td>
-</tr>
-<tr>
-<td>thSocialSecurityEmployee</td>
-<td>number</td>
-<td>false</td>
-<td>none</td>
-<td>none</td>
-</tr>
-<tr>
-<td>thSocialSecurityEmployer</td>
-<td>number</td>
-<td>false</td>
-<td>none</td>
-<td>none</td>
-</tr>
-<tr>
-<td>thProvidentFundEmployee</td>
-<td>number</td>
-<td>false</td>
-<td>none</td>
-<td>none</td>
-</tr>
-<tr>
-<td>thProvidentFundEmployer</td>
-<td>number</td>
-<td>false</td>
-<td>none</td>
-<td>none</td>
-</tr>
-<tr>
-<td>hkMpfEmployee</td>
-<td>number</td>
-<td>false</td>
-<td>none</td>
-<td>none</td>
-</tr>
-<tr>
-<td>hkMpfEmployer</td>
-<td>number</td>
+<td>hkEpf</td>
+<td>boolean</td>
 <td>false</td>
 <td>none</td>
 <td>none</td>
@@ -27571,6 +26979,8 @@ This operation does not require authentication
   <span class="hljs-attr">&quot;workEmail&quot;</span>: <span class="hljs-string">&quot;john.doe@company.com&quot;</span>,
   <span class="hljs-attr">&quot;workPhone&quot;</span>: <span class="hljs-string">&quot;+65-6123-4567&quot;</span>,
   <span class="hljs-attr">&quot;workPhoneExt&quot;</span>: <span class="hljs-string">&quot;1234&quot;</span>,
+  <span class="hljs-attr">&quot;payrollGroupName&quot;</span>: <span class="hljs-string">&quot;Monthly Payroll&quot;</span>,
+  <span class="hljs-attr">&quot;cycleFrequencyName&quot;</span>: <span class="hljs-string">&quot;Monthly&quot;</span>,
   <span class="hljs-attr">&quot;reportingTo&quot;</span>: <span class="hljs-string">&quot;Jane Smith&quot;</span>,
   <span class="hljs-attr">&quot;alsoReportingTo&quot;</span>: <span class="hljs-string">&quot;Bob Johnson&quot;</span>,
   <span class="hljs-attr">&quot;workRegion&quot;</span>: <span class="hljs-number">1</span>
@@ -27651,6 +27061,20 @@ This operation does not require authentication
 <td>false</td>
 <td>none</td>
 <td>Work phone extension (max 10 characters)</td>
+</tr>
+<tr>
+<td>payrollGroupName</td>
+<td>string</td>
+<td>false</td>
+<td>none</td>
+<td>Payroll Group Name (max 100 characters). Must match existing payroll group name in the system</td>
+</tr>
+<tr>
+<td>cycleFrequencyName</td>
+<td>string</td>
+<td>false</td>
+<td>none</td>
+<td>Cycle Frequency Name (max 100 characters). Must match existing cycle frequency name (e.g., Monthly, Bi-Weekly)</td>
 </tr>
 <tr>
 <td>reportingTo</td>
@@ -34139,72 +33563,8 @@ This operation does not require authentication
 </tr>
 </tbody>
 </table>
-<h2 id="tocs_encodebase64dto">EncodeBase64Dto</h2>
-<p><a id="schemaencodebase64dto"></a>
-<a id="schema_EncodeBase64Dto"></a>
-<a id="tocSencodebase64dto"></a>
-<a id="tocsencodebase64dto"></a></p>
-<pre class="highlight tab tab-json"><code>{
-  <span class="hljs-attr">&quot;text&quot;</span>: <span class="hljs-string">&quot;Hello World&quot;</span>
-}
-
-</code></pre>
-<h3 id="properties-93">Properties</h3>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Required</th>
-<th>Restrictions</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>text</td>
-<td>string</td>
-<td>true</td>
-<td>none</td>
-<td>String to encode in base64</td>
-</tr>
-</tbody>
-</table>
-<h2 id="tocs_decodebase64dto">DecodeBase64Dto</h2>
-<p><a id="schemadecodebase64dto"></a>
-<a id="schema_DecodeBase64Dto"></a>
-<a id="tocSdecodebase64dto"></a>
-<a id="tocsdecodebase64dto"></a></p>
-<pre class="highlight tab tab-json"><code>{
-  <span class="hljs-attr">&quot;encodedText&quot;</span>: <span class="hljs-string">&quot;SGVsbG8gV29ybGQ=&quot;</span>
-}
-
-</code></pre>
-<h3 id="properties-94">Properties</h3>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Required</th>
-<th>Restrictions</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>encodedText</td>
-<td>string</td>
-<td>true</td>
-<td>none</td>
-<td>Base64 encoded string to decode</td>
-</tr>
-</tbody>
-</table>
 <!-- Renderer: Shins v2.6.0 -->
 <!-- Generator: Widdershins v4.0.1 -->
-<!-- backwards compatibility -->
-<!-- backwards compatibility -->
 <!-- backwards compatibility -->
 <!-- backwards compatibility -->
 <!-- backwards compatibility -->
